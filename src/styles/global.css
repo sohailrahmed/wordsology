@@ -85,6 +85,7 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
 .prose figure { margin: 2em 0; }
 .prose figure a { display: block; background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 10px; }
 .prose figure img { display: block; margin: 0 auto; border-radius: 6px; }
+.prose figure:target a { border-color: var(--accent); box-shadow: 0 0 0 4px rgba(47, 107, 63, 0.2); }
 .prose figcaption { margin-top: 10px; font-size: 15px; line-height: 1.55; color: var(--muted); }
 .prose .slides { display: grid; grid-auto-flow: column; grid-auto-columns: min(88%, 640px); gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 10px; margin: 1.5em 0 2em; }
 .prose .slides figure { margin: 0; scroll-snap-align: start; }

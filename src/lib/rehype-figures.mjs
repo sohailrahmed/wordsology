@@ -2,6 +2,12 @@
 //   <figure><a href=full-size><img loading=lazy></a><figcaption>title</figcaption></figure>
 // so every chart can be tapped to open full size and pinch-zoomed on a phone.
 import { visit } from 'unist-util-visit';
+import fs from 'node:fs';
+import path from 'node:path';
+import sizeOf from 'image-size';
+
+// "/charts/microbiology/gram-pos-cocci2.png" -> "gram-pos-cocci" (used as the chart's link anchor)
+const anchorFor = (src) => path.basename(String(src)).replace(/\.[a-z0-9]+$/i, '').replace(/\d+$/, '').toLowerCase();
 
 export function rehypeFigures() {
   return (tree) => {
@@ -19,6 +25,14 @@ export function rehypeFigures() {
       const caption = img.properties.title;
       delete img.properties.title;
       img.properties.loading = 'lazy';
+      // Real width/height stop the page from jumping as charts load (so #links land in the right place).
+      try {
+        const file = path.join(process.cwd(), 'public', String(img.properties.src));
+        if (fs.existsSync(file)) {
+          const { width, height } = sizeOf(file);
+          if (width && height) { img.properties.width = width; img.properties.height = height; }
+        }
+      } catch {}
       img.properties.decoding = 'async';
       const href = link ? link.properties.href : img.properties.src;
       const opensFile = String(href).endsWith('.pdf');
@@ -30,7 +44,7 @@ export function rehypeFigures() {
       if (caption) {
         children.push({ type: 'element', tagName: 'figcaption', properties: {}, children: [{ type: 'text', value: caption }] });
       }
-      parent.children[index] = { type: 'element', tagName: 'figure', properties: {}, children };
+      parent.children[index] = { type: 'element', tagName: 'figure', properties: { id: anchorFor(img.properties.src) }, children };
     });
   };
 }
