@@ -1,0 +1,18 @@
+{
+ "strategy": 477,
+ "microbiology": 90,
+ "general": 742,
+ "licensing": 49,
+ "hematology": 10,
+ "chemistry": 47,
+ "immunology": 13,
+ "urinalysis-body-fluids": 9,
+ "blood-bank": 31,
+ "coagulation": 19,
+ "endocrinology": 3,
+ "all": 1490,
+ "answered": 593,
+ "success": 326,
+ "success_comments": 337,
+ "comments": 3100
+}

@@ -1,0 +1,108 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+}
+const { title, description = 'Free high-yield notes, charts and exam strategy for the ASCP MLS, MLT and ASCPi exams.', image = '/og.png' } = Astro.props;
+const fullTitle = title === 'Home' ? 'Wordsology · ASCP made easy' : `${title} · Wordsology`;
+const here = Astro.url.pathname;
+const nav = [
+  { href: '/passing-strategy/', label: 'Start here' },
+  { href: '/high-yield-notes-2/', label: 'Subjects' },
+  { href: '/qa/', label: 'Reader Q&A' },
+  { href: '/basic-testing-skills/', label: 'Testing skills' },
+  { href: '/getting-licensed/', label: 'Licensing' },
+  { href: '/about-2/', label: 'About' },
+];
+const canonical = new URL(here, Astro.site);
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{fullTitle}</title>
+  <meta name="description" content={description}>
+  <link rel="canonical" href={canonical}>
+  <meta property="og:title" content={fullTitle}>
+  <meta property="og:description" content={description}>
+  <meta property="og:url" content={canonical}>
+  <meta property="og:image" content={new URL(image, Astro.site)}>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#2F6B3F">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header" id="site-header">
+    <div class="wrap">
+      <a class="brand" href="/" aria-label="Wordsology home">
+        <span class="brand-mark" aria-hidden="true">W</span>
+        <span class="brand-name">wordsology</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        {nav.map((n) => <a href={n.href} aria-current={here.startsWith(n.href) ? 'page' : undefined}>{n.label}</a>)}
+      </nav>
+      <form class="search-form" action="/search/" method="get" role="search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4A5A50" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <label class="sr-only" for="q">Search the site</label>
+        <input id="q" name="q" type="search" placeholder="Search: Kell, TSI, hepatitis B…">
+      </form>
+    </div>
+  </header>
+
+  <main id="main">
+    <slot />
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2012–{new Date().getFullYear()} Wordsology · Made by Sohail Ahmed, MLS (ASCP)</span>
+      <nav aria-label="Footer">
+        <a href="/qa/">Reader Q&amp;A</a>
+        <a href="/musings/">Inspiration</a>
+        <a href="/miscellaneous/blood-bank-procedures/">Blood bank procedures</a>
+        <a href="/about-2/">About</a>
+      </nav>
+    </div>
+  </footer>
+
+  <dialog class="zoom" id="zoom" aria-label="Full-size image">
+    <span class="zoom-hint">Tap image to zoom · pinch on phones</span>
+    <button class="zoom-close" type="button" aria-label="Close">×</button>
+    <div class="zoom-inner"><img alt="" class="fit"></div>
+  </dialog>
+
+  <script>
+    const header = document.getElementById('site-header')!;
+    const toggle = header.querySelector<HTMLButtonElement>('.menu-toggle')!;
+    toggle.addEventListener('click', () => {
+      const open = header.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+
+    // Tap any chart to open it full screen; tap again to toggle fit / actual size.
+    const dlg = document.getElementById('zoom') as HTMLDialogElement;
+    const big = dlg.querySelector('img')!;
+    document.addEventListener('click', (e) => {
+      const a = (e.target as Element).closest<HTMLAnchorElement>('a[data-zoom]');
+      if (!a || e.metaKey || e.ctrlKey) return;
+      e.preventDefault();
+      const img = a.querySelector('img');
+      big.src = a.href;
+      big.alt = img?.alt ?? '';
+      big.classList.add('fit');
+      dlg.showModal();
+    });
+    big.addEventListener('click', () => big.classList.toggle('fit'));
+    dlg.querySelector('.zoom-close')!.addEventListener('click', () => dlg.close());
+    dlg.addEventListener('click', (e) => { if (e.target === dlg || (e.target as Element).classList.contains('zoom-inner')) dlg.close(); });
+  </script>
+</body>
+</html>

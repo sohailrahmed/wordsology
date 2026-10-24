@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.astro/
+.DS_Store
+# Never commit the WordPress export: it contains commenter emails.
+*.xml
+*.tar

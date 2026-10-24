@@ -1,0 +1,90 @@
+---
+// Renders every Markdown page in src/content/pages/ at its own `path`.
+import { getCollection, render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import SubjectGrid from '../components/SubjectGrid.astro';
+import { subjects, subjectById, subjectPath } from '../data/subjects';
+import counts from '../data/qa-counts.json';
+
+export async function getStaticPaths() {
+  const pages = await getCollection('pages', (p) => p.data.path !== '/');
+  return pages.map((page) => ({
+    params: { path: page.data.path.replace(/^\/|\/$/g, '') },
+    props: { page },
+  }));
+}
+
+const { page } = Astro.props;
+const { Content } = await render(page);
+const subject = page.data.subject ? subjectById[page.data.subject] : null;
+const isNotesIndex = page.data.path === '/high-yield-notes-2/';
+const qaTopic = subject?.id ?? ({ '/passing-strategy/': 'strategy', '/basic-testing-skills/': 'strategy', '/getting-licensed/': 'licensing' } as Record<string, string>)[page.data.path];
+const qaCount = qaTopic ? (counts as Record<string, number>)[qaTopic] ?? 0 : 0;
+const idx = subject ? subjects.findIndex((s) => s.id === subject.id) : -1;
+const next = idx >= 0 ? subjects[(idx + 1) % subjects.length] : null;
+const firstText = page.body?.replace(/!\[[^\]]*\]\([^)]*\)|[#*_>\[\]\\]|\([^)]*\)/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 155);
+const description = page.data.description ?? (subject ? `${subject.name} high-yield notes and charts for the ASCP MLS exam: ${subject.topics}.` : firstText);
+---
+<Base title={page.data.title} description={description}>
+  {subject ? (
+    <header class="page-head" style={`background:${subject.tint}`}>
+      <div class="wrap">
+        <p class="crumbs"><a href="/">Home</a> / <a href="/high-yield-notes-2/">Subjects</a> / {subject.name}</p>
+        <div class="page-title-row">
+          <span class="badge" style={`background:${subject.color}`}>{subject.abbr}</span>
+          <h1>{subject.name}</h1>
+        </div>
+        <p class="page-lede">{subject.topics}.</p>
+      </div>
+    </header>
+  ) : (
+    <header class="page-head page-head-plain">
+      <div class="wrap">
+        <p class="crumbs"><a href="/">Home</a> / {page.data.title}</p>
+        <h1>{page.data.title}</h1>
+      </div>
+    </header>
+  )}
+
+  <div class="wrap page-body">
+    <article class="prose" data-pagefind-body>
+      <Content />
+    </article>
+
+    {isNotesIndex && (
+      <section class="notes-grid" aria-label="Subjects">
+        <SubjectGrid />
+      </section>
+    )}
+
+    {qaCount > 0 && (
+      <a class="qa-link card" href={`/qa/?topic=${qaTopic}`}>
+        <span><strong>{qaCount.toLocaleString('en-US')} reader questions</strong> about {subject ? subject.name : page.data.title.toLowerCase()}</span>
+        <span aria-hidden="true">→</span>
+      </a>
+    )}
+
+    {next && (
+      <nav class="pager" aria-label="Subjects">
+        <a class="btn btn-secondary" href="/high-yield-notes-2/">← All subjects</a>
+        <a class="btn" style={`background:${next.color};color:#fff`} href={subjectPath(next.id)}>Next: {next.name} →</a>
+      </nav>
+    )}
+  </div>
+</Base>
+
+<style>
+  .page-head { padding: 40px 0 44px; }
+  .page-head-plain { background: var(--card); border-bottom: 1px solid var(--line); }
+  .crumbs { margin: 0 0 14px; font-size: 14px; color: var(--ink-3); }
+  .crumbs a { color: var(--ink-3); }
+  .page-title-row { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+  .badge { width: 56px; height: 56px; border-radius: 14px; color: #fff; display: grid; place-items: center; font-weight: 800; font-size: 19px; }
+  .page-head h1 { margin: 0; font-size: clamp(32px, 4.4vw, 48px); letter-spacing: -0.03em; font-weight: 800; }
+  .page-lede { margin: 16px 0 0; font-size: 18px; color: var(--ink-2); max-width: 720px; }
+  .page-body { max-width: 840px; padding-top: 40px; }
+  .notes-grid { margin-top: 32px; }
+  .qa-link { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-top: 40px; padding: 20px 24px; text-decoration: none; color: var(--ink); font-size: 17px; }
+  .qa-link:hover { color: var(--ink); border-color: var(--line-2); }
+  .pager { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--line); }
+</style>

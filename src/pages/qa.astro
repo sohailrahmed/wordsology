@@ -1,0 +1,190 @@
+---
+import Base from '../layouts/Base.astro';
+import { subjects } from '../data/subjects';
+import counts from '../data/qa-counts.json';
+
+const c = counts as Record<string, number>;
+const filters = [
+  { id: 'all', label: 'All', n: c.all },
+  { id: 'success', label: 'Success stories', n: c.success },
+  { id: 'answered', label: 'Answered by Sohail', n: c.answered },
+  { id: 'strategy', label: 'Study strategy', n: c.strategy },
+  ...subjects.filter((s) => c[s.id]).map((s) => ({ id: s.id, label: s.name, n: c[s.id], color: s.color })),
+  { id: 'licensing', label: 'Licensing', n: c.licensing },
+  { id: 'general', label: 'General', n: c.general },
+];
+const topicNames = Object.fromEntries([
+  ...subjects.map((s) => [s.id, { name: s.name, color: s.color, tint: s.tint }]),
+  ['strategy', { name: 'Study strategy', color: '#2F6B3F', tint: '#EEF5EF' }],
+  ['licensing', { name: 'Licensing', color: '#4A5A50', tint: '#EEF0EC' }],
+  ['general', { name: 'General', color: '#4A5A50', tint: '#EEF0EC' }],
+]);
+---
+<Base title="Reader Q&A" description="Thousands of questions, answers and success stories from ASCP exam takers, searchable by subject.">
+  <header class="qa-head">
+    <div class="wrap">
+      <p class="crumbs"><a href="/">Home</a> / Reader Q&amp;A</p>
+      <h1>Reader Q&amp;A</h1>
+      <p class="lede">{c.comments.toLocaleString('en-US')} questions, answers and success stories left by readers since 2012. This archive is read-only.</p>
+      <label class="qa-search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4A5A50" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <span class="sr-only">Search reader questions</span>
+        <input id="qa-q" type="search" placeholder="Search questions: LabCE score, Kell, NY license…" autocomplete="off">
+      </label>
+      <div class="chips" role="group" aria-label="Filter">
+        {filters.map((f) => (
+          <button type="button" class="chip" data-filter={f.id} aria-pressed={f.id === 'all' ? 'true' : 'false'}>
+            {f.color && <span class="dot" style={`background:${f.color}`} aria-hidden="true"></span>}
+            {f.label} <span class="chip-n">{f.n.toLocaleString('en-US')}</span>
+          </button>
+        ))}
+      </div>
+    </div>
+  </header>
+
+  <section class="wrap qa-body">
+    <p class="qa-status" id="qa-status" aria-live="polite">Loading…</p>
+    <ol class="threads" id="threads"></ol>
+    <button class="btn btn-secondary more" id="qa-more" type="button" hidden>Show more</button>
+  </section>
+
+  <template id="tpl-thread">
+    <li class="thread card">
+      <div class="thread-meta"><span class="topic"></span><span class="tag-win" hidden>Passed</span><time></time></div>
+      <div class="post"><p class="who"></p><div class="text"></div></div>
+      <ol class="replies"></ol>
+    </li>
+  </template>
+</Base>
+
+<script define:vars={{ topicNames }}>
+  const PAGE = 20;
+  const list = document.getElementById('threads');
+  const status = document.getElementById('qa-status');
+  const more = document.getElementById('qa-more');
+  const input = document.getElementById('qa-q');
+  const chips = [...document.querySelectorAll('.chip')];
+  const tpl = document.getElementById('tpl-thread');
+  const params = new URLSearchParams(location.search);
+  let filter = params.get('topic') || params.get('filter') || 'all';
+  let query = params.get('q') || '';
+  let data = [], shown = [], cursor = 0;
+
+  const fmt = (d) => new Date(d + 'T12:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+
+  function fill(el, text) {
+    // Plain text only: paragraphs from blank lines, line breaks kept.
+    el.replaceChildren(...text.split(/\n\s*\n/).map((para) => {
+      const p = document.createElement('p');
+      p.textContent = para;
+      return p;
+    }));
+  }
+
+  function post(c, isReply) {
+    const wrap = document.createElement(isReply ? 'li' : 'div');
+    wrap.className = isReply ? 'reply' + (c.s ? ' reply-sohail' : '') : 'post';
+    const who = document.createElement('p');
+    who.className = 'who';
+    who.textContent = c.s ? 'Sohail (Wordsology)' : c.a;
+    if (c.s) { const b = document.createElement('span'); b.className = 'badge-sohail'; b.textContent = 'Site author'; who.append(' ', b); }
+    if (isReply) { const t = document.createElement('time'); t.textContent = fmt(c.d); who.append(' · ', t); }
+    const text = document.createElement('div');
+    text.className = 'text';
+    fill(text, c.t);
+    wrap.append(who, text);
+    return wrap;
+  }
+
+  function render(th) {
+    const li = tpl.content.firstElementChild.cloneNode(true);
+    const tn = topicNames[th.topic];
+    const topic = li.querySelector('.topic');
+    topic.textContent = tn.name;
+    topic.style.color = tn.color;
+    topic.style.background = tn.tint;
+    li.querySelector('.tag-win').hidden = !th.win;
+    li.querySelector('time').textContent = fmt(th.d);
+    li.querySelector('.post').replaceWith(post(th, false));
+    const replies = li.querySelector('.replies');
+    (th.r || []).forEach((r) => replies.append(post(r, true)));
+    if (!th.r) replies.remove();
+    return li;
+  }
+
+  function matches(th) {
+    if (filter === 'success' && !th.win) return false;
+    if (filter === 'answered' && !th.ans) return false;
+    if (!['all', 'success', 'answered'].includes(filter) && th.topic !== filter) return false;
+    if (!query) return true;
+    const words = query.toLowerCase().split(/\s+/).filter(Boolean);
+    const hay = (th.t + ' ' + th.a + ' ' + (th.r || []).map((r) => r.t).join(' ')).toLowerCase();
+    return words.every((w) => hay.includes(w));
+  }
+
+  function apply() {
+    chips.forEach((c) => c.setAttribute('aria-pressed', String(c.dataset.filter === filter)));
+    shown = data.filter(matches);
+    if (filter === 'success') shown.sort((a, b) => (b.d > a.d ? 1 : -1));
+    cursor = 0;
+    list.replaceChildren();
+    page();
+    const label = chips.find((c) => c.dataset.filter === filter)?.firstChild?.textContent?.trim() || '';
+    status.textContent = shown.length
+      ? `${shown.length.toLocaleString('en-US')} conversation${shown.length === 1 ? '' : 's'}${filter !== 'all' ? ' in ' + label.replace(/\s*\d[\d,]*$/, '') : ''}${query ? ` matching “${query}”` : ''}`
+      : 'Nothing matches. Try fewer or different words.';
+    const u = new URL(location.href);
+    u.search = '';
+    if (filter !== 'all') u.searchParams.set(['success', 'answered'].includes(filter) ? 'filter' : 'topic', filter);
+    if (query) u.searchParams.set('q', query);
+    history.replaceState(null, '', u);
+  }
+
+  function page() {
+    shown.slice(cursor, cursor + PAGE).forEach((th) => list.append(render(th)));
+    cursor += PAGE;
+    more.hidden = cursor >= shown.length;
+    more.textContent = `Show more (${(shown.length - Math.min(cursor, shown.length)).toLocaleString('en-US')} left)`;
+  }
+
+  chips.forEach((c) => c.addEventListener('click', () => { filter = c.dataset.filter; apply(); }));
+  more.addEventListener('click', page);
+  let t;
+  input.value = query;
+  input.addEventListener('input', () => { clearTimeout(t); t = setTimeout(() => { query = input.value.trim(); apply(); }, 200); });
+
+  fetch('/qa-data.json').then((r) => r.json()).then((d) => { data = d; apply(); })
+    .catch(() => { status.textContent = 'Could not load the archive. Please refresh.'; });
+</script>
+
+<style is:global>
+  .qa-head { background: var(--card); border-bottom: 1px solid var(--line); padding: 40px 0 28px; }
+  .qa-head .crumbs { margin: 0 0 14px; font-size: 14px; color: var(--ink-3); }
+  .qa-head .crumbs a { color: var(--ink-3); }
+  .qa-head h1 { margin: 0 0 10px; font-size: clamp(32px, 4.4vw, 48px); font-weight: 800; letter-spacing: -0.03em; }
+  .qa-head .lede { margin: 0 0 24px; font-size: 18px; color: var(--ink-2); max-width: 720px; }
+  .qa-search { display: flex; align-items: center; gap: 10px; max-width: 640px; height: 52px; padding: 0 18px; border: 1px solid var(--line-2); border-radius: 14px; background: var(--ground); margin-bottom: 18px; }
+  .qa-search input { border: 0; background: transparent; font: inherit; font-size: 16px; width: 100%; outline: none; color: var(--ink); }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 999px; border: 1px solid var(--line-2); background: var(--card); font: inherit; font-size: 14px; font-weight: 650; color: var(--ink); cursor: pointer; }
+  .chip:hover { border-color: var(--ink); }
+  .chip[aria-pressed='true'] { background: var(--ink); border-color: var(--ink); color: #fff; }
+  .chip-n { font-weight: 500; opacity: 0.7; }
+  .dot { width: 10px; height: 10px; border-radius: 999px; }
+  .qa-body { max-width: 880px; padding-top: 28px; }
+  .qa-status { color: var(--ink-3); margin: 0 0 16px; font-size: 15px; }
+  .threads { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+  .thread { padding: 22px 24px; }
+  .thread-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-bottom: 12px; font-size: 13px; color: var(--muted); }
+  .topic { font-weight: 750; padding: 4px 10px; border-radius: 999px; }
+  .tag-win { font-weight: 750; padding: 4px 10px; border-radius: 999px; background: #FFF3C4; color: #6B4E00; }
+  .thread-meta time { margin-left: auto; }
+  .who { margin: 0 0 6px; font-weight: 750; font-size: 15px; }
+  .who time { font-weight: 400; color: var(--muted); font-size: 13px; }
+  .text p { margin: 0 0 0.7em; font-size: 16px; line-height: 1.65; white-space: pre-line; overflow-wrap: anywhere; }
+  .text p:last-child { margin-bottom: 0; }
+  .replies { list-style: none; margin: 14px 0 0; padding: 0 0 0 18px; border-left: 2px solid var(--line); display: flex; flex-direction: column; gap: 14px; }
+  .reply-sohail { background: var(--accent-soft); border-radius: 12px; padding: 14px 16px; margin-left: -6px; }
+  .badge-sohail { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; color: #fff; background: var(--accent); padding: 2px 8px; border-radius: 999px; vertical-align: 1px; }
+  .more { margin: 24px auto 0; display: flex; }
+</style>

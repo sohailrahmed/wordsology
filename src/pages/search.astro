@@ -1,0 +1,27 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Search" description="Search Wordsology's notes and pages.">
+  <section class="wrap search-page">
+    <h1>Search</h1>
+    <p class="hint">Searches every notes page. To search reader questions, use the <a href="/qa/">Reader Q&amp;A</a> page.</p>
+    <div id="search"></div>
+  </section>
+</Base>
+
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<script is:inline src="/pagefind/pagefind-ui.js"></script>
+<script is:inline>
+  window.addEventListener('DOMContentLoaded', () => {
+    const ui = new PagefindUI({ element: '#search', showSubResults: true, showImages: false, resetStyles: false });
+    const q = new URLSearchParams(location.search).get('q');
+    if (q) ui.triggerSearch(q);
+  });
+</script>
+
+<style is:global>
+  .search-page { max-width: 840px; padding-top: 48px; }
+  .search-page h1 { font-size: 40px; margin: 0 0 8px; font-weight: 800; }
+  .search-page .hint { color: var(--ink-3); margin: 0 0 24px; }
+  #search { --pagefind-ui-primary: #2F6B3F; --pagefind-ui-text: #14201A; --pagefind-ui-border: #CBD2C7; --pagefind-ui-border-radius: 12px; --pagefind-ui-font: var(--font); }
+</style>

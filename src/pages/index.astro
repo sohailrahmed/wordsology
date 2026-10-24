@@ -1,0 +1,123 @@
+---
+import Base from '../layouts/Base.astro';
+import QuestionCard from '../components/QuestionCard.astro';
+import SubjectGrid from '../components/SubjectGrid.astro';
+import counts from '../data/qa-counts.json';
+
+const passed = Math.floor(counts.success_comments / 50) * 50; // "300+" style, never overstated
+const quotes = [
+  { text: 'I just passed the MLT BOC and this website is almost 98% to thank for the success. My test was about 80% blood bank and all of your discrepancy slides helped so much.', who: 'Courtney', exam: 'MLT · 2020' },
+  { text: 'I finally passed my MLS on the 3rd try! Don’t give up! I was so tired of studying, but thanks to God first and this website second, I PASSED.', who: 'Ginger', exam: 'MLS · 2016' },
+  { text: 'I’ve been an AMT registered tech since 1988. ASCP was a personal goal for me but I had LOTS to re-learn. This site spells everything out.', who: 'Elizabeth', exam: 'MLS, first attempt · 2016' },
+];
+---
+<Base title="Home" description="Free high-yield notes, charts and exam strategy for the ASCP MLS, MLT and ASCPi exams, from a certified MLS. Helping exam takers since 2012.">
+  <section class="hero wrap">
+    <div class="hero-text">
+      <p class="eyebrow">ASCP exam prep since 2012</p>
+      <h1>Pass the MLS exam. One high-yield page at a time.</h1>
+      <p class="hero-lede">Free notes, charts and exam strategy for the MLS, MLT and international ASCPi exams, written by a certified MLS who passed it.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/passing-strategy/">Start here</a>
+        <a class="btn btn-secondary" href="#subjects">Browse subjects</a>
+      </div>
+    </div>
+    <div class="hero-card"><QuestionCard /></div>
+  </section>
+
+  <section class="stats" aria-label="Wordsology by the numbers">
+    <div class="wrap stats-grid">
+      <div><p class="stat">2012</p><p class="stat-label">Helping exam takers since</p></div>
+      <div><p class="stat">108</p><p class="stat-label">Countries visiting</p></div>
+      <div><p class="stat">{passed}+</p><p class="stat-label">Readers who told us they passed</p></div>
+      <div><p class="stat">8</p><p class="stat-label">Subjects covered</p></div>
+    </div>
+  </section>
+
+  <section class="wrap block" id="subjects">
+    <h2 class="section-title">Study by subject</h2>
+    <p class="section-lede">Each subject has its own color, used on its charts, page and questions.</p>
+    <SubjectGrid />
+  </section>
+
+  <section class="wrap block">
+    <h2 class="section-title">New here? Follow this path</h2>
+    <div class="path-grid">
+      <a class="path-step path-step-dark" href="/passing-strategy/">
+        <span class="path-num">Step 1</span>
+        <span class="path-title">Passing strategy</span>
+        <span class="path-body">How to plan your weeks, which resources to use, and how to know you're ready.</span>
+      </a>
+      <a class="path-step card" href="/basic-testing-skills/">
+        <span class="path-num">Step 2</span>
+        <span class="path-title">Testing skills</span>
+        <span class="path-body">How the adaptive exam works and how to handle tricky questions.</span>
+      </a>
+      <a class="path-step card" href="/high-yield-notes-2/">
+        <span class="path-num">Step 3</span>
+        <span class="path-title">High-yield notes</span>
+        <span class="path-body">The flowcharts and tables, subject by subject.</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="quotes">
+    <div class="wrap block">
+      <h2 class="section-title">From readers who passed</h2>
+      <p class="section-lede">{passed}+ readers have left a note saying they passed. <a href="/qa/?filter=success">Read their stories →</a></p>
+      <div class="quote-grid">
+        {quotes.map((q) => (
+          <figure class="quote">
+            <blockquote>“{q.text}”</blockquote>
+            <figcaption><strong>{q.who}</strong> · {q.exam}</figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap block">
+    <div class="cta">
+      <div>
+        <h2>Have a question?</h2>
+        <p>Browse {counts.comments.toLocaleString('en-US')} questions and answers from readers over the years, searchable by subject.</p>
+      </div>
+      <a class="btn cta-btn" href="/qa/">Open reader Q&amp;A</a>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero { display: flex; flex-wrap: wrap; gap: 48px; align-items: center; padding-top: 64px; padding-bottom: 56px; }
+  .hero-text { flex: 1 1 480px; min-width: 0; }
+  .hero h1 { margin: 0 0 20px; font-size: clamp(36px, 5vw, 58px); line-height: 1.05; letter-spacing: -0.03em; font-weight: 800; }
+  .hero-lede { margin: 0 0 32px; font-size: 19px; line-height: 1.6; color: var(--ink-2); max-width: 560px; }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+  .hero-card { flex: 1 1 380px; min-width: 0; }
+  .stats { background: var(--card); border-block: 1px solid var(--line); }
+  .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 24px; padding-top: 28px; padding-bottom: 28px; }
+  .stat { margin: 0; font-size: 32px; font-weight: 800; letter-spacing: -0.02em; }
+  .stat-label { margin: 4px 0 0; font-size: 14px; color: var(--muted); }
+  .block { padding-top: 64px; padding-bottom: 8px; }
+  .path-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .path-step { display: flex; flex-direction: column; gap: 10px; padding: 28px; border-radius: var(--radius); text-decoration: none; color: var(--ink); }
+  .path-step:hover { color: var(--ink); border-color: var(--line-2); }
+  .path-step-dark { background: var(--ink); color: #fff; }
+  .path-step-dark:hover { color: #fff; background: #000; }
+  .path-num { font-size: 14px; font-weight: 700; color: var(--accent); }
+  .path-step-dark .path-num { color: var(--accent-on-dark); }
+  .path-title { font-size: 21px; font-weight: 800; }
+  .path-body { font-size: 15px; line-height: 1.55; color: var(--ink-3); }
+  .path-step-dark .path-body { color: #D3DDD6; }
+  .quotes { background: var(--accent-soft); margin-top: 64px; padding-bottom: 64px; }
+  .quote-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 16px; }
+  .quote { margin: 0; background: #fff; border-radius: var(--radius); padding: 28px; }
+  .quote blockquote { margin: 0 0 16px; font-size: 17px; line-height: 1.6; }
+  .quote figcaption { font-size: 14px; color: var(--ink-3); }
+  .cta { background: var(--ink); color: #fff; border-radius: 24px; padding: 40px; display: flex; flex-wrap: wrap; gap: 24px; align-items: center; justify-content: space-between; }
+  .cta h2 { margin: 0 0 8px; font-size: 28px; font-weight: 800; }
+  .cta p { margin: 0; color: #D3DDD6; max-width: 560px; }
+  .cta-btn { background: var(--accent-on-dark); color: var(--ink); }
+  .cta-btn:hover { background: #fff; color: var(--ink); }
+  @media (max-width: 600px) { .hero { padding-top: 36px; } .cta { padding: 28px; } }
+</style>

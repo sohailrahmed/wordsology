@@ -1,0 +1,21 @@
+---
+import { subjects, subjectPath } from '../data/subjects';
+---
+<div class="subject-grid">
+  {subjects.map((s) => (
+    <a class="subject-tile card" href={subjectPath(s.id)}>
+      <span class="subject-badge" style={`background:${s.tint};color:${s.color}`}>{s.abbr}</span>
+      <span class="subject-name">{s.name}</span>
+      <span class="subject-topics">{s.topics}</span>
+    </a>
+  ))}
+</div>
+
+<style>
+  .subject-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 16px; }
+  .subject-tile { display: flex; flex-direction: column; gap: 10px; padding: 24px; min-height: 172px; text-decoration: none; color: var(--ink); transition: border-color .15s, transform .15s; }
+  .subject-tile:hover { color: var(--ink); border-color: var(--line-2); transform: translateY(-2px); }
+  .subject-badge { width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; font-weight: 800; font-size: 15px; }
+  .subject-name { font-size: 19px; font-weight: 800; }
+  .subject-topics { font-size: 14px; line-height: 1.5; color: var(--ink-3); }
+</style>

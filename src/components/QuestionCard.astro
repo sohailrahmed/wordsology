@@ -1,0 +1,85 @@
+---
+// Sohail's original cartoon questions, as tap-to-reveal flashcards.
+const questions = [
+  {
+    subject: 'Microbiology',
+    img: '/media/questions/haemophilus-and-staph-question.png',
+    alt: 'Cartoon: Staphylococcus aureus on sheep blood agar surrounded by Haemophilus colonies, asking which two key factors Haemophilus needs.',
+    answer: 'X factor (hemin) and V factor (NAD)',
+    explain: 'Staph aureus releases both as byproducts, so Haemophilus grows in a ring around it on sheep blood agar. This is called satelliting.',
+    answerImg: '/media/questions/haemophilus-and-staph-answer.png',
+    link: '/high-yield-notes-2/microbiology/',
+  },
+  {
+    subject: 'Microbiology',
+    img: '/media/questions/micropic1.png',
+    alt: 'Cartoon of a cow and a rat urinating, asking which organism humans catch from animal urine or soil contaminated by it.',
+    answer: 'Leptospira',
+    explain: 'A spirochete spread by the urine of infected animals such as rats and cattle, or by water and soil contaminated with it.',
+    link: '/high-yield-notes-2/microbiology/',
+  },
+  {
+    subject: 'Microbiology',
+    img: '/media/questions/whatami.png',
+    alt: 'Cartoon of a slimy gram-positive coccus boasting about catheters, surgical wounds, endocarditis and UTIs.',
+    answer: 'Coagulase-negative staphylococci (classically S. epidermidis)',
+    explain: 'Slime (biofilm) lets it colonize catheters and prosthetic valves, making it a leading cause of hospital-acquired infections.',
+    link: '/high-yield-notes-2/microbiology/',
+  },
+];
+---
+<div class="qcard card" data-qcard>
+  <div class="qcard-top">
+    <span class="qcard-tag">Microbiology · Cartoon question</span>
+    <span class="qcard-count"><span data-qnum>1</span> of {questions.length}</span>
+  </div>
+  {questions.map((q, i) => (
+    <div class="qcard-item" data-q={i} hidden={i !== 0}>
+      <img src={q.img} alt={q.alt} width="560" height="380" loading={i === 0 ? 'eager' : 'lazy'} />
+      <div class="qcard-answer" hidden>
+        <p class="qcard-answer-title">{q.answer}</p>
+        <p class="qcard-answer-body">{q.explain} <a href={q.link}>See the chart →</a></p>
+      </div>
+    </div>
+  ))}
+  <div class="qcard-actions">
+    <button class="btn btn-dark" type="button" data-reveal>Reveal answer</button>
+    <button class="btn btn-secondary" type="button" data-next>Next question</button>
+  </div>
+</div>
+
+<style>
+  .qcard { padding: 24px; box-shadow: 0 12px 32px rgba(20, 32, 26, 0.06); }
+  .qcard-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 16px; font-size: 13px; }
+  .qcard-tag { font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: #15703A; }
+  .qcard-count { color: var(--muted); }
+  .qcard-item img { display: block; width: 100%; height: auto; max-height: 300px; object-fit: contain; border-radius: 10px; background: #fff; }
+  .qcard-answer { margin-top: 16px; background: var(--accent-soft); border-radius: 12px; padding: 16px 18px; }
+  .qcard-answer-title { margin: 0 0 6px; font-weight: 800; color: var(--accent-dark); }
+  .qcard-answer-body { margin: 0; font-size: 15px; line-height: 1.55; color: var(--ink-2); }
+  .qcard-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+  .qcard-actions .btn { min-height: 48px; font-size: 15px; padding: 0 20px; }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-qcard]').forEach((card) => {
+    const items = [...card.querySelectorAll<HTMLElement>('[data-q]')];
+    const reveal = card.querySelector<HTMLButtonElement>('[data-reveal]')!;
+    const num = card.querySelector('[data-qnum]')!;
+    let i = 0;
+    const answer = () => items[i].querySelector<HTMLElement>('.qcard-answer')!;
+    reveal.addEventListener('click', () => {
+      const a = answer();
+      a.hidden = !a.hidden;
+      reveal.textContent = a.hidden ? 'Reveal answer' : 'Hide answer';
+    });
+    card.querySelector('[data-next]')!.addEventListener('click', () => {
+      answer().hidden = true;
+      items[i].hidden = true;
+      i = (i + 1) % items.length;
+      items[i].hidden = false;
+      num.textContent = String(i + 1);
+      reveal.textContent = 'Reveal answer';
+    });
+  });
+</script>
