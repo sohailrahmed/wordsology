@@ -113,3 +113,17 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
 .zoom img.fit { max-width: 100%; max-height: calc(100vh - 90px); }
 .zoom-close { position: fixed; top: 12px; right: 12px; width: 44px; height: 44px; border-radius: 999px; border: 0; background: #fff; color: var(--ink); font-size: 22px; cursor: pointer; }
 .zoom-hint { position: fixed; top: 22px; left: 16px; color: #D3DDD6; font-size: 14px; }
+
+/* ---------- parasitology chart ---------- */
+.prose .parasites { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; margin: 1.5em 0 2em; font-size: 15px; line-height: 1.45; }
+.prose .pz-panel { background: #fff; border: 1px solid var(--line); border-top: 5px solid #15703A; border-radius: 14px; padding: 18px; }
+.prose .pz-panel h4 { margin: 0 0 14px; font-size: 20px; font-weight: 800; }
+.prose .pz-kind + .pz-kind { margin-top: 18px; padding-top: 16px; border-top: 1px dashed var(--line-2); }
+.prose .pz-kind-title { margin: 0 0 10px; font-weight: 800; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: #15703A; }
+.prose .pz-kind-title span { font-weight: 600; text-transform: none; letter-spacing: 0; color: var(--muted); margin-left: 6px; }
+.prose .pz-groups { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
+.prose .pz-group { background: #F3F9F4; border-radius: 10px; padding: 10px 12px; }
+.prose .pz-group h5 { margin: 0 0 6px; font-size: 14px; font-weight: 800; color: var(--ink); }
+.prose .pz-group ul { list-style: none; margin: 0; padding: 0; }
+.prose .pz-group li { margin: 0 0 3px; }
+.prose .pz-sub { margin: 8px 0 4px; font-size: 12px; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-3); }

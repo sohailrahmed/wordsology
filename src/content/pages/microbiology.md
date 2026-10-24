@@ -46,4 +46,36 @@ Unfortunately, you just have to memorize some things. For example, here are a fe
 
 ![Tsi interpretation](/charts/microbiology/tsi-interpretation.jpg "This is probably a simple concept if you've learned about it in lab or at school. If you haven't, it can be frustrating trying to understand it on your own. I went through quite a few resources on the internet before I finally found a good explanation - and a light bulb went on in my head. I hope this picture can serve you similarly")
 
-![Parasitology flowchart](/charts/microbiology/parasitology-flowchart.jpg "These are the parasites I had to know for school. Only one showed up on my licensing exam so this is decidedly NOT high-yield, although it may help during coursework. I would definitely urge you to know the similarities/differences between the four major Plasmodium species (number of merozoites per schizont; shape, etc)")
+### Parasites
+
+These are the parasites I had to know for school. Only one showed up on my licensing exam so this is decidedly NOT high-yield, although it may help during coursework. I would definitely urge you to know the similarities/differences between the four major *Plasmodium* species (number of merozoites per schizont; shape, etc).
+
+<div class="parasites">
+<section class="pz-panel">
+<h4>Intestinal</h4>
+<div class="pz-kind"><p class="pz-kind-title">Protozoa <span>single cell</span></p><div class="pz-groups">
+<div class="pz-group"><h5>Amoebae</h5><ul><li><i>Entamoeba histolytica</i></li><li><i>E. dispar</i></li><li><i>E. hartmanni</i></li><li><i>E. coli</i></li><li><i>Endolimax nana</i></li><li><i>Blastocystis hominis</i></li></ul></div>
+<div class="pz-group"><h5>Flagellates</h5><ul><li><i>Dientamoeba fragilis</i></li><li><i>Giardia duodenalis</i> (<i>lamblia</i>)</li><li><i>Pentatrichomonas hominis</i></li></ul></div>
+<div class="pz-group"><h5>Ciliates</h5><ul><li><i>Balantidium coli</i></li></ul></div>
+<div class="pz-group"><h5>Sporozoa</h5><ul><li><i>Cryptosporidium</i></li><li><i>Cystoisospora</i> (<i>Isospora</i>) <i>belli</i></li></ul></div>
+</div></div>
+<div class="pz-kind"><p class="pz-kind-title">Helminths <span>multicellular</span></p><div class="pz-groups">
+<div class="pz-group"><h5>Nematodes</h5><ul><li><i>Trichuris trichiura</i></li><li><i>Enterobius vermicularis</i></li><li><i>Necator americanus</i></li><li><i>Ancylostoma duodenale</i></li><li><i>Strongyloides stercoralis</i></li><li><i>Ascaris lumbricoides</i></li></ul></div>
+<div class="pz-group"><h5>Cestodes</h5><ul><li><i>Diphyllobothrium latum</i></li><li><i>Hymenolepis nana</i></li><li><i>Taenia saginata</i></li><li><i>Taenia solium</i></li></ul></div>
+<div class="pz-group"><h5>Trematodes</h5><ul><li><i>Fasciolopsis buski</i></li><li><i>Fasciola hepatica</i></li><li><i>Clonorchis sinensis</i></li><li><i>Paragonimus westermani</i></li></ul><p class="pz-sub">Schistosomes</p><ul><li><i>S. mansoni</i></li><li><i>S. japonicum</i></li><li><i>S. haematobium</i></li></ul></div>
+</div></div>
+</section>
+<section class="pz-panel">
+<h4>Extraintestinal</h4>
+<div class="pz-kind"><p class="pz-kind-title">Protozoa <span>single cell</span></p><div class="pz-groups">
+<div class="pz-group"><h5>Blood &amp; tissue</h5><ul><li><i>Toxoplasma gondii</i></li><li><i>Leishmania</i></li><li><i>Babesia</i></li><li><i>Trypanosoma</i></li></ul></div>
+<div class="pz-group"><h5>Plasmodium</h5><ul><li><i>P. falciparum</i></li><li><i>P. malariae</i></li><li><i>P. ovale</i></li><li><i>P. vivax</i></li></ul></div>
+<div class="pz-group"><h5>Free-living amoebae</h5><ul><li><i>Acanthamoeba</i></li><li><i>Naegleria fowleri</i></li></ul></div>
+<div class="pz-group"><h5>Urogenital</h5><ul><li><i>Trichomonas vaginalis</i></li></ul></div>
+</div></div>
+<div class="pz-kind"><p class="pz-kind-title">Helminths <span>multicellular</span></p><div class="pz-groups">
+<div class="pz-group"><h5>Nematodes</h5><ul><li><i>Trichinella spiralis</i></li><li><i>Dracunculus medinensis</i></li></ul><p class="pz-sub">Filariae</p><ul><li><i>Wuchereria bancrofti</i></li><li><i>Brugia malayi</i></li><li><i>Loa loa</i></li><li><i>Onchocerca volvulus</i></li></ul></div>
+<div class="pz-group"><h5>Cestodes</h5><ul><li><i>Echinococcus granulosus</i></li></ul></div>
+</div></div>
+</section>
+</div>
