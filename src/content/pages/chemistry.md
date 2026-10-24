@@ -32,7 +32,9 @@ Tumor markers are used to monitor response to treatment. Think silly when you ne
 
 ![Diagnosing diabetes mellitus: fasting glucose number line with an A1C scale beneath, and the criteria to confirm the diagnosis](/charts/chemistry/diagnosing-diabetes-mellitus.svg "Simplify memorization of number ranges with a line graph. Criteria follow the American Diabetes Association Standards of Care.")
 
-![Cardiac markers](/charts/chemistry/cardiac-markers.jpg "\"as serious as a heart attack\" is a phrase important enough to have made its way into common usage - it's going to be on the exam")
+### Cardiac markers
+
+![How to tell if someone had an MI and how long ago: serial blood draws checking CK-MB, LD1 > LD2, myoglobin and cardiac troponins](/charts/chemistry/cardiac-markers.svg "\"As serious as a heart attack\" is a phrase important enough to have made its way into common usage - it's going to be on the exam")
 
 ![Lipoproteins1](/charts/chemistry/lipoproteins1.jpg "A simplified description of the different lipoproteins, how they form, and what's relevant to the exam for each")
 
