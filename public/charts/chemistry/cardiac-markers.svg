@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="880" height="596" viewBox="0 0 880 596" font-family="Helvetica, Arial, sans-serif" role="img" aria-label="How can you tell if someone had an MI and how long ago? Draw blood when the possible acute myocardial infarction patient first arrives at the ER, then every few hours afterwards, checking these markers. CK-MB: least specific for MI. LD1 greater than LD2: slowest to rise after MI. Myoglobin: fastest to rise after MI; a negative result can rule out an MI. Cardiac troponins: most specific for MI; last longest in blood.">
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="596" viewBox="0 0 880 596" font-family="Helvetica, Arial, sans-serif" role="img" aria-label="How can you tell if someone had an MI and how long ago? Draw blood when the possible acute myocardial infarction patient first arrives at the ER, then every few hours afterwards, checking these markers. CK-MB: rises in 4 to 6 hours and is normal by 2 to 3 days, good for spotting reinfarction. LD1 greater than LD2: slowest to rise and lasts longest, 10 to 14 days. Myoglobin: fastest to rise and least specific, because skeletal muscle has it too; a negative result can rule out an MI. Cardiac troponins: most specific for MI; stay elevated 7 to 10 days.">
   <rect width="880" height="596" fill="#fff"/>
   <defs><marker id="ah" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#0E6A80"/></marker></defs>
 
@@ -24,21 +24,23 @@
     <rect x="20" y="282" width="190" height="130" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
     <path d="M20 294 a12 12 0 0 1 12 -12 h166 a12 12 0 0 1 12 12 v30 h-190 Z" fill="#0E6A80"/>
     <text x="115" y="310" text-anchor="middle" font-size="18" font-weight="800" fill="#fff">CK-MB</text>
-    <text x="115" y="360" text-anchor="middle" font-size="18" fill="#16212B">Least specific</text>
-    <text x="115" y="384" text-anchor="middle" font-size="18" fill="#16212B">for MI</text>
+    <text x="115" y="352" text-anchor="middle" font-size="18" fill="#16212B">Rises in 4–6 hours;</text>
+    <text x="115" y="376" text-anchor="middle" font-size="18" fill="#16212B">normal by 2–3 days</text>
+    <text x="115" y="400" text-anchor="middle" font-size="13" fill="#4A5864">(good for spotting reinfarction)</text>
 
     <rect x="240" y="282" width="190" height="130" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
     <path d="M240 294 a12 12 0 0 1 12 -12 h166 a12 12 0 0 1 12 12 v30 h-190 Z" fill="#0E6A80"/>
     <text x="335" y="310" text-anchor="middle" font-size="18" font-weight="800" fill="#fff">LD1 &gt; LD2</text>
-    <text x="335" y="356" text-anchor="middle" font-size="18" fill="#16212B">Slowest to rise</text>
-    <text x="335" y="380" text-anchor="middle" font-size="18" fill="#16212B">after MI</text>
+    <text x="335" y="352" text-anchor="middle" font-size="18" fill="#16212B">Slowest to rise;</text>
+    <text x="335" y="376" text-anchor="middle" font-size="18" fill="#16212B">lasts longest (10–14 d)</text>
     <text x="335" y="402" text-anchor="middle" font-size="13" fill="#4A5864">("flipped" LD pattern)</text>
 
     <rect x="450" y="282" width="190" height="130" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
     <path d="M450 294 a12 12 0 0 1 12 -12 h166 a12 12 0 0 1 12 12 v30 h-190 Z" fill="#0E6A80"/>
     <text x="545" y="310" text-anchor="middle" font-size="18" font-weight="800" fill="#fff">Myoglobin</text>
-    <text x="545" y="360" text-anchor="middle" font-size="18" fill="#16212B">Fastest to rise</text>
-    <text x="545" y="384" text-anchor="middle" font-size="18" fill="#16212B">after MI</text>
+    <text x="545" y="352" text-anchor="middle" font-size="18" fill="#16212B">Fastest to rise;</text>
+    <text x="545" y="376" text-anchor="middle" font-size="18" fill="#16212B">least specific</text>
+    <text x="545" y="400" text-anchor="middle" font-size="13" fill="#4A5864">(skeletal muscle has it too)</text>
 
     <rect x="670" y="282" width="190" height="130" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
     <path d="M670 294 a12 12 0 0 1 12 -12 h166 a12 12 0 0 1 12 12 v30 h-190 Z" fill="#0E6A80"/>
@@ -53,9 +55,10 @@
   <text x="545" y="477" text-anchor="middle" font-size="17" font-weight="700" fill="#16212B">A negative result</text>
   <text x="545" y="500" text-anchor="middle" font-size="17" font-weight="700" fill="#16212B">can rule out an MI</text>
 
-  <line x1="765" y1="412" x2="765" y2="450" stroke="#B45309" stroke-width="2.5"/>
-  <ellipse cx="765" cy="482" rx="100" ry="34" fill="#FFF7ED" stroke="#B45309" stroke-width="2.5"/>
-  <text x="765" y="488" text-anchor="middle" font-size="17" font-weight="700" fill="#16212B">Lasts longest in blood</text>
+  <line x1="765" y1="412" x2="765" y2="444" stroke="#B45309" stroke-width="2.5"/>
+  <ellipse cx="765" cy="490" rx="100" ry="46" fill="#FFF7ED" stroke="#B45309" stroke-width="2.5"/>
+  <text x="765" y="484" text-anchor="middle" font-size="17" font-weight="700" fill="#16212B">Stays elevated</text>
+  <text x="765" y="506" text-anchor="middle" font-size="17" font-weight="700" fill="#16212B">7–10 days</text>
 
   <text x="20" y="582" font-size="13" fill="#4A5864">MI = myocardial infarction · CK-MB = creatine kinase MB isoenzyme · LD = lactate dehydrogenase</text>
 </svg>
