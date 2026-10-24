@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1130" viewBox="0 0 2200 1130" font-family="Helvetica, Arial, sans-serif" role="img" aria-label="Identification flowchart for gram-positive cocci, starting with catalase: Staphylococcus and Micrococcus on the positive side, Streptococcus and Enterococcus on the negative side.">
-<rect width="2200" height="1130" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1290" viewBox="0 0 2200 1290" font-family="Helvetica, Arial, sans-serif" role="img" aria-label="Identification flowchart for gram-positive cocci, starting with catalase: Staphylococcus and Micrococcus on the positive side, Streptococcus and Enterococcus on the negative side.">
+<rect width="2200" height="1290" fill="#fff"/>
 <text x="1100.0" y="46" font-size="30" font-weight="800" fill="#16212B" text-anchor="middle">Gram-positive cocci</text>
 <rect x="1025.0" y="70" width="150" height="34" rx="17" fill="#EEF2F5" stroke="#C9D3DA" stroke-width="1.5"/>
 <text x="1100.0" y="93" font-size="15" font-weight="700" fill="#4A5864" text-anchor="middle">Catalase</text>
@@ -45,7 +45,8 @@
 <text x="36.0" y="520" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• About 50% of people carry it</text>
 <text x="36.0" y="541" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;on skin and nares</text>
 <path d="M150 564 V610" stroke="#9F1239" stroke-width="2.5" stroke-dasharray="6 5"/>
-<text x="162" y="592" font-size="13" font-weight="700" fill="#9F1239" text-anchor="start">Methicillin-resistant strains</text>
+<text x="140" y="584" font-size="13" font-weight="700" fill="#9F1239" text-anchor="end">Methicillin-</text>
+<text x="140" y="601" font-size="13" font-weight="700" fill="#9F1239" text-anchor="end">resistant</text>
 <rect x="20.0" y="610" width="260" height="172" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
 <path d="M20.0 622 a12 12 0 0 1 12 -12 h236 a12 12 0 0 1 12 12 v28 h-260 Z" fill="#9F1239"/>
 <text x="36.0" y="637" font-size="17" font-weight="700" fill="#fff" text-anchor="start" font-style="italic">MRSA</text>
@@ -58,50 +59,54 @@
 <rect x="480.0" y="290" width="280" height="44" rx="10" fill="#fff" stroke="#0F766E" stroke-width="2.5"/>
 <text x="620" y="318" font-size="17" font-weight="700" fill="#0F766E" text-anchor="middle" font-style="italic">Coag-neg staph · Micrococcus</text>
 <path d="M620 334 L620 350" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
-<rect x="505.0" y="350" width="230" height="34" rx="17" fill="#EEF2F5" stroke="#C9D3DA" stroke-width="1.5"/>
-<text x="620" y="373" font-size="15" font-weight="700" fill="#4A5864" text-anchor="middle">Microdase · Bacitracin</text>
-<path d="M620 384 L620 398 L385 398 L385 425" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
-<circle cx="385" cy="404" r="13" fill="#fff" stroke="#0F766E" stroke-width="2.5"/>
-<text x="385" y="409.5" font-size="15" font-weight="800" fill="#0F766E" text-anchor="middle">+</text>
-<text x="405" y="420" font-size="13" font-weight="700" fill="#0F766E" text-anchor="start">S</text>
-<path d="M620 398 L860 398 L860 425" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
-<circle cx="860" cy="404" r="13" fill="#fff" stroke="#0F766E" stroke-width="2.5"/>
-<text x="860" y="409.5" font-size="15" font-weight="800" fill="#0F766E" text-anchor="middle">−</text>
-<text x="880" y="420" font-size="13" font-weight="700" fill="#0F766E" text-anchor="start">R</text>
-<rect x="275.0" y="425" width="220" height="127" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
-<path d="M275.0 437 a12 12 0 0 1 12 -12 h196 a12 12 0 0 1 12 12 v28 h-220 Z" fill="#0F766E"/>
-<text x="291.0" y="452" font-size="17" font-weight="700" fill="#fff" text-anchor="start" font-style="italic">Micrococcus</text>
-<text x="291.0" y="487" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Microdase (modified</text>
-<text x="291.0" y="508" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;oxidase) positive</text>
-<text x="291.0" y="529" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Bacitracin susceptible</text>
-<rect x="755.0" y="425" width="210" height="44" rx="10" fill="#fff" stroke="#0F766E" stroke-width="2.5"/>
-<text x="860" y="453" font-size="17" font-weight="700" fill="#0F766E" text-anchor="middle" font-style="italic">Coag-neg staph</text>
-<path d="M860 469 L860 485" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
-<rect x="790.0" y="485" width="140" height="34" rx="17" fill="#EEF2F5" stroke="#C9D3DA" stroke-width="1.5"/>
-<text x="860" y="508" font-size="15" font-weight="700" fill="#4A5864" text-anchor="middle">Novobiocin</text>
-<path d="M860 519 L860 533 L620 533 L620 560" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
-<circle cx="620" cy="539" r="13" fill="#fff" stroke="#0F766E" stroke-width="2.5"/>
-<text x="620" y="544.5" font-size="15" font-weight="800" fill="#0F766E" text-anchor="middle">S</text>
-<path d="M860 533 L860 560" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
-<circle cx="860" cy="548" r="13" fill="#fff" stroke="#0F766E" stroke-width="2.5"/>
-<text x="860" y="553.5" font-size="15" font-weight="800" fill="#0F766E" text-anchor="middle">R</text>
-<rect x="500.0" y="560" width="240" height="350" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
-<path d="M500.0 572 a12 12 0 0 1 12 -12 h216 a12 12 0 0 1 12 12 v28 h-240 Z" fill="#0F766E"/>
-<text x="516.0" y="587" font-size="17" font-weight="700" fill="#fff" text-anchor="start" font-style="italic">S. epidermidis</text>
-<text x="516.0" y="622" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Novobiocin zone of</text>
-<text x="516.0" y="643" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;inhibition &gt; 16 mm</text>
-<text x="516.0" y="664" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Hospital-acquired,</text>
-<text x="516.0" y="685" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;opportunistic: surgical</text>
-<text x="516.0" y="706" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;wounds; enters via</text>
-<text x="516.0" y="727" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;catheters to cause UTIs</text>
-<text x="516.0" y="748" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Glycocalyx (capsule, slime</text>
-<text x="516.0" y="769" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;layer, biofilm)</text>
-<image x="512.0" y="775" width="216" height="108" href="data:image/png;base64,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"/>
-<rect x="760.0" y="575" width="200" height="106" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
-<path d="M760.0 587 a12 12 0 0 1 12 -12 h176 a12 12 0 0 1 12 12 v28 h-200 Z" fill="#0F766E"/>
-<text x="776.0" y="602" font-size="17" font-weight="700" fill="#fff" text-anchor="start" font-style="italic">S. saprophyticus</text>
-<text x="776.0" y="637" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• UTIs in sexually</text>
-<text x="776.0" y="658" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;active females</text>
+<rect x="535.0" y="350" width="170" height="56" rx="18" fill="#EEF2F5" stroke="#C9D3DA" stroke-width="1.5"/>
+<text x="620" y="373" font-size="15" font-weight="700" fill="#4A5864" text-anchor="middle">Microdase</text>
+<line x1="557.0" y1="379" x2="683.0" y2="379" stroke="#C9D3DA" stroke-width="1"/>
+<text x="620" y="397" font-size="15" font-weight="700" fill="#4A5864" text-anchor="middle">Bacitracin</text>
+<path d="M620 406 L620 420 L385 420 L385 488" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="385" cy="436" r="13" fill="#fff" stroke="#0F766E" stroke-width="2.5"/>
+<text x="385" y="441.5" font-size="15" font-weight="800" fill="#0F766E" text-anchor="middle">+</text>
+<circle cx="385" cy="464" r="13" fill="#fff" stroke="#0F766E" stroke-width="2.5"/>
+<text x="385" y="469.5" font-size="15" font-weight="800" fill="#0F766E" text-anchor="middle">S</text>
+<path d="M620 420 L860 420 L860 488" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="860" cy="436" r="13" fill="#fff" stroke="#0F766E" stroke-width="2.5"/>
+<text x="860" y="441.5" font-size="15" font-weight="800" fill="#0F766E" text-anchor="middle">−</text>
+<circle cx="860" cy="464" r="13" fill="#fff" stroke="#0F766E" stroke-width="2.5"/>
+<text x="860" y="469.5" font-size="15" font-weight="800" fill="#0F766E" text-anchor="middle">R</text>
+<rect x="275.0" y="488" width="220" height="127" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
+<path d="M275.0 500 a12 12 0 0 1 12 -12 h196 a12 12 0 0 1 12 12 v28 h-220 Z" fill="#0F766E"/>
+<text x="291.0" y="515" font-size="17" font-weight="700" fill="#fff" text-anchor="start" font-style="italic">Micrococcus</text>
+<text x="291.0" y="550" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Microdase (modified</text>
+<text x="291.0" y="571" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;oxidase) positive</text>
+<text x="291.0" y="592" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Bacitracin susceptible</text>
+<rect x="755.0" y="488" width="210" height="44" rx="10" fill="#fff" stroke="#0F766E" stroke-width="2.5"/>
+<text x="860" y="516" font-size="17" font-weight="700" fill="#0F766E" text-anchor="middle" font-style="italic">Coag-neg staph</text>
+<path d="M860 532 L860 548" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<rect x="790.0" y="548" width="140" height="34" rx="17" fill="#EEF2F5" stroke="#C9D3DA" stroke-width="1.5"/>
+<text x="860" y="571" font-size="15" font-weight="700" fill="#4A5864" text-anchor="middle">Novobiocin</text>
+<path d="M860 582 L860 596 L620 596 L620 623" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="620" cy="602" r="13" fill="#fff" stroke="#0F766E" stroke-width="2.5"/>
+<text x="620" y="607.5" font-size="15" font-weight="800" fill="#0F766E" text-anchor="middle">S</text>
+<path d="M860 596 L860 638" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="860" cy="611" r="13" fill="#fff" stroke="#0F766E" stroke-width="2.5"/>
+<text x="860" y="616.5" font-size="15" font-weight="800" fill="#0F766E" text-anchor="middle">R</text>
+<rect x="500.0" y="623" width="240" height="350" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
+<path d="M500.0 635 a12 12 0 0 1 12 -12 h216 a12 12 0 0 1 12 12 v28 h-240 Z" fill="#0F766E"/>
+<text x="516.0" y="650" font-size="17" font-weight="700" fill="#fff" text-anchor="start" font-style="italic">S. epidermidis</text>
+<text x="516.0" y="685" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Novobiocin zone of</text>
+<text x="516.0" y="706" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;inhibition &gt; 16 mm</text>
+<text x="516.0" y="727" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Hospital-acquired,</text>
+<text x="516.0" y="748" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;opportunistic: surgical</text>
+<text x="516.0" y="769" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;wounds; enters via</text>
+<text x="516.0" y="790" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;catheters to cause UTIs</text>
+<text x="516.0" y="811" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Glycocalyx (capsule, slime</text>
+<text x="516.0" y="832" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;layer, biofilm)</text>
+<image x="512.0" y="838" width="216" height="108" href="data:image/png;base64,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"/>
+<rect x="760.0" y="638" width="200" height="106" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
+<path d="M760.0 650 a12 12 0 0 1 12 -12 h176 a12 12 0 0 1 12 12 v28 h-200 Z" fill="#0F766E"/>
+<text x="776.0" y="665" font-size="17" font-weight="700" fill="#fff" text-anchor="start" font-style="italic">S. saprophyticus</text>
+<text x="776.0" y="700" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• UTIs in sexually</text>
+<text x="776.0" y="721" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;active females</text>
 <rect x="1455.0" y="150" width="330" height="50" rx="25" fill="#3949AB"/>
 <text x="1620" y="182" font-size="20" font-weight="700" fill="#fff" text-anchor="middle" font-style="italic">Streptococcus · Enterococcus</text>
 <circle cx="1800.0" cy="175.0" r="6.6" fill="#7B3FA0" stroke="#fff" stroke-width="1.2"/>
@@ -176,22 +181,26 @@
 <text x="1461.0" y="678" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;low O₂; abscesses of brain</text>
 <text x="1461.0" y="699" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;and abdomen</text>
 <path d="M1930 324 L1930 340" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
-<rect x="1840.0" y="340" width="180" height="34" rx="17" fill="#EEF2F5" stroke="#C9D3DA" stroke-width="1.5"/>
-<text x="1930" y="363" font-size="15" font-weight="700" fill="#4A5864" text-anchor="middle">PYR · Bacitracin</text>
-<path d="M1930 374 L1930 388 L1830 388 L1830 415" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
-<circle cx="1830" cy="394" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
-<text x="1830" y="399.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">+</text>
-<text x="1850" y="410" font-size="13" font-weight="700" fill="#3949AB" text-anchor="start">S</text>
-<path d="M1930 388 L2070 388 L2070 404" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
-<circle cx="2070" cy="394" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
-<text x="2070" y="399.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">−</text>
-<text x="2090" y="410" font-size="13" font-weight="700" fill="#3949AB" text-anchor="start">R</text>
-<rect x="1720.0" y="415" width="220" height="106" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
-<path d="M1720.0 427 a12 12 0 0 1 12 -12 h196 a12 12 0 0 1 12 12 v28 h-220 Z" fill="#3949AB"/>
-<text x="1736.0" y="442" font-size="17" font-weight="700" fill="#fff" text-anchor="start" font-style="italic">S. pyogenes (Group A)</text>
-<text x="1736.0" y="477" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Strep throat</text>
-<text x="1736.0" y="498" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Scarlet fever</text>
-<g transform="translate(1998 402) scale(1.22)" aria-label="Hippurate">
+<rect x="1855.0" y="340" width="150" height="56" rx="18" fill="#EEF2F5" stroke="#C9D3DA" stroke-width="1.5"/>
+<text x="1930" y="363" font-size="15" font-weight="700" fill="#4A5864" text-anchor="middle">PYR</text>
+<line x1="1877.0" y1="369" x2="1983.0" y2="369" stroke="#C9D3DA" stroke-width="1"/>
+<text x="1930" y="387" font-size="15" font-weight="700" fill="#4A5864" text-anchor="middle">Bacitracin</text>
+<path d="M1930 396 L1930 410 L1830 410 L1830 476" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="1830" cy="426" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
+<text x="1830" y="431.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">+</text>
+<circle cx="1830" cy="454" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
+<text x="1830" y="459.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">S</text>
+<path d="M1930 410 L2070 410 L2070 476" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="2070" cy="426" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
+<text x="2070" y="431.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">−</text>
+<circle cx="2070" cy="454" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
+<text x="2070" y="459.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">R</text>
+<rect x="1720.0" y="476" width="220" height="106" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
+<path d="M1720.0 488 a12 12 0 0 1 12 -12 h196 a12 12 0 0 1 12 12 v28 h-220 Z" fill="#3949AB"/>
+<text x="1736.0" y="503" font-size="17" font-weight="700" fill="#fff" text-anchor="start" font-style="italic">S. pyogenes (Group A)</text>
+<text x="1736.0" y="538" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Strep throat</text>
+<text x="1736.0" y="559" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Scarlet fever</text>
+<g transform="translate(1998 476) scale(1.22)" aria-label="Hippurate">
   <ellipse cx="48" cy="32" rx="42" ry="22" fill="#1B1B1B"/>
   <rect x="74" y="14" width="38" height="26" rx="12" fill="#1B1B1B"/>
   <ellipse cx="108" cy="30" rx="10" ry="11" fill="#1B1B1B"/>
@@ -202,61 +211,71 @@
   <circle cx="99" cy="21" r="2" fill="#fff"/>
   <text x="50" y="37" font-size="13" font-weight="800" fill="#fff" text-anchor="middle" letter-spacing="0.5">HIPPURATE</text>
 </g>
-<g transform="translate(2008 484) scale(1.1)" aria-label="CAMP test">
+<g transform="translate(2008 558) scale(1.1)" aria-label="CAMP test">
   <path d="M0 8 H72 V0 L112 22 L72 44 V36 H0 Z" fill="#F28C28"/>
   <text x="10" y="29" font-size="17" font-weight="800" fill="#fff" letter-spacing="1">CAMP</text>
 </g>
-<path d="M2070 533 L2070 548 L1960 548 L1960 580" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
-<circle cx="1960" cy="562" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
-<text x="1960" y="567.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">+</text>
-<rect x="1840.0" y="580" width="240" height="232" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
-<path d="M1840.0 592 a12 12 0 0 1 12 -12 h216 a12 12 0 0 1 12 12 v28 h-240 Z" fill="#3949AB"/>
-<text x="1856.0" y="607" font-size="17" font-weight="700" fill="#fff" text-anchor="start" font-style="italic">S. agalactiae (Group B)</text>
-<text x="1856.0" y="642" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Bile NEG</text>
-<text x="1856.0" y="663" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Normal flora of the</text>
-<text x="1856.0" y="684" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;genitourinary tract</text>
-<text x="1856.0" y="705" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Can pass to the baby:</text>
-<text x="1856.0" y="726" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;neonatal sepsis,</text>
-<text x="1856.0" y="747" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;meningitis, pneumonia</text>
-<text x="1856.0" y="768" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Antiphagocytic capsule</text>
-<text x="1856.0" y="789" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;contains sialic acid</text>
-<path d="M2070 548 L2165 548 L2165 852 L2125 852" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
-<circle cx="2165" cy="580" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
-<text x="2165" y="585.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">−</text>
-<rect x="1975.0" y="835" width="150" height="34" rx="17" fill="#EEF2F5" stroke="#C9D3DA" stroke-width="1.5"/>
-<text x="2050" y="858" font-size="15" font-weight="700" fill="#4A5864" text-anchor="middle">Bile esculin</text>
-<path d="M2050 869 L2050 905" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
-<circle cx="2050" cy="886" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
-<text x="2050" y="891.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">−</text>
-<rect x="1925.0" y="905" width="250" height="106" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
-<path d="M1925.0 917 a12 12 0 0 1 12 -12 h226 a12 12 0 0 1 12 12 v28 h-250 Z" fill="#3949AB"/>
-<text x="1941.0" y="932" font-size="17" font-weight="700" fill="#fff" text-anchor="start" font-style="italic">Beta strep, not A, B, or D</text>
-<text x="1941.0" y="967" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Other beta-hemolytic</text>
-<text x="1941.0" y="988" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;streptococci</text>
+<path d="M2070 607 L2070 620 L1960 620 L1960 688" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="1960" cy="636" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
+<text x="1960" y="641.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">+</text>
+<circle cx="1960" cy="664" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
+<text x="1960" y="669.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">+</text>
+<rect x="1840.0" y="688" width="240" height="232" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
+<path d="M1840.0 700 a12 12 0 0 1 12 -12 h216 a12 12 0 0 1 12 12 v28 h-240 Z" fill="#3949AB"/>
+<text x="1856.0" y="715" font-size="17" font-weight="700" fill="#fff" text-anchor="start" font-style="italic">S. agalactiae (Group B)</text>
+<text x="1856.0" y="750" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Bile NEG</text>
+<text x="1856.0" y="771" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Normal flora of the</text>
+<text x="1856.0" y="792" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;genitourinary tract</text>
+<text x="1856.0" y="813" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Can pass to the baby:</text>
+<text x="1856.0" y="834" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;neonatal sepsis,</text>
+<text x="1856.0" y="855" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;meningitis, pneumonia</text>
+<text x="1856.0" y="876" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Antiphagocytic capsule</text>
+<text x="1856.0" y="897" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;contains sialic acid</text>
+<path d="M2070 620 L2165 620 L2165 957 L2125 957" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="2165" cy="636" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
+<text x="2165" y="641.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">−</text>
+<circle cx="2165" cy="664" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
+<text x="2165" y="669.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">−</text>
+<rect x="1975.0" y="940" width="150" height="34" rx="17" fill="#EEF2F5" stroke="#C9D3DA" stroke-width="1.5"/>
+<text x="2050" y="963" font-size="15" font-weight="700" fill="#4A5864" text-anchor="middle">Bile esculin</text>
+<path d="M2050 974 L2050 1008" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="2050" cy="990" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
+<text x="2050" y="995.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">−</text>
+<rect x="1925.0" y="1008" width="250" height="106" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
+<path d="M1925.0 1020 a12 12 0 0 1 12 -12 h226 a12 12 0 0 1 12 12 v28 h-250 Z" fill="#3949AB"/>
+<text x="1941.0" y="1035" font-size="17" font-weight="700" fill="#fff" text-anchor="start" font-style="italic">Beta strep, not A, B, or D</text>
+<text x="1941.0" y="1070" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Other beta-hemolytic</text>
+<text x="1941.0" y="1091" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;streptococci</text>
 <path d="M1400 449 L1400 463 L1290 463" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
-<path d="M1290 463 L1290 900 L1640 900 L1640 915" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M1290 463 L1290 985 L1640 985 L1640 1000" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
 <circle cx="1290" cy="480" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
 <text x="1290" y="485.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">+</text>
-<path d="M1975 852 L1890 852 L1890 900 L1640 900" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
-<circle cx="1935" cy="852" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
-<text x="1935" y="857.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">+</text>
-<rect x="1550.0" y="915" width="180" height="34" rx="17" fill="#EEF2F5" stroke="#C9D3DA" stroke-width="1.5"/>
-<text x="1640" y="938" font-size="15" font-weight="700" fill="#4A5864" text-anchor="middle">PYR · 6.5% NaCl</text>
-<path d="M1640 949 L1640 963 L1500 963 L1500 985" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
-<circle cx="1500" cy="969" r="13" fill="#fff" stroke="#B45309" stroke-width="2.5"/>
-<text x="1500" y="974.5" font-size="15" font-weight="800" fill="#B45309" text-anchor="middle">+</text>
-<path d="M1640 963 L1780 963 L1780 985" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
-<circle cx="1780" cy="969" r="13" fill="#fff" stroke="#B45309" stroke-width="2.5"/>
-<text x="1780" y="974.5" font-size="15" font-weight="800" fill="#B45309" text-anchor="middle">−</text>
-<rect x="1385.0" y="985" width="230" height="85" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
-<path d="M1385.0 997 a12 12 0 0 1 12 -12 h206 a12 12 0 0 1 12 12 v28 h-230 Z" fill="#B45309"/>
-<text x="1401.0" y="1012" font-size="17" font-weight="700" fill="#fff" text-anchor="start" font-style="italic">Enterococcus</text>
-<text x="1401.0" y="1047" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• PYR +, grows in 6.5% NaCl</text>
-<rect x="1655.0" y="985" width="250" height="106" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
-<path d="M1655.0 997 a12 12 0 0 1 12 -12 h226 a12 12 0 0 1 12 12 v28 h-250 Z" fill="#B45309"/>
-<text x="1671.0" y="1012" font-size="17" font-weight="700" fill="#fff" text-anchor="start" font-style="italic">Group D (non-enterococcal)</text>
-<text x="1671.0" y="1047" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• PYR −, no growth in 6.5%</text>
-<text x="1671.0" y="1068" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;NaCl</text>
-<text x="40" y="1106" font-size="14" font-weight="600" fill="#4A5864" text-anchor="start">Sohail Ahmed, MLS(ASCP) · wordsology.org</text>
-<text x="2160" y="1106" font-size="14" font-weight="600" fill="#4A5864" text-anchor="end">+ positive   − negative   S susceptible   R resistant</text>
+<path d="M1975 957 L1890 957 L1890 985 L1640 985" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="1935" cy="957" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
+<text x="1935" y="962.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">+</text>
+<rect x="1565.0" y="1000" width="150" height="56" rx="18" fill="#EEF2F5" stroke="#C9D3DA" stroke-width="1.5"/>
+<text x="1640" y="1023" font-size="15" font-weight="700" fill="#4A5864" text-anchor="middle">PYR</text>
+<line x1="1587.0" y1="1029" x2="1693.0" y2="1029" stroke="#C9D3DA" stroke-width="1"/>
+<text x="1640" y="1047" font-size="15" font-weight="700" fill="#4A5864" text-anchor="middle">6.5% NaCl</text>
+<path d="M1640 1056 L1640 1070 L1500 1070 L1500 1136" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="1500" cy="1086" r="13" fill="#fff" stroke="#B45309" stroke-width="2.5"/>
+<text x="1500" y="1091.5" font-size="15" font-weight="800" fill="#B45309" text-anchor="middle">+</text>
+<circle cx="1500" cy="1114" r="13" fill="#fff" stroke="#B45309" stroke-width="2.5"/>
+<text x="1500" y="1119.5" font-size="15" font-weight="800" fill="#B45309" text-anchor="middle">+</text>
+<path d="M1640 1070 L1780 1070 L1780 1136" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="1780" cy="1086" r="13" fill="#fff" stroke="#B45309" stroke-width="2.5"/>
+<text x="1780" y="1091.5" font-size="15" font-weight="800" fill="#B45309" text-anchor="middle">−</text>
+<circle cx="1780" cy="1114" r="13" fill="#fff" stroke="#B45309" stroke-width="2.5"/>
+<text x="1780" y="1119.5" font-size="15" font-weight="800" fill="#B45309" text-anchor="middle">−</text>
+<rect x="1385.0" y="1136" width="230" height="85" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
+<path d="M1385.0 1148 a12 12 0 0 1 12 -12 h206 a12 12 0 0 1 12 12 v28 h-230 Z" fill="#B45309"/>
+<text x="1401.0" y="1163" font-size="17" font-weight="700" fill="#fff" text-anchor="start" font-style="italic">Enterococcus</text>
+<text x="1401.0" y="1198" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• PYR +, grows in 6.5% NaCl</text>
+<rect x="1655.0" y="1136" width="250" height="106" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
+<path d="M1655.0 1148 a12 12 0 0 1 12 -12 h226 a12 12 0 0 1 12 12 v28 h-250 Z" fill="#B45309"/>
+<text x="1671.0" y="1163" font-size="17" font-weight="700" fill="#fff" text-anchor="start" font-style="italic">Group D (non-enterococcal)</text>
+<text x="1671.0" y="1198" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• PYR −, no growth in 6.5%</text>
+<text x="1671.0" y="1219" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;NaCl</text>
+<text x="40" y="1266" font-size="14" font-weight="600" fill="#4A5864" text-anchor="start">Sohail Ahmed, MLS(ASCP) · wordsology.org</text>
+<text x="2160" y="1266" font-size="14" font-weight="600" fill="#4A5864" text-anchor="end">+ positive   − negative   S susceptible   R resistant</text>
 </svg>
