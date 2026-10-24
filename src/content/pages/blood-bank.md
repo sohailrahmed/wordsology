@@ -5,27 +5,35 @@ subject: "blood-bank"
 updated: "2016-09-11"
 ---
 
-This is how you can solve the simple type of panel you'll encounter on the ASCP exam
+## How to solve an antibody panel
 
-![Slide14](/charts/blood-bank/slide14.png)
+This is how you can solve the simple type of panel you'll encounter on the ASCP exam. Swipe through the 10 slides, or tap one to open it full size.
 
-![Slide24](/charts/blood-bank/slide24.png)
+<div class="slides">
 
-![Slide34](/charts/blood-bank/slide34.png)
+![Slide 1](/charts/blood-bank/slide14.png)
 
-![Slide44](/charts/blood-bank/slide44.png)
+![Slide 2](/charts/blood-bank/slide24.png)
 
-![Slide54](/charts/blood-bank/slide54.png)
+![Slide 3](/charts/blood-bank/slide34.png)
 
-![Slide64](/charts/blood-bank/slide64.png)
+![Slide 4](/charts/blood-bank/slide44.png)
 
-![Slide75](/charts/blood-bank/slide75.png)
+![Slide 5](/charts/blood-bank/slide54.png)
 
-![Slide84](/charts/blood-bank/slide84.png)
+![Slide 6](/charts/blood-bank/slide64.png)
 
-![Slide95](/charts/blood-bank/slide95.png)
+![Slide 7](/charts/blood-bank/slide75.png)
 
-![Slide105](/charts/blood-bank/slide105.png)
+![Slide 8](/charts/blood-bank/slide84.png)
+
+![Slide 9](/charts/blood-bank/slide95.png)
+
+![Slide 10](/charts/blood-bank/slide105.png)
+
+</div>
+
+## More blood bank charts
 
 ![Another very minor issue that can be majorly annoying unless you learned it in school. This is a great translation method from Polansky](/charts/blood-bank/fisher-race-nomenclature.png "Another very minor issue that can be majorly annoying unless you learned it in school. This is a great translation method from Polansky")
 

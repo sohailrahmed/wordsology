@@ -88,6 +88,7 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
 .prose figcaption { margin-top: 10px; font-size: 15px; line-height: 1.55; color: var(--muted); }
 .prose .slides { display: grid; grid-auto-flow: column; grid-auto-columns: min(88%, 640px); gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 10px; margin: 1.5em 0 2em; }
 .prose .slides figure { margin: 0; scroll-snap-align: start; }
+.prose .slides figure a { height: 100%; display: flex; align-items: center; }
 .prose table { border-collapse: collapse; width: 100%; font-size: 16px; display: block; overflow-x: auto; }
 .prose th, .prose td { border: 1px solid var(--line); padding: 10px 14px; text-align: left; }
 
