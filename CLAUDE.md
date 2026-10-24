@@ -35,3 +35,15 @@ Every push to `main` deploys automatically. Page text lives in `src/content/page
   `tools/gpc_chart.py`; regenerate with `python3 tools/gpc_chart.py public/charts/microbiology/gram-pos-cocci.svg`.
 - Every chart figure gets an anchor `chart-` + its file name (trailing digits dropped), e.g.
   `/high-yield-notes-2/microbiology/#chart-gram-pos-cocci`. The prefix keeps it from clashing with heading anchors.
+
+## Comments
+
+- Readers comment on any page (`PageComments.astro`) and ask/reply on `/qa/`. Code: `functions/` (Cloudflare Pages Functions),
+  `src/components/CommentForm.astro`, `src/lib/threads.ts`.
+- Stored in Cloudflare D1 (`wordsology-comments`, binding `DB`; table created automatically). Nothing shows until Sohail
+  approves from the email (Approve / Approve and reply / Delete). Archive replies use parent `a<id>`.
+- Settings in Cloudflare Pages, for BOTH Production and Preview: `TURNSTILE_SECRET`, `RESEND_API_KEY`, `NOTIFY_EMAIL`.
+  The Turnstile site key is public and built into `CommentForm.astro`.
+- Emails come from Resend's default sender; Gmail filter on subject `"New comment from" "on Wordsology"` labels them.
+  After the domain switch, verify wordsology.org in Resend and set `FROM_EMAIL`.
+- Test locally: `npx wrangler pages dev dist --d1 DB=wordsology-comments --binding DEV_MODE=1` (skips spam check, logs email).
