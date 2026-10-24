@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="582" viewBox="0 0 900 582" font-family="Helvetica, Arial, sans-serif" role="img" aria-label="Diagnosing diabetes mellitus. Fasting plasma glucose number line in mg/dL: hypoglycemic below 70, normal 70 to 99, impaired fasting glucose (prediabetes) 100 to 125, diabetes 126 and above. A1C scale beneath, aligned by category: normal below 5.7 percent, prediabetes 5.7 to 6.4 percent, diabetes 6.5 percent and above. To confirm diabetes, one of the following must also be true: repeat fasting glucose of 126 or more on another day, A1C of 6.5 percent or more, plasma glucose of 200 or more at 2 hours of an oral glucose tolerance test, or classic symptoms with a random glucose of 200 or more.">
+  <rect width="900" height="582" fill="#fff"/>
+  <text x="450" y="40" text-anchor="middle" font-size="26" font-weight="800" fill="#16212B">Diagnosing diabetes mellitus</text>
+
+  <!-- zone labels + brackets above the fasting glucose line -->
+  <g font-size="16" font-weight="700" text-anchor="middle">
+    <text x="214" y="138" fill="#1D4ED8">Hypoglycemic</text>
+    <text x="434" y="118" fill="#15803D">Normal</text>
+    <text x="434" y="138" fill="#15803D">fasting glucose</text>
+    <text x="557" y="98" fill="#B45309">Impaired</text>
+    <text x="557" y="118" fill="#B45309">fasting glucose</text>
+    <text x="557" y="138" fill="#B45309">(prediabetes)</text>
+    <text x="726" y="118" fill="#B91C1C">Provisional diagnosis</text>
+    <text x="726" y="138" fill="#B91C1C">of diabetes mellitus</text>
+  </g>
+  <g fill="none" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M66 172 V156 H362 V172" stroke="#1D4ED8"/>
+    <path d="M374 172 V156 H494 V172" stroke="#15803D"/>
+    <path d="M506 172 V156 H608 V172" stroke="#B45309"/>
+    <path d="M620 172 V156 H832" stroke="#B91C1C"/>
+  </g>
+
+  <!-- fasting plasma glucose number line (mg/dL) -->
+  <line x1="60" y1="190" x2="836" y2="190" stroke="#16212B" stroke-width="3"/>
+  <path d="M836 182 L852 190 L836 198 Z" fill="#16212B"/>
+  <g stroke="#16212B" stroke-width="3"><line x1="60" y1="180" x2="60" y2="200"/><line x1="368" y1="180" x2="368" y2="200"/><line x1="500" y1="180" x2="500" y2="200"/><line x1="614" y1="180" x2="614" y2="200"/></g>
+  <g font-size="17" font-weight="700" fill="#16212B" text-anchor="middle">
+    <text x="60" y="222">0</text><text x="368" y="222">70</text><text x="500" y="222">100</text><text x="614" y="222">126</text>
+  </g>
+  <text x="852" y="222" text-anchor="end" font-size="14" fill="#4A5864">Fasting plasma glucose (mg/dL)</text>
+
+  <!-- A1C scale, aligned by category (not by number) -->
+  <g stroke="#9AA8B3" stroke-width="1.5" stroke-dasharray="4 4"><line x1="368" y1="232" x2="368" y2="262"/><line x1="500" y1="232" x2="500" y2="262"/><line x1="614" y1="232" x2="614" y2="262"/></g>
+  <text x="352" y="292" text-anchor="end" font-size="17" font-weight="800" fill="#16212B">A1C (%)</text>
+  <text x="352" y="312" text-anchor="end" font-size="13" fill="#4A5864">separate scale, same categories</text>
+  <rect x="368" y="264" width="132" height="44" fill="#DCFCE7"/>
+  <rect x="500" y="264" width="114" height="44" fill="#FEF3C7"/>
+  <rect x="614" y="264" width="222" height="44" fill="#FEE2E2"/>
+  <rect x="368" y="264" width="468" height="44" fill="none" stroke="#9AA8B3" stroke-width="1.5" rx="2"/>
+  <g font-size="18" font-weight="800" text-anchor="middle">
+    <text x="434" y="292" fill="#15803D">&lt; 5.7</text>
+    <text x="557" y="292" fill="#B45309">5.7–6.4</text>
+    <text x="725" y="292" fill="#B91C1C">≥ 6.5</text>
+  </g>
+
+  <!-- confirmation box -->
+  <path d="M726 312 V346" stroke="#B91C1C" stroke-width="2.5" stroke-dasharray="7 5" fill="none"/>
+  <path d="M719 340 L726 354 L733 340 Z" fill="#B91C1C"/>
+  <rect x="292" y="360" width="590" height="206" rx="12" fill="#FFF7F7" stroke="#B91C1C" stroke-width="2.5" stroke-dasharray="10 6"/>
+  <text x="314" y="392" font-size="17" font-weight="800" fill="#B91C1C">To confirm the diagnosis, one of these must also be true:</text>
+  <g font-size="17" fill="#16212B">
+    <text x="314" y="424">• Repeat fasting glucose ≥ 126 mg/dL on another day</text>
+    <text x="314" y="452">• A1C ≥ 6.5%</text>
+    <text x="314" y="480">• Plasma glucose ≥ 200 mg/dL at 2 hours of an OGTT</text>
+    <text x="314" y="508">• Classic symptoms + random (casual) glucose ≥ 200 mg/dL</text>
+  </g>
+  <text x="314" y="536" font-size="13" fill="#4A5864">OGTT = oral glucose tolerance test</text>
+  <text x="314" y="554" font-size="13" fill="#4A5864">Classic symptoms: polyuria, polydipsia, unexplained weight loss</text>
+</svg>

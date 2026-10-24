@@ -28,7 +28,9 @@ Tumor markers are used to monitor response to treatment. Think silly when you ne
 
 ![Which enzymes diagnose which diseases: brackets group ALP, GGT, ALT, AST, LD, CK and cardiac troponin by disorder](/charts/chemistry/diagnostic-enzymology.svg "Turn pages of text into a single diagram by just scribbling some notes and seeing what you come up with")
 
-![simplify memorization of number ranges with a line graph](/charts/chemistry/diagnosing-diabetes-mellitus.jpg "simplify memorization of number ranges with a line graph")
+### Diagnosing diabetes mellitus
+
+![Diagnosing diabetes mellitus: fasting glucose number line with an A1C scale beneath, and the criteria to confirm the diagnosis](/charts/chemistry/diagnosing-diabetes-mellitus.svg "Simplify memorization of number ranges with a line graph. Criteria follow the American Diabetes Association Standards of Care.")
 
 ![Cardiac markers](/charts/chemistry/cardiac-markers.jpg "\"as serious as a heart attack\" is a phrase important enough to have made its way into common usage - it's going to be on the exam")
 
