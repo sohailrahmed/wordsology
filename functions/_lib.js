@@ -56,16 +56,19 @@ export function same(a, b) {
   return r === 0;
 }
 
-export async function turnstileOk(env, tokenValue, ip) {
-  if (env.DEV_MODE === '1') return true;
-  if (!env.TURNSTILE_SECRET || !tokenValue) return false;
+// Returns '' when the check passes, otherwise a short reason code (shown to help troubleshooting).
+export async function turnstileCheck(env, tokenValue, ip) {
+  if (env.DEV_MODE === '1') return '';
+  if (!env.TURNSTILE_SECRET) return 'no-secret';
+  if (!tokenValue) return 'no-token';
   const body = new FormData();
   body.append('secret', env.TURNSTILE_SECRET);
   body.append('response', tokenValue);
   if (ip) body.append('remoteip', ip);
   const r = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', { method: 'POST', body });
   const out = await r.json().catch(() => ({}));
-  return out.success === true;
+  if (out.success === true) return '';
+  return (out['error-codes'] || ['unknown']).join(',');
 }
 
 export async function sendEmail(env, { subject, html }) {

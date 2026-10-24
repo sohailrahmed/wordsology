@@ -56,6 +56,7 @@ const sitekey = import.meta.env.PUBLIC_TURNSTILE_SITEKEY || '1x00000000000000000
     const box = form.querySelector('.ts') as HTMLElement;
     let widget: string | undefined;
     let tsToken = '';
+    let waiting: ((t: string) => void) | null = null;
     const start = async () => {
       if (widget !== undefined) return;
       widget = '';
@@ -63,7 +64,7 @@ const sitekey = import.meta.env.PUBLIC_TURNSTILE_SITEKEY || '1x00000000000000000
       if (!w.turnstile) return;
       widget = w.turnstile.render(box, {
         sitekey: form.dataset.sitekey, appearance: 'interaction-only', size: 'flexible',
-        callback: (t: string) => { tsToken = t; },
+        callback: (t: string) => { tsToken = t; waiting?.(t); waiting = null; },
         'expired-callback': () => { tsToken = ''; },
       });
     };
@@ -81,6 +82,12 @@ const sitekey = import.meta.env.PUBLIC_TURNSTILE_SITEKEY || '1x00000000000000000
       }
       await start();
       btn.disabled = true;
+      if (!tsToken && w.turnstile && widget) {
+        // The invisible check can take a moment; wait up to 10 seconds for it.
+        msg.className = 'cform-msg';
+        msg.textContent = 'Checking you’re not a bot…';
+        await new Promise<void>((res) => { waiting = () => res(); setTimeout(res, 10000); });
+      }
       msg.className = 'cform-msg';
       msg.textContent = 'Sending…';
       try {
@@ -90,7 +97,7 @@ const sitekey = import.meta.env.PUBLIC_TURNSTILE_SITEKEY || '1x00000000000000000
           body: JSON.stringify({
             name, text, email: fd.get('email'), website: fd.get('website'),
             topic: fd.get('topic') || form.dataset.topic, parent: form.dataset.parent || null,
-            page: location.pathname, turnstile: tsToken,
+            page: location.pathname, turnstile: tsToken, sitekey: form.dataset.sitekey,
           }),
         });
         const out = await r.json().catch(() => ({}));

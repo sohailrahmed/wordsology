@@ -1,6 +1,6 @@
 // GET  /api/comments  → every approved new comment (the archive lives in /qa-data.json)
 // POST /api/comments  → a reader leaves a comment or reply; it waits for Sohail's approval
-import { db, json, esc, token, sha256, turnstileOk, sendEmail } from '../_lib.js';
+import { db, json, esc, token, sha256, turnstileCheck, sendEmail } from '../_lib.js';
 
 const TOPICS = new Set(['blood-bank', 'chemistry', 'coagulation', 'endocrinology', 'hematology', 'immunology',
   'microbiology', 'urinalysis-body-fluids', 'strategy', 'licensing', 'general']);
@@ -34,7 +34,12 @@ export async function onRequestPost({ request, env }) {
   if ((text.match(/https?:\/\//g) || []).length > 2) return json({ error: 'Please include no more than two links.' }, 400);
 
   const ip = request.headers.get('cf-connecting-ip') || '';
-  if (!(await turnstileOk(env, f.turnstile, ip))) return json({ error: 'The spam check didn’t go through. Please try again.' }, 400);
+  // A test site key on the page means PUBLIC_TURNSTILE_SITEKEY wasn't there when the site was built.
+  const spam = String(f.sitekey || '').startsWith('1x0000') && env.DEV_MODE !== '1' ? 'site-key-missing-at-build' : await turnstileCheck(env, f.turnstile, ip);
+  if (spam) {
+    console.log('[turnstile]', spam, 'sitekey on page:', String(f.sitekey || '').slice(0, 12));
+    return json({ error: `The spam check didn’t go through. Please try again. (${spam})` }, 400);
+  }
 
   const DB = await db(env);
   const ipHash = await sha256(ip + (env.TURNSTILE_SECRET || 'dev'));
