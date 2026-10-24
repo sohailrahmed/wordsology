@@ -4,11 +4,30 @@
 /exam-recalls/  /qa/  301
 /blog/  /  301
 /miscellaneous/  /  301
-/comment-page-:n/  /qa/  301
-/high-yield-notes-2/:subject/comment-page-:n/  /high-yield-notes-2/:subject/  301
 /high-yield-notes-2/:subject/:attachment/  /high-yield-notes-2/:subject/  301
-/:page/comment-page-:n/  /:page/  301
 /feed/  /  301
+
+# Old comment pages (WordPress split comments into numbered pages)
+/comment-page-*  /qa/  301
+/about-2/comment-page-*  /about-2/  301
+/basic-testing-skills/comment-page-*  /basic-testing-skills/  301
+/getting-licensed/comment-page-*  /getting-licensed/  301
+/high-yield-notes-2/comment-page-*  /high-yield-notes-2/  301
+/passing-strategy/comment-page-*  /passing-strategy/  301
+/miscellaneous/blood-bank-procedures/comment-page-*  /miscellaneous/blood-bank-procedures/  301
+/miscellaneous/favorite-place-in-the-world/comment-page-*  /miscellaneous/favorite-place-in-the-world/  301
+/high-yield-notes-2/blood-bank/comment-page-*  /high-yield-notes-2/blood-bank/  301
+/high-yield-notes-2/chemistry/comment-page-*  /high-yield-notes-2/chemistry/  301
+/high-yield-notes-2/coagulation/comment-page-*  /high-yield-notes-2/coagulation/  301
+/high-yield-notes-2/endocrinology/comment-page-*  /high-yield-notes-2/endocrinology/  301
+/high-yield-notes-2/hematology/comment-page-*  /high-yield-notes-2/hematology/  301
+/high-yield-notes-2/immunology/comment-page-*  /high-yield-notes-2/immunology/  301
+/high-yield-notes-2/microbiology/comment-page-*  /high-yield-notes-2/microbiology/  301
+/high-yield-notes-2/urinalysis-body-fluids/comment-page-*  /high-yield-notes-2/urinalysis-body-fluids/  301
+/actual-questions/comment-page-*  /qa/  301
+/answers/comment-page-*  /qa/  301
+/exam-recalls/comment-page-*  /qa/  301
+
 /wp-admin/*  /  301
 /wp-login.php  /  301
 

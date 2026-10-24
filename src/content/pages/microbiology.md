@@ -23,7 +23,7 @@ These are the flowcharts I produced. Once I had these, there was very little add
 
 ![Gram negative diplococci](/charts/microbiology/gram-negative-diplococci.png)
 
-[\](http://wordsology.org/wp-content/uploads/2012/11/gram-negative-coccobacilli.jpg)An excellent microbiology professor suggested using tables to see what's **unique** about a single organism, as it can help you memorize what is so similar about the others. For example, referring to the table of Gram Negative Diplococci, notice how *moraxella catarrhalis* is negative for acid production from oxidation of glucose, maltose and lactose. Also notice how only one organism is superoxol or DNase positive. By memorizing these few unique characteristics, you've essentially memorized all the others!
+An excellent microbiology professor suggested using tables to see what's **unique** about a single organism, as it can help you memorize what is so similar about the others. For example, referring to the table of Gram Negative Diplococci, notice how *moraxella catarrhalis* is negative for acid production from oxidation of glucose, maltose and lactose. Also notice how only one organism is superoxol or DNase positive. By memorizing these few unique characteristics, you've essentially memorized all the others!
 
 ![Obligate anaerobes](/charts/microbiology/obligate-anaerobes.png)
 
