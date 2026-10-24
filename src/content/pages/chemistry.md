@@ -36,7 +36,9 @@ Tumor markers are used to monitor response to treatment. Think silly when you ne
 
 ![How to tell if someone had an MI and how long ago: serial blood draws checking CK-MB, LD1 > LD2, myoglobin and cardiac troponins](/charts/chemistry/cardiac-markers.svg "\"As serious as a heart attack\" is a phrase important enough to have made its way into common usage - it's going to be on the exam")
 
-![Lipoproteins1](/charts/chemistry/lipoproteins1.jpg "A simplified description of the different lipoproteins, how they form, and what's relevant to the exam for each")
+### Lipoproteins
+
+![Lipoproteins: chylomicrons lead to VLDL and then LDL; HDL counteracts LDL. Each shows its main component and apoprotein](/charts/chemistry/lipoproteins.svg "A simplified description of the different lipoproteins, how they form, and what's relevant to the exam for each")
 
 ![Metabolic syndrome](/charts/chemistry/metabolic-syndrome.jpg "Questions concerning the diagnosis of metabolic syndrome come up fairly regularly during practice exams")
 
