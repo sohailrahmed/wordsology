@@ -30,7 +30,22 @@ THE single most important Polansky review card, with respect to questions I had 
 
 ![Hematopoiesis: myeloid and lymphoid lines](/charts/hematology/hematopoiesis.svg "It's important to know the difference between antigen-independent and antigen-dependent lymphopoiesis, and where each occurs")
 
-![Differentiating lymphocytes](/charts/hematology/differentiating-lymphocytes.jpg "You'll come across questions that require you to know whether you have a B or T lymphocyte, and whether it's mature or not. In the proper context, this information can suggest what type of cancerous cell you're dealing with")
+### B or T? Mature or not?
+
+You'll come across questions that require you to know whether you have a B or T lymphocyte, and whether it's mature or not. In the proper context, this information can suggest what type of cancerous cell you're dealing with.
+
+<div class="chart-table chart-cd" id="chart-differentiating-lymphocytes">
+<table>
+<thead><tr><th>Stage</th><th>B lymphocyte</th><th>T lymphocyte</th></tr></thead>
+<tbody>
+<tr><td><strong>Early</strong><span>Common to both types</span></td><td colspan="2" class="both"><b>CD10</b> (also called CALLA) <b>TdT</b></td></tr>
+<tr><td><strong>Differentiated</strong></td><td><b>CD19</b> <b>CD20</b></td><td><b>CD2</b> <b>CD3</b> <b>CD5</b> <b>CD7</b></td></tr>
+<tr><td><strong>Mature</strong></td><td><b>sIg</b> (surface immunoglobulin)</td><td><b>CD4</b> <b>CD8</b></td></tr>
+</tbody>
+</table>
+</div>
+
+<p class="chart-note">CALLA = common acute lymphoblastic leukemia antigen · TdT = terminal deoxynucleotidyl transferase</p>
 
 ![Cancer flow chart3](/charts/hematology/cancer-flow-chart3.jpg "A topic I couldn't grasp until I visualized it as a whole")
 
