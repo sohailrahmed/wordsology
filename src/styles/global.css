@@ -154,3 +154,23 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
 .prose .chart-ab th:nth-child(1) { width: 25%; } .prose .chart-ab th:nth-child(2) { width: 35%; } .prose .chart-ab th:nth-child(3) { width: 40%; }
 .prose .chart-ab td, .prose .chart-ab th { overflow-wrap: break-word; }
 @media (max-width: 600px) { .prose .chart-ab td:first-child { white-space: normal; } .prose .chart-ab table { font-size: 13.5px; } .prose .chart-ab th { font-size: 12.5px; } .prose .chart-ab th, .prose .chart-ab td { padding: 9px 6px; } .prose .chart-ab th:nth-child(1) { width: 23%; } .prose .chart-ab th:nth-child(2) { width: 33%; } .prose .chart-ab th:nth-child(3) { width: 44%; } }
+
+/* ---------- reference ranges ---------- */
+.prose .chart-ranges td:first-child { white-space: nowrap; }
+.prose .chart-ranges td:last-child { color: var(--subject, #15703A); }
+.prose .chart-ranges td { font-size: 15.5px; }
+/* phones: each row becomes a small labeled card */
+@media (max-width: 600px) {
+  .prose .chart-ranges thead { display: none; }
+  .prose .chart-ranges table, .prose .chart-ranges tbody { display: block; }
+  .prose .chart-ranges tr { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 12px; padding: 12px 14px; border-bottom: 1px solid var(--line); }
+  .prose .chart-ranges tr:last-child { border-bottom: 0; }
+  .prose .chart-ranges td { display: block; border: 0 !important; padding: 0 !important; font-size: 14.5px; }
+  .prose .chart-ranges td:first-child { grid-column: 1 / -1; font-size: 16px; margin-bottom: 2px; }
+  .prose .chart-ranges td:last-child { grid-column: 1 / -1; }
+  .prose .chart-ranges td:last-child:empty { display: none; }
+  .prose .chart-ranges td:nth-child(2)::before, .prose .chart-ranges td:nth-child(3)::before, .prose .chart-ranges td:nth-child(4)::before { display: block; font-size: 11px; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); font-style: normal; }
+  .prose .chart-ranges td:nth-child(2)::before { content: "Conventional"; }
+  .prose .chart-ranges td:nth-child(3)::before { content: "SI units"; }
+  .prose .chart-ranges td:nth-child(4)::before { content: "Easy to remember"; margin-top: 4px; }
+}
