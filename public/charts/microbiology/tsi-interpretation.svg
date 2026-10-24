@@ -17,7 +17,7 @@
     <path d="M335 150 L380 186 V660 H335 Z" fill="url(#yel)"/>
     <path d="M380 186 L425 222 V660 H380 Z" fill="url(#red)"/>
     <!-- slant / deep boundary -->
-    <path d="M335 304 Q380 294 425 308" stroke="#fff" stroke-opacity=".75" stroke-width="2" stroke-dasharray="6 5" fill="none"/>
+    <path d="M335 198 L425 270" stroke="#fff" stroke-opacity=".9" stroke-width="2.5" stroke-dasharray="7 5" fill="none"/>
     <!-- gas cracks -->
     <g stroke="#5A3A00" stroke-opacity=".55" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round">
       <path d="M336 408 l12 6 l-3 12 l15 7 l-4 10"/>
@@ -41,14 +41,14 @@
 
   <!-- leader lines + dots -->
   <g stroke-width="3" stroke-linecap="round">
-    <line x1="292" y1="200" x2="358" y2="230" stroke="#B88A00"/>
+    <line x1="292" y1="200" x2="358" y2="190" stroke="#B88A00"/>
     <line x1="292" y1="350" x2="358" y2="350" stroke="#B88A00"/>
     <line x1="292" y1="490" x2="352" y2="420" stroke="#5B6A61"/>
-    <line x1="468" y1="200" x2="404" y2="250" stroke="#8E1A1A"/>
+    <line x1="468" y1="200" x2="404" y2="228" stroke="#8E1A1A"/>
     <line x1="468" y1="350" x2="404" y2="350" stroke="#8E1A1A"/>
     <line x1="468" y1="560" x2="404" y2="560" stroke="#1B1B1B"/>
   </g>
-  <g fill="#14201A" stroke="#fff" stroke-width="2"><circle cx="358" cy="230" r="6"/><circle cx="358" cy="350" r="6"/><circle cx="352" cy="420" r="6"/><circle cx="404" cy="250" r="6"/><circle cx="404" cy="350" r="6"/></g>
+  <g fill="#14201A" stroke="#fff" stroke-width="2"><circle cx="358" cy="190" r="6"/><circle cx="358" cy="350" r="6"/><circle cx="352" cy="420" r="6"/><circle cx="404" cy="228" r="6"/><circle cx="404" cy="350" r="6"/></g>
   <circle cx="404" cy="560" r="6" fill="#fff" stroke="#1B1B1B" stroke-width="2"/>
 
   <!-- left: fermented = yellow; gas -->
