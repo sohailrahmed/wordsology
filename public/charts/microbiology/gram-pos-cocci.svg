@@ -152,7 +152,7 @@
 <circle cx="1830" cy="394" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
 <text x="1830" y="399.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">+</text>
 <text x="1850" y="410" font-size="13" font-weight="700" fill="#3949AB" text-anchor="start">S</text>
-<path d="M1930 388 L2070 388 L2070 415" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M1930 388 L2070 388 L2070 404" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
 <circle cx="2070" cy="394" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
 <text x="2070" y="399.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">−</text>
 <text x="2090" y="410" font-size="13" font-weight="700" fill="#3949AB" text-anchor="start">R</text>
@@ -161,42 +161,55 @@
 <text x="1736.0" y="442" font-size="17" font-weight="700" fill="#fff" text-anchor="start" font-style="italic">S. pyogenes (Group A)</text>
 <text x="1736.0" y="477" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Strep throat</text>
 <text x="1736.0" y="498" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Scarlet fever</text>
-<rect x="1985.0" y="415" width="170" height="34" rx="17" fill="#EEF2F5" stroke="#C9D3DA" stroke-width="1.5"/>
-<text x="2070" y="438" font-size="15" font-weight="700" fill="#4A5864" text-anchor="middle">Hippurate · CAMP</text>
-<path d="M2070 449 L2070 463 L1960 463 L1960 545" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
-<circle cx="1960" cy="520" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
-<text x="1960" y="525.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">+</text>
-<rect x="1840.0" y="545" width="240" height="232" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
-<path d="M1840.0 557 a12 12 0 0 1 12 -12 h216 a12 12 0 0 1 12 12 v28 h-240 Z" fill="#3949AB"/>
-<text x="1856.0" y="572" font-size="17" font-weight="700" fill="#fff" text-anchor="start" font-style="italic">S. agalactiae (Group B)</text>
-<text x="1856.0" y="607" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Bile NEG</text>
-<text x="1856.0" y="628" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Normal flora of the</text>
-<text x="1856.0" y="649" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;genitourinary tract</text>
-<text x="1856.0" y="670" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Can pass to the baby:</text>
-<text x="1856.0" y="691" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;neonatal sepsis,</text>
-<text x="1856.0" y="712" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;meningitis, pneumonia</text>
-<text x="1856.0" y="733" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Antiphagocytic capsule</text>
-<text x="1856.0" y="754" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;contains sialic acid</text>
-<path d="M2070 463 L2160 463 L2160 822 L2125 822" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
-<circle cx="2160" cy="500" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
-<text x="2160" y="505.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">−</text>
-<rect x="1975.0" y="805" width="150" height="34" rx="17" fill="#EEF2F5" stroke="#C9D3DA" stroke-width="1.5"/>
-<text x="2050" y="828" font-size="15" font-weight="700" fill="#4A5864" text-anchor="middle">Bile esculin</text>
-<path d="M2050 839 L2050 870" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
-<circle cx="2050" cy="852" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
-<text x="2050" y="857.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">−</text>
-<rect x="1925.0" y="870" width="250" height="106" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
-<path d="M1925.0 882 a12 12 0 0 1 12 -12 h226 a12 12 0 0 1 12 12 v28 h-250 Z" fill="#3949AB"/>
-<text x="1941.0" y="897" font-size="17" font-weight="700" fill="#fff" text-anchor="start" font-style="italic">Beta strep, not A, B, or D</text>
-<text x="1941.0" y="932" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Other beta-hemolytic</text>
-<text x="1941.0" y="953" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;streptococci</text>
+<g transform="translate(1998 402) scale(1.22)" aria-label="Hippurate">
+  <ellipse cx="48" cy="32" rx="42" ry="22" fill="#1B1B1B"/>
+  <rect x="74" y="14" width="38" height="26" rx="12" fill="#1B1B1B"/>
+  <ellipse cx="108" cy="30" rx="10" ry="11" fill="#1B1B1B"/>
+  <circle cx="82" cy="13" r="5" fill="#1B1B1B"/><circle cx="92" cy="12" r="5" fill="#1B1B1B"/>
+  <rect x="16" y="44" width="11" height="18" rx="3" fill="#1B1B1B"/><rect x="31" y="46" width="11" height="16" rx="3" fill="#1B1B1B"/>
+  <rect x="58" y="46" width="11" height="16" rx="3" fill="#1B1B1B"/><rect x="73" y="44" width="11" height="18" rx="3" fill="#1B1B1B"/>
+  <path d="M7 28 q-6 2 -7 8" stroke="#1B1B1B" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="99" cy="21" r="2" fill="#fff"/>
+  <text x="50" y="37" font-size="13" font-weight="800" fill="#fff" text-anchor="middle" letter-spacing="0.5">HIPPURATE</text>
+</g>
+<g transform="translate(2008 484) scale(1.1)" aria-label="CAMP test">
+  <path d="M0 8 H72 V0 L112 22 L72 44 V36 H0 Z" fill="#F28C28"/>
+  <text x="10" y="29" font-size="17" font-weight="800" fill="#fff" letter-spacing="1">CAMP</text>
+</g>
+<path d="M2070 533 L2070 548 L1960 548 L1960 580" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="1960" cy="562" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
+<text x="1960" y="567.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">+</text>
+<rect x="1840.0" y="580" width="240" height="232" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
+<path d="M1840.0 592 a12 12 0 0 1 12 -12 h216 a12 12 0 0 1 12 12 v28 h-240 Z" fill="#3949AB"/>
+<text x="1856.0" y="607" font-size="17" font-weight="700" fill="#fff" text-anchor="start" font-style="italic">S. agalactiae (Group B)</text>
+<text x="1856.0" y="642" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Bile NEG</text>
+<text x="1856.0" y="663" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Normal flora of the</text>
+<text x="1856.0" y="684" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;genitourinary tract</text>
+<text x="1856.0" y="705" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Can pass to the baby:</text>
+<text x="1856.0" y="726" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;neonatal sepsis,</text>
+<text x="1856.0" y="747" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;meningitis, pneumonia</text>
+<text x="1856.0" y="768" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Antiphagocytic capsule</text>
+<text x="1856.0" y="789" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;contains sialic acid</text>
+<path d="M2070 548 L2165 548 L2165 852 L2125 852" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="2165" cy="580" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
+<text x="2165" y="585.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">−</text>
+<rect x="1975.0" y="835" width="150" height="34" rx="17" fill="#EEF2F5" stroke="#C9D3DA" stroke-width="1.5"/>
+<text x="2050" y="858" font-size="15" font-weight="700" fill="#4A5864" text-anchor="middle">Bile esculin</text>
+<path d="M2050 869 L2050 905" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="2050" cy="886" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
+<text x="2050" y="891.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">−</text>
+<rect x="1925.0" y="905" width="250" height="106" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
+<path d="M1925.0 917 a12 12 0 0 1 12 -12 h226 a12 12 0 0 1 12 12 v28 h-250 Z" fill="#3949AB"/>
+<text x="1941.0" y="932" font-size="17" font-weight="700" fill="#fff" text-anchor="start" font-style="italic">Beta strep, not A, B, or D</text>
+<text x="1941.0" y="967" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Other beta-hemolytic</text>
+<text x="1941.0" y="988" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;streptococci</text>
 <path d="M1400 449 L1400 463 L1290 463" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
 <path d="M1290 463 L1290 900 L1640 900 L1640 915" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
 <circle cx="1290" cy="480" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
 <text x="1290" y="485.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">+</text>
-<path d="M1975 822 L1890 822 L1890 900 L1640 900" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
-<circle cx="1935" cy="822" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
-<text x="1935" y="827.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">+</text>
+<path d="M1975 852 L1890 852 L1890 900 L1640 900" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="1935" cy="852" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
+<text x="1935" y="857.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">+</text>
 <rect x="1550.0" y="915" width="180" height="34" rx="17" fill="#EEF2F5" stroke="#C9D3DA" stroke-width="1.5"/>
 <text x="1640" y="938" font-size="15" font-weight="700" fill="#4A5864" text-anchor="middle">PYR · 6.5% NaCl</text>
 <path d="M1640 949 L1640 963 L1500 963 L1500 985" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
