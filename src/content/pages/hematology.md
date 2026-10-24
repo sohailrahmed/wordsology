@@ -28,7 +28,7 @@ THE single most important Polansky review card, with respect to questions I had 
 
 <p class="chart-note">10³/µL is the same as 10³/mm³ · µm³ is the same as fL (femtoliters)</p>
 
-![Hematopoiesis1](/charts/hematology/hematopoiesis1.jpg "It's important to know the difference between antigen-independent and antigen-dependent lymphopoiesis, and where each occurs")
+![Hematopoiesis: myeloid and lymphoid lines](/charts/hematology/hematopoiesis.svg "It's important to know the difference between antigen-independent and antigen-dependent lymphopoiesis, and where each occurs")
 
 ![Differentiating lymphocytes](/charts/hematology/differentiating-lymphocytes.jpg "You'll come across questions that require you to know whether you have a B or T lymphocyte, and whether it's mature or not. In the proper context, this information can suggest what type of cancerous cell you're dealing with")
 
