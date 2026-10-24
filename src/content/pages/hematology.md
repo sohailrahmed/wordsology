@@ -47,7 +47,7 @@ You'll come across questions that require you to know whether you have a B or T 
 
 <p class="chart-note">CALLA = common acute lymphoblastic leukemia antigen · TdT = terminal deoxynucleotidyl transferase</p>
 
-![Cancer flow chart3](/charts/hematology/cancer-flow-chart3.jpg "A topic I couldn't grasp until I visualized it as a whole")
+![Granulocytosis: non-malignant, chronic or acute?](/charts/hematology/cancer-flow-chart.svg "A topic I couldn't grasp until I visualized it as a whole")
 
 ![Granulocyte abnormalities](/charts/hematology/granulocyte-abnormalities.jpg "You'll definitely have a question on non-malignant granulocytic abnormalities")
 
