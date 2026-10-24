@@ -43,7 +43,7 @@ card(L, 100, CW, 200, 'Chylomicrons', '90% triglyceride', '#1D4ED8', 'B-48', [
     ['Transported out to circulation and various tissues'],
     ['Ultimately degraded in the liver']])
 out.append(f'<line x1="{L+CW/2}" y1="340" x2="{L+CW/2}" y2="364" stroke="{TEAL}" stroke-width="3" marker-end="url(#ah)"/>')
-card(L, 370, CW, 170, 'VLDL', '70% triglyceride', '#1D4ED8', 'B-100', [
+card(L, 370, CW, 170, 'VLDL', '55% triglyceride', '#1D4ED8', 'B-100', [
     ['Synthesized in the liver from endogenous triglycerides'],
     ['Goes out to the blood and deposits triglycerides', 'into body tissues, eventually turning into LDL']])
 out.append(f'<line x1="{L+CW/2}" y1="580" x2="{L+CW/2}" y2="604" stroke="{TEAL}" stroke-width="3" marker-end="url(#ah)"/>')
@@ -61,7 +61,7 @@ out.append('<path d="M524 666 L544 702" stroke="#15803D" stroke-width="5" stroke
 t(680, 640, 'HDL counteracts LDL', 15, 700, '#15803D')
 
 svg = (f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" font-family="Helvetica, Arial, sans-serif" role="img" '
-       'aria-label="Lipoproteins. Chylomicrons, 90 percent triglyceride, apoprotein B-48: exogenous dietary triglycerides from the intestine are transported to circulation and tissues and ultimately degraded in the liver. They lead to VLDL, 70 percent triglyceride, apoprotein B-100: synthesized in the liver from endogenous triglycerides, deposits triglycerides into tissues and eventually turns into LDL. LDL, 50 percent cholesterol, apoprotein B-100: brings cholesterol into peripheral cells for membrane and hormone synthesis, but can also bring cholesterol to artery walls. HDL, 50 percent protein, apoprotein A-1: synthesized in the liver, removes excess cholesterol from peripheral tissues and counteracts LDL.">\n'
+       'aria-label="Lipoproteins. Chylomicrons, 90 percent triglyceride, apoprotein B-48: exogenous dietary triglycerides from the intestine are transported to circulation and tissues and ultimately degraded in the liver. They lead to VLDL, 55 percent triglyceride, apoprotein B-100: synthesized in the liver from endogenous triglycerides, deposits triglycerides into tissues and eventually turns into LDL. LDL, 50 percent cholesterol, apoprotein B-100: brings cholesterol into peripheral cells for membrane and hormone synthesis, but can also bring cholesterol to artery walls. HDL, 50 percent protein, apoprotein A-1: synthesized in the liver, removes excess cholesterol from peripheral tissues and counteracts LDL.">\n'
        + '\n'.join(out) + '\n</svg>\n')
 open(sys.argv[1], 'w').write(svg)
 print('ok')
