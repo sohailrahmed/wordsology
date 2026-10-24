@@ -17,7 +17,7 @@ Tumor markers are used to monitor response to treatment. Think silly when you ne
 | --- | --- | --- |
 | **CEA** | Colon | *"C'ya on the flipside"* |
 | **CA 19-9** | GI, pancreas | |
-| **AFP** | Hepatic, pancreatic, testicular | *"Aaah! That's F'in Painful!"* |
+| **AFP** | Hepatic, testicular | *"Aaah! That's F'in Painful!"* |
 | **CA-125** | Ovarian | *"The ovaries are full of hundreds of eggs"* |
 | **hCG** | Testes, ovaries (normally just indicates pregnancy) | |
 | **PSA** | Prostate (< 25% free PSA associated with cancer) | |
