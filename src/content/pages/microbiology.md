@@ -29,7 +29,20 @@ An excellent microbiology professor suggested using tables to see what's **uniqu
 
 ![Spirochetes](/charts/microbiology/spirochetes1.png)
 
-![Hacek organisms2](/charts/microbiology/hacek-organisms2.jpg "Unfortunately, you just have to memorize some things. For example, here are a few must-know properties of the (H)ACEK organisms")
+### The (H)ACEK organisms
+
+Unfortunately, you just have to memorize some things. For example, here are a few must-know properties of the (H)ACEK organisms. All four are normal oral flora.
+
+<div class="chart-table">
+
+| Organism | Oxidase | Key facts |
+| --- | :---: | --- |
+| *Actinobacillus* (now *Aggregatibacter*) | − | Endocarditis; periodontitis |
+| *Cardiobacterium hominis* | + | Endocarditis |
+| *Eikenella corrodens* | + | Pits the agar; bleach odor; **fight bites** (clenched-fist injuries) |
+| *Kingella* | + | Pits the agar; joint damage |
+
+</div>
 
 ![Tsi interpretation](/charts/microbiology/tsi-interpretation.jpg "This is probably a simple concept if you've learned about it in lab or at school. If you haven't, it can be frustrating trying to understand it on your own. I went through quite a few resources on the internet before I finally found a good explanation - and a light bulb went on in my head. I hope this picture can serve you similarly")
 
