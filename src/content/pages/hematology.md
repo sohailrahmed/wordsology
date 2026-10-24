@@ -51,17 +51,25 @@ You'll come across questions that require you to know whether you have a B or T 
 
 ![Non-malignant neutrophilic disorders](/charts/hematology/granulocyte-abnormalities.svg "You'll definitely have a question on non-malignant granulocytic abnormalities")
 
-![Answering Hemoglobin Electrophoresis Questions on the ASCP Exam](/charts/hematology/slide41.png "Answering Hemoglobin Electrophoresis Questions on the ASCP Exam (click to open)")
+### Hemoglobin electrophoresis
+
+![Hemoglobin electrophoresis: cellulose acetate vs citrate agar](/charts/hematology/hemoglobin-electrophoresis.png "The first slide of my slideshow, Answering Hemoglobin Electrophoresis Questions on the ASCP Exam")
+
+<div class="pdf-box">
+<p><strong>Hemoglobin electrophoresis for the ASCP exam.</strong> The last 12 slides are 6 questions (to test your knowledge) and 6 answers (to cement your understanding).</p>
+<p><a class="btn btn-primary" href="/files/hemoglobin-electrophoresis-slideshow.pdf">Open the full slideshow (PDF)</a></p>
+</div>
 
 ### Miscellaneous
 
-Know what increases Erythrocyte Sedimentation Rate (ESR):\
-tilted tube\
-high temps\
-Macrocytosis\
-Roleaux\
-excess fibrinogens/globulins\
-infection/ inflammation\
-low RBC count (anemia)
+Know what increases Erythrocyte Sedimentation Rate (ESR):
+
+- Tilted tube
+- High temps
+- Macrocytosis
+- Rouleaux
+- Excess fibrinogens/globulins
+- Infection/inflammation
+- Low RBC count (anemia)
 
 When it comes to Hemoglobin itself, know what it's made up of. Know the different types of hemoglobin (A, A2, F, S) and what chains make them up. Why do you would see different types of hemoglobin in certain thalassemias? Know what types of hemoglobin the fetus makes, vs the adult.  Know the breakdown products of intravascular hemolysis vs extravascular hemolysis, and the lab findings for each. I just remember having questions about some of these but I don't recall exactly. These types of questions will come up repeatedly while you're studying.

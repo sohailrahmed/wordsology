@@ -182,3 +182,10 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
 .prose .chart-cd td b { display: inline-block; background: var(--subject-tint, #E5F4EA); color: var(--subject, #15703A); font-weight: 800; border-radius: 8px; padding: 2px 9px; margin: 2px 4px 2px 0; font-size: 15px; }
 .prose .chart-cd th:nth-child(2), .prose .chart-cd td:nth-child(2):not(.both) { border-right: 1px solid var(--line); }
 @media (max-width: 600px) { .prose .chart-cd td b { font-size: 13.5px; padding: 1px 7px; } .prose .chart-cd th:first-child, .prose .chart-cd td:first-child { width: 31%; font-size: 13.5px; } .prose .chart-cd td:first-child strong { font-size: 14px; } .prose .chart-cd td:first-child span { font-size: 12px; } }
+
+/* PDF download box under a chart */
+.prose .pdf-box { margin: -0.5em 0 2em; padding: 18px 20px; background: var(--subject-tint, #E5F4EA); border-radius: 14px; }
+.prose .pdf-box p { margin: 0 0 12px; }
+.prose .pdf-box p:last-child { margin: 0; }
+.prose .pdf-box .btn { text-decoration: none; color: #fff; background: var(--subject, #15703A); }
+@media (min-width: 601px) { .prose .chart-ranges th:first-child { width: 17%; } .prose .chart-ranges th:nth-child(2), .prose .chart-ranges th:nth-child(3) { width: 30%; } }
