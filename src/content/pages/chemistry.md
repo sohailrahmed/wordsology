@@ -58,7 +58,27 @@ Questions concerning the diagnosis of metabolic syndrome come up fairly regularl
 
 <p class="chart-note">NCEP ATP III = National Cholesterol Education Program, Adult Treatment Panel III</p>
 
-![Acid base disorders](/charts/chemistry/acid-base-disorders.jpg "I had one very easy acid-base disorder question which I can no longer remember. Don't go too crazy learning how the Henderson-Hasselbach equation is derived - it's only taught in school to fill time. DO know the reference ranges for the blood gases, as well as pH. It might be on your exam!")
+### Acid-base disorders
+
+<div class="ab-box">
+<p class="ab-line">The pH of plasma depends on <span class="ab-chip ab-lung">pCO₂ <small>regulated by the lungs</small></span> and the <span class="ab-chip ab-kid">bicarbonate concentration <small>regulated by the kidneys</small></span></p>
+<p class="ab-line">Essentially, an acid-base disorder is when the <span class="ab-frac"><span>20</span><span>1</span></span> ratio of <span class="ab-frac"><span>HCO₃⁻</span><span>0.03 × pCO₂</span></span> changes.</p>
+</div>
+
+<div class="chart-table chart-ab">
+
+| If this is the problem | Then this is the name of the condition | And your body resolves the problem by doing this |
+| --- | --- | --- |
+| **HCO₃⁻** low | Metabolic acidosis | Hyperventilation (blow off CO₂) |
+| **HCO₃⁻** high | Metabolic alkalosis | Hypoventilation (retain CO₂) |
+| **pCO₂** high | Respiratory acidosis | Kidneys retain HCO₃⁻, excrete H⁺ |
+| **pCO₂** low | Respiratory alkalosis | Kidneys excrete HCO₃⁻, retain H⁺ |
+
+</div>
+
+<p class="ab-ranges"><b>Know the reference ranges:</b> pH 7.35–7.45 · pCO₂ 35–45 mmHg · HCO₃⁻ 22–26 mEq/L</p>
+
+I had one very easy acid-base disorder question which I can no longer remember. Don't go too crazy learning how the Henderson-Hasselbalch equation is derived - it's only taught in school to fill time. DO know the reference ranges for the blood gases, as well as pH. It might be on your exam!
 
 ### What else will be on the exam?
 
