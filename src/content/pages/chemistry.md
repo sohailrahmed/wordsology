@@ -24,7 +24,9 @@ Tumor markers are used to monitor response to treatment. Think silly when you ne
 
 </div>
 
-![Diagnostic enzymology](/charts/chemistry/diagnostic-enzymology.jpg "Turn pages of text into a single diagram by just scribbling some notes and seeing what you come up with")
+### Diagnostic enzymology
+
+![Which enzymes diagnose which diseases: brackets group ALP, GGT, ALT, AST, LD, CK and cardiac troponin by disorder](/charts/chemistry/diagnostic-enzymology.svg "Turn pages of text into a single diagram by just scribbling some notes and seeing what you come up with")
 
 ![simplify memorization of number ranges with a line graph](/charts/chemistry/diagnosing-diabetes-mellitus.jpg "simplify memorization of number ranges with a line graph")
 

@@ -11,6 +11,13 @@ const anchorFor = (src) => path.basename(String(src)).replace(/\.[a-z0-9]+$/i, '
 
 export function rehypeFigures() {
   return (tree) => {
+    const used = new Map(); // keep every chart anchor unique on the page
+    const uniqueId = (base) => {
+      base = base || 'image';
+      const n = (used.get(base) || 0) + 1;
+      used.set(base, n);
+      return n === 1 ? base : `${base}-${n}`;
+    };
     visit(tree, 'element', (node, index, parent) => {
       if (node.tagName !== 'p' || !parent) return;
       const kids = node.children.filter((c) => !(c.type === 'text' && !c.value.trim()));
@@ -46,7 +53,7 @@ export function rehypeFigures() {
       if (caption) {
         children.push({ type: 'element', tagName: 'figcaption', properties: {}, children: [{ type: 'text', value: caption }] });
       }
-      parent.children[index] = { type: 'element', tagName: 'figure', properties: { id: anchorFor(img.properties.src), className: wide ? ['wide'] : undefined }, children };
+      parent.children[index] = { type: 'element', tagName: 'figure', properties: { id: 'chart-' + uniqueId(anchorFor(img.properties.src)), className: wide ? ['wide'] : undefined }, children };
     });
   };
 }

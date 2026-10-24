@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="330" viewBox="0 0 840 330" font-family="Helvetica, Arial, sans-serif" role="img" aria-label="Which enzymes diagnose which diseases. Biliary tract obstruction: ALP and GGT. Bone disorder: ALP. Hepatic disorder (viral hepatitis): ALT, AST and LD. Skeletal muscle disorder: AST, LD and CK. Cardiac muscle disorder: AST, LD, CK and cardiac troponin.">
+  <rect width="840" height="330" fill="#fff"/>
+  <text x="420" y="40" text-anchor="middle" font-size="26" font-weight="800" fill="#16212B">Which enzymes diagnose which diseases?</text>
+
+  <!-- brackets above the enzymes -->
+  <g fill="none" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M58 128 V112 H212 V128" stroke="#0E9F6E"/>
+    <path d="M278 128 V112 H542 V128" stroke="#8A6D00"/>
+  </g>
+  <text x="135" y="100" text-anchor="middle" font-size="17" font-weight="700" fill="#0E9F6E">Biliary tract obstruction</text>
+  <text x="410" y="100" text-anchor="middle" font-size="17" font-weight="700" fill="#8A6D00">Hepatic disorder (viral hepatitis)</text>
+
+  <!-- the enzymes -->
+  <g font-size="24" font-weight="800" fill="#16212B" text-anchor="middle">
+    <rect x="44" y="138" width="72" height="42" rx="10" fill="#EEF2F5"/><text x="80" y="168">ALP</text>
+    <rect x="154" y="138" width="72" height="42" rx="10" fill="#EEF2F5"/><text x="190" y="168">GGT</text>
+    <rect x="264" y="138" width="72" height="42" rx="10" fill="#EEF2F5"/><text x="300" y="168">ALT</text>
+    <rect x="374" y="138" width="72" height="42" rx="10" fill="#EEF2F5"/><text x="410" y="168">AST</text>
+    <rect x="484" y="138" width="72" height="42" rx="10" fill="#EEF2F5"/><text x="520" y="168">LD</text>
+    <rect x="594" y="138" width="72" height="42" rx="10" fill="#EEF2F5"/><text x="630" y="168">CK</text>
+    <rect x="704" y="138" width="80" height="42" rx="10" fill="#EEF2F5"/><text x="744" y="168">cTn</text>
+  </g>
+
+  <!-- brackets below the enzymes -->
+  <g fill="none" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M52 190 V206 H108 V190" stroke="#1D4ED8"/>
+    <path d="M388 190 V206 H652 V190" stroke="#C62828"/>
+    <path d="M378 190 V264 H790 V190" stroke="#1E3A8A"/>
+  </g>
+  <text x="80" y="232" text-anchor="middle" font-size="17" font-weight="700" fill="#1D4ED8">Bone disorder</text>
+  <text x="520" y="232" text-anchor="middle" font-size="17" font-weight="700" fill="#C62828">Skeletal muscle disorder</text>
+  <text x="584" y="292" text-anchor="middle" font-size="17" font-weight="700" fill="#1E3A8A">Cardiac muscle disorder</text>
+  <text x="820" y="318" text-anchor="end" font-size="12" fill="#5B6A61">cTn = cardiac troponin · LD = lactate dehydrogenase</text>
+</svg>
