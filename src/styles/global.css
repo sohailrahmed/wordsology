@@ -127,3 +127,19 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
 .prose .pz-group ul { list-style: none; margin: 0; padding: 0; }
 .prose .pz-group li { margin: 0 0 3px; }
 .prose .pz-sub { margin: 8px 0 4px; font-size: 12px; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-3); }
+
+/* ---------- TSI tubes ---------- */
+.prose .tsi { margin: 1.5em 0 2em; background: #fff; border: 1px solid var(--line); border-top: 5px solid #15703A; border-radius: 14px; padding: 20px; }
+.prose .tsi-rules { font-size: 15px; line-height: 1.5; background: #F3F9F4; border-radius: 10px; padding: 14px 16px; margin-bottom: 18px; }
+.prose .tsi-rules p { margin: 0 0 6px; }
+.prose .tsi-rules p:last-child { margin: 0; }
+.prose .tsi-note { color: var(--ink-3); }
+.prose .tsi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 14px; }
+.prose .tsi-card { margin: 0; display: flex; flex-direction: column; align-items: center; text-align: center; }
+.prose .tsi-tube { width: 86px; height: auto; display: block; margin-bottom: 10px; }
+.prose .tsi-card figcaption { display: flex; flex-direction: column; gap: 4px; margin: 0; color: var(--ink); }
+.prose .tsi-code { font-weight: 800; font-size: 20px; }
+.prose .tsi-title { font-weight: 700; font-size: 14px; }
+.prose .tsi-body { font-size: 13.5px; line-height: 1.45; color: var(--ink-3); }
+.prose .tsi-ex { font-size: 13.5px; color: #15703A; font-weight: 600; }
+@media (max-width: 600px) { .prose .tsi-grid { grid-template-columns: 1fr 1fr; } .prose .tsi { padding: 14px; } }
