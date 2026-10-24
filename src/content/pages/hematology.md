@@ -38,7 +38,7 @@ You'll come across questions that require you to know whether you have a B or T 
 <table>
 <thead><tr><th>Stage</th><th>B lymphocyte</th><th>T lymphocyte</th></tr></thead>
 <tbody>
-<tr><td><strong>Early</strong><span>Common to both types</span></td><td colspan="2" class="both"><b>CD10</b> (also called CALLA) <b>TdT</b></td></tr>
+<tr><td><strong>Early</strong><span>TdT is common to both types</span></td><td><b>CD10</b> (also called CALLA) <b>TdT</b></td><td><b>TdT</b></td></tr>
 <tr><td><strong>Differentiated</strong></td><td><b>CD19</b> <b>CD20</b></td><td><b>CD2</b> <b>CD3</b> <b>CD5</b> <b>CD7</b></td></tr>
 <tr><td><strong>Mature</strong></td><td><b>sIg</b> (surface immunoglobulin)</td><td><b>CD4</b> <b>CD8</b></td></tr>
 </tbody>
