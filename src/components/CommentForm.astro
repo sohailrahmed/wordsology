@@ -5,7 +5,8 @@ import { subjects } from '../data/subjects';
 interface Props { topic: string; heading?: string; intro?: string; idPrefix?: string; reply?: boolean; pickTopic?: boolean }
 const { topic, heading = 'Ask a question or leave a comment', intro, idPrefix = 'c', reply = false, pickTopic = false } = Astro.props;
 const topicOptions = [...subjects.map((s) => [s.id, s.name]), ['strategy', 'Study strategy'], ['licensing', 'Licensing'], ['general', 'Something else']];
-const sitekey = import.meta.env.PUBLIC_TURNSTILE_SITEKEY || '1x00000000000000000000AA';
+// Turnstile site key: public by design (it's visible on every page). The secret key lives only in Cloudflare.
+const sitekey = import.meta.env.PUBLIC_TURNSTILE_SITEKEY || '0x4AAAAAAFkD5GqkQ-cDGlmL';
 ---
 <form class:list={["cform", reply ? "cform-reply" : "card"]} data-topic={topic} data-sitekey={sitekey} novalidate>
   {!reply && <h2 class="cform-title">{heading}</h2>}
