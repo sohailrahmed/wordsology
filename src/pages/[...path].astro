@@ -47,7 +47,7 @@ const description = page.data.description ?? (subject ? `${subject.name} high-yi
   )}
 
   <div class="wrap page-body">
-    <article class="prose" data-pagefind-body>
+    <article class="prose" data-pagefind-body style={subject ? `--subject:${subject.color};--subject-tint:${subject.tint}` : undefined}>
       <Content />
     </article>
 

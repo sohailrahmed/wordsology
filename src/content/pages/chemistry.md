@@ -7,7 +7,22 @@ updated: "2012-12-10"
 
 Talk about important. This is THE most tested subject on the ASCP MT exam - at least based on an unscientific poll of one person. It's packed full of different topics: Endocrinology? check. Pharmacology? check. Enzymology, Diabetes and Blood gases? check check and check. This subject is essentially a catch-all with a whole variety of different topics - they're all important!
 
-![Chem tumor markers2](/charts/chemistry/chem-tumor-markers2.jpg "Think silly when you need to memorize very plain facts. AFG may not mean anything but \"AAAH That's F'in Painful\" might suggest which parts of the body it's related to")
+### Tumor markers
+
+Tumor markers are used to monitor response to treatment. Think silly when you need to memorize very plain facts: AFP may not mean anything, but "Aaah! That's F'in Painful!" might suggest which parts of the body it's related to.
+
+<div class="chart-table chart-hooks">
+
+| Rise of this marker | Is associated with this cancer | Memory hook |
+| --- | --- | --- |
+| **CEA** | Colon | *"C'ya on the flipside"* |
+| **CA 19-9** | GI, pancreas | |
+| **AFP** | Hepatic, pancreatic, testicular | *"Aaah! That's F'in Painful!"* |
+| **CA-125** | Ovarian | *"The ovaries are full of hundreds of eggs"* |
+| **hCG** | Testes, ovaries (normally just indicates pregnancy) | |
+| **PSA** | Prostate (< 25% free PSA associated with cancer) | |
+
+</div>
 
 ![Diagnostic enzymology](/charts/chemistry/diagnostic-enzymology.jpg "Turn pages of text into a single diagram by just scribbling some notes and seeing what you come up with")
 
