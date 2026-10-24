@@ -3,7 +3,7 @@
 const questions = [
   {
     subject: 'Microbiology',
-    img: '/media/questions/haemophilus-and-staph-question.svg',
+    img: '/media/questions/haemophilus-and-staph-question.png',
     alt: 'Cartoon: Staphylococcus aureus on sheep blood agar surrounded by Haemophilus colonies, asking which two key factors Haemophilus needs.',
     answer: 'X factor (hemin) and V factor (NAD)',
     explain: 'Staph aureus releases both as byproducts, so Haemophilus grows in a ring around it on sheep blood agar. This is called satelliting.',
@@ -35,7 +35,10 @@ const questions = [
   </div>
   {questions.map((q, i) => (
     <div class="qcard-item" data-q={i} hidden={i !== 0}>
-      <img src={q.img} alt={q.alt} width="560" height="380" loading={i === 0 ? 'eager' : 'lazy'} />
+      <a href={q.img} data-zoom class="qcard-zoom" aria-label="Enlarge the cartoon">
+        <img src={q.img} alt={q.alt} width="560" height="380" loading={i === 0 ? 'eager' : 'lazy'} />
+        <span class="qcard-zoom-hint" aria-hidden="true">Tap to enlarge</span>
+      </a>
       <div class="qcard-answer" hidden>
         <p class="qcard-answer-title">{q.answer}</p>
         <p class="qcard-answer-body">{q.explain} <a href={q.link}>See the chart →</a></p>
@@ -54,6 +57,8 @@ const questions = [
   .qcard-tag { font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: #15703A; }
   .qcard-count { color: var(--muted); }
   .qcard-item img { display: block; width: 100%; height: auto; max-height: 420px; object-fit: contain; border-radius: 10px; background: #fff; }
+  .qcard-zoom { position: relative; display: block; cursor: zoom-in; }
+  .qcard-zoom-hint { position: absolute; right: 10px; bottom: 10px; background: rgba(20, 32, 26, 0.78); color: #fff; font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 999px; }
   .qcard-answer { margin-top: 16px; background: var(--accent-soft); border-radius: 12px; padding: 16px 18px; }
   .qcard-answer-title { margin: 0 0 6px; font-weight: 800; color: var(--accent-dark); }
   .qcard-answer-body { margin: 0; font-size: 15px; line-height: 1.55; color: var(--ink-2); }
