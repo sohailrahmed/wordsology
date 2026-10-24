@@ -91,7 +91,7 @@ card(950, 20, 190, 228, 'Pelger-Huët', NUC, ['Dumbbell / peanut-', 'shaped nucl
 branch(250, 300, 'Functional disorders', FUNC)
 link('M250 319 V336 M160 336 H450 M160 336 V352 M450 336 V352', FUNC)
 card(20, 352, 280, 300, ['Chronic granulomatous', 'disease (CGD)'], FUNC, [
-    'Sex-linked: males', '',
+    'Mostly X-linked (males)', '',
     'Can’t produce the oxidative', 'burst (NADPH oxidase defect),', 'so they can’t kill bacteria'])
 card(320, 352, 260, 300, 'Chédiak-Higashi', FUNC, [
     'Fusion of 1° + 2° granules,', 'so they’re unable to', 'degranulate to kill bacteria'], chediak)
@@ -115,7 +115,7 @@ for i, ln in enumerate(['<tspan font-weight="800">* Differentiate from toxic</ts
 t(20, 772, '1° = primary (azurophilic) granules · 2° = secondary (specific) granules · NADPH = nicotinamide adenine dinucleotide phosphate', 13, 400, INK2, 'start')
 
 svg = (f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" font-family="Helvetica, Arial, sans-serif" role="img" '
-       'aria-label="Non-malignant neutrophilic disorders. Nuclear abnormalities: Pelger-Huet, a dumbbell or peanut-shaped nucleus. Functional disorders: chronic granulomatous disease, sex-linked, in males, cannot produce the oxidative burst because of an NADPH oxidase defect, so they cannot kill bacteria; Chediak-Higashi, fusion of primary and secondary granules so they are unable to degranulate to kill bacteria. Cytoplasmic abnormalities: May-Hegglin, cigar-shaped Dohle-like inclusions, giant platelets, thrombocytopenia and bleeding; Alder-Reilly, large primary granules in a single or multiple cell lines. Differentiate Alder-Reilly from toxic granulation, which is present in neutrophils alone.">\n'
+       'aria-label="Non-malignant neutrophilic disorders. Nuclear abnormalities: Pelger-Huet, a dumbbell or peanut-shaped nucleus. Functional disorders: chronic granulomatous disease, mostly X-linked, in males, cannot produce the oxidative burst because of an NADPH oxidase defect, so they cannot kill bacteria; Chediak-Higashi, fusion of primary and secondary granules so they are unable to degranulate to kill bacteria. Cytoplasmic abnormalities: May-Hegglin, cigar-shaped Dohle-like inclusions, giant platelets, thrombocytopenia and bleeding; Alder-Reilly, large primary granules in a single or multiple cell lines. Differentiate Alder-Reilly from toxic granulation, which is present in neutrophils alone.">\n'
        + '\n'.join(out) + '\n</svg>\n')
 open(sys.argv[1], 'w').write(svg)
 print('ok')
