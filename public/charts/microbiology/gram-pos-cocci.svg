@@ -1,0 +1,219 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1130" viewBox="0 0 2200 1130" font-family="Helvetica, Arial, sans-serif" role="img" aria-label="Identification flowchart for gram-positive cocci, starting with catalase: Staphylococcus and Micrococcus on the positive side, Streptococcus and Enterococcus on the negative side.">
+<rect width="2200" height="1130" fill="#fff"/>
+<text x="1100.0" y="46" font-size="30" font-weight="800" fill="#16212B" text-anchor="middle">Gram-positive cocci</text>
+<rect x="1025.0" y="70" width="150" height="34" rx="17" fill="#EEF2F5" stroke="#C9D3DA" stroke-width="1.5"/>
+<text x="1100.0" y="93" font-size="15" font-weight="700" fill="#4A5864" text-anchor="middle">Catalase</text>
+<path d="M1100.0 104 L1100.0 120 L505 120 L505 150" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M1100.0 120 L1620 120 L1620 150" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="505" cy="128" r="13" fill="#fff" stroke="#0F766E" stroke-width="2.5"/>
+<text x="505" y="133.5" font-size="15" font-weight="800" fill="#0F766E" text-anchor="middle">+</text>
+<circle cx="1620" cy="128" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
+<text x="1620" y="133.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">−</text>
+<rect x="340.0" y="150" width="330" height="50" rx="25" fill="#0F766E"/>
+<text x="505" y="182" font-size="20" font-weight="700" fill="#fff" text-anchor="middle" font-style="italic">Staphylococcus · Micrococcus</text>
+<path d="M505 200 L505 215" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<rect x="435.0" y="215" width="140" height="34" rx="17" fill="#EEF2F5" stroke="#C9D3DA" stroke-width="1.5"/>
+<text x="505" y="238" font-size="15" font-weight="700" fill="#4A5864" text-anchor="middle">Coagulase</text>
+<path d="M505 249 L505 262 L150 262 L150 290" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="150" cy="268" r="13" fill="#fff" stroke="#0F766E" stroke-width="2.5"/>
+<text x="150" y="273.5" font-size="15" font-weight="800" fill="#0F766E" text-anchor="middle">+</text>
+<path d="M505 262 L620 262 L620 290" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="620" cy="268" r="13" fill="#fff" stroke="#0F766E" stroke-width="2.5"/>
+<text x="620" y="273.5" font-size="15" font-weight="800" fill="#0F766E" text-anchor="middle">−</text>
+<rect x="20.0" y="290" width="260" height="274" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
+<path d="M20.0 302 a12 12 0 0 1 12 -12 h236 a12 12 0 0 1 12 12 v28 h-260 Z" fill="#0F766E"/>
+<text x="36.0" y="317" font-size="17" font-weight="700" fill="#fff" text-anchor="start" font-style="italic">S. aureus (&amp; S. intermedius)</text>
+<text x="36.0" y="352" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Salt tolerant; beta hemolytic</text>
+<text x="36.0" y="373" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Exfoliative toxins and</text>
+<text x="36.0" y="394" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;enterotoxins; exfoliative</text>
+<text x="36.0" y="415" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;toxin causes scalded skin</text>
+<text x="36.0" y="436" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;syndrome</text>
+<text x="36.0" y="457" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Hyaluronidase</text>
+<text x="36.0" y="478" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Tampon use linked to toxic</text>
+<text x="36.0" y="499" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;shock syndrome (TSS)</text>
+<text x="36.0" y="520" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• About 50% of people carry it</text>
+<text x="36.0" y="541" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;on skin and nares</text>
+<path d="M150 564 V610" stroke="#9F1239" stroke-width="2.5" stroke-dasharray="6 5"/>
+<text x="162" y="592" font-size="13" font-weight="700" fill="#9F1239" text-anchor="start">Methicillin-resistant strains</text>
+<rect x="20.0" y="610" width="260" height="148" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
+<path d="M20.0 622 a12 12 0 0 1 12 -12 h236 a12 12 0 0 1 12 12 v28 h-260 Z" fill="#9F1239"/>
+<text x="36.0" y="637" font-size="17" font-weight="700" fill="#fff" text-anchor="start" font-style="italic">MRSA</text>
+<text x="36.0" y="672" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Beta-lactamase inactivates</text>
+<text x="36.0" y="693" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;penicillin/ampicillin</text>
+<text x="36.0" y="714" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Treat with vancomycin</text>
+<text x="36.0" y="735" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;(&quot;vanquish-mycin&quot;)</text>
+<rect x="480.0" y="290" width="280" height="44" rx="10" fill="#fff" stroke="#0F766E" stroke-width="2.5"/>
+<text x="620" y="318" font-size="17" font-weight="700" fill="#0F766E" text-anchor="middle" font-style="italic">Coag-neg staph · Micrococcus</text>
+<path d="M620 334 L620 350" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<rect x="505.0" y="350" width="230" height="34" rx="17" fill="#EEF2F5" stroke="#C9D3DA" stroke-width="1.5"/>
+<text x="620" y="373" font-size="15" font-weight="700" fill="#4A5864" text-anchor="middle">Microdase · Bacitracin</text>
+<path d="M620 384 L620 398 L385 398 L385 425" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="385" cy="404" r="13" fill="#fff" stroke="#0F766E" stroke-width="2.5"/>
+<text x="385" y="409.5" font-size="15" font-weight="800" fill="#0F766E" text-anchor="middle">+</text>
+<text x="405" y="420" font-size="13" font-weight="700" fill="#0F766E" text-anchor="start">S</text>
+<path d="M620 398 L860 398 L860 425" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="860" cy="404" r="13" fill="#fff" stroke="#0F766E" stroke-width="2.5"/>
+<text x="860" y="409.5" font-size="15" font-weight="800" fill="#0F766E" text-anchor="middle">−</text>
+<text x="880" y="420" font-size="13" font-weight="700" fill="#0F766E" text-anchor="start">R</text>
+<rect x="275.0" y="425" width="220" height="127" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
+<path d="M275.0 437 a12 12 0 0 1 12 -12 h196 a12 12 0 0 1 12 12 v28 h-220 Z" fill="#0F766E"/>
+<text x="291.0" y="452" font-size="17" font-weight="700" fill="#fff" text-anchor="start" font-style="italic">Micrococcus</text>
+<text x="291.0" y="487" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Microdase (modified</text>
+<text x="291.0" y="508" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;oxidase) positive</text>
+<text x="291.0" y="529" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Bacitracin susceptible</text>
+<rect x="755.0" y="425" width="210" height="44" rx="10" fill="#fff" stroke="#0F766E" stroke-width="2.5"/>
+<text x="860" y="453" font-size="17" font-weight="700" fill="#0F766E" text-anchor="middle" font-style="italic">Coag-neg staph</text>
+<path d="M860 469 L860 485" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<rect x="790.0" y="485" width="140" height="34" rx="17" fill="#EEF2F5" stroke="#C9D3DA" stroke-width="1.5"/>
+<text x="860" y="508" font-size="15" font-weight="700" fill="#4A5864" text-anchor="middle">Novobiocin</text>
+<path d="M860 519 L860 533 L620 533 L620 560" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="620" cy="539" r="13" fill="#fff" stroke="#0F766E" stroke-width="2.5"/>
+<text x="620" y="544.5" font-size="15" font-weight="800" fill="#0F766E" text-anchor="middle">S</text>
+<path d="M860 533 L860 560" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="860" cy="548" r="13" fill="#fff" stroke="#0F766E" stroke-width="2.5"/>
+<text x="860" y="553.5" font-size="15" font-weight="800" fill="#0F766E" text-anchor="middle">R</text>
+<rect x="500.0" y="560" width="240" height="232" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
+<path d="M500.0 572 a12 12 0 0 1 12 -12 h216 a12 12 0 0 1 12 12 v28 h-240 Z" fill="#0F766E"/>
+<text x="516.0" y="587" font-size="17" font-weight="700" fill="#fff" text-anchor="start" font-style="italic">S. epidermidis</text>
+<text x="516.0" y="622" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Novobiocin zone of</text>
+<text x="516.0" y="643" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;inhibition &gt; 16 mm</text>
+<text x="516.0" y="664" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Hospital-acquired,</text>
+<text x="516.0" y="685" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;opportunistic: surgical</text>
+<text x="516.0" y="706" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;wounds; enters via</text>
+<text x="516.0" y="727" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;catheters to cause UTIs</text>
+<text x="516.0" y="748" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Glycocalyx (capsule, slime</text>
+<text x="516.0" y="769" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;layer, biofilm)</text>
+<rect x="760.0" y="575" width="200" height="106" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
+<path d="M760.0 587 a12 12 0 0 1 12 -12 h176 a12 12 0 0 1 12 12 v28 h-200 Z" fill="#0F766E"/>
+<text x="776.0" y="602" font-size="17" font-weight="700" fill="#fff" text-anchor="start" font-style="italic">S. saprophyticus</text>
+<text x="776.0" y="637" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• UTIs in sexually</text>
+<text x="776.0" y="658" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;active females</text>
+<rect x="1455.0" y="150" width="330" height="50" rx="25" fill="#3949AB"/>
+<text x="1620" y="182" font-size="20" font-weight="700" fill="#fff" text-anchor="middle" font-style="italic">Streptococcus · Enterococcus</text>
+<path d="M1620 200 L1620 215" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<rect x="1505.0" y="215" width="230" height="34" rx="17" fill="#EEF2F5" stroke="#C9D3DA" stroke-width="1.5"/>
+<text x="1620" y="238" font-size="15" font-weight="700" fill="#4A5864" text-anchor="middle">Hemolysis on blood agar</text>
+<path d="M1620 249 L1620 262 L1270 262 L1270 280" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M1620 262 L1930 262 L1930 280" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<rect x="1165.0" y="280" width="210" height="44" rx="10" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
+<text x="1270" y="308" font-size="17" font-weight="700" fill="#3949AB" text-anchor="middle" font-style="italic">Alpha hemolytic</text>
+<rect x="1825.0" y="280" width="210" height="44" rx="10" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
+<text x="1930" y="308" font-size="17" font-weight="700" fill="#3949AB" text-anchor="middle" font-style="italic">Beta hemolytic</text>
+<path d="M1270 324 L1270 340" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<rect x="1205.0" y="340" width="130" height="34" rx="17" fill="#EEF2F5" stroke="#C9D3DA" stroke-width="1.5"/>
+<text x="1270" y="363" font-size="15" font-weight="700" fill="#4A5864" text-anchor="middle">Optochin</text>
+<path d="M1270 374 L1270 388 L1150 388 L1150 415" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="1150" cy="394" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
+<text x="1150" y="399.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">S</text>
+<path d="M1270 388 L1400 388 L1400 415" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="1400" cy="394" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
+<text x="1400" y="399.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">R</text>
+<rect x="1025.0" y="415" width="250" height="442" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
+<path d="M1025.0 427 a12 12 0 0 1 12 -12 h226 a12 12 0 0 1 12 12 v28 h-250 Z" fill="#3949AB"/>
+<text x="1041.0" y="442" font-size="17" font-weight="700" fill="#fff" text-anchor="start" font-style="italic">S. pneumoniae</text>
+<text x="1041.0" y="477" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Optochin zone &gt; 14 mm</text>
+<text x="1041.0" y="498" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Lancet-shaped diplococci (in</text>
+<text x="1041.0" y="519" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;pairs)</text>
+<text x="1041.0" y="540" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Glistening, wet, domed</text>
+<text x="1041.0" y="561" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;colonies</text>
+<text x="1041.0" y="582" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Bile soluble</text>
+<text x="1041.0" y="603" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Quellung reaction positive</text>
+<text x="1041.0" y="624" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;(capsular swelling)</text>
+<text x="1041.0" y="645" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Requires CO₂; grows on</text>
+<text x="1041.0" y="666" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;brain-heart infusion,</text>
+<text x="1041.0" y="687" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;trypticase soy and chocolate</text>
+<text x="1041.0" y="708" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;agar</text>
+<text x="1041.0" y="729" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Polysaccharide capsule</text>
+<text x="1041.0" y="750" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;protects it from</text>
+<text x="1041.0" y="771" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;phagocytosis</text>
+<text x="1041.0" y="792" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Pneumonia and meningitis in</text>
+<text x="1041.0" y="813" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;adults; otitis media in</text>
+<text x="1041.0" y="834" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;children</text>
+<rect x="1330.0" y="415" width="140" height="34" rx="17" fill="#EEF2F5" stroke="#C9D3DA" stroke-width="1.5"/>
+<text x="1400" y="438" font-size="15" font-weight="700" fill="#4A5864" text-anchor="middle">Bile esculin</text>
+<path d="M1400 449 L1400 463 L1570 463 L1570 490" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="1570" cy="469" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
+<text x="1570" y="474.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">−</text>
+<rect x="1445.0" y="490" width="250" height="232" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
+<path d="M1445.0 502 a12 12 0 0 1 12 -12 h226 a12 12 0 0 1 12 12 v28 h-250 Z" fill="#3949AB"/>
+<text x="1461.0" y="517" font-size="17" font-weight="700" fill="#fff" text-anchor="start" font-style="italic">Viridans streptococci</text>
+<text x="1461.0" y="552" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Normal flora of the upper</text>
+<text x="1461.0" y="573" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;respiratory tract</text>
+<text x="1461.0" y="594" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Cause dental infections; in</text>
+<text x="1461.0" y="615" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;the bloodstream, subacute</text>
+<text x="1461.0" y="636" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;bacterial endocarditis</text>
+<text x="1461.0" y="657" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• S. anginosus group grows in</text>
+<text x="1461.0" y="678" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;low O₂; abscesses of brain</text>
+<text x="1461.0" y="699" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;and abdomen</text>
+<path d="M1930 324 L1930 340" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<rect x="1840.0" y="340" width="180" height="34" rx="17" fill="#EEF2F5" stroke="#C9D3DA" stroke-width="1.5"/>
+<text x="1930" y="363" font-size="15" font-weight="700" fill="#4A5864" text-anchor="middle">PYR · Bacitracin</text>
+<path d="M1930 374 L1930 388 L1830 388 L1830 415" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="1830" cy="394" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
+<text x="1830" y="399.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">+</text>
+<text x="1850" y="410" font-size="13" font-weight="700" fill="#3949AB" text-anchor="start">S</text>
+<path d="M1930 388 L2070 388 L2070 415" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="2070" cy="394" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
+<text x="2070" y="399.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">−</text>
+<text x="2090" y="410" font-size="13" font-weight="700" fill="#3949AB" text-anchor="start">R</text>
+<rect x="1720.0" y="415" width="220" height="106" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
+<path d="M1720.0 427 a12 12 0 0 1 12 -12 h196 a12 12 0 0 1 12 12 v28 h-220 Z" fill="#3949AB"/>
+<text x="1736.0" y="442" font-size="17" font-weight="700" fill="#fff" text-anchor="start" font-style="italic">S. pyogenes (Group A)</text>
+<text x="1736.0" y="477" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Strep throat</text>
+<text x="1736.0" y="498" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Scarlet fever</text>
+<rect x="1985.0" y="415" width="170" height="34" rx="17" fill="#EEF2F5" stroke="#C9D3DA" stroke-width="1.5"/>
+<text x="2070" y="438" font-size="15" font-weight="700" fill="#4A5864" text-anchor="middle">Hippurate · CAMP</text>
+<path d="M2070 449 L2070 463 L1960 463 L1960 545" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="1960" cy="520" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
+<text x="1960" y="525.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">+</text>
+<rect x="1840.0" y="545" width="240" height="232" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
+<path d="M1840.0 557 a12 12 0 0 1 12 -12 h216 a12 12 0 0 1 12 12 v28 h-240 Z" fill="#3949AB"/>
+<text x="1856.0" y="572" font-size="17" font-weight="700" fill="#fff" text-anchor="start" font-style="italic">S. agalactiae (Group B)</text>
+<text x="1856.0" y="607" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Bile NEG</text>
+<text x="1856.0" y="628" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Normal flora of the</text>
+<text x="1856.0" y="649" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;genitourinary tract</text>
+<text x="1856.0" y="670" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Can pass to the baby:</text>
+<text x="1856.0" y="691" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;neonatal sepsis,</text>
+<text x="1856.0" y="712" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;meningitis, pneumonia</text>
+<text x="1856.0" y="733" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Antiphagocytic capsule</text>
+<text x="1856.0" y="754" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;contains sialic acid</text>
+<path d="M2070 463 L2160 463 L2160 822 L2125 822" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="2160" cy="500" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
+<text x="2160" y="505.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">−</text>
+<rect x="1975.0" y="805" width="150" height="34" rx="17" fill="#EEF2F5" stroke="#C9D3DA" stroke-width="1.5"/>
+<text x="2050" y="828" font-size="15" font-weight="700" fill="#4A5864" text-anchor="middle">Bile esculin</text>
+<path d="M2050 839 L2050 870" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="2050" cy="852" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
+<text x="2050" y="857.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">−</text>
+<rect x="1925.0" y="870" width="250" height="106" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
+<path d="M1925.0 882 a12 12 0 0 1 12 -12 h226 a12 12 0 0 1 12 12 v28 h-250 Z" fill="#3949AB"/>
+<text x="1941.0" y="897" font-size="17" font-weight="700" fill="#fff" text-anchor="start" font-style="italic">Beta strep, not A, B, or D</text>
+<text x="1941.0" y="932" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• Other beta-hemolytic</text>
+<text x="1941.0" y="953" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;streptococci</text>
+<path d="M1400 449 L1400 463 L1290 463" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M1290 463 L1290 900 L1640 900 L1640 915" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="1290" cy="480" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
+<text x="1290" y="485.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">+</text>
+<path d="M1975 822 L1890 822 L1890 900 L1640 900" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="1935" cy="822" r="13" fill="#fff" stroke="#3949AB" stroke-width="2.5"/>
+<text x="1935" y="827.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">+</text>
+<rect x="1550.0" y="915" width="180" height="34" rx="17" fill="#EEF2F5" stroke="#C9D3DA" stroke-width="1.5"/>
+<text x="1640" y="938" font-size="15" font-weight="700" fill="#4A5864" text-anchor="middle">PYR · 6.5% NaCl</text>
+<path d="M1640 949 L1640 963 L1500 963 L1500 985" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="1500" cy="969" r="13" fill="#fff" stroke="#B45309" stroke-width="2.5"/>
+<text x="1500" y="974.5" font-size="15" font-weight="800" fill="#B45309" text-anchor="middle">+</text>
+<path d="M1640 963 L1780 963 L1780 985" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="1780" cy="969" r="13" fill="#fff" stroke="#B45309" stroke-width="2.5"/>
+<text x="1780" y="974.5" font-size="15" font-weight="800" fill="#B45309" text-anchor="middle">−</text>
+<rect x="1385.0" y="985" width="230" height="85" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
+<path d="M1385.0 997 a12 12 0 0 1 12 -12 h206 a12 12 0 0 1 12 12 v28 h-230 Z" fill="#B45309"/>
+<text x="1401.0" y="1012" font-size="17" font-weight="700" fill="#fff" text-anchor="start" font-style="italic">Enterococcus</text>
+<text x="1401.0" y="1047" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• PYR +, grows in 6.5% NaCl</text>
+<rect x="1655.0" y="985" width="250" height="106" rx="12" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
+<path d="M1655.0 997 a12 12 0 0 1 12 -12 h226 a12 12 0 0 1 12 12 v28 h-250 Z" fill="#B45309"/>
+<text x="1671.0" y="1012" font-size="17" font-weight="700" fill="#fff" text-anchor="start" font-style="italic">Group D (non-enterococcal)</text>
+<text x="1671.0" y="1047" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">• PYR −, no growth in 6.5%</text>
+<text x="1671.0" y="1068" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;NaCl</text>
+<text x="40" y="1106" font-size="14" font-weight="600" fill="#4A5864" text-anchor="start">Sohail Ahmed, MLS(ASCP) · wordsology.org</text>
+<text x="2160" y="1106" font-size="14" font-weight="600" fill="#4A5864" text-anchor="end">+ positive   − negative   S susceptible   R resistant</text>
+</svg>

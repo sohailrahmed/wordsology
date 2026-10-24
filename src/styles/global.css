@@ -85,6 +85,8 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
 .prose figure { margin: 2em 0; }
 .prose figure a { display: block; background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 10px; }
 .prose figure img { display: block; margin: 0 auto; border-radius: 6px; }
+.prose figure.wide { width: min(1240px, calc(100vw - 32px)); position: relative; left: 50%; transform: translateX(-50%); }
+.prose figure.wide figcaption { max-width: 792px; margin-left: auto; margin-right: auto; }
 .prose figure:target a { border-color: var(--accent); box-shadow: 0 0 0 4px rgba(47, 107, 63, 0.2); }
 .prose figcaption { margin-top: 10px; font-size: 15px; line-height: 1.55; color: var(--muted); }
 .prose .slides { display: grid; grid-auto-flow: column; grid-auto-columns: min(88%, 640px); gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 10px; margin: 1.5em 0 2em; }
@@ -113,7 +115,8 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
 .zoom img { max-width: none; width: auto; max-height: none; background: #fff; border-radius: 6px; }
 .zoom img.fit { max-width: 100%; max-height: calc(100vh - 90px); }
 .zoom-close { position: fixed; top: 12px; right: 12px; width: 44px; height: 44px; border-radius: 999px; border: 0; background: #fff; color: var(--ink); font-size: 22px; cursor: pointer; }
-.zoom-hint { position: fixed; top: 22px; left: 16px; color: #D3DDD6; font-size: 14px; }
+.zoom-hint { position: fixed; top: 16px; left: 12px; z-index: 2; color: #fff; font-size: 13px; background: rgba(10, 16, 12, 0.75); padding: 8px 12px; border-radius: 999px; }
+.zoom-close { z-index: 2; }
 
 /* ---------- parasitology chart ---------- */
 .prose .parasites { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; margin: 1.5em 0 2em; font-size: 15px; line-height: 1.45; }

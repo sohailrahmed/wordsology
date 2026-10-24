@@ -24,6 +24,7 @@ export function rehypeFigures() {
       if (img.tagName !== 'img') return;
       const caption = img.properties.title;
       delete img.properties.title;
+      let wide = false;
       img.properties.loading = 'lazy';
       // Real width/height stop the page from jumping as charts load (so #links land in the right place).
       try {
@@ -31,6 +32,7 @@ export function rehypeFigures() {
         if (fs.existsSync(file)) {
           const { width, height } = sizeOf(file);
           if (width && height) { img.properties.width = width; img.properties.height = height; }
+          if (width >= 1800) wide = true;
         }
       } catch {}
       img.properties.decoding = 'async';
@@ -44,7 +46,7 @@ export function rehypeFigures() {
       if (caption) {
         children.push({ type: 'element', tagName: 'figcaption', properties: {}, children: [{ type: 'text', value: caption }] });
       }
-      parent.children[index] = { type: 'element', tagName: 'figure', properties: { id: anchorFor(img.properties.src) }, children };
+      parent.children[index] = { type: 'element', tagName: 'figure', properties: { id: anchorFor(img.properties.src), className: wide ? ['wide'] : undefined }, children };
     });
   };
 }

@@ -11,7 +11,7 @@ Each organism produces a unique combination of results based on certain testing 
 
 These are the flowcharts I produced. Once I had these, there was very little additional work for me to do. I only did questions to solidify my recall of the information on the charts.
 
-![Gram Pos Cocci](/charts/microbiology/gram-pos-cocci2.png)
+![Gram-positive cocci identification flowchart: catalase, coagulase, hemolysis and follow-up tests](/charts/microbiology/gram-pos-cocci.svg "Tap or click the chart to open it full screen and zoom in.")
 
 ![Gram Pos Bacilli](/charts/microbiology/gram-pos-bacilli.png)
 
