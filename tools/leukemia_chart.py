@@ -62,16 +62,16 @@ t(760, 392, '≥ 20% <tspan font-size="16" font-weight="600" fill="#4A5864">(WHO
 arrow('M760 410 V508', PURP, 3)
 out.append(f'<rect x="560" y="514" width="400" height="252" rx="14" fill="#fff" stroke="{PURP}" stroke-width="2"/>')
 t(760, 550, 'Acute myelogenous leukemia (AML)', 19, 800, PURP)
-for i in range(7):
-    col, row = (0, i) if i < 4 else (1, i - 4)
+for i in range(8):
+    col, row = divmod(i, 4)
     x, y = 680 + col * 160, 594 + row * 48
     out.append(f'<rect x="{x-58}" y="{y-24}" width="116" height="36" rx="10" fill="{PURP_T}"/>')
-    t(x, y, f'AML-M{i+1}', 18, 800, PURP)
+    t(x, y, f'AML-M{i}', 18, 800, PURP)
 
 t(20, 788, 'FAB = French-American-British classification · WHO = World Health Organization', 13, 400, INK2, 'start')
 
 svg = (f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" font-family="Helvetica, Arial, sans-serif" role="img" '
-       'aria-label="Increased WBC count plus an absolute granulocytosis? If yes: blasts in peripheral blood? If no, it is a non-malignant granulocytic abnormality. If yes, two paths. Blasts under 10 percent in blood and bone marrow: chronic myeloproliferative neoplasm (chronic myeloproliferative disorder): chronic myelogenous leukemia, primary myelofibrosis (idiopathic myelofibrosis), polycythemia vera, essential thrombocythemia. Blasts in bone marrow over 30 percent (FAB) or at least 20 percent (WHO): acute myelogenous leukemia, AML-M1 through AML-M7.">\n'
+       'aria-label="Increased WBC count plus an absolute granulocytosis? If yes: blasts in peripheral blood? If no, it is a non-malignant granulocytic abnormality. If yes, two paths. Blasts under 10 percent in blood and bone marrow: chronic myeloproliferative neoplasm (chronic myeloproliferative disorder): chronic myelogenous leukemia, primary myelofibrosis (idiopathic myelofibrosis), polycythemia vera, essential thrombocythemia. Blasts in bone marrow over 30 percent (FAB) or at least 20 percent (WHO): acute myelogenous leukemia, AML-M0 through AML-M7.">\n'
        + '\n'.join(out) + '\n</svg>\n')
 open(sys.argv[1], 'w').write(svg)
 print('ok')
