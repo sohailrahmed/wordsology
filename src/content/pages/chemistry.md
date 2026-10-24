@@ -40,7 +40,23 @@ Tumor markers are used to monitor response to treatment. Think silly when you ne
 
 ![Lipoproteins: chylomicrons lead to VLDL and then LDL; HDL counteracts LDL. Each shows its main component and apoprotein](/charts/chemistry/lipoproteins.svg "A simplified description of the different lipoproteins, how they form, and what's relevant to the exam for each")
 
-![Metabolic syndrome](/charts/chemistry/metabolic-syndrome.jpg "Questions concerning the diagnosis of metabolic syndrome come up fairly regularly during practice exams")
+### Metabolic syndrome
+
+Questions concerning the diagnosis of metabolic syndrome come up fairly regularly during practice exams. These are the NCEP ATP III diagnostic criteria: **3 or more means you've got it.**
+
+<div class="chart-table chart-criteria">
+
+| Criterion | Cutoff |
+| --- | --- |
+| Abdominal obesity (increased waist size) | > 40 inches in men; > 35 inches in women |
+| Elevated triglycerides | ≥ 150 mg/dL, or drug treatment ongoing |
+| Low HDL cholesterol | < 40 mg/dL in men; < 50 mg/dL in women |
+| Elevated blood pressure | ≥ 130/85 mmHg, or drug treatment ongoing |
+| Elevated fasting glucose | ≥ 100 mg/dL, or drug treatment ongoing |
+
+</div>
+
+<p class="chart-note">NCEP ATP III = National Cholesterol Education Program, Adult Treatment Panel III</p>
 
 ![Acid base disorders](/charts/chemistry/acid-base-disorders.jpg "I had one very easy acid-base disorder question which I can no longer remember. Don't go too crazy learning how the Henderson-Hasselbach equation is derived - it's only taught in school to fill time. DO know the reference ranges for the blood gases, as well as pH. It might be on your exam!")
 

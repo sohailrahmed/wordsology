@@ -33,7 +33,7 @@ An excellent microbiology professor suggested using tables to see what's **uniqu
 
 Unfortunately, you just have to memorize some things. For example, here are a few must-know properties of the (H)ACEK organisms. All four are normal oral flora.
 
-<div class="chart-table">
+<div class="chart-table chart-signs">
 
 | Organism | Oxidase | Key facts |
 | --- | :---: | --- |
