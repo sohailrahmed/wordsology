@@ -11,6 +11,17 @@
 <text x="1620" y="133.5" font-size="15" font-weight="800" fill="#3949AB" text-anchor="middle">−</text>
 <rect x="340.0" y="150" width="330" height="50" rx="25" fill="#0F766E"/>
 <text x="505" y="182" font-size="20" font-weight="700" fill="#fff" text-anchor="middle" font-style="italic">Staphylococcus · Micrococcus</text>
+<circle cx="690" cy="166" r="6" fill="#7B3FA0" stroke="#fff" stroke-width="1.2"/>
+<circle cx="701" cy="163" r="6" fill="#7B3FA0" stroke="#fff" stroke-width="1.2"/>
+<circle cx="712" cy="167" r="6" fill="#7B3FA0" stroke="#fff" stroke-width="1.2"/>
+<circle cx="695" cy="176" r="6" fill="#7B3FA0" stroke="#fff" stroke-width="1.2"/>
+<circle cx="706" cy="175" r="6" fill="#7B3FA0" stroke="#fff" stroke-width="1.2"/>
+<circle cx="717" cy="177" r="6" fill="#7B3FA0" stroke="#fff" stroke-width="1.2"/>
+<circle cx="700" cy="185" r="6" fill="#7B3FA0" stroke="#fff" stroke-width="1.2"/>
+<circle cx="711" cy="186" r="6" fill="#7B3FA0" stroke="#fff" stroke-width="1.2"/>
+<circle cx="705" cy="195" r="6" fill="#7B3FA0" stroke="#fff" stroke-width="1.2"/>
+<circle cx="686" cy="179" r="6" fill="#7B3FA0" stroke="#fff" stroke-width="1.2"/>
+<circle cx="721" cy="165" r="6" fill="#7B3FA0" stroke="#fff" stroke-width="1.2"/>
 <path d="M505 200 L505 215" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
 <rect x="435.0" y="215" width="140" height="34" rx="17" fill="#EEF2F5" stroke="#C9D3DA" stroke-width="1.5"/>
 <text x="505" y="238" font-size="15" font-weight="700" fill="#4A5864" text-anchor="middle">Coagulase</text>
@@ -93,6 +104,16 @@
 <text x="776.0" y="658" font-size="15" font-weight="400" fill="#16212B" text-anchor="start">&#160;&#160;&#160;active females</text>
 <rect x="1455.0" y="150" width="330" height="50" rx="25" fill="#3949AB"/>
 <text x="1620" y="182" font-size="20" font-weight="700" fill="#fff" text-anchor="middle" font-style="italic">Streptococcus · Enterococcus</text>
+<circle cx="1800.0" cy="175.0" r="6.6" fill="#7B3FA0" stroke="#fff" stroke-width="1.2"/>
+<circle cx="1812.5" cy="180.3" r="6.6" fill="#7B3FA0" stroke="#fff" stroke-width="1.2"/>
+<circle cx="1825.0" cy="183.5" r="6.6" fill="#7B3FA0" stroke="#fff" stroke-width="1.2"/>
+<circle cx="1837.5" cy="183.6" r="6.6" fill="#7B3FA0" stroke="#fff" stroke-width="1.2"/>
+<circle cx="1850.0" cy="180.4" r="6.6" fill="#7B3FA0" stroke="#fff" stroke-width="1.2"/>
+<circle cx="1862.5" cy="175.1" r="6.6" fill="#7B3FA0" stroke="#fff" stroke-width="1.2"/>
+<circle cx="1875.0" cy="169.9" r="6.6" fill="#7B3FA0" stroke="#fff" stroke-width="1.2"/>
+<circle cx="1887.5" cy="166.5" r="6.6" fill="#7B3FA0" stroke="#fff" stroke-width="1.2"/>
+<circle cx="1900.0" cy="166.4" r="6.6" fill="#7B3FA0" stroke="#fff" stroke-width="1.2"/>
+<circle cx="1912.5" cy="169.5" r="6.6" fill="#7B3FA0" stroke="#fff" stroke-width="1.2"/>
 <path d="M1620 200 L1620 215" fill="none" stroke="#9AA8B3" stroke-width="2.5" stroke-linejoin="round"/>
 <rect x="1505.0" y="215" width="230" height="34" rx="17" fill="#EEF2F5" stroke="#C9D3DA" stroke-width="1.5"/>
 <text x="1620" y="238" font-size="15" font-weight="700" fill="#4A5864" text-anchor="middle">Hemolysis on blood agar</text>
