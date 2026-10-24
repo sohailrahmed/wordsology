@@ -3,6 +3,7 @@
 import { getCollection, render } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import SubjectGrid from '../components/SubjectGrid.astro';
+import PageComments from '../components/PageComments.astro';
 import { subjects, subjectById, subjectPath } from '../data/subjects';
 import counts from '../data/qa-counts.json';
 
@@ -63,6 +64,8 @@ const description = page.data.description ?? (subject ? `${subject.name} high-yi
         <span aria-hidden="true">→</span>
       </a>
     )}
+
+    <PageComments topic={qaTopic ?? 'general'} />
 
     {next && (
       <nav class="pager" aria-label="Subjects">

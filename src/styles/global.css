@@ -189,3 +189,21 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
 .prose .pdf-box p:last-child { margin: 0; }
 .prose .pdf-box .btn { text-decoration: none; color: #fff; background: var(--subject, #15703A); }
 @media (min-width: 601px) { .prose .chart-ranges th:first-child { width: 17%; } .prose .chart-ranges th:nth-child(2), .prose .chart-ranges th:nth-child(3) { width: 30%; } }
+
+/* ---------- comment threads (Q&A page and under each page) ---------- */
+  .threads { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+  .thread { padding: 22px 24px; }
+  .thread-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-bottom: 12px; font-size: 13px; color: var(--muted); }
+  .topic { font-weight: 750; padding: 4px 10px; border-radius: 999px; }
+  .tag-win { font-weight: 750; padding: 4px 10px; border-radius: 999px; background: #FFF3C4; color: #6B4E00; }
+  .thread-meta time { margin-left: auto; }
+  .who { margin: 0 0 6px; font-weight: 750; font-size: 15px; }
+  .who time { font-weight: 400; color: var(--muted); font-size: 13px; }
+  .text p { margin: 0 0 0.7em; font-size: 16px; line-height: 1.65; white-space: pre-line; overflow-wrap: anywhere; }
+  .text p:last-child { margin-bottom: 0; }
+  .replies { list-style: none; margin: 14px 0 0; padding: 0 0 0 18px; border-left: 2px solid var(--line); display: flex; flex-direction: column; gap: 14px; }
+  .reply-sohail { background: var(--accent-soft); border-radius: 12px; padding: 14px 16px; margin-left: -6px; }
+  .badge-sohail { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; color: #fff; background: var(--accent); padding: 2px 8px; border-radius: 999px; vertical-align: 1px; }
+  .tag-new { font-weight: 750; padding: 4px 10px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); }
+  .reply-btn { margin-top: 12px; font: inherit; font-size: 14px; font-weight: 700; color: var(--accent); background: none; border: 0; padding: 6px 0; cursor: pointer; }
+  .reply-btn:hover { text-decoration: underline; text-underline-offset: 3px; }

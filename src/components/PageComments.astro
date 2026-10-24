@@ -1,0 +1,53 @@
+---
+// Comments under a page: approved new comments for this page, plus the form.
+import CommentForm from './CommentForm.astro';
+interface Props { topic: string }
+const { topic } = Astro.props;
+---
+<section class="page-comments" aria-labelledby="comments-h" data-topic={topic}>
+  <h2 id="comments-h" class="pc-title" hidden>Comments</h2>
+  <ol class="threads pc-list"></ol>
+  <CommentForm topic={topic} />
+  <template id="tpl-reply"><CommentForm topic={topic} reply idPrefix="r" /></template>
+</section>
+
+<script>
+  import { fmt, post, group, replyButton } from '../lib/threads';
+  const root = document.querySelector<HTMLElement>('.page-comments');
+  if (root) {
+    const list = root.querySelector('.pc-list')!;
+    const title = root.querySelector<HTMLElement>('.pc-title')!;
+    const here = location.pathname.replace(/\/?$/, '/');
+    fetch('/api/comments').then((r) => (r.ok ? r.json() : [])).then((rows) => {
+      const mine = rows.filter((c: any) => (c.page || '').replace(/\/?$/, '/') === here);
+      const { threads } = group(mine);
+      if (!threads.length) return;
+      title.hidden = false;
+      title.textContent = `${threads.length} comment${threads.length === 1 ? '' : 's'}`;
+      for (const th of threads) {
+        const li = document.createElement('li');
+        li.className = 'thread card';
+        const meta = document.createElement('div');
+        meta.className = 'thread-meta';
+        const t = document.createElement('time');
+        t.textContent = fmt(th.d);
+        meta.append(t);
+        li.append(meta, post(th, false));
+        if (th.r?.length) {
+          const ol = document.createElement('ol');
+          ol.className = 'replies';
+          th.r.forEach((r) => ol.append(post(r, true)));
+          li.append(ol);
+        }
+        replyButton(li, String(th.id), th.topic);
+        list.append(li);
+      }
+    }).catch(() => {});
+  }
+</script>
+
+<style>
+  .page-comments { margin-top: 40px; display: grid; gap: 16px; }
+  .pc-title { margin: 0; font-size: 22px; }
+  .pc-list:empty { display: none; }
+</style>

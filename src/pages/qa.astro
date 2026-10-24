@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import { subjects } from '../data/subjects';
 import counts from '../data/qa-counts.json';
+import CommentForm from '../components/CommentForm.astro';
 
 const c = counts as Record<string, number>;
 const filters = [
@@ -25,7 +26,7 @@ const topicNames = Object.fromEntries([
     <div class="wrap">
       <p class="crumbs"><a href="/">Home</a> / Reader Q&amp;A</p>
       <h1>Reader Q&amp;A</h1>
-      <p class="lede">{c.comments.toLocaleString('en-US')} questions, answers and success stories left by readers since 2012. This archive is read-only.</p>
+      <p class="lede">{c.comments.toLocaleString('en-US')} questions, answers and success stories left by readers since 2012. Have a question of your own? <a href="#ask">Ask it below the list</a> or reply to any conversation.</p>
       <label class="qa-search">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4A5A50" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
         <span class="sr-only">Search reader questions</span>
@@ -42,77 +43,58 @@ const topicNames = Object.fromEntries([
     </div>
   </header>
 
-  <section class="wrap qa-body">
+  <section class="wrap qa-body" id="qa-root" data-topics={JSON.stringify(topicNames)}>
     <p class="qa-status" id="qa-status" aria-live="polite">Loading…</p>
     <ol class="threads" id="threads"></ol>
     <button class="btn btn-secondary more" id="qa-more" type="button" hidden>Show more</button>
+    <div class="ask" id="ask"><CommentForm topic="general" heading="Ask a question" intro="Ask about the exam, studying, licensing or anything on the site. Readers and Sohail answer here." idPrefix="ask" pickTopic /></div>
   </section>
 
   <template id="tpl-thread">
     <li class="thread card">
-      <div class="thread-meta"><span class="topic"></span><span class="tag-win" hidden>Passed</span><time></time></div>
+      <div class="thread-meta"><span class="topic"></span><span class="tag-win" hidden>Passed</span><span class="tag-new" hidden>New</span><time></time></div>
       <div class="post"><p class="who"></p><div class="text"></div></div>
       <ol class="replies"></ol>
     </li>
   </template>
+  <template id="tpl-reply"><CommentForm topic="general" reply idPrefix="r" /></template>
 </Base>
 
-<script define:vars={{ topicNames }}>
+<script>
+  import { fmt, post, group, replyButton, type Thread } from '../lib/threads';
+  const root = document.getElementById('qa-root')!;
+  const topicNames = JSON.parse(root.dataset.topics!);
   const PAGE = 20;
-  const list = document.getElementById('threads');
-  const status = document.getElementById('qa-status');
-  const more = document.getElementById('qa-more');
-  const input = document.getElementById('qa-q');
-  const chips = [...document.querySelectorAll('.chip')];
-  const tpl = document.getElementById('tpl-thread');
+  const list = document.getElementById('threads')!;
+  const status = document.getElementById('qa-status')!;
+  const more = document.getElementById('qa-more') as HTMLButtonElement;
+  const input = document.getElementById('qa-q') as HTMLInputElement;
+  const chips = [...document.querySelectorAll<HTMLButtonElement>('.chip')];
+  const tpl = document.getElementById('tpl-thread') as HTMLTemplateElement;
   const params = new URLSearchParams(location.search);
   let filter = params.get('topic') || params.get('filter') || 'all';
   let query = params.get('q') || '';
-  let data = [], shown = [], cursor = 0;
+  let data: Thread[] = [], shown: Thread[] = [], cursor = 0;
 
-  const fmt = (d) => new Date(d + 'T12:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
-
-  function fill(el, text) {
-    // Plain text only: paragraphs from blank lines, line breaks kept.
-    el.replaceChildren(...text.split(/\n\s*\n/).map((para) => {
-      const p = document.createElement('p');
-      p.textContent = para;
-      return p;
-    }));
-  }
-
-  function post(c, isReply) {
-    const wrap = document.createElement(isReply ? 'li' : 'div');
-    wrap.className = isReply ? 'reply' + (c.s ? ' reply-sohail' : '') : 'post';
-    const who = document.createElement('p');
-    who.className = 'who';
-    who.textContent = c.s ? 'Sohail (Wordsology)' : c.a;
-    if (c.s) { const b = document.createElement('span'); b.className = 'badge-sohail'; b.textContent = 'Site author'; who.append(' ', b); }
-    if (isReply) { const t = document.createElement('time'); t.textContent = fmt(c.d); who.append(' · ', t); }
-    const text = document.createElement('div');
-    text.className = 'text';
-    fill(text, c.t);
-    wrap.append(who, text);
-    return wrap;
-  }
-
-  function render(th) {
-    const li = tpl.content.firstElementChild.cloneNode(true);
-    const tn = topicNames[th.topic];
-    const topic = li.querySelector('.topic');
+  function render(th: Thread) {
+    const li = tpl.content.firstElementChild!.cloneNode(true) as HTMLElement;
+    const tn = topicNames[th.topic] || topicNames.general;
+    const topic = li.querySelector('.topic') as HTMLElement;
     topic.textContent = tn.name;
     topic.style.color = tn.color;
     topic.style.background = tn.tint;
-    li.querySelector('.tag-win').hidden = !th.win;
-    li.querySelector('time').textContent = fmt(th.d);
-    li.querySelector('.post').replaceWith(post(th, false));
-    const replies = li.querySelector('.replies');
+    (li.querySelector('.tag-win') as HTMLElement).hidden = !th.win;
+    (li.querySelector('.tag-new') as HTMLElement).hidden = !th.isNew;
+    li.querySelector('time')!.textContent = fmt(th.d);
+    li.querySelector('.post')!.replaceWith(post(th, false));
+    const replies = li.querySelector('.replies')!;
     (th.r || []).forEach((r) => replies.append(post(r, true)));
-    if (!th.r) replies.remove();
+    if (!th.r?.length) replies.remove();
+    replyButton(li, th.isNew ? String(th.id) : 'a' + th.id, th.topic);
     return li;
   }
 
-  function matches(th) {
+  function matches(th: Thread) {
     if (filter === 'success' && !th.win) return false;
     if (filter === 'answered' && !th.ans) return false;
     if (!['all', 'success', 'answered'].includes(filter) && th.topic !== filter) return false;
@@ -147,14 +129,22 @@ const topicNames = Object.fromEntries([
     more.textContent = `Show more (${(shown.length - Math.min(cursor, shown.length)).toLocaleString('en-US')} left)`;
   }
 
-  chips.forEach((c) => c.addEventListener('click', () => { filter = c.dataset.filter; apply(); }));
+  chips.forEach((c) => c.addEventListener('click', () => { filter = c.dataset.filter!; apply(); }));
   more.addEventListener('click', page);
-  let t;
+  let t: ReturnType<typeof setTimeout>;
   input.value = query;
   input.addEventListener('input', () => { clearTimeout(t); t = setTimeout(() => { query = input.value.trim(); apply(); }, 200); });
 
-  fetch('/qa-data.json').then((r) => r.json()).then((d) => { data = d; apply(); })
-    .catch(() => { status.textContent = 'Could not load the archive. Please refresh.'; });
+  const fresh = fetch('/api/comments').then((r) => (r.ok ? r.json() : [])).catch(() => []);
+  fetch('/qa-data.json').then((r) => r.json()).then(async (archive: Thread[]) => {
+    const { threads, archiveReplies } = group(await fresh);
+    for (const th of archive) {
+      const extra = archiveReplies.get(String(th.id));
+      if (extra) { th.r = [...(th.r || []), ...extra]; if (extra.some((r) => r.s)) th.ans = 1; }
+    }
+    data = [...threads, ...archive];
+    apply();
+  }).catch(() => { status.textContent = 'Could not load the archive. Please refresh.'; });
 </script>
 
 <style is:global>
@@ -173,18 +163,6 @@ const topicNames = Object.fromEntries([
   .dot { width: 10px; height: 10px; border-radius: 999px; }
   .qa-body { max-width: 880px; padding-top: 28px; }
   .qa-status { color: var(--ink-3); margin: 0 0 16px; font-size: 15px; }
-  .threads { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
-  .thread { padding: 22px 24px; }
-  .thread-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-bottom: 12px; font-size: 13px; color: var(--muted); }
-  .topic { font-weight: 750; padding: 4px 10px; border-radius: 999px; }
-  .tag-win { font-weight: 750; padding: 4px 10px; border-radius: 999px; background: #FFF3C4; color: #6B4E00; }
-  .thread-meta time { margin-left: auto; }
-  .who { margin: 0 0 6px; font-weight: 750; font-size: 15px; }
-  .who time { font-weight: 400; color: var(--muted); font-size: 13px; }
-  .text p { margin: 0 0 0.7em; font-size: 16px; line-height: 1.65; white-space: pre-line; overflow-wrap: anywhere; }
-  .text p:last-child { margin-bottom: 0; }
-  .replies { list-style: none; margin: 14px 0 0; padding: 0 0 0 18px; border-left: 2px solid var(--line); display: flex; flex-direction: column; gap: 14px; }
-  .reply-sohail { background: var(--accent-soft); border-radius: 12px; padding: 14px 16px; margin-left: -6px; }
-  .badge-sohail { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; color: #fff; background: var(--accent); padding: 2px 8px; border-radius: 999px; vertical-align: 1px; }
   .more { margin: 24px auto 0; display: flex; }
+  .ask { margin-top: 40px; scroll-margin-top: 90px; }
 </style>

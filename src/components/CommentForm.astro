@@ -1,0 +1,137 @@
+---
+// A comment / question form. New comments wait for Sohail's approval (see functions/api).
+// Also renders a hidden <template> the Q&A page clones for inline "Reply" forms.
+import { subjects } from '../data/subjects';
+interface Props { topic: string; heading?: string; intro?: string; idPrefix?: string; reply?: boolean; pickTopic?: boolean }
+const { topic, heading = 'Ask a question or leave a comment', intro, idPrefix = 'c', reply = false, pickTopic = false } = Astro.props;
+const topicOptions = [...subjects.map((s) => [s.id, s.name]), ['strategy', 'Study strategy'], ['licensing', 'Licensing'], ['general', 'Something else']];
+const sitekey = import.meta.env.PUBLIC_TURNSTILE_SITEKEY || '1x00000000000000000000AA';
+---
+<form class:list={["cform", reply ? "cform-reply" : "card"]} data-topic={topic} data-sitekey={sitekey} novalidate>
+  {!reply && <h2 class="cform-title">{heading}</h2>}
+  {intro && <p class="cform-intro">{intro}</p>}
+  <div class="cform-row">
+    <label>Name <input name="name" id={`${idPrefix}-name`} autocomplete="name" maxlength="60" required></label>
+    <label><span>Email <span class="opt">optional, only Sohail sees it</span></span><input name="email" id={`${idPrefix}-email`} type="email" autocomplete="email" maxlength="120"></label>
+  </div>
+  {pickTopic && (
+    <label>Topic
+      <select name="topic" id={`${idPrefix}-topic`}>
+        {topicOptions.map(([v, n]) => <option value={v} selected={v === topic}>{n}</option>)}
+      </select>
+    </label>
+  )}
+  <label>{reply ? 'Your reply' : 'Comment'} <textarea name="text" id={`${idPrefix}-text`} rows={reply ? 4 : 5} maxlength="5000" required></textarea></label>
+  <label class="hp" aria-hidden="true">Website <input name="website" tabindex="-1" autocomplete="off"></label>
+  <div class="ts"></div>
+  <div class="cform-foot">
+    <button class="btn btn-primary" type="submit">{reply ? 'Post reply' : 'Post comment'}</button>
+    <p class="cform-msg" role="status" aria-live="polite"></p>
+  </div>
+  <p class="cform-note">Comments show up after Sohail approves them.</p>
+</form>
+
+<script>
+  type W = Window & { turnstile?: any; wsComments?: { mount: (f: HTMLFormElement) => void } };
+  const w = window as W;
+  let loading: Promise<void> | null = null;
+  function loadTurnstile() {
+    if (w.turnstile) return Promise.resolve();
+    loading ??= new Promise((res) => {
+      const s = document.createElement('script');
+      s.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
+      s.async = true;
+      s.onload = () => res();
+      s.onerror = () => res();
+      document.head.append(s);
+    });
+    return loading;
+  }
+
+  function mount(form: HTMLFormElement) {
+    if (form.dataset.mounted) return;
+    form.dataset.mounted = '1';
+    const msg = form.querySelector('.cform-msg') as HTMLElement;
+    const btn = form.querySelector('button[type=submit]') as HTMLButtonElement;
+    const box = form.querySelector('.ts') as HTMLElement;
+    let widget: string | undefined;
+    let tsToken = '';
+    const start = async () => {
+      if (widget !== undefined) return;
+      widget = '';
+      await loadTurnstile();
+      if (!w.turnstile) return;
+      widget = w.turnstile.render(box, {
+        sitekey: form.dataset.sitekey, appearance: 'interaction-only', size: 'flexible',
+        callback: (t: string) => { tsToken = t; },
+        'expired-callback': () => { tsToken = ''; },
+      });
+    };
+    form.addEventListener('focusin', start, { once: true });
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const fd = new FormData(form);
+      const name = String(fd.get('name') || '').trim();
+      const text = String(fd.get('text') || '').trim();
+      if (!name || text.length < 3) {
+        msg.className = 'cform-msg err';
+        msg.textContent = !name ? 'Please add your name.' : 'Please write a comment.';
+        return;
+      }
+      await start();
+      btn.disabled = true;
+      msg.className = 'cform-msg';
+      msg.textContent = 'Sending…';
+      try {
+        const r = await fetch('/api/comments', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({
+            name, text, email: fd.get('email'), website: fd.get('website'),
+            topic: fd.get('topic') || form.dataset.topic, parent: form.dataset.parent || null,
+            page: location.pathname, turnstile: tsToken,
+          }),
+        });
+        const out = await r.json().catch(() => ({}));
+        if (!r.ok) throw new Error(out.error || 'Something went wrong. Please try again.');
+        form.reset();
+        msg.className = 'cform-msg ok';
+        msg.textContent = 'Thanks! Your comment will show up once Sohail approves it.';
+        form.dispatchEvent(new CustomEvent('comment-sent', { bubbles: true, detail: out }));
+      } catch (err) {
+        msg.className = 'cform-msg err';
+        msg.textContent = (err as Error).message.startsWith('Failed to fetch') ? 'Couldn’t reach the site. Check your connection and try again.' : (err as Error).message;
+      } finally {
+        btn.disabled = false;
+        if (w.turnstile && widget) { w.turnstile.reset(widget); tsToken = ''; }
+      }
+    });
+  }
+
+  w.wsComments = { mount };
+  document.querySelectorAll<HTMLFormElement>('form.cform').forEach(mount);
+</script>
+
+<style is:global>
+  .cform { padding: 22px 24px; display: grid; gap: 14px; }
+  .cform-title { margin: 0; font-size: 22px; letter-spacing: -0.01em; }
+  .cform-intro { margin: -6px 0 0; color: var(--ink-2); font-size: 16px; }
+  .cform label { display: grid; gap: 6px; font-size: 15px; font-weight: 700; color: var(--ink); min-width: 0; }
+  .cform .opt { font-weight: 400; color: var(--muted); font-size: 13px; margin-left: 6px; }
+  .cform-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .cform input, .cform textarea, .cform select { font: inherit; font-size: 16px; font-weight: 400; color: var(--ink); background: var(--ground); border: 1px solid var(--line-2); border-radius: 12px; padding: 12px 14px; width: 100%; box-sizing: border-box; }
+  .cform textarea { resize: vertical; min-height: 120px; line-height: 1.5; }
+  .cform input:focus, .cform textarea:focus { outline: 3px solid var(--accent); outline-offset: 1px; background: var(--card); }
+  .cform .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+  .cform .ts:empty { display: none; }
+  .cform-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; }
+  .cform-foot .btn[disabled] { opacity: 0.6; cursor: default; }
+  .cform-msg { margin: 0; font-size: 15px; color: var(--ink-2); }
+  .cform-msg.ok { color: var(--accent); font-weight: 700; }
+  .cform-msg.err { color: #A3261B; font-weight: 700; }
+  .cform-note { margin: -4px 0 0; font-size: 13px; color: var(--muted); }
+  .cform-reply { margin-top: 14px; padding: 16px 18px; background: var(--ground); border: 1px solid var(--line); border-radius: 14px; }
+  .cform-reply input, .cform-reply textarea { background: var(--card); }
+  @media (max-width: 600px) { .cform { padding: 18px 16px; } .cform-row { grid-template-columns: 1fr; } }
+</style>

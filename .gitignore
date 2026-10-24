@@ -5,3 +5,5 @@ dist/
 # Never commit the WordPress export: it contains commenter emails.
 *.xml
 *.tar
+.wrangler
+.dev.vars
