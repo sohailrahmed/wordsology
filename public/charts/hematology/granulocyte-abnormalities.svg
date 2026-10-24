@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="790" viewBox="0 0 1160 790" font-family="Helvetica, Arial, sans-serif" role="img" aria-label="Non-malignant neutrophilic disorders. Nuclear abnormalities: Pelger-Huet, a dumbbell or peanut-shaped nucleus. Functional disorders: chronic granulomatous disease, sex-linked, in males, inability to degranulate oxidative bactericidal products; Chediak-Higashi, fusion of primary and secondary granules so they are unable to degranulate to kill bacteria. Cytoplasmic abnormalities: May-Hegglin, cigar-shaped Dohle-like inclusions, giant platelets, thrombocytopenia and bleeding; Alder-Reilly, large primary granules in a single or multiple cell lines. Differentiate Alder-Reilly from toxic granulation, which is present in neutrophils alone.">
+<rect width="1160" height="790" fill="#fff"/>
+<path d="M640 90 L800 74" stroke="#7C8B96" stroke-width="2.5" fill="none"/>
+<path d="M350 162 L250 286" stroke="#7C8B96" stroke-width="2.5" fill="none"/>
+<path d="M560 168 L760 286" stroke="#7C8B96" stroke-width="2.5" fill="none"/>
+<ellipse cx="470" cy="116" rx="210" ry="62" fill="#FCE8F1" stroke="#BE185D" stroke-width="3"/>
+<text x="470" y="110" font-size="24" font-weight="800" fill="#BE185D" text-anchor="middle">Non-malignant</text>
+<text x="470" y="140" font-size="24" font-weight="800" fill="#BE185D" text-anchor="middle">neutrophilic disorders</text>
+<rect x="678.5" y="55" width="267" height="38" rx="19" fill="#1D4ED8"/>
+<text x="812" y="80" font-size="17" font-weight="800" fill="#fff" text-anchor="middle">Nuclear abnormalities</text>
+<path d="M932 74 H950" stroke="#1D4ED8" stroke-width="2.5" fill="none"/>
+<rect x="950" y="20" width="190" height="228" rx="14" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
+<path d="M950 34 a14 14 0 0 1 14 -14 h162 a14 14 0 0 1 14 14 v28 h-190 Z" fill="#1D4ED8"/>
+<text x="1045.0" y="48" font-size="19" font-weight="800" fill="#fff" text-anchor="middle">Pelger-Huët</text>
+<circle cx="1045.0" cy="118" r="40" fill="#F7E8F0" stroke="#D9A9C2" stroke-width="2"/>
+<circle cx="1031.0" cy="118" r="12" fill="#5B2C83"/>
+<circle cx="1059.0" cy="118" r="12" fill="#5B2C83"/>
+<rect x="1031.0" y="114.5" width="28" height="7" fill="#5B2C83"/>
+<text x="1045.0" y="192" font-size="16" font-weight="400" fill="#16212B" text-anchor="middle">Dumbbell / peanut-</text>
+<text x="1045.0" y="215" font-size="16" font-weight="400" fill="#16212B" text-anchor="middle">shaped nucleus</text>
+<rect x="122.0" y="281" width="256" height="38" rx="19" fill="#0E6A80"/>
+<text x="250" y="306" font-size="17" font-weight="800" fill="#fff" text-anchor="middle">Functional disorders</text>
+<path d="M250 319 V336 M160 336 H450 M160 336 V352 M450 336 V352" stroke="#0E6A80" stroke-width="2.5" fill="none"/>
+<rect x="20" y="352" width="280" height="300" rx="14" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
+<path d="M20 366 a14 14 0 0 1 14 -14 h252 a14 14 0 0 1 14 14 v52 h-280 Z" fill="#0E6A80"/>
+<text x="160.0" y="380" font-size="19" font-weight="800" fill="#fff" text-anchor="middle">Chronic granulomatous</text>
+<text x="160.0" y="404" font-size="19" font-weight="800" fill="#fff" text-anchor="middle">disease (CGD)</text>
+<text x="160.0" y="456" font-size="16" font-weight="400" fill="#16212B" text-anchor="middle">Sex-linked: males</text>
+<text x="160.0" y="479" font-size="16" font-weight="400" fill="#16212B" text-anchor="middle"></text>
+<text x="160.0" y="502" font-size="16" font-weight="400" fill="#16212B" text-anchor="middle">Inability to degranulate</text>
+<text x="160.0" y="525" font-size="16" font-weight="400" fill="#16212B" text-anchor="middle">oxidative bactericidal</text>
+<text x="160.0" y="548" font-size="16" font-weight="400" fill="#16212B" text-anchor="middle">products</text>
+<rect x="320" y="352" width="260" height="300" rx="14" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
+<path d="M320 366 a14 14 0 0 1 14 -14 h232 a14 14 0 0 1 14 14 v28 h-260 Z" fill="#0E6A80"/>
+<text x="450.0" y="380" font-size="19" font-weight="800" fill="#fff" text-anchor="middle">Chédiak-Higashi</text>
+<circle cx="450.0" cy="450" r="40" fill="#F7E8F0" stroke="#D9A9C2" stroke-width="2"/>
+<circle cx="431.0" cy="464" r="9.5" fill="#5B2C83"/>
+<circle cx="446.0" cy="450" r="9.5" fill="#5B2C83"/>
+<circle cx="461.0" cy="464" r="9.5" fill="#5B2C83"/>
+<path d="M431.0 464 L446.0 450 L461.0 464" stroke="#5B2C83" stroke-width="4" fill="none"/>
+<circle cx="432.0" cy="430" r="7" fill="#9D4EDD" stroke="#5B2C83" stroke-width="1.2"/>
+<circle cx="464.0" cy="428" r="8" fill="#9D4EDD" stroke="#5B2C83" stroke-width="1.2"/>
+<circle cx="474.0" cy="458" r="6.5" fill="#9D4EDD" stroke="#5B2C83" stroke-width="1.2"/>
+<circle cx="424.0" cy="460" r="5.5" fill="#9D4EDD" stroke="#5B2C83" stroke-width="1.2"/>
+<text x="450.0" y="524" font-size="16" font-weight="400" fill="#16212B" text-anchor="middle">Fusion of 1° + 2° granules,</text>
+<text x="450.0" y="547" font-size="16" font-weight="400" fill="#16212B" text-anchor="middle">so they’re unable to</text>
+<text x="450.0" y="570" font-size="16" font-weight="400" fill="#16212B" text-anchor="middle">degranulate to kill bacteria</text>
+<rect x="604.5" y="281" width="311" height="38" rx="19" fill="#7C3AED"/>
+<text x="760" y="306" font-size="17" font-weight="800" fill="#fff" text-anchor="middle">Cytoplasmic abnormalities</text>
+<path d="M760 319 V336 M740 336 H1015 M740 336 V352 M1015 336 V352" stroke="#7C3AED" stroke-width="2.5" fill="none"/>
+<rect x="610" y="352" width="260" height="300" rx="14" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
+<path d="M610 366 a14 14 0 0 1 14 -14 h232 a14 14 0 0 1 14 14 v28 h-260 Z" fill="#7C3AED"/>
+<text x="740.0" y="380" font-size="19" font-weight="800" fill="#fff" text-anchor="middle">May-Hegglin</text>
+<circle cx="718.0" cy="450" r="40" fill="#F7E8F0" stroke="#D9A9C2" stroke-width="2"/>
+<circle cx="699.0" cy="462" r="9.5" fill="#5B2C83"/>
+<circle cx="714.0" cy="448" r="9.5" fill="#5B2C83"/>
+<circle cx="729.0" cy="462" r="9.5" fill="#5B2C83"/>
+<path d="M699.0 462 L714.0 448 L729.0 462" stroke="#5B2C83" stroke-width="4" fill="none"/>
+<ellipse cx="726.0" cy="428" rx="13" ry="4.5" fill="#7FA7D9" transform="rotate(-18 726.0 428)"/>
+<circle cx="782.0" cy="458" r="19" fill="#EBDDF3" stroke="#B48ACB" stroke-width="2"/>
+<circle cx="776.0" cy="454" r="2.4" fill="#7E4FA3"/>
+<circle cx="787.0" cy="461" r="2.4" fill="#7E4FA3"/>
+<circle cx="780.0" cy="467" r="2.4" fill="#7E4FA3"/>
+<circle cx="789.0" cy="450" r="2.4" fill="#7E4FA3"/>
+<text x="782.0" y="494" font-size="12" font-weight="600" fill="#4A5864" text-anchor="middle">giant platelet</text>
+<text x="740.0" y="524" font-size="16" font-weight="400" fill="#16212B" text-anchor="middle">Cigar-shaped,</text>
+<text x="740.0" y="547" font-size="16" font-weight="400" fill="#16212B" text-anchor="middle">Döhle-like inclusions</text>
+<text x="740.0" y="570" font-size="16" font-weight="400" fill="#16212B" text-anchor="middle"></text>
+<text x="740.0" y="593" font-size="16" font-weight="400" fill="#16212B" text-anchor="middle">Giant platelets,</text>
+<text x="740.0" y="616" font-size="16" font-weight="400" fill="#16212B" text-anchor="middle">thrombocytopenia</text>
+<text x="740.0" y="639" font-size="16" font-weight="400" fill="#16212B" text-anchor="middle">+ bleeding</text>
+<rect x="890" y="352" width="250" height="260" rx="14" fill="#fff" stroke="#D5DDE3" stroke-width="1.5"/>
+<path d="M890 366 a14 14 0 0 1 14 -14 h222 a14 14 0 0 1 14 14 v28 h-250 Z" fill="#7C3AED"/>
+<text x="1015.0" y="380" font-size="19" font-weight="800" fill="#fff" text-anchor="middle">Alder-Reilly</text>
+<circle cx="1015.0" cy="450" r="40" fill="#F7E8F0" stroke="#D9A9C2" stroke-width="2"/>
+<circle cx="1000.0" cy="460" r="9.5" fill="#5B2C83"/>
+<circle cx="1015.0" cy="446" r="9.5" fill="#5B2C83"/>
+<circle cx="1030.0" cy="460" r="9.5" fill="#5B2C83"/>
+<path d="M1000.0 460 L1015.0 446 L1030.0 460" stroke="#5B2C83" stroke-width="4" fill="none"/>
+<circle cx="1039.0" cy="450.0" r="3.2" fill="#3B1A57"/>
+<circle cx="1042.7" cy="461.5" r="3.2" fill="#3B1A57"/>
+<circle cx="1032.0" cy="467.0" r="3.2" fill="#3B1A57"/>
+<circle cx="1026.5" cy="477.7" r="3.2" fill="#3B1A57"/>
+<circle cx="1015.0" cy="474.0" r="3.2" fill="#3B1A57"/>
+<circle cx="1003.5" cy="477.7" r="3.2" fill="#3B1A57"/>
+<circle cx="998.0" cy="467.0" r="3.2" fill="#3B1A57"/>
+<circle cx="987.3" cy="461.5" r="3.2" fill="#3B1A57"/>
+<circle cx="991.0" cy="450.0" r="3.2" fill="#3B1A57"/>
+<circle cx="987.3" cy="438.5" r="3.2" fill="#3B1A57"/>
+<circle cx="998.0" cy="433.0" r="3.2" fill="#3B1A57"/>
+<circle cx="1003.5" cy="422.3" r="3.2" fill="#3B1A57"/>
+<circle cx="1015.0" cy="426.0" r="3.2" fill="#3B1A57"/>
+<circle cx="1026.5" cy="422.3" r="3.2" fill="#3B1A57"/>
+<circle cx="1032.0" cy="433.0" r="3.2" fill="#3B1A57"/>
+<circle cx="1042.7" cy="438.5" r="3.2" fill="#3B1A57"/>
+<text x="1015.0" y="524" font-size="16" font-weight="400" fill="#16212B" text-anchor="middle">Large 1° granules in a</text>
+<text x="1015.0" y="547" font-size="16" font-weight="400" fill="#16212B" text-anchor="middle">single or multiple</text>
+<text x="1015.0" y="570" font-size="16" font-weight="400" fill="#16212B" text-anchor="middle">cell lines <tspan fill="#DB2777" font-weight="800">*</tspan></text>
+<path d="M1015 612 V640" stroke="#DB2777" stroke-width="2.5"/>
+<path d="M1008 622 L1015 610 L1022 622" stroke="#DB2777" stroke-width="2.5" fill="none"/>
+<rect x="890" y="640" width="250" height="96" rx="14" fill="#FDF2F8" stroke="#DB2777" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="1015" y="668" font-size="16" font-weight="400" fill="#9D174D" text-anchor="middle"><tspan font-weight="800">* Differentiate from toxic</tspan></text>
+<text x="1015" y="691" font-size="16" font-weight="400" fill="#9D174D" text-anchor="middle"><tspan font-weight="800">granulation</tspan>, which is</text>
+<text x="1015" y="714" font-size="16" font-weight="400" fill="#9D174D" text-anchor="middle">present in neutrophils alone</text>
+<text x="20" y="772" font-size="13" font-weight="400" fill="#4A5864" text-anchor="start">1° = primary (azurophilic) granules · 2° = secondary (specific) granules</text>
+</svg>

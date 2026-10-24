@@ -49,7 +49,7 @@ You'll come across questions that require you to know whether you have a B or T 
 
 ![Granulocytosis: non-malignant, chronic or acute?](/charts/hematology/cancer-flow-chart.svg "A topic I couldn't grasp until I visualized it as a whole")
 
-![Granulocyte abnormalities](/charts/hematology/granulocyte-abnormalities.jpg "You'll definitely have a question on non-malignant granulocytic abnormalities")
+![Non-malignant neutrophilic disorders](/charts/hematology/granulocyte-abnormalities.svg "You'll definitely have a question on non-malignant granulocytic abnormalities")
 
 ![Answering Hemoglobin Electrophoresis Questions on the ASCP Exam](/charts/hematology/slide41.png "Answering Hemoglobin Electrophoresis Questions on the ASCP Exam (click to open)")
 
