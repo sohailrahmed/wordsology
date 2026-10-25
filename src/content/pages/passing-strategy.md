@@ -6,7 +6,7 @@ updated: "2017-01-15"
 
 I recently took the ASCP exam in order to acquire a state license in laboratory science. I've written this for folks seeking advice on a passing strategy. If you're experiencing difficulty understanding the material or are anxious about what the exam entails, i'd like to help.
 
-![Studying2](/media/passing-strategy/studying2.jpg)
+![Overstudying for the ASCP exam: a comic](/media/passing-strategy/studying2.svg)
 
 **Who this is for:**\
 Different strategies work for different folks. Some can pass an exam in two weeks, while others may require more than one attempt. I wished to make this strategy comprehensive so I have written this for folks taking the exam with only a rudimentary understanding of laboratory science. You know what an antibody is, but the fella who kept interrupting the professor made it impossible for you to learn anything else. Maybe your Professor exhausted his/her own own knowledge by this point. Perhaps you crammed for every exam in school, learning nothing substantive in the process. You may even be taking the exam after being out of school for several years. Whatever your situation, I'd like you to understand that you **will** pass this exam, by following a few simple steps.
