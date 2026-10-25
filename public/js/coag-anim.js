@@ -88,17 +88,17 @@
   function noiseSrc(a) { const n = a.createBufferSource(); n.buffer = noiseBuf; n.loop = true; n.loopStart = Math.random(); return keep(n); }
   const S = {
     // pencil on paper: bright filtered noise that flutters as the lead catches the grain
-    scratch(dur, freq = 2600, vol = 1.5, rate = 23) {
+    scratch(dur, freq = 3600, vol = 0.32, rate = 17) {
       const a = ac(); if (!a) return; const t = a.currentTime;
       const n = noiseSrc(a), bp = a.createBiquadFilter(); bp.type = 'bandpass'; bp.frequency.value = freq; bp.Q.value = 0.9;
       const g = env(a, vol * 0.6, t, dur), am = a.createGain(); am.gain.value = 0.6;
-      const lfo = keep(a.createOscillator()); lfo.type = 'square'; lfo.frequency.value = rate; const lg = a.createGain(); lg.gain.value = 0.4;
+      const lfo = keep(a.createOscillator()); lfo.frequency.value = rate; const lg = a.createGain(); lg.gain.value = 0.4;
       lfo.connect(lg).connect(am.gain);
       n.connect(bp).connect(am).connect(g).connect(master);
       n.start(t); lfo.start(t); n.stop(t + dur + 0.05); lfo.stop(t + dur + 0.05);
     },
     // eraser: lower, rubbery back-and-forth
-    erase(dur) { S.scratch(dur, 950, 0.9, 5.3); },
+    erase(dur) { S.scratch(dur, 950, 0.55, 5.3); },
     // motor whir with a pitch glide
     whir(dur, f0 = 85, f1 = 150) {
       const a = ac(); if (!a) return; const t = a.currentTime;
@@ -195,7 +195,6 @@
     pen.style.transition = 'opacity .25s';
     put(jobs[0].at(0), 30);
     penJobs = jobs;
-    jobs.forEach((j) => later(j.t0 * 1000, () => { if (cur === n) S.scratch(j.dur); }));
     const frame = penFrame = () => {
       if (cur !== n || paused) return;
       const t = (vnow() - t0) / 1000;
