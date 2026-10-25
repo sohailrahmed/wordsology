@@ -7,7 +7,7 @@ updated: "2012-12-10"
 
 I studied endocrinology by making one-page graphics for each hormone. Only high-yield info.
 
-![adrenal gland](/charts/endocrinology/adrenal-gland1.jpg)
+![Adrenal gland](/charts/endocrinology/adrenal-gland.svg "Adrenal gland: one page, only high-yield info")
 
 ![estrogen](/charts/endocrinology/estrogen.jpg)
 

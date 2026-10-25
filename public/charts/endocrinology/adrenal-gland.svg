@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1180" viewBox="0 0 1400 1180" font-family="Helvetica, Arial, sans-serif" role="img" aria-label="Adrenal gland. Renin-angiotensin: the kidney juxtaglomerular apparatus senses low blood pressure or low sodium and releases renin; angiotensinogen becomes angiotensin I, then angiotensin II, which stimulates the cortex to make mineralocorticoids (aldosterone): the body retains sodium and water while excreting potassium, blood volume increases. CRH stimulates ACTH, which stimulates glucocorticoids (cortisol): elevates blood glucose via gluconeogenesis, depresses antibody formation and the inflammatory response. The medulla makes amines: epinephrine 80 percent and norepinephrine 20 percent, metabolized to metanephrine and normetanephrine, then VMA. Conn syndrome, Cushing syndrome, pheochromocytoma, congenital adrenal hyperplasia and hypoadrenalism are described in boxes.">
+<rect width="1400" height="1180" fill="#fff"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#5B6A75"/></marker></defs>
+<text x="118" y="40" font-size="16" font-weight="400" fill="#4A5864" text-anchor="start">Kidney’s JG apparatus</text>
+<text x="118" y="62" font-size="16" font-weight="400" fill="#4A5864" text-anchor="start">senses low BP or low Na⁺</text>
+<line x1="200" y1="70" x2="200" y2="168" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<text x="230" y="158" font-size="16" font-weight="700" fill="#16212B" text-anchor="middle" dy="0">renin</text>
+<text x="20" y="196" font-size="17" font-weight="700" fill="#16212B" text-anchor="start">Angiotensinogen</text>
+<line x1="168" y1="190" x2="232" y2="190" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<text x="242" y="196" font-size="17" font-weight="700" fill="#16212B" text-anchor="start">Angiotensin I</text>
+<line x1="352" y1="190" x2="404" y2="190" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<text x="414" y="196" font-size="17" font-weight="700" fill="#16212B" text-anchor="start">Angiotensin II</text>
+<line x1="530" y1="190" x2="566" y2="190" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<text x="700" y="74" font-size="20" font-weight="800" fill="#16212B" text-anchor="middle">Adrenal gland</text>
+<rect x="570" y="90" width="260" height="200" rx="22" fill="#FDE68A" stroke="#B7791F" stroke-width="3"/>
+<text x="700" y="122" font-size="19" font-weight="800" fill="#7C4A03" text-anchor="middle">Cortex</text>
+<circle cx="700" cy="196" r="62" fill="#A5F3FC" stroke="#0E7490" stroke-width="3"/>
+<text x="700" y="192" font-size="17" font-weight="800" fill="#0E4F5C" text-anchor="middle">Medulla</text>
+<text x="700" y="214" font-size="15" font-weight="400" fill="#0E4F5C" text-anchor="middle">amines</text>
+<text x="596" y="190" font-size="14" font-weight="700" fill="#7C4A03" text-anchor="middle" transform="rotate(-90 596 190)">mineralocorticoids</text>
+<text x="804" y="190" font-size="14" font-weight="700" fill="#7C4A03" text-anchor="middle" transform="rotate(90 804 190)">glucocorticoids</text>
+<line x1="978" y1="190" x2="836" y2="190" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<text x="988" y="196" font-size="17" font-weight="700" fill="#16212B" text-anchor="start">ACTH</text>
+<line x1="1128" y1="190" x2="1056" y2="190" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<text x="1138" y="196" font-size="17" font-weight="700" fill="#16212B" text-anchor="start">CRH</text>
+<line x1="600" y1="290" x2="330" y2="376" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<line x1="800" y1="290" x2="1070" y2="376" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<text x="300" y="402" font-size="19" font-weight="800" fill="#16212B" text-anchor="middle">Aldosterone</text>
+<line x1="300" y1="414" x2="300" y2="446" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<text x="300" y="468" font-size="17" font-weight="400" fill="#16212B" text-anchor="middle">body retains Na⁺ &amp; H₂O</text>
+<text x="300" y="492" font-size="17" font-weight="400" fill="#16212B" text-anchor="middle">while excreting K⁺</text>
+<line x1="300" y1="502" x2="300" y2="534" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<text x="300" y="558" font-size="17" font-weight="400" fill="#16212B" text-anchor="middle">blood volume increases</text>
+<text x="300" y="582" font-size="17" font-weight="400" fill="#16212B" text-anchor="middle">(low BP is remedied)</text>
+<rect x="110" y="636" width="380" height="142" rx="14" fill="#FFF7F7" stroke="#F1B5B5" stroke-width="2"/>
+<path d="M110 650 a14 14 0 0 1 14 -14 h352 a14 14 0 0 1 14 14 v32 h-380 Z" fill="#FDE2E2"/>
+<text x="128" y="667" font-size="18" font-weight="800" fill="#B91C1C" text-anchor="start">Hyperaldosteronism = Conn syndrome</text>
+<text x="128" y="708" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">• caused by an adrenal adenoma</text>
+<text x="128" y="731" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">• results in hypertension</text>
+<path d="M700 258 V330 M640 330 H760" stroke="#5B6A75" stroke-width="2.2" fill="none"/>
+<line x1="640" y1="330" x2="640" y2="372" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<line x1="760" y1="330" x2="760" y2="372" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<text x="640" y="396" font-size="17" font-weight="700" fill="#16212B" text-anchor="middle">Epinephrine</text>
+<text x="640" y="418" font-size="17" font-weight="700" fill="#16212B" text-anchor="middle">(80%)</text>
+<text x="760" y="396" font-size="17" font-weight="700" fill="#16212B" text-anchor="middle">Norepinephrine</text>
+<text x="760" y="418" font-size="17" font-weight="700" fill="#16212B" text-anchor="middle">(20%)</text>
+<line x1="640" y1="426" x2="640" y2="488" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<line x1="760" y1="426" x2="760" y2="488" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<text x="700" y="462" font-size="15" font-weight="400" fill="#4A5864" text-anchor="middle" font-style="italic">metabolized to</text>
+<text x="640" y="510" font-size="17" font-weight="700" fill="#16212B" text-anchor="middle">Metanephrine</text>
+<text x="760" y="534" font-size="17" font-weight="700" fill="#16212B" text-anchor="middle">Normetanephrine</text>
+<line x1="640" y1="520" x2="692" y2="584" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<line x1="760" y1="544" x2="708" y2="584" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<text x="700" y="610" font-size="20" font-weight="800" fill="#16212B" text-anchor="middle">VMA</text>
+<rect x="520" y="636" width="360" height="216" rx="14" fill="#FFF7F7" stroke="#F1B5B5" stroke-width="2"/>
+<path d="M520 650 a14 14 0 0 1 14 -14 h332 a14 14 0 0 1 14 14 v32 h-360 Z" fill="#FDE2E2"/>
+<text x="538" y="667" font-size="18" font-weight="800" fill="#B91C1C" text-anchor="start">Pheochromocytoma</text>
+<text x="538" y="708" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">a benign tumor of the adrenal medulla</text>
+<text x="538" y="731" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">which results in elevated levels of the</text>
+<text x="538" y="754" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">hormones and metabolites in plasma</text>
+<text x="538" y="777" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">&amp; urine</text>
+<text x="538" y="812" font-size="16" font-weight="700" fill="#1D4ED8" text-anchor="start">the best screening test for this</text>
+<text x="538" y="835" font-size="16" font-weight="700" fill="#1D4ED8" text-anchor="start">disease is detection of metanephrine</text>
+<text x="1100" y="402" font-size="19" font-weight="800" fill="#16212B" text-anchor="middle">Cortisol</text>
+<line x1="1100" y1="414" x2="1100" y2="440" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<text x="920" y="466" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">• elevates blood glucose via gluconeogenesis</text>
+<text x="932" y="490" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">(which refers to formation of glucose from</text>
+<text x="932" y="514" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">non carbs as in lipolysis and protein</text>
+<text x="932" y="538" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">catabolism)</text>
+<text x="920" y="562" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">• depressed antibody formation</text>
+<text x="920" y="586" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">• depressed inflammatory response</text>
+<rect x="910" y="636" width="380" height="166" rx="14" fill="#FFF7F7" stroke="#F1B5B5" stroke-width="2"/>
+<path d="M910 650 a14 14 0 0 1 14 -14 h352 a14 14 0 0 1 14 14 v32 h-380 Z" fill="#FDE2E2"/>
+<text x="928" y="667" font-size="18" font-weight="800" fill="#B91C1C" text-anchor="start">Hypercortisolism = Cushing syndrome</text>
+<text x="928" y="708" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">weight gain in face (moon face) &amp;</text>
+<text x="928" y="731" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">abdomen; buffalo hump; thin skin;</text>
+<text x="928" y="754" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">easy bruising; muscle wasting;</text>
+<text x="928" y="777" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">low immune response</text>
+<rect x="110" y="900" width="560" height="250" rx="14" fill="#FFF7F7" stroke="#F1B5B5" stroke-width="2"/>
+<path d="M110 914 a14 14 0 0 1 14 -14 h532 a14 14 0 0 1 14 14 v32 h-560 Z" fill="#FDE2E2"/>
+<text x="128" y="931" font-size="18" font-weight="800" fill="#B91C1C" text-anchor="start">Congenital adrenal hyperplasia</text>
+<text x="128" y="972" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">results from a genetic deficiency of 21-hydroxylase,</text>
+<text x="128" y="995" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">a precursor to aldosterone &amp; cortisol</text>
+<text x="128" y="1018" font-size="16" font-weight="400" fill="#16212B" text-anchor="start"></text>
+<text x="128" y="1041" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">as a result, ACTH levels become elevated</text>
+<text x="128" y="1064" font-size="16" font-weight="400" fill="#16212B" text-anchor="start"></text>
+<text x="128" y="1087" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">precursors (17-OH progesterone) accumulate,</text>
+<text x="128" y="1110" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">resulting in virilization b/c precursors may be</text>
+<text x="128" y="1133" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">shunted to produce androgens</text>
+<rect x="730" y="900" width="560" height="250" rx="14" fill="#FFF7F7" stroke="#F1B5B5" stroke-width="2"/>
+<path d="M730 914 a14 14 0 0 1 14 -14 h532 a14 14 0 0 1 14 14 v32 h-560 Z" fill="#FDE2E2"/>
+<text x="748" y="931" font-size="18" font-weight="800" fill="#B91C1C" text-anchor="start">Hypoadrenalism can be due to:</text>
+<text x="748" y="972" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">• primary atrophy of adrenal cortex (Addison’s disease)</text>
+<text x="748" y="995" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">• secondary adrenal insufficiency b/c of low CRH or ACTH</text>
+<text x="748" y="1018" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">• long term suppression of the hypothalamic-pituitary-</text>
+<text x="760" y="1041" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">adrenal axis by glucocorticoid therapy</text>
+<text x="748" y="1080" font-size="16" font-weight="700" fill="#B91C1C" text-anchor="start">symptoms include skin pigmentation, weak muscles,</text>
+<text x="748" y="1103" font-size="16" font-weight="700" fill="#B91C1C" text-anchor="start">hypotension, hyponatremia, hyperkalemia</text>
+<text x="1290" y="1172" font-size="12" font-weight="400" fill="#4A5864" text-anchor="end">JG = juxtaglomerular · VMA = vanillylmandelic acid · ACTH = adrenocorticotropic hormone · CRH = corticotropin-releasing hormone</text>
+</svg>
