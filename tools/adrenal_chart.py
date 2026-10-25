@@ -96,7 +96,7 @@ box(110, 900, 560, 250, 'Congenital adrenal hyperplasia',
 box(730, 900, 560, 250, 'Hypoadrenalism can be due to:',
     ['• primary atrophy of adrenal cortex (Addison’s disease)', '• secondary adrenal insufficiency b/c of low CRH or ACTH',
      '• long term suppression of the hypothalamic-pituitary-', '   adrenal axis by glucocorticoid therapy'])
-lines(748, 1080, ['symptoms include skin pigmentation, weak muscles,', 'hypotension, hyponatremia, hyperkalemia'], 16, 23, RED, weight=700)
+lines(748, 1080, ['symptoms include weak muscles, hypotension,', 'hyponatremia; in Addison’s also skin pigmentation', 'and hyperkalemia'], 16, 23, RED, weight=700)
 
 t(1290, 1172, 'JG = juxtaglomerular · VMA = vanillylmandelic acid · ACTH = adrenocorticotropic hormone · CRH = corticotropin-releasing hormone', 12, 400, INK2, 'end')
 
