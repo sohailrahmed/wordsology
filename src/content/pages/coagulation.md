@@ -36,7 +36,7 @@ Press Play, or step through it. This is exactly how I'd draw it on scrap paper d
 - 10 is special so it's out of order
 - 7 is lucky so it's below the others
 - 3, 5, 8 are helpful mates (they help along particular steps of the pathway)
-- 13 is unlucky so it's not related "2" anything
+- 13 is unlucky so it's excommunicated 2 the edge
 - The factors IN a straight line are part of the INTRINSIC pathway. The aPTT (which has more letters) monitors this pathway (which has more factors)
 - On the other hand, PT (which has fewer letters) monitors the Extrinsic pathway (which has fewer factors)
 
