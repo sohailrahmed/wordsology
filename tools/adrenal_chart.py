@@ -90,7 +90,7 @@ box(910, 636, 380, 166, 'Hypercortisolism = Cushing syndrome',
 
 # --- bottom boxes ---
 box(110, 900, 560, 250, 'Congenital adrenal hyperplasia',
-    ['results from a genetic deficiency of 21-hydroxylase,', 'a precursor to aldosterone &amp; cortisol', '',
+    ['results from a genetic deficiency of 21-hydroxylase,', 'an enzyme needed to make aldosterone &amp; cortisol', '',
      'as a result, ACTH levels become elevated', '',
      'precursors (17-OH progesterone) accumulate,', 'resulting in virilization b/c precursors may be', 'shunted to produce androgens'])
 box(730, 900, 560, 250, 'Hypoadrenalism can be due to:',
