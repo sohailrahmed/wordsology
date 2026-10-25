@@ -24,6 +24,7 @@ Press Play, or step through it. This is exactly how I'd draw it on scrap paper d
 <button type="button" class="btn btn-secondary" data-ca="prev">← Back</button>
 <button type="button" class="btn btn-primary" data-ca="play" aria-pressed="false">▶ Play</button>
 <button type="button" class="btn btn-secondary" data-ca="next">Next →</button>
+<button type="button" class="btn btn-secondary ca-snd" data-ca="sound" aria-pressed="true">🔊 Sound on</button>
 <span class="ca-step"></span>
 </div>
 <p class="ca-cap" aria-live="polite"></p>
