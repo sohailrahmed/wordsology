@@ -156,7 +156,6 @@ AnimKit.mount('cycle-anim', '/anim/cycle.svg', (root) => {
     if (hit(11.6)) snd.S.blip(1.3);
     if (hit(18.6)) snd.S.thud();
     if (preg && hit(21)) snd.S.cheer();
-    if (!preg && hit(25)) snd.S.wah();
     if (hit(1.2)) snd.S.splash();
   }
   function stop() {
