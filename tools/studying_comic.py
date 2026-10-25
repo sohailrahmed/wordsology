@@ -82,7 +82,7 @@ def panel(i):
 text(W / 2, 52, 'Overstudying for the ASCP exam', 40, 'middle', extra=' text-decoration="underline"')
 
 y = panel(0); door(642, y + 22)
-guy(112, y + 84, 'wide', 'o', 'panic'); bubble(196, y + 26, 400, ['i forgot the', 'henderson-hasselbach derivation'], (166, y + 92))
+guy(112, y + 84, 'wide', 'o', 'panic'); bubble(196, y + 26, 400, ['i forgot the', 'henderson-hasselbalch derivation'], (166, y + 92))
 
 y = panel(1); door(642, y + 22)
 guy(112, y + 84, 'up', 'wavy', 'chin'); bubble(196, y + 26, 330, ['i know its in here', 'somewhere brain...'], (166, y + 84))
