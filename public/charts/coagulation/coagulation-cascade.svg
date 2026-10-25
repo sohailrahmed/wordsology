@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="470" viewBox="0 0 1000 470" font-family="Helvetica, Arial, sans-serif" role="img" aria-label="Coagulation cascade written backwards: 12, 11, 9, 10, 2, 1 in a straight line is the intrinsic pathway, monitored by the aPTT (heparin). Factor 8 helps between 9 and 10, factor 5 helps between 10 and 2, factor 3 helps 7, which sits below 10. 10, 5, 2, 1 and 7 are the extrinsic and common pathway, tested by the PT and monitored with the INR (warfarin). Lack of 9 is hemophilia B, lack of 8 is hemophilia A. 13 stands apart.">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#C2302B"/></marker>
+  </defs>
+  <rect width="1000" height="470" fill="#fff"/>
+
+  <!-- intrinsic pathway: the straight line -->
+  <rect x="226" y="116" width="614" height="104" rx="36" fill="#ECFEFF" stroke="#0891B2" stroke-width="3"/>
+  <!-- extrinsic + common: the L -->
+  <path d="M562 132 H778 a32 32 0 0 1 32 32 v10 a32 32 0 0 1 -32 32 H626 V282 a26 26 0 0 1 -26 26 h-12 a26 26 0 0 1 -26 -26 Z" fill="#FFF1F1" fill-opacity="0.65" stroke="#C2302B" stroke-width="3"/>
+
+  <!-- connecting lines -->
+  <g stroke="#16212B" stroke-width="2.5">
+    <path d="M296 178 H352 M402 178 H456 M494 178 H554 M622 178 H676 M720 178 H756"/>
+    <path d="M594 200 V236"/>
+    <path d="M850 92 L702 166" stroke-width="2"/>
+  </g>
+
+  <!-- the factors, backwards -->
+  <g font-size="36" font-weight="700" fill="#16212B" text-anchor="middle">
+    <text x="270" y="191">12</text>
+    <text x="378" y="191">11</text>
+    <text x="476" y="191">9</text>
+    <text x="594" y="191">10</text>
+    <text x="700" y="191">2</text>
+    <text x="780" y="191">1</text>
+    <text x="594" y="276">7</text>
+    <text x="874" y="92">13</text>
+  </g>
+  <g font-size="30" font-weight="700" fill="#16212B" text-anchor="middle">
+    <text x="522" y="160">8</text>
+    <text x="648" y="160">5</text>
+  </g>
+  <text x="610" y="232" font-size="22" font-weight="800" fill="#16212B">3</text>
+
+  <!-- hemophilias: crossed out -->
+  <g stroke="#C2302B" stroke-width="3.5" stroke-linecap="round">
+    <path d="M462 160 L490 196 M490 160 L462 196"/>
+    <path d="M510 134 L534 164 M534 134 L510 164"/>
+  </g>
+  <text x="476" y="40" font-size="20" font-style="italic" fill="#C2302B" text-anchor="middle">Hemophilia B</text>
+  <path d="M476 50 V154" stroke="#C2302B" stroke-width="2" marker-end="url(#ar)"/>
+  <text x="586" y="84" font-size="20" font-style="italic" fill="#C2302B" text-anchor="middle">Hemophilia A</text>
+  <path d="M560 94 L530 124" stroke="#C2302B" stroke-width="2" marker-end="url(#ar)"/>
+
+  <!-- notes -->
+  <g font-size="19" fill="#0E7490" font-weight="700">
+    <text x="20" y="120">The aPTT is used to</text>
+    <text x="20" y="145">monitor the <tspan text-decoration="underline">IN</tspan>trinsic</text>
+    <text x="20" y="170">pathway, which is <tspan text-decoration="underline">IN</tspan></text>
+    <text x="20" y="195">a straight line.</text>
+    <text x="20" y="240">You monitor this if</text>
+    <text x="20" y="265">the person is on</text>
+    <text x="20" y="290">heparin</text>
+  </g>
+  <g font-size="19" fill="#C2302B" font-weight="700">
+    <text x="520" y="350">PT tests the Extrinsic (and common) pathway.</text>
+    <text x="520" y="392">This is monitored via the INR if the person</text>
+    <text x="520" y="417">is on oral anticoagulants like</text>
+    <text x="520" y="442">warfarin (Coumadin)</text>
+  </g>
+</svg>

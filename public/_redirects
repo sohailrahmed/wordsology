@@ -38,7 +38,7 @@
 /wp-content/uploads/2012/11/cancer-flow-chart3.jpg  /charts/hematology/cancer-flow-chart.svg  301
 /wp-content/uploads/2012/11/cardiac-markers.jpg  /charts/chemistry/cardiac-markers.jpg  301
 /wp-content/uploads/2012/11/chem-tumor-markers2.jpg  /charts/chemistry/chem-tumor-markers2.jpg  301
-/wp-content/uploads/2012/11/coagulationcascade1.jpg  /charts/coagulation/coagulationcascade1.jpg  301
+/wp-content/uploads/2012/11/coagulationcascade1.jpg  /charts/coagulation/coagulation-cascade.svg  301
 /wp-content/uploads/2012/11/common-abo-discrepancies4.png  /charts/blood-bank/common-abo-discrepancies4.png  301
 /wp-content/uploads/2012/11/curved-gram-neg-bacilli-yes-online.png  /charts/microbiology/curved-gram-neg-bacilli-yes-online.png  301
 /wp-content/uploads/2012/11/diagnosing-diabetes-mellitus.jpg  /charts/chemistry/diagnosing-diabetes-mellitus.jpg  301
@@ -103,3 +103,4 @@
 /wp-content/uploads/*  /  302
 /charts/immunology/hepb-picture.jpg  /charts/immunology/hepb-particle.svg  301
 /charts/immunology/super-easy-hepb1.jpg  /high-yield-notes-2/immunology/#chart-hepb-markers  301
+/charts/coagulation/coagulationcascade1.jpg  /charts/coagulation/coagulation-cascade.svg  301

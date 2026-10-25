@@ -5,13 +5,13 @@ subject: "coagulation"
 updated: "2015-08-28"
 ---
 
-Learning about coagulation by reading words is like trying to make friends while dressed as a clown, holding an axe, standing in a a cornfield in the middle of nowhere.  Don't make things hard for yourself. Draw a picture!
+Learning about coagulation by reading words is like trying to make friends while dressed as a clown, holding an axe, standing in a cornfield in the middle of nowhere.  Don't make things hard for yourself. Draw a picture!
 
 *But the coagulation cascade looks long and complicated!*
 
 That's just how it LOOKS...in actuality it's as easy as 12,11,10,9...observe:
 
-![CoagulationCascade](/charts/coagulation/coagulationcascade1.jpg)
+![The coagulation cascade, written backwards](/charts/coagulation/coagulation-cascade.svg "As easy as 12, 11, 10, 9…")
 
 - Write out the factors from 13 to 1 - backwards. You don't need to differentiate between a particular factor and its activated form (for example, 10 and 10a) because they all become activated
 - 4 and 6 don't exist
@@ -22,4 +22,4 @@ That's just how it LOOKS...in actuality it's as easy as 12,11,10,9...observe:
 - The factors IN a straight line are part of the INTRINSIC pathway. The aPTT (which has more letters) monitors this pathway (which has more factors)
 - On the other hand, PT (which has fewer letters) monitors the Extrinsic pathway (which has fewer factors)
 
-Once you've got a handle on the above, notice that you can remember various other facts about the coagulation cascade using observations like, *"10 is a special number so those factors surrounding it - 2,7,9,10 - need vitamin K" ,* or *"lack of  factor will result in  disease".*The following diagram helped me learn much of coagulation, in conjunction with the text. However, it's not enough. Do lots of questions with this diagram in mind. I hope it helps.
+Once you've got a handle on the above, notice that you can remember various other facts about the coagulation cascade using observations like, *"10 is a special number so those factors surrounding it - 2,7,9,10 - need vitamin K" ,* or *"lack of \_\_\_\_ factor will result in \_\_\_\_ disease".* The following diagram helped me learn much of coagulation, in conjunction with the text. However, it's not enough. Do lots of questions with this diagram in mind. I hope it helps.
