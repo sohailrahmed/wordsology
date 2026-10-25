@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="1040" viewBox="0 0 1240 1040" font-family="Helvetica, Arial, sans-serif" role="img" aria-label="Thyroid. The hypothalamus releases TRH; the anterior pituitary releases TSH; the thyroid follicular cells release free T4 (somewhat active) and free T3 (most active), which feed back negatively. T4 is deiodinated to inactive reverse T3. Table: primary hypothyroidism T4 down, T3 down, TSH up; secondary hypothyroidism all down; primary hyperthyroidism T4 up, T3 up, TSH down; secondary hyperthyroidism all up. Thyroid hormones circulate bound to TBG, prealbumin or albumin. Hypothyroidism and Hashimoto thyroiditis; hyperthyroidism, thyroid storm and Graves disease are described.">
+<rect width="1240" height="1040" fill="#fff"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#5B6A75"/></marker></defs>
+<ellipse cx="430" cy="50" rx="96" ry="36" fill="#6EE7B7" stroke="#047857" stroke-width="2.5"/>
+<text x="430" y="56" font-size="18" font-weight="800" fill="#053B2B" text-anchor="middle">Hypothalamus</text>
+<line x1="430" y1="86" x2="430" y2="140" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<text x="442" y="120" font-size="17" font-weight="800" fill="#16212B" text-anchor="start">TRH</text>
+<ellipse cx="430" cy="180" rx="96" ry="36" fill="#6EE7B7" stroke="#047857" stroke-width="2.5"/>
+<text x="430" y="175" font-size="18" font-weight="800" fill="#053B2B" text-anchor="middle">Anterior</text>
+<text x="430" y="197" font-size="18" font-weight="800" fill="#053B2B" text-anchor="middle">Pituitary</text>
+<line x1="430" y1="216" x2="430" y2="262" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<text x="442" y="246" font-size="17" font-weight="800" fill="#16212B" text-anchor="start">TSH</text>
+<path d="M410 300 C 370 262, 308 270, 312 330 C 316 384, 368 398, 402 368 C 418 356, 442 356, 458 368 C 492 398, 544 384, 548 330 C 552 270, 490 262, 450 300 C 438 312, 422 312, 410 300 Z" fill="#F7B7A3" stroke="#B4533A" stroke-width="2.5"/>
+<rect x="412" y="262" width="36" height="22" rx="8" fill="#CBD5E1" stroke="#64748B" stroke-width="2"/>
+<text x="430" y="332" font-size="16" font-weight="700" fill="#5A1F12" text-anchor="middle">Thyroid gland</text>
+<text x="430" y="352" font-size="16" font-weight="700" fill="#5A1F12" text-anchor="middle">(follicular cells)</text>
+<line x1="400" y1="392" x2="364" y2="440" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<line x1="460" y1="392" x2="496" y2="440" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<ellipse cx="354" cy="462" rx="34" ry="20" fill="#EEF2FF" stroke="#1D4ED8" stroke-width="2.5"/>
+<text x="354" y="468" font-size="18" font-weight="800" fill="#1D4ED8" text-anchor="middle">FT4</text>
+<text x="354" y="504" font-size="15" font-weight="400" fill="#4A5864" text-anchor="middle">(somewhat</text>
+<text x="354" y="523" font-size="15" font-weight="400" fill="#4A5864" text-anchor="middle">active)</text>
+<ellipse cx="506" cy="462" rx="34" ry="20" fill="#EEF2FF" stroke="#1D4ED8" stroke-width="2.5"/>
+<text x="506" y="468" font-size="18" font-weight="800" fill="#1D4ED8" text-anchor="middle">FT3</text>
+<text x="506" y="504" font-size="15" font-weight="400" fill="#4A5864" text-anchor="middle">(most active)</text>
+<line x1="318" y1="462" x2="218" y2="462" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<text x="268" y="452" font-size="14" font-weight="400" fill="#4A5864" text-anchor="middle">deiodination</text>
+<text x="190" y="468" font-size="18" font-weight="800" fill="#16212B" text-anchor="middle">rT3</text>
+<text x="190" y="504" font-size="15" font-weight="400" fill="#4A5864" text-anchor="middle">(inactive)</text>
+<path d="M540 462 H620 V50 H534" stroke="#1D4ED8" stroke-width="2.5" fill="none"/>
+<path d="M620 180 H534" stroke="#1D4ED8" stroke-width="2.5" fill="none"/>
+<path d="M534 38 V62" stroke="#1D4ED8" stroke-width="3"/>
+<path d="M534 168 V192" stroke="#1D4ED8" stroke-width="3"/>
+<text x="630" y="290" font-size="14" font-weight="700" fill="#1D4ED8" text-anchor="start" transform="rotate(90 630 290)">negative feedback</text>
+<text x="1059" y="58" font-size="17" font-weight="800" fill="#16212B" text-anchor="middle">T4</text>
+<text x="1121" y="58" font-size="17" font-weight="800" fill="#16212B" text-anchor="middle">T3</text>
+<text x="1186" y="58" font-size="17" font-weight="800" fill="#16212B" text-anchor="middle">TSH</text>
+<rect x="760" y="70" width="460" height="48" fill="#fff" stroke="#CBD5E1" stroke-width="1.5"/>
+<text x="774" y="101" font-size="17" font-weight="600" fill="#16212B" text-anchor="start">Primary hypothyroidism</text>
+<text x="1059.0" y="103" font-size="26" font-weight="800" fill="#1D4ED8" text-anchor="middle">↓</text>
+<text x="1121.0" y="103" font-size="26" font-weight="800" fill="#1D4ED8" text-anchor="middle">↓</text>
+<text x="1186.0" y="103" font-size="26" font-weight="800" fill="#B91C1C" text-anchor="middle">↑</text>
+<rect x="760" y="118" width="460" height="48" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+<text x="774" y="149" font-size="17" font-weight="600" fill="#16212B" text-anchor="start">Secondary hypothyroidism</text>
+<text x="1059.0" y="151" font-size="26" font-weight="800" fill="#1D4ED8" text-anchor="middle">↓</text>
+<text x="1121.0" y="151" font-size="26" font-weight="800" fill="#1D4ED8" text-anchor="middle">↓</text>
+<text x="1186.0" y="151" font-size="26" font-weight="800" fill="#1D4ED8" text-anchor="middle">↓</text>
+<rect x="760" y="166" width="460" height="48" fill="#fff" stroke="#CBD5E1" stroke-width="1.5"/>
+<text x="774" y="197" font-size="17" font-weight="600" fill="#16212B" text-anchor="start">Primary hyperthyroidism</text>
+<text x="1059.0" y="199" font-size="26" font-weight="800" fill="#B91C1C" text-anchor="middle">↑</text>
+<text x="1121.0" y="199" font-size="26" font-weight="800" fill="#B91C1C" text-anchor="middle">↑</text>
+<text x="1186.0" y="199" font-size="26" font-weight="800" fill="#1D4ED8" text-anchor="middle">↓</text>
+<rect x="760" y="214" width="460" height="48" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+<text x="774" y="245" font-size="17" font-weight="600" fill="#16212B" text-anchor="start">Secondary hyperthyroidism</text>
+<text x="1059.0" y="247" font-size="26" font-weight="800" fill="#B91C1C" text-anchor="middle">↑</text>
+<text x="1121.0" y="247" font-size="26" font-weight="800" fill="#B91C1C" text-anchor="middle">↑</text>
+<text x="1186.0" y="247" font-size="26" font-weight="800" fill="#B91C1C" text-anchor="middle">↑</text>
+<line x1="1028" y1="70" x2="1028" y2="262" stroke="#CBD5E1" stroke-width="1.5"/>
+<line x1="1090" y1="70" x2="1090" y2="262" stroke="#CBD5E1" stroke-width="1.5"/>
+<line x1="1152" y1="70" x2="1152" y2="262" stroke="#CBD5E1" stroke-width="1.5"/>
+<text x="760" y="292" font-size="14" font-weight="400" fill="#4A5864" text-anchor="start">↑ increased · ↓ decreased</text>
+<rect x="20" y="560" width="1200" height="104" rx="12" fill="#F8FAFC" stroke="#16212B" stroke-width="2"/>
+<text x="40" y="592" font-size="17" font-weight="700" fill="#16212B" text-anchor="start">• Thyroid hormones circulate in the blood bound to thyroxine binding globulin (TBG) or pre-albumin or albumin</text>
+<text x="40" y="620" font-size="17" font-weight="700" fill="#16212B" text-anchor="start">• while the quantity of free T4 is greater, free T3 is the biologically potent molecule</text>
+<text x="40" y="648" font-size="17" font-weight="700" fill="#16212B" text-anchor="start">• reverse T3 is biologically inactive</text>
+<text x="40" y="710" font-size="19" font-weight="800" fill="#B91C1C" text-anchor="start" text-decoration="underline">Hypothyroidism (myxedema)</text>
+<text x="40" y="738" font-size="17" font-weight="400" fill="#B91C1C" text-anchor="start">symptoms: enlarged thyroid gland; impaired mental</text>
+<text x="40" y="762" font-size="17" font-weight="400" fill="#B91C1C" text-anchor="start">acuity; weight gain; cold intolerance</text>
+<text x="40" y="836" font-size="17" font-weight="400" fill="#B91C1C" text-anchor="start">Hashimoto thyroiditis is due to an autoimmune disease</text>
+<text x="40" y="860" font-size="17" font-weight="400" fill="#B91C1C" text-anchor="start">in which TPO Ab (antithyroid peroxidase antibody)</text>
+<text x="40" y="884" font-size="17" font-weight="400" fill="#B91C1C" text-anchor="start">attacks the thyroid gland</text>
+<text x="70" y="918" font-size="17" font-weight="700" fill="#B91C1C" text-anchor="start">not enough thyroid hormone is produced,</text>
+<text x="70" y="942" font-size="17" font-weight="700" fill="#B91C1C" text-anchor="start">so TSH &amp; TRH are elevated</text>
+<text x="660" y="710" font-size="19" font-weight="800" fill="#B91C1C" text-anchor="start" text-decoration="underline">Hyperthyroidism</text>
+<text x="660" y="738" font-size="17" font-weight="400" fill="#B91C1C" text-anchor="start">symptoms: muscle loss; fatigue; heat intolerance;</text>
+<text x="660" y="762" font-size="17" font-weight="400" fill="#B91C1C" text-anchor="start">nervousness; exophthalmos</text>
+<text x="660" y="798" font-size="17" font-weight="400" fill="#B91C1C" text-anchor="start">“Thyroid storm” refers to the life-threatening</text>
+<text x="660" y="822" font-size="17" font-weight="400" fill="#B91C1C" text-anchor="start">complication of uncontrolled thyrotoxicosis</text>
+<text x="660" y="846" font-size="17" font-weight="400" fill="#B91C1C" text-anchor="start">(excess thyroid hormones)</text>
+<text x="660" y="884" font-size="17" font-weight="400" fill="#B91C1C" text-anchor="start">Graves disease occurs when antibodies bind to TSH</text>
+<text x="660" y="908" font-size="17" font-weight="400" fill="#B91C1C" text-anchor="start">receptors, stimulating the thyroid gland.</text>
+<text x="660" y="932" font-size="17" font-weight="400" fill="#B91C1C" text-anchor="start">It’s more common in women.</text>
+<text x="690" y="966" font-size="17" font-weight="700" fill="#B91C1C" text-anchor="start">too much thyroid hormone is produced</text>
+<text x="690" y="990" font-size="17" font-weight="700" fill="#B91C1C" text-anchor="start">so TSH &amp; TRH levels are depressed</text>
+<text x="1220" y="1032" font-size="12" font-weight="400" fill="#4A5864" text-anchor="end">TRH = thyrotropin-releasing hormone · TSH = thyroid-stimulating hormone · FT4/FT3 = free thyroxine / free triiodothyronine · rT3 = reverse T3</text>
+</svg>

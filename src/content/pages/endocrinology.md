@@ -11,4 +11,4 @@ I studied endocrinology by making one-page graphics for each hormone. Only high-
 
 ![Estrogen, progesterone and the menstrual cycle](/charts/endocrinology/estrogen.svg "Estrogen, progesterone and the menstrual cycle")
 
-![thyroid](/charts/endocrinology/thyroid.jpg)
+![Thyroid](/charts/endocrinology/thyroid.svg "Thyroid: the axis, lab patterns and diseases")
