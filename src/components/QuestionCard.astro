@@ -20,7 +20,7 @@ const questions = [
   },
   {
     subject: 'Microbiology',
-    img: '/media/questions/whatami.png',
+    img: '/media/questions/whatami.svg',
     alt: 'Cartoon of a slimy gram-positive coccus boasting about catheters, surgical wounds, endocarditis and UTIs.',
     answer: 'Coagulase-negative staphylococci (classically S. epidermidis)',
     explain: 'Slime (biofilm) lets it colonize catheters and prosthetic valves, making it a leading cause of hospital-acquired infections.',
@@ -37,18 +37,20 @@ const questions = [
     <div class="qcard-item" data-q={i} hidden={i !== 0}>
       <a href={q.img} data-zoom class="qcard-zoom" aria-label="Enlarge the cartoon">
         <img src={q.img} alt={q.alt} width="560" height="380" loading={i === 0 ? 'eager' : 'lazy'} />
-        <span class="qcard-zoom-hint" aria-hidden="true">Tap to enlarge</span>
       </a>
-      <div class="qcard-answer" hidden>
-        <p class="qcard-answer-title">{q.answer}</p>
-        <p class="qcard-answer-body">{q.explain} <a href={q.link}>See the chart →</a></p>
-      </div>
     </div>
   ))}
+  <p class="qcard-hint">Tap the cartoon to enlarge it</p>
   <div class="qcard-actions">
     <button class="btn btn-dark" type="button" data-reveal>Reveal answer</button>
     <button class="btn btn-secondary" type="button" data-next>Next question</button>
   </div>
+  {questions.map((q, i) => (
+    <div class="qcard-answer" data-a={i} hidden>
+      <p class="qcard-answer-title">{q.answer}</p>
+      <p class="qcard-answer-body">{q.explain} <a href={q.link}>See the chart →</a></p>
+    </div>
+  ))}
 </div>
 
 <style>
@@ -56,13 +58,14 @@ const questions = [
   .qcard-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 16px; font-size: 13px; }
   .qcard-tag { font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: #15703A; }
   .qcard-count { color: var(--muted); }
-  .qcard-item img { display: block; width: 100%; height: auto; max-height: 420px; object-fit: contain; border-radius: 10px; background: #fff; }
-  .qcard-zoom { position: relative; display: block; cursor: zoom-in; }
-  .qcard-zoom-hint { position: absolute; right: 10px; bottom: 10px; background: rgba(20, 32, 26, 0.78); color: #fff; font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 999px; }
+  .qcard-item img { display: block; width: 100%; height: 100%; object-fit: contain; }
+  /* Same frame for every cartoon, so the buttons below never move */
+  .qcard-zoom { position: relative; display: block; cursor: zoom-in; aspect-ratio: 3 / 2; background: #fff; border-radius: 10px; overflow: hidden; }
+  .qcard-hint { margin: 8px 0 0; font-size: 13px; color: var(--muted); text-align: right; }
   .qcard-answer { margin-top: 16px; background: var(--accent-soft); border-radius: 12px; padding: 16px 18px; }
   .qcard-answer-title { margin: 0 0 6px; font-weight: 800; color: var(--accent-dark); }
   .qcard-answer-body { margin: 0; font-size: 15px; line-height: 1.55; color: var(--ink-2); }
-  .qcard-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+  .qcard-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
   .qcard-actions .btn { min-height: 48px; font-size: 15px; padding: 0 20px; }
 </style>
 
@@ -72,7 +75,8 @@ const questions = [
     const reveal = card.querySelector<HTMLButtonElement>('[data-reveal]')!;
     const num = card.querySelector('[data-qnum]')!;
     let i = 0;
-    const answer = () => items[i].querySelector<HTMLElement>('.qcard-answer')!;
+    const answers = [...card.querySelectorAll<HTMLElement>('[data-a]')];
+    const answer = () => answers[i];
     reveal.addEventListener('click', () => {
       const a = answer();
       a.hidden = !a.hidden;
