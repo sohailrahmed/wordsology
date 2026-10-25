@@ -207,3 +207,35 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
   .tag-new { font-weight: 750; padding: 4px 10px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); }
   .reply-btn { margin-top: 12px; font: inherit; font-size: 14px; font-weight: 700; color: var(--accent); background: none; border: 0; padding: 6px 0; cursor: pointer; }
   .reply-btn:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+/* Antibody characteristics (blood bank) */
+.prose .le-note { margin: 1.5em 0; padding: 18px 20px; border-radius: 14px; background: var(--subject-tint, #E5F4EA); border-left: 5px solid var(--subject, #15703A); }
+.prose .le-note p { margin: 0 0 8px; }
+.prose .le-note .le-title { font-weight: 800; font-size: 18px; color: var(--subject, #15703A); }
+.prose .le-note table { margin: 6px 0 0; border: 0; background: transparent; display: table; }
+.prose .le-note td { border: 0; padding: 6px 12px 6px 0; vertical-align: top; background: transparent; }
+.prose .le-note td.ph { font-weight: 800; white-space: nowrap; color: var(--subject, #15703A); font-size: 18px; }
+.prose .chart-abx th:first-child, .prose .chart-abx td:first-child { width: 48%; }
+.prose .chart-abx td b { display: inline-block; font-weight: 700; margin: 2px 6px 2px 0; }
+.prose .chart-abx td b:not(:last-of-type)::after { content: ","; }
+.prose .chart-abx s.x b { display: inline; margin: 0; }
+.prose .chart-abx td b:has(+ s)::after { content: ","; }
+.prose .chart-abx .grp, .prose .chart-abx .kdk { display: inline-block; border: 2px solid currentColor; border-radius: 999px; padding: 0 8px 0 10px; margin: 2px 6px 2px 0; }
+.prose .chart-abx .kdk { color: var(--subject, #15703A); background: var(--subject-tint, #E5F4EA); }
+.prose .chart-abx .grp b:last-of-type, .prose .chart-abx .kdk b:last-of-type { margin-right: 0; }
+.prose .chart-abx .st { color: var(--subject, #15703A); }
+.prose .chart-abx tr.star td:first-child { font-weight: 700; }
+.prose .chart-abx s.x { text-decoration-thickness: 2px; text-decoration-color: #A3261B; opacity: 0.7; }
+.prose .chart-abx .hand { display: block; font-size: 14px; color: var(--subject, #15703A); margin-top: 2px; }
+.prose .kdk-key { font-weight: 700; color: var(--subject, #15703A); }
+@media (max-width: 600px) {
+  .prose .chart-abx thead { display: none; }
+  .prose .chart-abx table, .prose .chart-abx tbody, .prose .chart-abx tr, .prose .chart-abx td { display: block; width: auto !important; }
+  .prose .chart-abx tr { padding: 12px 14px; border-bottom: 1px solid var(--line); }
+  .prose .chart-abx tr:last-child { border-bottom: 0; }
+  .prose .chart-abx td { border: 0 !important; padding: 0 !important; }
+  .prose .chart-abx td:first-child { font-size: 14px; color: var(--muted); margin-bottom: 4px; }
+  .prose .le-note table, .prose .le-note tbody, .prose .le-note tr, .prose .le-note td { display: block; }
+  .prose .le-note tr { padding: 6px 0; }
+  .prose .le-note td { padding: 0; }
+}
