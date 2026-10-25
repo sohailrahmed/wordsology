@@ -266,3 +266,40 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
   .prose .chart-hepb td:nth-child(2)::before { content: "Antigens"; }
   .prose .chart-hepb td:nth-child(3)::before { content: "Antibodies"; }
 }
+
+/* Urine crystals: folksy notebook pages */
+@font-face { font-family: 'Patrick Hand'; src: url('/fonts/patrick-hand-latin-400-normal.woff2') format('woff2'); font-display: swap; }
+.prose .crystal-book { --pencil: #4A4A4A; --paper: #FFFDF4; --rule: #DCE6F0; font-family: 'Patrick Hand', 'Comic Sans MS', 'Segoe Print', cursive; margin: 1.5em 0 2em; display: grid; gap: 28px; }
+.prose .cb-guy { display: flex; align-items: center; gap: 10px; }
+.prose .cb-guy-art { flex: 0 0 auto; transform: rotate(-4deg); }
+.prose .cb-bubble { position: relative; margin: 0; background: #fff; border: 2.5px solid #2B2B2B; border-radius: 26px 22px 28px 20px; padding: 10px 18px; font-size: 22px; line-height: 1.2; transform: rotate(-1.5deg); }
+.prose .cb-bubble::before { content: ""; position: absolute; left: -14px; top: 50%; border: 9px solid transparent; border-right: 14px solid #2B2B2B; transform: translateY(-50%); }
+.prose .cb-page { position: relative; background-color: var(--paper); background-image: linear-gradient(90deg, transparent 54px, #F2B8B8 54px, #F2B8B8 56px, transparent 56px), repeating-linear-gradient(transparent 0 31px, var(--rule) 31px 32px); border-radius: 6px; padding: 26px 22px 18px 70px; box-shadow: 0 2px 0 rgba(0,0,0,0.04), 0 10px 24px rgba(40, 30, 10, 0.08); transform: rotate(-0.4deg); }
+.prose .cb-acid { transform: rotate(0.35deg); }
+.prose .cb-page::before, .prose .cb-page::after { content: ""; position: absolute; top: -12px; width: 92px; height: 26px; opacity: 0.85; border-radius: 3px; }
+.prose .cb-page::before { left: 18px; transform: rotate(-6deg); }
+.prose .cb-page::after { right: 18px; transform: rotate(5deg); }
+.prose .cb-alk::before, .prose .cb-alk::after { background: #9EE7F0; }
+.prose .cb-acid::before, .prose .cb-acid::after { background: #F5A3A3; }
+.prose .cb-page h4 { margin: 0 0 12px; font-family: inherit; font-weight: 400; font-size: 30px; line-height: 1.1; letter-spacing: 0; }
+.prose .cb-alk h4 { color: #0E7C8C; } .prose .cb-acid h4 { color: #C2302B; }
+.prose .cb-page h4::after { content: ""; display: block; width: 210px; height: 6px; margin-top: 2px; background: currentColor; opacity: 0.25; border-radius: 6px; transform: rotate(-1deg); }
+.prose .cb-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.prose .cb-list li { display: grid; grid-template-columns: 64px 1fr; gap: 14px; align-items: center; margin: 0; padding: 4px 0; }
+.prose .cb-list li::marker { content: none; }
+.prose .cb-doodle { width: 64px; height: 64px; display: block; background: #fff; border-radius: 50%; box-shadow: inset 0 0 0 2px rgba(0,0,0,0.06); }
+.prose .cb-doodle svg { display: block; width: 64px; height: 64px; }
+.prose .cb-txt p { margin: 0; line-height: 1.25; }
+.prose .cb-txt { display: grid; grid-template-columns: minmax(150px, 0.8fr) 1.2fr 1fr; gap: 4px 16px; align-items: baseline; }
+.prose .cb-name { font-size: 23px; color: #1F1F1F; }
+.prose .cb-desc { font-size: 21px; color: #2F2F2F; }
+.prose .cb-note { font-size: 19px; color: #6A6A6A; }
+.prose .cb-note::before { content: "✎ "; }
+@media (max-width: 720px) {
+  .prose .cb-txt { grid-template-columns: 1fr; gap: 0; }
+  .prose .cb-page { padding: 24px 14px 14px 52px; background-image: linear-gradient(90deg, transparent 40px, #F2B8B8 40px, #F2B8B8 42px, transparent 42px), repeating-linear-gradient(transparent 0 31px, var(--rule) 31px 32px); }
+  .prose .cb-list li { grid-template-columns: 52px 1fr; gap: 10px; align-items: start; padding: 8px 0; }
+  .prose .cb-doodle, .prose .cb-doodle svg { width: 52px; height: 52px; }
+  .prose .cb-bubble { font-size: 19px; }
+  .prose .cb-page h4 { font-size: 26px; }
+}
