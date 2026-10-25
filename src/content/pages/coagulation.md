@@ -11,6 +11,8 @@ Learning about coagulation by reading words is like trying to make friends while
 
 That's just how it LOOKS...in actuality it's as easy as 12,11,10,9...observe:
 
+### Watch me write it out
+
 Press Play, or step through it. This is exactly how I'd draw it on scrap paper during the exam.
 
 <div class="coag-anim" id="coag-anim">
