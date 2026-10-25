@@ -336,6 +336,11 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
 .coag-anim .moody.bounce .face { animation: ca-bounce .32s ease-in-out infinite alternate; }
 @keyframes ca-bounce { from { transform: translateY(0) scale(1); } to { transform: translateY(-10px) scale(1.05); } }
 .coag-anim #hand { transform-box: view-box; opacity: 0; pointer-events: none; filter: drop-shadow(1px 3px 2px rgba(0,0,0,.2)); }
+.coag-anim #hand .claw { transform-box: fill-box; transition: transform .25s ease; }
+.coag-anim #hand .claw-l { transform-origin: 100% 0; }
+.coag-anim #hand .claw-r { transform-origin: 0 0; }
+.coag-anim #hand.open .claw-l { transform: rotate(22deg); }
+.coag-anim #hand.open .claw-r { transform: rotate(-22deg); }
 .coag-anim #pencil .eraser-down { display: none; }
 .coag-anim #pencil.flip .eraser-down { display: inline; }
 .coag-anim #pencil.flip .tip-down { display: none; }

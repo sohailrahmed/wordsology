@@ -27,7 +27,7 @@
     { cap: 'Let’s draw the coagulation cascade. It’s as easy as 12, 11, 10, 9…', pos: null, pen: [470, 190] },
     { cap: 'Write out the factors from 13 to 1, backwards.', pos: P1, write: true, dur: 5600, pen: P1[1] },
     { cap: '4 and 6 don’t exist.', pos: P1, gone: [4, 6], erase: [4, 6], dur: 5600, pen: P1[6] },
-    { cap: '10 is special, so it’s out of order.', pos: P3, gone: [4, 6], swap: true, dur: 5000, pen: P3[10] },
+    { cap: '10 is special, so it’s out of order.', pos: P3, gone: [4, 6], swap: true, dur: 5400, pen: P3[10] },
     { cap: '7 is lucky, so it’s below the others.', pos: P4, gone: [4, 6], lucky: true, dur: 6200, pen: FINAL[7] },
     { cap: '3, 5 and 8 are helpful mates (they help along particular steps of the pathway).', pos: P5, gone: [4, 6], helpers: true, pen: FINAL[5] },
     { cap: '13 is unlucky, so it’s not related “2” anything.', pos: FINAL, gone: [4, 6], helpers: true, marks: ['l13'], sad: true, dur: 9000, pen: FINAL[13] },
@@ -37,8 +37,37 @@
     { cap: 'Lack of 9 causes Hemophilia B. Lack of 8 causes Hemophilia A.', pos: FINAL, gone: [4, 6], helpers: true, marks: ['l13', 'lines', 'loop', 'tptt', 'ell', 'tpt', 'x9', 'x8', 'thb', 'tha'], pen: [440, 60] },
     { cap: '10 is a special number, so those factors surrounding it, 2, 7, 9 and 10, need vitamin K.', pos: FINAL, gone: [4, 6], helpers: true, marks: ['l13', 'lines', 'loop', 'tptt', 'ell', 'tpt', 'x9', 'x8', 'thb', 'tha', 'vk'], pen: [690, 262] },
   ];
-  const ALLMARKS = ['l13', 'lines', 'loop', 'tptt', 'ell', 'tpt', 'x9', 'x8', 'thb', 'tha', 'vk'];
+  const ALLMARKS = ['l13', 'lines', 'loop', 'tptt', 'ell', 'tpt', 'x9', 'thb', 'x8', 'tha', 'vk'];
   let cur = 0, timer = null;
+  // a pausable clock: everything timed in the animation runs off this, so Pause freezes it all
+  let paused = false, pausedAt = 0, offset = 0, queue = [], qRAF = 0;
+  const vnow = () => (paused ? pausedAt : performance.now()) - offset;
+  const pump = () => {
+    qRAF = 0;
+    if (paused) return;
+    const t = vnow();
+    const due = queue.filter((j) => j.at <= t);
+    queue = queue.filter((j) => j.at > t);
+    due.forEach((j) => j.fn());
+    if (queue.length) qRAF = requestAnimationFrame(pump);
+  };
+  function later(a, b) {
+    const [fn, ms] = typeof a === 'function' ? [a, b] : [b, a];
+    const job = { at: vnow() + ms, fn };
+    queue.push(job);
+    if (!qRAF && !paused) qRAF = requestAnimationFrame(pump);
+    return job;
+  }
+  const cancel = (job) => { queue = queue.filter((j) => j !== job); };
+  const anims = () => (root.getAnimations ? root.getAnimations({ subtree: true }) : []);
+  function freeze() { if (paused) return; paused = true; pausedAt = performance.now(); anims().forEach((a) => a.pause()); }
+  function thaw() {
+    if (!paused) return;
+    offset += performance.now() - pausedAt; paused = false;
+    anims().forEach((a) => a.play());
+    if (queue.length && !qRAF) qRAF = requestAnimationFrame(pump);
+    if (penJobs) penRAF = requestAnimationFrame(penFrame);
+  }
 
   function strokeIn(el, on, animate, delay = 0) {
     el.querySelectorAll('path').forEach((p, k) => {
@@ -64,20 +93,21 @@
     el.style.clipPath = 'inset(0 -5% 0 0)';
   }
 
-  let penRAF = 0;
+  let penRAF = 0, penJobs = null, penFrame = null;
   // move the pencil tip along each drawing job; glide between jobs with the tip lifted
   function runPen(n, jobs) {
     const pen = q('pencil');
     cancelAnimationFrame(penRAF);
-    const t0 = performance.now(), last = jobs[jobs.length - 1], end = last.t0 + last.dur;
+    const t0 = vnow(), last = jobs[jobs.length - 1], end = last.t0 + last.dur;
     const put = ([x, y], lift = 0) => { pen.style.transform = `translate(${x + 14}px, ${y - 44 - lift}px)`; };
     pen.style.transition = 'opacity .25s';
     put(jobs[0].at(0), 30);
-    const frame = (now) => {
-      if (cur !== n) return;
-      const t = (now - t0) / 1000;
+    penJobs = jobs;
+    const frame = penFrame = () => {
+      if (cur !== n || paused) return;
+      const t = (vnow() - t0) / 1000;
       if (t >= jobs[0].t0 - 0.3) pen.style.opacity = 1;
-      if (t > end + 0.3) { pen.style.opacity = 0; return; }
+      if (t > end + 0.3) { pen.style.opacity = 0; penJobs = null; return; }
       let i = jobs.findIndex((j) => t < j.t0 + j.dur);
       if (i < 0) put(last.at(1));
       else if (t >= jobs[i].t0) put(jobs[i].at((t - jobs[i].t0) / jobs[i].dur));
@@ -172,7 +202,7 @@
     if (jobs.length) runPen(n, jobs);
     else if (anim && !reduce && s.erase) {
       pen.style.transition = 'opacity .3s'; pen.style.opacity = 1;
-      setTimeout(() => { if (cur === n) { pen.style.transition = 'opacity .5s'; pen.style.opacity = 0; } }, 4900);
+      later(() => { if (cur === n) { pen.style.transition = 'opacity .5s'; pen.style.opacity = 0; } }, 4900);
     }
     if (s.swap && anim && !reduce) {
       // a hand pinches 10, lifts it over 9 and drops it out of order
@@ -181,13 +211,17 @@
       const handAt = (x, y, dur) => { hand.style.transition = `transform ${dur}s cubic-bezier(.4,0,.3,1), opacity .3s`; hand.style.transform = `translate(${x}px, ${y}px)`; };
       at(g10, P2[10][0], 190, 0.9); at(g9, P2[9][0], 190, 0.9);
       pen.style.opacity = 0;
-      hand.style.transform = `translate(${P2[10][0] + 60}px, -40px)`;
-      const T = (ms, fn) => setTimeout(() => { if (cur === n) fn(); }, ms);
-      T(700, () => { hand.style.opacity = 1; handAt(P2[10][0], 168, 0.6); });
-      T(1400, () => { at(g10, P2[10][0], 140, 0.5); handAt(P2[10][0], 118, 0.5); });
-      T(1900, () => { at(g9, P3[9][0], 190, 0.6); at(g10, P3[10][0], 140, 0.7); handAt(P3[10][0], 118, 0.7); });
-      T(2700, () => { at(g10, P3[10][0], 190, 0.35); handAt(P3[10][0], 168, 0.35); });
-      T(3200, () => { handAt(P3[10][0] + 80, -60, 0.7); hand.style.opacity = 0; });
+      hand.classList.add('open');
+      hand.style.transform = `translate(${P2[10][0]}px, -40px)`;
+      const T = (ms, fn) => later(ms, () => { if (cur === n) fn(); });
+      T(600, () => { hand.style.opacity = 1; handAt(P2[10][0], 168, 0.7); });
+      T(1350, () => hand.classList.remove('open'));
+      T(1650, () => { at(g10, P2[10][0], 140, 0.5); handAt(P2[10][0], 118, 0.5); });
+      T(2150, () => { at(g9, P3[9][0], 190, 0.6); at(g10, P3[10][0], 140, 0.7); handAt(P3[10][0], 118, 0.7); });
+      T(2950, () => { at(g10, P3[10][0], 190, 0.35); handAt(P3[10][0], 168, 0.35); });
+      T(3350, () => hand.classList.add('open'));
+      T(3650, () => { handAt(P3[10][0], -60, 0.7); });
+      T(4300, () => { hand.style.opacity = 0; });
     }
     // reset 7's face
     const g7 = q('n7');
@@ -197,7 +231,7 @@
     if (s.sad && anim && !reduce) {
       // 13 trudges off to the edge with a sad face
       pen.style.opacity = 0;
-      const T = (ms, fn) => setTimeout(() => { if (cur === n) fn(); }, ms);
+      const T = (ms, fn) => later(() => { if (cur === n) fn(); }, ms);
       g13.style.transition = 'none';
       g13.style.transform = `translate(${P5[13][0]}px, 190px)`;
       T(200, () => g13.classList.add('happy', 'droop'));
@@ -218,7 +252,7 @@
       const hops = 4;
       g7.style.transition = 'none';
       g7.style.transform = `translate(${x0}px, 190px)`;
-      const T = (ms, fn) => setTimeout(() => { if (cur === n) fn(); }, ms);
+      const T = (ms, fn) => later(() => { if (cur === n) fn(); }, ms);
       for (let h = 1; h <= hops; h++) {
         const fx = x0 + (x1 - x0) * h / hops, fy = 190 + (y1 - 190) * h / hops;
         T(150 + (h - 1) * 300, () => { g7.style.transition = 'transform .15s ease-out'; g7.style.transform = `translate(${fx - (x1 - x0) / hops / 2}px, ${fy - 34}px)`; });
@@ -238,12 +272,12 @@
         const base = 0.5 + k * 2.1;
         for (let j = 0; j < 8; j++) moves.push([base * 1000 + j * 190, x + (j % 2 ? 12 : -12), y + (j % 3) * 4 - 4]);
       });
-      moves.forEach(([ms, x, y]) => setTimeout(() => {
+      moves.forEach(([ms, x, y]) => later(() => {
         if (cur !== n) return;
         pen.style.transition = 'transform 0.18s ease';
         pen.style.transform = `translate(${x + 14}px, ${y - 44}px)`;
       }, ms));
-      setTimeout(() => { if (cur === n) pen.classList.remove('flip'); }, 4700);
+      later(() => { if (cur === n) pen.classList.remove('flip'); }, 4700);
     }
     cap.textContent = s.cap;
     stepN.textContent = `Step ${n + 1} of ${steps.length}`;
@@ -252,17 +286,18 @@
     cur = n;
   }
 
-  function stop() { clearTimeout(timer); timer = null; play.textContent = '▶ Play'; play.setAttribute('aria-pressed', 'false'); }
+  function stop() { if (timer) cancel(timer); timer = null; thaw(); play.textContent = '▶ Play'; play.setAttribute('aria-pressed', 'false'); }
   prev.addEventListener('click', () => { stop(); show(Math.max(0, cur - 1), false); });
   next.addEventListener('click', () => { stop(); show(Math.min(steps.length - 1, cur + 1), true); });
   play.addEventListener('click', () => {
-    if (timer) return stop();
-    if (cur === steps.length - 1) show(0, false);
+    if (timer && !paused) { freeze(); play.textContent = '▶ Play'; play.setAttribute('aria-pressed', 'false'); return; }
     play.textContent = '❚❚ Pause'; play.setAttribute('aria-pressed', 'true');
+    if (timer && paused) { thaw(); return; }
+    if (cur === steps.length - 1) show(0, false);
     const tick = () => {
       if (cur >= steps.length - 1) return stop();
       show(cur + 1, true);
-      timer = setTimeout(tick, steps[cur]._dur || steps[cur].dur || 4200);
+      timer = later(tick, steps[cur]._dur || steps[cur].dur || 4200);
     };
     tick();
   });
