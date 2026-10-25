@@ -385,9 +385,18 @@
   }
 
   function stop() { if (timer) cancel(timer); timer = null; thaw(); play.textContent = '▶ Play'; play.setAttribute('aria-pressed', 'false'); }
+  // phones only allow sound to start during a tap, so switch it on the moment a button is pressed
+  function unlock() {
+    const a = ac(); if (!a) return;
+    if (a.state === 'suspended') a.resume();
+    const b = a.createBuffer(1, 1, 22050), src = a.createBufferSource();
+    src.buffer = b; src.connect(a.destination); src.start(0);
+  }
+  [prev, next, play].forEach((btn) => btn.addEventListener('pointerdown', unlock));
   prev.addEventListener('click', () => { stop(); hush(); show(Math.max(0, cur - 1), false); });
   next.addEventListener('click', () => { stop(); show(Math.min(steps.length - 1, cur + 1), true); });
   play.addEventListener('click', () => {
+    unlock();
     if (timer && !paused) { freeze(); play.textContent = '▶ Play'; play.setAttribute('aria-pressed', 'false'); return; }
     play.textContent = '❚❚ Pause'; play.setAttribute('aria-pressed', 'true');
     if (timer && paused) { thaw(); return; }
