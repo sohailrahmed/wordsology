@@ -30,7 +30,7 @@
     { cap: '10 is special, so it’s out of order.', pos: P3, gone: [4, 6], swap: true, dur: 5400, pen: P3[10] },
     { cap: '7 is lucky, so it’s below the others.', pos: P4, gone: [4, 6], lucky: true, dur: 6200, pen: FINAL[7] },
     { cap: '3, 5 and 8 are helpful mates (they help along particular steps of the pathway).', pos: P5, gone: [4, 6], helpers: true, pen: FINAL[5] },
-    { cap: '13 is unlucky, so it’s not related “2” anything.', pos: FINAL, gone: [4, 6], helpers: true, marks: ['l13'], sad: true, dur: 9000, pen: FINAL[13] },
+    { cap: '13 is unlucky, so it’s excommunicated 2 the edge.', pos: FINAL, gone: [4, 6], helpers: true, marks: ['l13'], sad: true, dur: 9000, pen: FINAL[13] },
     { cap: 'Connect them: 12, 11, 9, 10, 2, 1 in a line, and 10 down to 7.', pos: FINAL, gone: [4, 6], helpers: true, marks: ['l13', 'lines'], pen: [750, 190] },
     { cap: 'The factors IN a straight line are part of the INTRINSIC pathway. The aPTT (which has more letters) monitors this pathway (which has more factors).', pos: FINAL, gone: [4, 6], helpers: true, marks: ['l13', 'lines', 'loop', 'tptt'], pen: [130, 96] },
     { cap: 'On the other hand, PT (which has fewer letters) monitors the Extrinsic pathway (which has fewer factors).', pos: FINAL, gone: [4, 6], helpers: true, marks: ['l13', 'lines', 'loop', 'tptt', 'ell', 'tpt'], pen: [560, 300] },
