@@ -15,7 +15,8 @@ AnimKit.mount('thyroid-anim', '/anim/thyroid.svg', (root) => {
   ];
   const labs = (t4, t3, tsh) => {
     const c = (v) => (v === '↑' ? 'up' : v === '↓' ? 'dn' : 'ok');
-    return { text: { 'v-t4': t4, 'v-t3': t3, 'v-tsh': tsh }, cls: { 'v-t4': c(t4), 'v-t3': c(t3), 'v-tsh': c(tsh) } };
+    const w = (v) => (v === '↑' ? 'high' : v === '↓' ? 'low' : 'normal');
+    return { text: { 'v-t4': w(t4), 'v-t3': w(t3), 'v-tsh': w(tsh) }, cls: { 'v-t4': 'word ' + c(t4), 'v-t3': 'word ' + c(t3), 'v-tsh': 'word ' + c(tsh) } };
   };
   const HYPO = { sym0: 'Hypothyroidism (myxedema)', sym1: 'enlarged thyroid gland', sym2: 'impaired mental acuity', sym3: 'weight gain', sym4: 'cold intolerance' };
   const HYPER = { sym0: 'Hyperthyroidism', sym1: 'muscle loss; fatigue', sym2: 'heat intolerance', sym3: 'nervousness', sym4: 'exophthalmos (bulging eyes)' };
