@@ -91,7 +91,14 @@
     });
     paint();
     clock.onPause((p) => { if (ac) { if (p) ac.suspend(); else if (on) ac.resume(); } });
-    return { S, hush };
+    // phones only allow sound to start during a tap: call this from a button's pointerdown
+    function unlock() {
+      const a = ctx(); if (!a) return;
+      if (a.state === 'suspended') a.resume();
+      const b = a.createBuffer(1, 1, 22050), src = a.createBufferSource();
+      src.buffer = b; src.connect(a.destination); src.start(0);
+    }
+    return { S, hush, unlock };
   }
 
   // ---------- hormone messenger flows ----------
@@ -238,6 +245,7 @@
       show(cur + 1, true);
       timer = clock.later(steps[cur].dur || 5200, tick);
     }
+    [prev, next, play, ...chips].forEach((btn) => btn.addEventListener('pointerdown', snd.unlock));
     prev.addEventListener('click', () => { stop(); show(Math.max(0, cur - 1), true); });
     next.addEventListener('click', () => { stop(); show(Math.min(steps.length - 1, cur + 1), true); });
     chips.forEach((c) => c.addEventListener('click', () => { stop(); show(+c.dataset.jump, true); }));

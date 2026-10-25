@@ -185,6 +185,7 @@ AnimKit.mount('cycle-anim', '/anim/cycle.svg', (root) => {
     const k = dir > 0 ? KEYS.find((x) => x > day + 0.05) : [...KEYS].reverse().find((x) => x < day - 0.05);
     if (k !== undefined) { cues(day, k); render(k); }
   };
+  [prev, next, play, ...modeBtns].forEach((btn) => btn.addEventListener('pointerdown', snd.unlock));
   prev.addEventListener('click', () => jump(-1));
   next.addEventListener('click', () => jump(1));
   slider.addEventListener('input', () => { stop(); render(+slider.value); });
