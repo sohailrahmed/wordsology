@@ -92,8 +92,6 @@ guy(112, y + 92, 'wide', 'flat', 'raised'); bubble(196, y + 26, 300, ['stop play
 
 y = panel(3); door(642, y + 22)
 guy(112, y + 84, 'red', 'scream', 'grab'); bubble(196, y + 18, 366, ['i need to remember to', 'pass this test!!!!!'], (166, y + 80))
-guy(262, y + 136, 'worried', 'small', 'none', small=True, skin='#F8FAFC', shirt='#4ADE80')
-bubble(312, y + 112, 280, ['im scared can i leave?'], (290, y + 132), size=26)
 
 y = panel(4); door(44, y + 22, mirror=True)
 add(f'<rect x="586" y="{y+128}" width="124" height="16" rx="4" fill="#D6B48A" stroke="{INK}" stroke-width="3"/>')
@@ -104,7 +102,7 @@ guy(530, y + 92, 'blank', 'line')
 bubble(150, y + 22, 300, ['why did we have to go', 'to school for this?'], (488, y + 76), side='right')
 
 svg = (f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" '
-       'aria-label="Comic: Overstudying for the ASCP exam. A student outside the test room panics: I forgot the Henderson-Hasselbalch derivation. I know it\'s in here somewhere, brain. Stop playing games, what was it? I need to remember to pass this test! A smaller student says: I\'m scared, can I leave? Inside the test room, the question is 2 + 2 =, and the student asks: why did we have to go to school for this?">\n'
+       'aria-label="Comic: Overstudying for the ASCP exam. A student outside the test room panics: I forgot the Henderson-Hasselbalch derivation. I know it\'s in here somewhere, brain. Stop playing games, what was it? I need to remember to pass this test! Inside the test room, the question is 2 + 2 =, and the student asks: why did we have to go to school for this?">\n'
        f'<style>@font-face{{font-family:"PH";src:url(data:font/woff2;base64,{font}) format("woff2")}}text{{font-family:"PH","Patrick Hand","Comic Sans MS",cursive}}</style>\n'
        f'<rect width="{W}" height="{H}" fill="#FFFDF4"/>\n' + '\n'.join(out) + '\n</svg>\n')
 open(sys.argv[1], 'w').write(svg)
