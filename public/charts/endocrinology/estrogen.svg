@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1880" viewBox="0 0 1500 1880" font-family="Helvetica, Arial, sans-serif" role="img" aria-label="Estrogen, progesterone and the menstrual cycle. The hypothalamus releases GnRH; the anterior pituitary releases FSH, which grows ovarian follicles and causes estrogen release; estrogen prompts an LH surge, which causes ovulation. The ruptured follicle becomes the corpus luteum, which produces progesterone. High estrogen plus progesterone suppress FSH and LH and thicken the endometrium. With implantation, HCG maintains the corpus luteum, peaking at 8 to 10 weeks; then the placenta takes over progesterone production. Without implantation, the corpus luteum degenerates, hormones fall and menstruation occurs. Notes cover estradiol, estriol, and post-menopausal FSH and LH.">
+<rect width="1500" height="1880" fill="#fff"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#5B6A75"/></marker><marker id="ahr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#C2302B"/></marker><marker id="ahk" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#16212B"/></marker></defs>
+<text x="560" y="34" font-size="19" font-weight="800" fill="#16212B" text-anchor="start" text-decoration="underline">An overview of why this is important</text>
+<ellipse cx="606" cy="62" rx="48" ry="16" fill="none" stroke="#C2302B" stroke-width="2"/>
+<text x="560" y="68" font-size="18" font-weight="700" fill="#C2302B" text-anchor="start">Estrogens cause development of</text>
+<text x="560" y="92" font-size="18" font-weight="700" fill="#C2302B" text-anchor="start">secondary female sex characteristics</text>
+<text x="590" y="124" font-size="16" font-weight="400" fill="#8B1E1E" text-anchor="start">they are secreted at first by the ovarian</text>
+<text x="590" y="146" font-size="16" font-weight="400" fill="#8B1E1E" text-anchor="start">follicles and later by the placenta (during</text>
+<text x="590" y="168" font-size="16" font-weight="400" fill="#8B1E1E" text-anchor="start">pregnancy)</text>
+<text x="560" y="210" font-size="18" font-weight="700" fill="#1D4ED8" text-anchor="start">Progesterone maintains the uterine lining,</text>
+<text x="560" y="234" font-size="18" font-weight="700" fill="#1D4ED8" text-anchor="start">getting it ready for possible implantation</text>
+<text x="560" y="258" font-size="18" font-weight="700" fill="#1D4ED8" text-anchor="start">of a fertilized egg</text>
+<text x="590" y="290" font-size="16" font-weight="400" fill="#1E3A8A" text-anchor="start">it is secreted at first by the corpus luteum</text>
+<text x="590" y="312" font-size="16" font-weight="400" fill="#1E3A8A" text-anchor="start">and later by the placenta (during pregnancy)</text>
+<rect x="40" y="30" width="300" height="124" rx="14" fill="#FFF7F7" stroke="#C2302B" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="58" y="62" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">Estradiol-17β is the most potent</text>
+<text x="58" y="84" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">version</text>
+<line x1="56" y1="100" x2="324" y2="100" stroke="#C2302B" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="58" y="126" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">Estriol is only made during pregnancy</text>
+<path d="M340 62 L558 62" stroke="#C2302B" stroke-width="2" fill="none"/>
+<rect x="990" y="20" width="490" height="326" rx="14" fill="#fff" stroke="#C2302B" stroke-width="2" stroke-dasharray="9 6"/>
+<text x="1010" y="50" font-size="20" font-weight="800" fill="#16212B" text-anchor="start">Menstrual cycle</text>
+<line x1="1010" y1="280" x2="1310" y2="280" stroke="#16212B" stroke-width="1.5"/>
+<text x="1010.0" y="300" font-size="13" font-weight="400" fill="#4A5864" text-anchor="middle">0</text>
+<text x="1085.0" y="300" font-size="13" font-weight="400" fill="#4A5864" text-anchor="middle">7</text>
+<text x="1160.0" y="300" font-size="13" font-weight="400" fill="#4A5864" text-anchor="middle">14</text>
+<text x="1235.0" y="300" font-size="13" font-weight="400" fill="#4A5864" text-anchor="middle">21</text>
+<text x="1310.0" y="300" font-size="13" font-weight="400" fill="#4A5864" text-anchor="middle">28</text>
+<line x1="1160.0" y1="80" x2="1160.0" y2="280" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="4 4"/>
+<text x="1160.0" y="76" font-size="12" font-weight="700" fill="#4A5864" text-anchor="middle">ovulation</text>
+<polyline points="1010.0,254.8 1012.7,254.8 1015.4,254.8 1018.0,254.8 1020.7,254.8 1023.4,254.8 1026.1,254.8 1028.8,254.8 1031.4,254.8 1034.1,254.8 1036.8,254.8 1039.5,254.8 1042.1,254.8 1044.8,254.8 1047.5,254.8 1050.2,254.8 1052.9,254.8 1055.5,254.8 1058.2,254.8 1060.9,254.8 1063.6,254.8 1066.2,254.8 1068.9,254.8 1071.6,254.8 1074.3,254.8 1077.0,254.8 1079.6,254.8 1082.3,254.8 1085.0,254.8 1087.7,254.8 1090.4,254.8 1093.0,254.8 1095.7,254.8 1098.4,254.8 1101.1,254.8 1103.8,254.8 1106.4,254.8 1109.1,254.8 1111.8,254.8 1114.5,254.8 1117.1,254.8 1119.8,254.8 1122.5,254.8 1125.2,254.8 1127.9,254.7 1130.5,254.5 1133.2,253.9 1135.9,252.3 1138.6,248.8 1141.2,241.8 1143.9,229.3 1146.6,209.8 1149.3,183.1 1152.0,151.9 1154.6,121.6 1157.3,99.2 1160.0,91.0 1162.7,99.2 1165.4,121.6 1168.0,151.9 1170.7,183.1 1173.4,209.8 1176.1,229.3 1178.8,241.8 1181.4,248.8 1184.1,252.3 1186.8,253.9 1189.5,254.5 1192.1,254.7 1194.8,254.8 1197.5,254.8 1200.2,254.8 1202.9,254.8 1205.5,254.8 1208.2,254.8 1210.9,254.8 1213.6,254.8 1216.2,254.8 1218.9,254.8 1221.6,254.8 1224.3,254.8 1227.0,254.8 1229.6,254.8 1232.3,254.8 1235.0,254.8 1237.7,254.8 1240.4,254.8 1243.0,254.8 1245.7,254.8 1248.4,254.8 1251.1,254.8 1253.8,254.8 1256.4,254.8 1259.1,254.8 1261.8,254.8 1264.5,254.8 1267.1,254.8 1269.8,254.8 1272.5,254.8 1275.2,254.8 1277.9,254.8 1280.5,254.8 1283.2,254.8 1285.9,254.8 1288.6,254.8 1291.2,254.8 1293.9,254.8 1296.6,254.8 1299.3,254.8 1302.0,254.8 1304.6,254.8 1307.3,254.8 1310.0,254.8" fill="none" stroke="#7C3AED" stroke-width="2.6"/>
+<polyline points="1010.0,239.2 1012.7,238.5 1015.4,237.9 1018.0,237.2 1020.7,236.6 1023.4,236.0 1026.1,235.5 1028.8,235.0 1031.4,234.6 1034.1,234.2 1036.8,234.0 1039.5,233.8 1042.1,233.8 1044.8,233.8 1047.5,234.0 1050.2,234.2 1052.9,234.6 1055.5,235.0 1058.2,235.5 1060.9,236.0 1063.6,236.6 1066.2,237.2 1068.9,237.9 1071.6,238.5 1074.3,239.2 1077.0,239.9 1079.6,240.5 1082.3,241.2 1085.0,241.8 1087.7,242.3 1090.4,242.8 1093.0,243.3 1095.7,243.8 1098.4,244.1 1101.1,244.5 1103.8,244.8 1106.4,245.1 1109.1,245.3 1111.8,245.5 1114.5,245.7 1117.1,245.8 1119.8,245.9 1122.5,246.0 1125.2,246.0 1127.9,245.8 1130.5,245.4 1133.2,244.4 1135.9,242.5 1138.6,239.2 1141.2,234.0 1143.9,226.4 1146.6,216.4 1149.3,204.5 1152.0,192.2 1154.6,181.2 1157.3,173.5 1160.0,170.8 1162.7,173.5 1165.4,181.2 1168.0,192.2 1170.7,204.6 1173.4,216.4 1176.1,226.4 1178.8,234.1 1181.4,239.3 1184.1,242.6 1186.8,244.5 1189.5,245.5 1192.1,246.0 1194.8,246.3 1197.5,246.3 1200.2,246.4 1202.9,246.4 1205.5,246.4 1208.2,246.4 1210.9,246.4 1213.6,246.4 1216.2,246.4 1218.9,246.4 1221.6,246.4 1224.3,246.4 1227.0,246.4 1229.6,246.4 1232.3,246.4 1235.0,246.4 1237.7,246.4 1240.4,246.4 1243.0,246.4 1245.7,246.4 1248.4,246.4 1251.1,246.4 1253.8,246.4 1256.4,246.4 1259.1,246.4 1261.8,246.4 1264.5,246.4 1267.1,246.4 1269.8,246.4 1272.5,246.4 1275.2,246.4 1277.9,246.4 1280.5,246.4 1283.2,246.4 1285.9,246.4 1288.6,246.4 1291.2,246.4 1293.9,246.4 1296.6,246.4 1299.3,246.4 1302.0,246.4 1304.6,246.4 1307.3,246.4 1310.0,246.4" fill="none" stroke="#0E7490" stroke-width="2.6" stroke-dasharray="6 4"/>
+<polyline points="1010.0,259.0 1012.7,259.0 1015.4,259.0 1018.0,259.0 1020.7,259.0 1023.4,259.0 1026.1,259.0 1028.8,259.0 1031.4,259.0 1034.1,259.0 1036.8,259.0 1039.5,259.0 1042.1,259.0 1044.8,259.0 1047.5,259.0 1050.2,259.0 1052.9,259.0 1055.5,259.0 1058.2,259.0 1060.9,259.0 1063.6,259.0 1066.2,259.0 1068.9,259.0 1071.6,259.0 1074.3,258.9 1077.0,258.9 1079.6,258.8 1082.3,258.7 1085.0,258.5 1087.7,258.3 1090.4,257.9 1093.0,257.2 1095.7,256.4 1098.4,255.2 1101.1,253.5 1103.8,251.3 1106.4,248.5 1109.1,244.9 1111.8,240.5 1114.5,235.3 1117.1,229.2 1119.8,222.4 1122.5,215.0 1125.2,207.2 1127.9,199.3 1130.5,191.7 1133.2,184.8 1135.9,179.0 1138.6,174.5 1141.2,171.7 1143.9,170.7 1146.6,171.6 1149.3,174.3 1152.0,178.6 1154.6,184.3 1157.3,191.1 1160.0,198.4 1162.7,206.0 1165.4,213.4 1168.0,220.3 1170.7,226.5 1173.4,231.9 1176.1,236.2 1178.8,239.6 1181.4,241.9 1184.1,243.3 1186.8,243.9 1189.5,243.6 1192.1,242.7 1194.8,241.3 1197.5,239.3 1200.2,237.0 1202.9,234.4 1205.5,231.5 1208.2,228.6 1210.9,225.6 1213.6,222.6 1216.2,219.7 1218.9,217.0 1221.6,214.6 1224.3,212.5 1227.0,210.9 1229.6,209.6 1232.3,208.9 1235.0,208.6 1237.7,208.9 1240.4,209.6 1243.0,210.9 1245.7,212.6 1248.4,214.6 1251.1,217.1 1253.8,219.7 1256.4,222.6 1259.1,225.7 1261.8,228.7 1264.5,231.8 1267.1,234.8 1269.8,237.7 1272.5,240.5 1275.2,243.0 1277.9,245.3 1280.5,247.5 1283.2,249.4 1285.9,251.0 1288.6,252.5 1291.2,253.7 1293.9,254.7 1296.6,255.6 1299.3,256.3 1302.0,256.9 1304.6,257.4 1307.3,257.8 1310.0,258.1" fill="none" stroke="#C2302B" stroke-width="2.6"/>
+<polyline points="1010.0,269.5 1012.7,269.5 1015.4,269.5 1018.0,269.5 1020.7,269.5 1023.4,269.5 1026.1,269.5 1028.8,269.5 1031.4,269.5 1034.1,269.5 1036.8,269.5 1039.5,269.5 1042.1,269.5 1044.8,269.5 1047.5,269.5 1050.2,269.5 1052.9,269.5 1055.5,269.5 1058.2,269.5 1060.9,269.5 1063.6,269.5 1066.2,269.5 1068.9,269.5 1071.6,269.5 1074.3,269.5 1077.0,269.5 1079.6,269.5 1082.3,269.5 1085.0,269.5 1087.7,269.5 1090.4,269.5 1093.0,269.5 1095.7,269.5 1098.4,269.5 1101.1,269.5 1103.8,269.5 1106.4,269.5 1109.1,269.5 1111.8,269.5 1114.5,269.5 1117.1,269.5 1119.8,269.5 1122.5,269.5 1125.2,269.5 1127.9,269.5 1130.5,269.5 1133.2,269.5 1135.9,269.5 1138.6,269.5 1141.2,269.4 1143.9,269.4 1146.6,269.4 1149.3,269.3 1152.0,269.2 1154.6,269.1 1157.3,268.9 1160.0,268.6 1162.7,268.3 1165.4,267.8 1168.0,267.2 1170.7,266.4 1173.4,265.3 1176.1,264.0 1178.8,262.4 1181.4,260.4 1184.1,257.9 1186.8,255.0 1189.5,251.5 1192.1,247.5 1194.8,242.9 1197.5,237.8 1200.2,232.1 1202.9,225.9 1205.5,219.3 1208.2,212.5 1210.9,205.5 1213.6,198.5 1216.2,191.6 1218.9,185.2 1221.6,179.4 1224.3,174.3 1227.0,170.1 1229.6,167.0 1232.3,165.1 1235.0,164.5 1237.7,165.1 1240.4,167.0 1243.0,170.1 1245.7,174.3 1248.4,179.4 1251.1,185.2 1253.8,191.6 1256.4,198.5 1259.1,205.5 1261.8,212.5 1264.5,219.3 1267.1,225.9 1269.8,232.1 1272.5,237.8 1275.2,242.9 1277.9,247.5 1280.5,251.5 1283.2,255.0 1285.9,257.9 1288.6,260.4 1291.2,262.4 1293.9,264.0 1296.6,265.3 1299.3,266.4 1302.0,267.2 1304.6,267.8 1307.3,268.3 1310.0,268.6" fill="none" stroke="#1D4ED8" stroke-width="2.6" stroke-dasharray="2 4"/>
+<text x="1014" y="320" font-size="13" font-weight="800" fill="#7C3AED" text-anchor="start">LH</text>
+<text x="1088" y="320" font-size="13" font-weight="800" fill="#0E7490" text-anchor="start">FSH</text>
+<text x="1162" y="320" font-size="13" font-weight="800" fill="#C2302B" text-anchor="start">Estrogen</text>
+<text x="1236" y="320" font-size="13" font-weight="800" fill="#1D4ED8" text-anchor="start">Progesterone</text>
+<text x="1322" y="82" font-size="14" font-weight="400" fill="#4A5864" text-anchor="start">FSH &amp; LH peak at</text>
+<text x="1322" y="101" font-size="14" font-weight="400" fill="#4A5864" text-anchor="start">the middle of the</text>
+<text x="1322" y="120" font-size="14" font-weight="400" fill="#4A5864" text-anchor="start">menstrual cycle</text>
+<text x="1322" y="162" font-size="14" font-weight="400" fill="#4A5864" text-anchor="start">In post-menopausal</text>
+<text x="1322" y="181" font-size="14" font-weight="400" fill="#4A5864" text-anchor="start">women, the ovaries</text>
+<text x="1322" y="200" font-size="14" font-weight="400" fill="#4A5864" text-anchor="start">stop secreting</text>
+<text x="1322" y="219" font-size="14" font-weight="400" fill="#4A5864" text-anchor="start">estrogens. In response,</text>
+<text x="1322" y="238" font-size="14" font-weight="400" fill="#4A5864" text-anchor="start">FSH &amp; LH rise to their</text>
+<text x="1322" y="257" font-size="14" font-weight="400" fill="#4A5864" text-anchor="start">highest levels</text>
+<rect x="54" y="468" width="150" height="46" rx="10" fill="#F1F5F9" stroke="#16212B" stroke-width="2"/>
+<text x="129.0" y="497.0" font-size="18" font-weight="800" fill="#16212B" text-anchor="middle">Hypothalamus</text>
+<line x1="204" y1="491" x2="236" y2="491" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<text x="240" y="497" font-size="17" font-weight="800" fill="#16212B" text-anchor="start">GnRH</text>
+<line x1="292" y1="491" x2="324" y2="491" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<rect x="326" y="462" width="150" height="60" rx="10" fill="#F1F5F9" stroke="#16212B" stroke-width="2"/>
+<text x="401.0" y="487.0" font-size="18" font-weight="800" fill="#16212B" text-anchor="middle">Anterior</text>
+<text x="401.0" y="509.0" font-size="18" font-weight="800" fill="#16212B" text-anchor="middle">Pituitary</text>
+<polygon points="423.2,565.2 410.2,578.2 391.8,578.2 378.8,565.2 378.8,546.8 391.8,533.8 410.2,533.8 423.2,546.8" fill="#D62828" stroke="#fff" stroke-width="2.5"/>
+<text x="401" y="561" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">STOP</text>
+<line x1="476" y1="480" x2="520" y2="472" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<text x="526" y="478" font-size="17" font-weight="800" fill="#16212B" text-anchor="start">FSH</text>
+<line x1="570" y1="472" x2="610" y2="472" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<rect x="612" y="450" width="112" height="44" rx="10" fill="#F1F5F9" stroke="#16212B" stroke-width="2"/>
+<text x="668.0" y="478.0" font-size="18" font-weight="800" fill="#16212B" text-anchor="middle">Ovaries</text>
+<text x="740" y="428" font-size="16" font-weight="400" fill="#16212B" text-anchor="start" font-style="italic">causes growth of</text>
+<text x="740" y="449" font-size="16" font-weight="400" fill="#16212B" text-anchor="start" font-style="italic">ovarian follicles</text>
+<circle cx="790" cy="482" r="6" fill="#1D4ED8"/>
+<circle cx="816" cy="482" r="10" fill="#1D4ED8"/>
+<circle cx="854" cy="482" r="17" fill="#1D4ED8"/>
+<text x="590" y="520" font-size="16" font-weight="400" fill="#16212B" text-anchor="start" font-style="italic">causes estrogen</text>
+<text x="590" y="541" font-size="16" font-weight="400" fill="#16212B" text-anchor="start" font-style="italic">release from ovaries</text>
+<ellipse cx="686" cy="515" rx="42" ry="13" fill="none" stroke="#C2302B" stroke-width="2"/>
+<line x1="664" y1="548" x2="664" y2="572" stroke="#C2302B" stroke-width="2.2" marker-end="url(#ahr)"/>
+<text x="676" y="568" font-size="18" font-weight="800" fill="#C2302B" text-anchor="start">+</text>
+<text x="636" y="596" font-size="16" font-weight="700" fill="#C2302B" text-anchor="start" font-style="italic">the estrogen</text>
+<text x="636" y="617" font-size="16" font-weight="700" fill="#C2302B" text-anchor="start" font-style="italic">prompts a surge</text>
+<text x="636" y="638" font-size="16" font-weight="700" fill="#C2302B" text-anchor="start" font-style="italic">of LH release</text>
+<line x1="476" y1="510" x2="506" y2="540" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<text x="510" y="562" font-size="17" font-weight="800" fill="#16212B" text-anchor="start">LH</text>
+<path d="M540 556 H880 L940 498" stroke="#16212B" stroke-width="3" fill="none"/>
+<path d="M724 466 L880 466 L940 498" stroke="#16212B" stroke-width="1.6" fill="none"/>
+<line x1="940" y1="498" x2="1004" y2="498" stroke="#16212B" stroke-width="3" marker-end="url(#ahk)"/>
+<text x="1014" y="474" font-size="16" font-weight="400" fill="#16212B" text-anchor="start"><tspan font-weight="800" text-decoration="underline">OVULATION</tspan> which was prompted by that LH surge</text>
+<text x="1014" y="500" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">refers to the rupture of the follicle,</text>
+<text x="1014" y="521" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">releasing the egg</text>
+<path d="M1130 556 L1146.4 544.5 A20 20 0 1 0 1146.4 567.5 Z" fill="#1D4ED8"/>
+<circle cx="1141.0" cy="549.2" r="2.8" fill="#fff"/>
+<circle cx="1141.0" cy="556.0" r="2.8" fill="#fff"/>
+<circle cx="1141.0" cy="562.8" r="2.8" fill="#fff"/>
+<circle cx="1158" cy="558" r="8" fill="#E11D48"/>
+<line x1="1120" y1="580" x2="1076" y2="740" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<path d="M1162 566 C 1200 640, 1340 600, 1346 700 L1348 732" stroke="#16212B" stroke-width="1.8" fill="none" marker-end="url(#ah)"/>
+<path d="M1062 764 L1076.7 753.7 A18 18 0 1 0 1076.7 774.3 Z" fill="#1D4ED8"/>
+<circle cx="1071.9" cy="757.9" r="2.5" fill="#fff"/>
+<circle cx="1071.9" cy="764.0" r="2.5" fill="#fff"/>
+<circle cx="1071.9" cy="770.1" r="2.5" fill="#fff"/>
+<circle cx="1352" cy="746" r="8" fill="#E11D48"/>
+<text x="946" y="800" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">the ruptured follicle remains</text>
+<text x="946" y="821" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">in the ovary, becoming a</text>
+<text x="946" y="842" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">Corpus Luteum (CL)</text>
+<text x="1262" y="778" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">the egg makes its way thru</text>
+<text x="1262" y="799" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">the fallopian tube, hoping to</text>
+<text x="1262" y="820" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">implant in the endometrium</text>
+<line x1="1054" y1="870" x2="1054" y2="910" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<text x="962" y="936" font-size="16" font-weight="700" fill="#16212B" text-anchor="start">the CL produces</text>
+<text x="962" y="957" font-size="16" font-weight="700" fill="#16212B" text-anchor="start">Progesterone</text>
+<line x1="1054" y1="966" x2="1054" y2="1006" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<rect x="938" y="1012" width="240" height="118" rx="12" fill="#F8FAFC" stroke="#16212B" stroke-width="2"/>
+<text x="1058" y="1040" font-size="16" font-weight="700" fill="#16212B" text-anchor="middle">high levels of</text>
+<text x="1058" y="1059" font-size="16" font-weight="700" fill="#16212B" text-anchor="middle">Estrogen from before</text>
+<text x="1058" y="1078" font-size="16" font-weight="700" fill="#16212B" text-anchor="middle">+</text>
+<text x="1058" y="1097" font-size="16" font-weight="700" fill="#16212B" text-anchor="middle">high levels of</text>
+<text x="1058" y="1116" font-size="16" font-weight="700" fill="#16212B" text-anchor="middle">Progesterone now</text>
+<line x1="936" y1="1062" x2="466" y2="1062" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<text x="350" y="1056" font-size="17" font-weight="700" fill="#16212B" text-anchor="start">suppresses</text>
+<text x="350" y="1078" font-size="17" font-weight="700" fill="#16212B" text-anchor="start">FSH &amp; LH</text>
+<line x1="378" y1="1030" x2="378" y2="590" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<line x1="1054" y1="1132" x2="1054" y2="1170" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<text x="942" y="1198" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">Thickens the endometrium</text>
+<text x="942" y="1219" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">(getting it ready to accommodate</text>
+<text x="942" y="1240" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">a possibly fertilized egg)</text>
+<line x1="1008" y1="1266" x2="904" y2="1334" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<line x1="1044" y1="1266" x2="1156" y2="1334" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<text x="736" y="1354" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">if successful implantation of a</text>
+<text x="736" y="1375" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">fertilized ovum occurs, then the</text>
+<text x="736" y="1396" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">endometrium begins producing HCG</text>
+<line x1="846" y1="1424" x2="846" y2="1470" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<text x="740" y="1494" font-size="16" font-weight="700" fill="#16212B" text-anchor="start">HCG maintains the CL</text>
+<text x="760" y="1518" font-size="16" font-weight="700" fill="#1E3A8A" text-anchor="start">HCG is thus highest early in</text>
+<text x="760" y="1539" font-size="16" font-weight="700" fill="#1E3A8A" text-anchor="start">pregnancy (peaking at 8–10 weeks)</text>
+<text x="760" y="1560" font-size="16" font-weight="700" fill="#1E3A8A" text-anchor="start"></text>
+<text x="760" y="1581" font-size="16" font-weight="700" fill="#1E3A8A" text-anchor="start">This is why HCG is measured in</text>
+<text x="760" y="1602" font-size="16" font-weight="700" fill="#1E3A8A" text-anchor="start">the early detection of pregnancy</text>
+<line x1="846" y1="1640" x2="846" y2="1680" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<text x="708" y="1704" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">when HCG levels fall, CL degenerates.</text>
+<text x="708" y="1725" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">Placenta now takes over producing</text>
+<text x="708" y="1746" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">Progesterone (levels of this hormone</text>
+<text x="708" y="1767" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">peaking in the 3rd trimester)</text>
+<ellipse cx="740" cy="1720" rx="38" ry="13" fill="none" stroke="#C2302B" stroke-width="2"/>
+<text x="1100" y="1354" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">if successful implantation of a</text>
+<text x="1100" y="1375" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">fertilized ovum does NOT occur,</text>
+<text x="1100" y="1396" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">then HCG is NOT produced</text>
+<line x1="1192" y1="1424" x2="1192" y2="1470" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<text x="1100" y="1494" font-size="16" font-weight="700" fill="#16212B" text-anchor="start">CL degenerates</text>
+<line x1="1192" y1="1506" x2="1192" y2="1540" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<text x="1100" y="1564" font-size="16" font-weight="700" fill="#16212B" text-anchor="start">Estrogen &amp; Progesterone</text>
+<text x="1100" y="1585" font-size="16" font-weight="700" fill="#16212B" text-anchor="start">levels decrease</text>
+<line x1="1192" y1="1594" x2="1192" y2="1628" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<text x="1100" y="1652" font-size="16" font-weight="700" fill="#16212B" text-anchor="start">Menstruation occurs</text>
+<text x="1100" y="1673" font-size="16" font-weight="700" fill="#16212B" text-anchor="start">(a shedding of the</text>
+<text x="1100" y="1694" font-size="16" font-weight="700" fill="#16212B" text-anchor="start">thickened endometrium)</text>
+<rect x="300" y="1640" width="340" height="210" rx="14" fill="#FFF7F7" stroke="#C2302B" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="318" y="1670" font-size="15" font-weight="400" fill="#8B1E1E" text-anchor="start" font-style="italic">Note: the Placenta also synthesizes</text>
+<text x="318" y="1691" font-size="15" font-weight="400" fill="#8B1E1E" text-anchor="start" font-style="italic">Estriol from a molecule that is only</text>
+<text x="318" y="1712" font-size="15" font-weight="400" fill="#8B1E1E" text-anchor="start" font-style="italic">produced by the fetus.</text>
+<text x="318" y="1733" font-size="15" font-weight="400" fill="#8B1E1E" text-anchor="start" font-style="italic"></text>
+<text x="318" y="1754" font-size="15" font-weight="400" fill="#8B1E1E" text-anchor="start" font-style="italic">Estriol levels are monitored during</text>
+<text x="318" y="1775" font-size="15" font-weight="400" fill="#8B1E1E" text-anchor="start" font-style="italic">pregnancy b/c a fall in estriol level</text>
+<text x="318" y="1796" font-size="15" font-weight="400" fill="#8B1E1E" text-anchor="start" font-style="italic">suggests some problem with either</text>
+<text x="318" y="1817" font-size="15" font-weight="400" fill="#8B1E1E" text-anchor="start" font-style="italic">the fetus or the placenta</text>
+<path d="M640 1736 L702 1724" stroke="#C2302B" stroke-width="1.6" fill="none"/>
+<text x="1480" y="1866" font-size="12" font-weight="400" fill="#4A5864" text-anchor="end">GnRH = gonadotropin-releasing hormone · FSH = follicle-stimulating hormone · LH = luteinizing hormone · HCG = human chorionic gonadotropin</text>
+</svg>

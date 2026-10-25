@@ -9,6 +9,6 @@ I studied endocrinology by making one-page graphics for each hormone. Only high-
 
 ![Adrenal gland](/charts/endocrinology/adrenal-gland.svg "Adrenal gland: one page, only high-yield info")
 
-![estrogen](/charts/endocrinology/estrogen.jpg)
+![Estrogen, progesterone and the menstrual cycle](/charts/endocrinology/estrogen.svg "Estrogen, progesterone and the menstrual cycle")
 
 ![thyroid](/charts/endocrinology/thyroid.jpg)
