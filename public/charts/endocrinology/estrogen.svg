@@ -122,8 +122,9 @@
 <line x1="1044" y1="1266" x2="1156" y2="1334" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
 <text x="736" y="1354" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">if successful implantation of a</text>
 <text x="736" y="1375" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">fertilized ovum occurs, then the</text>
-<text x="736" y="1396" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">endometrium begins producing HCG</text>
-<line x1="846" y1="1424" x2="846" y2="1470" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
+<text x="736" y="1396" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">trophoblast (the developing placenta)</text>
+<text x="736" y="1417" font-size="16" font-weight="400" fill="#16212B" text-anchor="start">begins producing HCG</text>
+<line x1="846" y1="1440" x2="846" y2="1470" stroke="#5B6A75" stroke-width="2.2" marker-end="url(#ah)"/>
 <text x="740" y="1494" font-size="16" font-weight="700" fill="#16212B" text-anchor="start">HCG maintains the CL</text>
 <text x="760" y="1518" font-size="16" font-weight="700" fill="#1E3A8A" text-anchor="start">HCG is thus highest early in</text>
 <text x="760" y="1539" font-size="16" font-weight="700" fill="#1E3A8A" text-anchor="start">pregnancy (peaking at 8–10 weeks)</text>
