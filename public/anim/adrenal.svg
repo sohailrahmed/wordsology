@@ -1,0 +1,100 @@
+<svg viewBox="0 0 940 590" role="img" aria-label="Animation: the adrenal gland, the renin-angiotensin system, cortisol, the medulla, and Conn syndrome, Cushing syndrome, pheochromocytoma, congenital adrenal hyperplasia and Addison's disease">
+<defs>
+<marker id="ad-ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#5B6A75"/></marker>
+</defs>
+<rect class="paper" x="0" y="0" width="940" height="590" rx="14"/>
+
+<!-- the gland -->
+<g id="gland" data-r="">
+<g class="organ" id="cortex"><rect x="370" y="200" width="200" height="160" rx="26" fill="#FDE68A" stroke="#B7791F" stroke-width="3"/></g>
+<circle cx="470" cy="288" r="48" fill="#A5F3FC" stroke="#0E7490" stroke-width="3"/>
+<text class="lbl" x="470" y="228" style="fill:#7C4A03">Cortex</text>
+<text class="lbl" x="470" y="294" style="fill:#0E4F5C">Medulla</text>
+</g>
+<g id="g-parts" data-r="">
+<text class="sm" x="390" y="300" transform="rotate(-90 390 300)" style="fill:#7C4A03;font-weight:700">mineralocorticoids</text>
+<text class="sm" x="550" y="282" transform="rotate(90 550 282)" style="fill:#7C4A03;font-weight:700">glucocorticoids</text>
+<text class="sm" x="470" y="316" style="fill:#0E4F5C;font-weight:700">amines</text>
+<text class="sm" x="300" y="216" style="fill:#7C4A03">salt hormone</text><path d="M330 222 L376 236" class="arw thin"/>
+<text class="sm" x="642" y="216" style="fill:#7C4A03">sugar hormone</text><path d="M610 222 L566 236" class="arw thin"/>
+</g>
+<g id="tum-conn" data-r="" class="buzz"><circle cx="392" cy="352" r="16" fill="#FCA5A5" stroke="#B91C1C" stroke-width="2.5"/><text class="sm" x="352" y="392" style="fill:#B91C1C;font-weight:700">adenoma</text></g>
+<g id="tum-pheo" data-r="" class="buzz"><circle cx="500" cy="318" r="15" fill="#FCA5A5" stroke="#B91C1C" stroke-width="2.5"/><text class="sm" x="600" y="186" style="fill:#B91C1C;font-weight:700">tumor in the medulla</text><path d="M592 192 L510 304" class="arw thin red"/></g>
+
+<!-- kidney + blood pressure gauge -->
+<g id="kid" data-r="">
+<path d="M78 26 C26 26 22 128 80 130 C110 131 116 108 104 94 C96 84 98 74 106 64 C118 48 108 26 78 26 Z" fill="#E9A89E" stroke="#9F4A3E" stroke-width="2.5"/>
+<text class="sm" x="70" y="152">kidney (JG apparatus)</text>
+</g>
+<g id="kid-worry" data-r=""><circle cx="62" cy="70" r="3.5" fill="#5A1F12"/><circle cx="82" cy="70" r="3.5" fill="#5A1F12"/><path d="M62 92 Q72 84 82 92" fill="none" stroke="#5A1F12" stroke-width="3" stroke-linecap="round"/><text class="hl" x="30" y="40" style="fill:#B91C1C">?</text></g>
+<g id="kid-happy" data-r=""><circle cx="62" cy="70" r="3.5" fill="#5A1F12"/><circle cx="82" cy="70" r="3.5" fill="#5A1F12"/><path d="M60 84 Q72 96 84 84" fill="none" stroke="#5A1F12" stroke-width="3" stroke-linecap="round"/></g>
+<g id="gauge" data-r="" transform="translate(206 92)">
+<path d="M-40 0 A40 40 0 0 1 -20 -34.6" fill="none" stroke="#60A5FA" stroke-width="10"/>
+<path d="M-20 -34.6 A40 40 0 0 1 20 -34.6" fill="none" stroke="#4ADE80" stroke-width="10"/>
+<path d="M20 -34.6 A40 40 0 0 1 40 0" fill="none" stroke="#F87171" stroke-width="10"/>
+<g id="needle" class="needle"><path d="M0 0 L0 -34" stroke="#1F2937" stroke-width="4" stroke-linecap="round"/></g>
+<circle r="6" fill="#1F2937"/>
+<text class="sm" x="0" y="24" style="font-weight:700">blood pressure</text>
+</g>
+
+<!-- renin–angiotensin chain -->
+<g id="a-renin" data-r="" class="dr"><path id="p-renin" d="M80 160 L80 196" class="arw" marker-end="url(#ad-ar)"/><text class="sm" x="118" y="186" style="font-weight:700">renin</text></g>
+<g id="c-1" data-r=""><text class="hl2" x="96" y="222">Angiotensinogen</text></g>
+<g id="a-a1" data-r="" class="dr"><path id="p-a1" d="M96 232 L96 260" class="arw" marker-end="url(#ad-ar)"/></g>
+<g id="c-2" data-r=""><text class="hl2" x="96" y="284">Angiotensin I</text></g>
+<g id="a-a2" data-r="" class="dr"><path id="p-a2" d="M96 294 L96 322" class="arw" marker-end="url(#ad-ar)"/></g>
+<g id="c-3" data-r=""><text class="hl2" x="96" y="346">Angiotensin II</text></g>
+<g id="a-ang" data-r="" class="dr"><path id="p-ang" d="M168 338 C240 336 300 300 364 290" class="arw" marker-end="url(#ad-ar)"/></g>
+
+<!-- CRH / ACTH -->
+<g id="hp" data-r="">
+<ellipse cx="840" cy="46" rx="84" ry="28" fill="#A7F3D0" stroke="#047857" stroke-width="2.5"/><text class="sm" x="840" y="52" style="font-size:20px;fill:#1F2937">Hypothalamus</text>
+<ellipse cx="840" cy="150" rx="84" ry="30" fill="#A7F3D0" stroke="#047857" stroke-width="2.5"/><text class="sm" x="840" y="146" style="font-size:19px;fill:#1F2937">Anterior</text><text class="sm" x="840" y="166" style="font-size:19px;fill:#1F2937">pituitary</text>
+</g>
+<g id="a-crh" data-r="" class="dr"><path id="p-crh" d="M840 76 L840 116" class="arw" marker-end="url(#ad-ar)"/><text class="sm" x="868" y="102" style="font-weight:700">CRH</text></g>
+<g id="a-acth" data-r="" class="dr"><path id="p-acth" d="M840 182 C840 260 700 292 578 290" class="arw" marker-end="url(#ad-ar)"/><text class="sm" x="790" y="250" style="font-weight:700">ACTH</text></g>
+
+<!-- outputs -->
+<g id="a-ald" data-r="" class="dr"><path id="p-ald" d="M396 362 C360 400 300 410 250 418" class="arw" marker-end="url(#ad-ar)"/><text class="hl2" x="186" y="424">Aldosterone</text></g>
+<g id="a-cort" data-r="" class="dr"><path id="p-cort" d="M544 362 C580 400 640 410 690 418" class="arw" marker-end="url(#ad-ar)"/><text class="hl2" x="742" y="424">Cortisol</text></g>
+<g id="a-med" data-r="" class="dr">
+<path id="p-epi" d="M450 338 L424 402" class="arw" marker-end="url(#ad-ar)"/><path id="p-nor" d="M490 338 L516 402" class="arw" marker-end="url(#ad-ar)"/>
+<text class="sm2c" x="400" y="424">Epinephrine</text><text class="sm" x="400" y="442">(80%)</text>
+<text class="sm2c" x="548" y="424">Norepinephrine</text><text class="sm" x="548" y="442">(20%)</text>
+</g>
+<g id="a-met" data-r="" class="dr">
+<path d="M400 450 L400 470" class="arw" marker-end="url(#ad-ar)"/><path d="M548 450 L548 470" class="arw" marker-end="url(#ad-ar)"/>
+<text class="sm2c" x="400" y="492">Metanephrine</text><text class="sm2c" x="548" y="492">Normetanephrine</text>
+<path d="M410 500 L456 536" class="arw" marker-end="url(#ad-ar)"/><path d="M538 500 L492 536" class="arw" marker-end="url(#ad-ar)"/>
+<text class="hl2" x="474" y="566">VMA</text>
+</g>
+<g id="met-ring" data-r="" class="glow"><ellipse cx="400" cy="486" rx="70" ry="20" fill="none" stroke="#DC2626" stroke-width="3"/><text class="sm" x="290" y="530" style="fill:#DC2626;font-weight:700">best screening test</text></g>
+
+<!-- aldosterone effect: the blood vessel -->
+<g id="vessel" data-r="">
+<g class="organ" id="vtube"><rect x="36" y="470" width="300" height="56" rx="28" fill="#FECACA" stroke="#B91C1C" stroke-width="2.5"/><path d="M60 498 H312" stroke="#F87171" stroke-width="2" stroke-dasharray="6 8"/></g>
+<text class="sm" x="186" y="552">blood vessel (blood volume)</text>
+<text class="sm" x="196" y="456" style="fill:#6D28D9;font-weight:700">Na⁺ &amp; H₂O in</text>
+<text class="sm" x="314" y="430" style="fill:#C2410C;font-weight:700">K⁺ out</text>
+<path id="p-na" d="M64 440 L90 492" class="ghost"/><path id="p-h2o" d="M124 440 L140 492" class="ghost"/><path id="p-k" d="M262 496 L286 440" class="ghost"/>
+</g>
+<!-- cortisol effect: blood sugar meter and immune shield -->
+<g id="sugar" data-r="">
+<rect x="650" y="452" width="34" height="110" rx="12" fill="#fff" stroke="#64748B" stroke-width="2.5"/>
+<g class="lvl" id="sug"><rect x="654" y="456" width="26" height="102" rx="9" fill="#F59E0B"/></g>
+<text class="sm" x="667" y="582">blood glucose</text>
+<path id="p-glu" d="M720 560 L720 470" class="ghost"/>
+</g>
+<g id="shield" data-r="">
+<g class="dimmer" id="shd"><path d="M840 456 L884 472 V506 C884 534 862 552 840 562 C818 552 796 534 796 506 V472 Z" fill="#BBF7D0" stroke="#15803D" stroke-width="2.5"/><path d="M822 508 L836 522 L860 494" fill="none" stroke="#15803D" stroke-width="4" stroke-linecap="round"/></g>
+<text class="sm" x="840" y="582">immune response</text>
+</g>
+<g id="moon" data-r=""><circle cx="898" cy="380" r="26" fill="#FDE68A" stroke="#A16207" stroke-width="2.5"/><circle cx="884" cy="388" r="6" fill="#FCA5A5"/><circle cx="912" cy="388" r="6" fill="#FCA5A5"/><circle cx="890" cy="376" r="3" fill="#1F2937"/><circle cx="906" cy="376" r="3" fill="#1F2937"/><path d="M892 394 Q898 398 904 394" fill="none" stroke="#1F2937" stroke-width="2.5" stroke-linecap="round"/><text class="sm" x="898" y="424" style="font-weight:700">moon face</text></g>
+
+<!-- CAH: the roadblock and the detour -->
+<g id="block" data-r="" class="buzz2">
+<g transform="translate(332 398)"><rect x="-36" y="-13" width="72" height="26" rx="5" fill="#fff" stroke="#DC2626" stroke-width="3"/><text x="0" y="6" class="sm" style="fill:#DC2626;font-weight:700;font-size:16px">no 21-OH</text></g>
+<g transform="translate(608 398)"><rect x="-36" y="-13" width="72" height="26" rx="5" fill="#fff" stroke="#DC2626" stroke-width="3"/><text x="0" y="6" class="sm" style="fill:#DC2626;font-weight:700;font-size:16px">no 21-OH</text></g>
+</g>
+<g id="a-andro" data-r="" class="dr"><path id="p-andro" d="M470 198 L470 128" class="arw red" marker-end="url(#ad-ar)"/><text class="hl2" x="470" y="86" style="fill:#B91C1C">Androgens</text><text class="sm" x="470" y="110" style="fill:#B91C1C">→ virilization</text><text class="sm" x="560" y="166" style="fill:#7C4A03">17-OH progesterone piles up</text></g>
+</svg>

@@ -1,0 +1,69 @@
+<svg viewBox="0 0 940 540" role="img" aria-label="Animation: the thyroid feedback loop and what happens in primary and secondary hypothyroidism and hyperthyroidism">
+<defs>
+<marker id="th-ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#5B6A75"/></marker>
+<marker id="th-arb" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#1D4ED8"/></marker>
+<g id="th-y"><path d="M0 0 V13 M0 0 L-7 -8 M0 0 L7 -8" fill="none" stroke="#7C3AED" stroke-width="3.5" stroke-linecap="round"/></g>
+</defs>
+<rect class="paper" x="0" y="0" width="940" height="540" rx="14"/>
+
+<!-- organs -->
+<g id="hyp" data-r=""><ellipse cx="230" cy="60" rx="96" ry="34" fill="#A7F3D0" stroke="#047857" stroke-width="2.5"/><text class="lbl" x="230" y="69">Hypothalamus</text></g>
+<g id="pit" data-r=""><ellipse cx="230" cy="190" rx="96" ry="36" fill="#A7F3D0" stroke="#047857" stroke-width="2.5"/><text class="lbl" x="230" y="185">Anterior</text><text class="lbl" x="230" y="210">pituitary</text></g>
+<g id="thy" data-r=""><g class="organ"><path transform="translate(230 0)" d="M-20 316 C-60 278,-122 286,-118 346 C-114 400,-62 414,-28 384 C-12 372,12 372,28 384 C62 414,114 400,118 346 C122 286,60 278,20 316 C8 328,-8 328,-20 316 Z" fill="#F7B7A3" stroke="#B4533A" stroke-width="2.5"/></g><text class="lbl" x="230" y="356">Thyroid</text></g>
+
+<!-- arrows (the hormones travel along these) -->
+<g id="a-trh" data-r="" class="dr"><path id="p-trh" d="M230 96 L230 150" class="arw" marker-end="url(#th-ar)"/><text class="hl" x="246" y="132">TRH</text></g>
+<g id="a-tsh" data-r="" class="dr"><path id="p-tsh" d="M230 228 L230 282" class="arw" marker-end="url(#th-ar)"/><text class="hl" x="246" y="262">TSH</text></g>
+<g id="a-t4" data-r="" class="dr"><path id="p-t4" d="M196 404 L156 458" class="arw" marker-end="url(#th-ar)"/><text class="hl" x="146" y="490">T4</text><text class="sm" x="146" y="512">(somewhat active)</text></g>
+<g id="a-t3" data-r="" class="dr"><path id="p-t3" d="M264 404 L304 458" class="arw" marker-end="url(#th-ar)"/><text class="hl" x="316" y="490">T3</text><text class="sm" x="316" y="512">(most active)</text></g>
+<g id="a-rt3" data-r="" class="dr"><path id="p-rt3" d="M118 482 L70 482" class="arw" marker-end="url(#th-ar)"/><text class="hl" x="44" y="490">rT3</text><text class="sm" x="44" y="512">(inactive)</text></g>
+<g id="iod" data-r=""><circle cx="96" cy="466" r="11" fill="#FDE68A" stroke="#B45309" stroke-width="2"/><text class="sm" x="96" y="471" style="font-weight:700">I</text></g>
+<g id="a-fb" data-r="" class="dr"><path id="p-fb" d="M352 482 H396 V60 H338" class="arw fb" marker-end="url(#th-arb)"/><path id="p-fb2" d="M396 190 H338" class="arw fb" marker-end="url(#th-arb)"/><text class="sm fbt" x="412" y="300" transform="rotate(90 412 300)">negative feedback</text><text class="hl fbt" x="352" y="48">−</text><text class="hl fbt" x="352" y="178">−</text></g>
+
+<!-- disease cartoons -->
+<g id="ab-hashi" data-r="" class="attack">
+<use href="#th-y" transform="translate(96 296) rotate(-120)"/><use href="#th-y" transform="translate(110 420) rotate(-60)"/><use href="#th-y" transform="translate(364 300) rotate(120)"/><use href="#th-y" transform="translate(350 420) rotate(60)"/><use href="#th-y" transform="translate(230 432) rotate(0)"/>
+<text class="sm" x="70" y="276" style="fill:#7C3AED">TPO Ab</text>
+</g>
+<g id="ab-graves" data-r="" class="press">
+<use href="#th-y" transform="translate(170 292) rotate(180)"/><use href="#th-y" transform="translate(292 292) rotate(180)"/><use href="#th-y" transform="translate(146 300) rotate(200)"/><use href="#th-y" transform="translate(316 300) rotate(160)"/>
+<text class="hl" x="122" y="300" style="fill:#16A34A">+</text><text class="hl" x="336" y="282" style="fill:#16A34A">+</text>
+<text class="sm" x="70" y="246" style="fill:#7C3AED">antibodies on</text><text class="sm" x="70" y="264" style="fill:#7C3AED">TSH receptors</text>
+</g>
+<g id="thy-sad" data-r=""><circle cx="214" cy="372" r="3.5" fill="#5A1F12"/><circle cx="246" cy="372" r="3.5" fill="#5A1F12"/><path d="M216 392 Q230 382 244 392" fill="none" stroke="#5A1F12" stroke-width="3" stroke-linecap="round"/></g>
+<g id="thy-hot" data-r="" class="heat"><path d="M210 366 L222 371 M250 366 L238 371" stroke="#5A1F12" stroke-width="3" stroke-linecap="round"/><circle cx="216" cy="377" r="3.5" fill="#5A1F12"/><circle cx="244" cy="377" r="3.5" fill="#5A1F12"/><path d="M218 392 H242" stroke="#5A1F12" stroke-width="3" stroke-linecap="round"/><path class="wv" d="M120 270 q6 -10 0 -20 q-6 -10 0 -20 M340 270 q6 -10 0 -20 q-6 -10 0 -20" fill="none" stroke="#F97316" stroke-width="3" stroke-linecap="round"/></g>
+<g id="pit-zzz" data-r="" class="zzz"><path d="M200 226 q8 5 16 0 M244 226 q8 5 16 0" fill="none" stroke="#065F46" stroke-width="3" stroke-linecap="round"/><text class="hl z1" x="338" y="176" style="fill:#64748B">z</text><text class="hl z2" x="352" y="156" style="fill:#64748B;font-size:30px">z</text><text class="hl z3" x="368" y="132" style="fill:#64748B;font-size:38px">Z</text></g>
+<g id="pit-hyper" data-r="" class="buzz"><circle cx="300" cy="214" r="15" fill="#FCA5A5" stroke="#B91C1C" stroke-width="2"/><text class="sm" x="300" y="248" style="fill:#B91C1C">overactive</text><text class="hl" x="140" y="168" style="fill:#B91C1C">!!</text></g>
+
+<!-- labs -->
+<g id="labs" data-r="">
+<rect x="470" y="70" width="420" height="196" rx="16" class="card"/>
+<text class="lbl" x="680" y="104">Lab results</text>
+<text class="hl" x="540" y="152">T4</text><text class="hl" x="540" y="198">T3</text><text class="hl" x="540" y="244">TSH</text>
+<text id="v-t4" class="val" x="690" y="156">✓</text><text id="v-t3" class="val" x="690" y="202">✓</text><text id="v-tsh" class="val" x="690" y="248">✓</text>
+</g>
+<!-- symptoms -->
+<g id="body" data-r="">
+<rect x="470" y="282" width="420" height="238" rx="16" class="card"/>
+<g id="ic-ok" data-r=""><circle cx="530" cy="350" r="30" fill="#FDE047" stroke="#A16207" stroke-width="2.5"/><circle cx="520" cy="343" r="3.5" fill="#1F2937"/><circle cx="540" cy="343" r="3.5" fill="#1F2937"/><path d="M516 357 Q530 370 544 357" fill="none" stroke="#1F2937" stroke-width="3" stroke-linecap="round"/></g>
+<g id="ic-cold" data-r="" class="spin"><g transform="translate(530 350)"><g class="wob"><path d="M0 -32 V32 M-28 -16 L28 16 M-28 16 L28 -16 M-6 -26 L0 -20 L6 -26 M-6 26 L0 20 L6 26" fill="none" stroke="#0284C7" stroke-width="4" stroke-linecap="round"/></g></g></g>
+<g id="ic-hot" data-r="" class="spin"><g transform="translate(530 350)"><g class="wob"><circle r="17" fill="#FB923C"/><path d="M0 -32 V-24 M0 24 V32 M-32 0 H-24 M24 0 H32 M-23 -23 L-17 -17 M17 17 L23 23 M-23 23 L-17 17 M17 -17 L23 -23" stroke="#EA580C" stroke-width="4" stroke-linecap="round"/></g></g></g>
+<text id="sym0" class="hl" x="580" y="332" style="text-anchor:start"></text>
+<text id="sym1" class="sm2" x="580" y="372"></text>
+<text id="sym2" class="sm2" x="580" y="404"></text>
+<text id="sym3" class="sm2" x="580" y="436"></text>
+<text id="sym4" class="sm2" x="580" y="468"></text>
+</g>
+<!-- shortcut table -->
+<g id="sumtab" data-r="">
+<rect x="460" y="70" width="450" height="450" rx="16" class="card"/>
+<text class="lbl" x="685" y="108">The shortcut</text>
+<text class="sm" x="726" y="148" style="font-weight:700">T4</text><text class="sm" x="786" y="148" style="font-weight:700">TSH</text>
+<text class="sm2" x="478" y="198">Primary hypo</text><text class="val dn" x="726" y="204">↓</text><text class="val up" x="786" y="204">↑</text><text class="tag opp" x="852" y="198">opposite</text>
+<text class="sm2" x="478" y="266">Secondary hypo</text><text class="val dn" x="726" y="272">↓</text><text class="val dn" x="786" y="272">↓</text><text class="tag same" x="852" y="266">same</text>
+<text class="sm2" x="478" y="334">Primary hyper</text><text class="val up" x="726" y="340">↑</text><text class="val dn" x="786" y="340">↓</text><text class="tag opp" x="852" y="334">opposite</text>
+<text class="sm2" x="478" y="402">Secondary hyper</text><text class="val up" x="726" y="408">↑</text><text class="val up" x="786" y="408">↑</text><text class="tag same" x="852" y="402">same</text>
+<text class="sm" x="685" y="460" style="fill:#047857;font-weight:700">opposite = thyroid problem (primary)</text>
+<text class="sm" x="685" y="490" style="fill:#7C3AED;font-weight:700">same = pituitary problem (secondary)</text>
+</g>
+</svg>

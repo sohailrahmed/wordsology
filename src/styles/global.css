@@ -365,3 +365,65 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
   .prose .social-btn { flex: 1 1 0; flex-direction: column; justify-content: center; gap: 5px; min-height: 76px; padding: 8px 4px; border-radius: 18px; font-size: 14px; min-width: 0; }
   .prose .social-btn svg { width: 28px; height: 28px; }
 }
+/* ===== Step-through chart animations (anim-kit.js) ===== */
+.prose .ea .ea-stage { min-height: 120px; }
+.prose .ea .ea-stage svg { display: block; width: 100%; height: auto; }
+.ea .paper { fill: #FFFDF4; }
+.ea text { font-family: 'Patrick Hand', 'Comic Sans MS', cursive; fill: #1F2937; text-anchor: middle; }
+.ea .lbl { font-size: 25px; }
+.ea .hl { font-size: 27px; font-weight: 700; }
+.ea .sm { font-size: 17px; fill: #4A5864; }
+.ea .sm2 { font-size: 21px; text-anchor: start; }
+.ea .val { font-size: 40px; font-weight: 700; }
+.ea .val.up { fill: #DC2626; } .ea .val.dn { fill: #1D4ED8; } .ea .val.ok { fill: #16A34A; }
+.ea .tag { font-size: 19px; font-weight: 700; } .ea .tag.opp { fill: #047857; } .ea .tag.same { fill: #7C3AED; }
+.ea .card { fill: #fff; stroke: #D6D3C4; stroke-width: 2; }
+.ea .arw { fill: none; stroke: #5B6A75; stroke-width: 3; stroke-linecap: round; }
+.ea .arw.fb { stroke: #1D4ED8; stroke-dasharray: 7 6; }
+.ea .fbt { fill: #1D4ED8; }
+.ea .dot text { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 12px; font-weight: 800; fill: #fff; }
+.ea [data-r] { opacity: 0; transition: opacity .5s ease; }
+.ea [data-r].on { opacity: 1; }
+.ea .organ { transform-box: fill-box; transform-origin: center; transition: transform .6s ease; }
+.ea .organ path { transition: fill .6s ease; }
+.ea .swell .organ { transform: scale(1.12); }
+.ea .hot .organ path { fill: #FB7185; }
+.ea .attack.on use { animation: ea-jab .5s ease-in-out infinite alternate; transform-box: fill-box; }
+@keyframes ea-jab { to { translate: 0 4px; } }
+.ea .press.on use { animation: ea-press .35s ease-in-out infinite alternate; }
+@keyframes ea-press { to { translate: 0 3px; } }
+.ea .heat.on .wv { animation: ea-rise 1s ease-in-out infinite; }
+@keyframes ea-rise { from { translate: 0 6px; opacity: .3; } to { translate: 0 -6px; opacity: 1; } }
+.ea .zzz.on .z1 { animation: ea-zz 2s ease-in-out infinite; } .ea .zzz.on .z2 { animation: ea-zz 2s ease-in-out .4s infinite; } .ea .zzz.on .z3 { animation: ea-zz 2s ease-in-out .8s infinite; }
+@keyframes ea-zz { 0%, 100% { opacity: .2; } 50% { opacity: 1; } }
+.ea .buzz.on circle { animation: ea-buzz .18s linear infinite alternate; transform-box: fill-box; transform-origin: center; }
+@keyframes ea-buzz { to { transform: scale(1.12); } }
+.ea .spin.on .wob { animation: ea-wob 3s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+@keyframes ea-wob { 0%, 100% { rotate: -8deg; } 50% { rotate: 8deg; } }
+.ea #iod.on { animation: ea-fly 1.6s ease-out infinite; }
+@keyframes ea-fly { from { translate: 0 0; opacity: 1; } to { translate: 0 -36px; opacity: 0; } }
+.prose .ea-chips { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 10px; }
+.prose .ea-chips span { font-size: 14px; color: var(--muted); margin-right: 2px; }
+.prose .ea-chips button { min-height: 38px; padding: 0 14px; border-radius: 999px; border: 1px solid var(--line); background: #fff; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; color: var(--ink); }
+.prose .ea-chips button.active { background: #1F2937; color: #fff; border-color: #1F2937; }
+@media (prefers-reduced-motion: reduce) { .ea *, .ea *::before { animation: none !important; } }
+.ea .hl2 { font-size: 23px; font-weight: 700; }
+.ea .sm2c { font-size: 19px; }
+.ea .arw.thin { stroke-width: 2; }
+.ea .arw.red { stroke: #DC2626; }
+.ea .ghost { fill: none; stroke: none; }
+.ea .needle { transition: transform 1s ease; rotate: 0deg; }
+.ea .needle { transform: rotate(0deg); }
+.ea .needle.lo { transform: rotate(-62deg); }
+.ea .needle.hi { transform: rotate(62deg); }
+.ea .needle.slow { transition-duration: 3s; transition-delay: 1s; }
+.ea .lvl { transform-box: fill-box; transform-origin: 50% 100%; transform: scaleY(.3); transition: transform 2.5s ease; }
+.ea .lvl.mid { transform: scaleY(.6); } .ea .lvl.hi { transform: scaleY(1); } .ea .lvl.lo { transform: scaleY(.18); }
+.ea .dimmer { transition: opacity 1.5s ease; } .ea .dimmer.dim { opacity: .65; } .ea .dimmer.vdim { opacity: .2; }
+.ea .full .organ, .ea .organ.full { transform: scaleY(1.3); }
+.ea .organ.thin { transform: scaleY(.65); }
+.ea .organ.swell, .ea .swell > .organ { transform: scale(1.12); }
+.ea .organ.shrink { transform: scale(.82); }
+.ea .glow.on ellipse { animation: ea-glow 1s ease-in-out infinite alternate; }
+@keyframes ea-glow { from { stroke-opacity: .35; } to { stroke-opacity: 1; } }
+.ea .buzz2.on g { animation: ea-jab .4s ease-in-out infinite alternate; }
