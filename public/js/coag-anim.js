@@ -99,17 +99,21 @@
     },
     // eraser: lower, rubbery back-and-forth
     erase(dur) { S.scratch(dur, 950, 0.55, 5.3); },
-    // motor whir with a pitch glide
-    whir(dur, f0 = 85, f1 = 150) {
-      const a = ac(); if (!a) return; const t = a.currentTime;
-      const lp = a.createBiquadFilter(); lp.type = 'lowpass'; lp.frequency.value = 900;
-      const g = env(a, 0.09, t, dur, 0.05, 0.12); lp.connect(g).connect(master);
-      [0, 7].forEach((det) => {
-        const o = keep(a.createOscillator()); o.type = 'sawtooth';
-        o.frequency.setValueAtTime(f0 + det, t); o.frequency.linearRampToValueAtTime(f1 + det, t + dur * 0.6);
-        o.frequency.linearRampToValueAtTime(f1 * 0.9 + det, t + dur);
-        o.connect(lp); o.start(t); o.stop(t + dur + 0.05);
-      });
+    // gear ratchet: a fast run of little metal ticks while the arm moves
+    whir(dur, f0 = 22, f1 = 30) {
+      const a = ac(); if (!a) return; const t0 = a.currentTime;
+      let t = 0, k = 0;
+      while (t < dur) {
+        const at = t0 + t, accent = k % 4 === 0;
+        const n = noiseSrc(a), bp = a.createBiquadFilter(); bp.type = 'bandpass'; bp.frequency.value = accent ? 2300 : 3400; bp.Q.value = 6;
+        const g = a.createGain(); g.gain.setValueAtTime(accent ? 0.9 : 0.6, at); g.gain.exponentialRampToValueAtTime(0.001, at + 0.018);
+        n.connect(bp).connect(g).connect(master); n.start(at); n.stop(at + 0.02);
+        const o = keep(a.createOscillator()); o.type = 'triangle'; o.frequency.value = accent ? 1250 : 1700;
+        const og = a.createGain(); og.gain.setValueAtTime(0.05, at); og.gain.exponentialRampToValueAtTime(0.0005, at + 0.025);
+        o.connect(og).connect(master); o.start(at); o.stop(at + 0.03);
+        const rate = f0 + (f1 - f0) * Math.min(1, t / Math.max(0.1, dur * 0.5));
+        t += 1 / rate; k++;
+      }
     },
     // metal claw clunk
     clunk() {
@@ -307,13 +311,13 @@
       hand.classList.add('open');
       hand.style.transform = `translate(${P2[10][0]}px, -40px)`;
       const T = (ms, fn) => later(ms, () => { if (cur === n) fn(); });
-      T(600, () => { S.whir(0.7, 150, 95); hand.style.opacity = 1; handAt(P2[10][0], 168, 0.7); });
+      T(600, () => { S.whir(0.7); hand.style.opacity = 1; handAt(P2[10][0], 168, 0.7); });
       T(1350, () => { S.clunk(); hand.classList.remove('open'); });
-      T(1650, () => { S.whir(0.5, 90, 140); at(g10, P2[10][0], 140, 0.5); handAt(P2[10][0], 118, 0.5); });
-      T(2150, () => { S.whir(0.7, 110, 130); at(g9, P3[9][0], 190, 0.6); at(g10, P3[10][0], 140, 0.7); handAt(P3[10][0], 118, 0.7); });
-      T(2950, () => { S.whir(0.35, 130, 95); at(g10, P3[10][0], 190, 0.35); handAt(P3[10][0], 168, 0.35); });
+      T(1650, () => { S.whir(0.5); at(g10, P2[10][0], 140, 0.5); handAt(P2[10][0], 118, 0.5); });
+      T(2150, () => { S.whir(0.7); at(g9, P3[9][0], 190, 0.6); at(g10, P3[10][0], 140, 0.7); handAt(P3[10][0], 118, 0.7); });
+      T(2950, () => { S.whir(0.35); at(g10, P3[10][0], 190, 0.35); handAt(P3[10][0], 168, 0.35); });
       T(3350, () => { S.clunk(); hand.classList.add('open'); });
-      T(3650, () => { S.whir(0.7, 95, 160); handAt(P3[10][0], -60, 0.7); });
+      T(3650, () => { S.whir(0.7); handAt(P3[10][0], -60, 0.7); });
       T(4300, () => { hand.style.opacity = 0; });
     }
     // reset 7's face
