@@ -1,0 +1,62 @@
+<svg viewBox="0 0 940 560" role="img" aria-label="Animation: a 28-day menstrual cycle showing hormone levels, the ovary, the uterine lining and the pituitary, with and without pregnancy">
+<defs>
+<clipPath id="cy-reveal"><rect id="cy-clip" x="40" y="20" width="0" height="250"/></clipPath>
+<marker id="cy-ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#5B6A75"/></marker>
+<marker id="cy-arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#DC2626"/></marker>
+</defs>
+<rect class="paper" x="0" y="0" width="940" height="560" rx="14"/>
+
+<!-- hormone graph: x = 60 + day/28*500, baseline y = 250 -->
+<g id="cy-graph">
+<line x1="60" y1="250" x2="560" y2="250" stroke="#1F2937" stroke-width="2"/>
+<g id="cy-ticks"></g>
+<line x1="301" y1="44" x2="301" y2="250" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="4 4"/>
+<text class="sm" x="301" y="38">ovulation</text>
+<g id="cy-curves" clip-path="url(#cy-reveal)"></g>
+<line id="cy-cursor" x1="60" y1="30" x2="60" y2="252" stroke="#1F2937" stroke-width="2.5"/>
+<g id="cy-legend"></g>
+<!-- phases -->
+<rect x="60" y="262" width="72" height="20" rx="4" fill="#FCA5A5"/><text class="sm" x="96" y="277" style="font-size:14px;fill:#7F1D1D">period</text>
+<rect x="135" y="262" width="164" height="20" rx="4" fill="#BFDBFE"/><text class="sm" x="217" y="277" style="font-size:14px;fill:#1E3A8A">follicular phase</text>
+<rect x="303" y="262" width="257" height="20" rx="4" fill="#FDE68A"/><text class="sm" x="431" y="277" style="font-size:14px;fill:#78350F">luteal phase</text>
+</g>
+<text id="cy-day" class="hl" x="600" y="42" style="text-anchor:start">Day 1</text>
+
+<!-- ovary -->
+<g id="cy-ovary">
+<ellipse cx="770" cy="160" rx="140" ry="86" fill="#FBCFE8" stroke="#BE185D" stroke-width="2.5"/>
+<text class="sm" x="770" y="268" style="font-weight:700;fill:#9D174D">ovary</text>
+<circle cx="700" cy="120" r="7" fill="#F9A8D4"/><circle cx="840" cy="200" r="6" fill="#F9A8D4"/><circle cx="850" cy="118" r="5" fill="#F9A8D4"/>
+<g id="cy-fol"><circle id="cy-fol-c" cx="770" cy="160" r="10" fill="#93C5FD" stroke="#1D4ED8" stroke-width="2"/></g>
+<path id="cy-rupt" d="" fill="#93C5FD" stroke="#1D4ED8" stroke-width="2" opacity="0"/>
+<circle id="cy-cl" cx="770" cy="160" r="0" fill="#FACC15" stroke="#A16207" stroke-width="2.5"/>
+<text id="cy-ovlbl" class="sm" x="770" y="96" style="font-weight:700"></text>
+</g>
+<!-- fallopian tube (the egg's route) -->
+<path id="cy-tube" d="M690 214 C640 300 560 280 470 330" fill="none" stroke="#F9A8D4" stroke-width="14" stroke-linecap="round" opacity=".55"/>
+<path id="cy-hcgpath" d="M330 376 C380 350 440 336 470 330 C560 280 640 300 726 170" fill="none" stroke="none"/>
+<circle id="cy-egg" cx="770" cy="160" r="6" fill="#E11D48" stroke="#fff" stroke-width="2"/>
+
+<!-- uterus lining -->
+<g id="cy-uterus">
+<rect x="60" y="440" width="430" height="34" rx="8" fill="#BE7B8A"/>
+<text class="sm" x="275" y="463" style="fill:#fff">uterus wall</text>
+<g id="cy-lining-g"><rect id="cy-lining" x="60" y="400" width="430" height="40" rx="10" fill="#F9A8D4" stroke="#DB2777" stroke-width="2"/></g>
+<text class="sm" x="275" y="500" style="font-weight:700;fill:#9D174D">endometrium (uterine lining)</text>
+<g id="cy-drops"></g>
+<circle id="cy-embryo" cx="330" cy="376" r="0" fill="#E11D48" stroke="#fff" stroke-width="2"/>
+<text id="cy-emblbl" class="sm" x="330" y="350" style="font-weight:700;fill:#BE123C"></text>
+</g>
+
+<!-- the pituitary axis -->
+<g id="cy-axis">
+<ellipse cx="760" cy="322" rx="78" ry="22" fill="#A7F3D0" stroke="#047857" stroke-width="2"/><text class="sm" x="760" y="328" style="font-size:18px;fill:#1F2937">Hypothalamus</text>
+<path id="cy-p-gnrh" d="M760 344 L760 378" class="arw" marker-end="url(#cy-ar)"/><text class="sm" x="792" y="368" style="font-weight:700">GnRH</text>
+<ellipse cx="760" cy="404" rx="78" ry="24" fill="#A7F3D0" stroke="#047857" stroke-width="2"/><text class="sm" x="760" y="410" style="font-size:18px;fill:#1F2937">Anterior pituitary</text>
+<path id="cy-p-fsh" d="M720 428 L692 494" class="arw" marker-end="url(#cy-ar)"/><text class="sm" x="680" y="462" style="font-weight:700;fill:#0E7490">FSH</text>
+<path id="cy-p-lh" d="M800 428 L828 494" class="arw" marker-end="url(#cy-ar)"/><text class="sm" x="842" y="462" style="font-weight:700;fill:#7C3AED">LH</text>
+<rect x="660" y="500" width="200" height="34" rx="10" fill="#FBCFE8" stroke="#BE185D" stroke-width="2"/><text class="sm" x="760" y="523" style="font-size:18px;fill:#9D174D">ovaries</text>
+<g id="cy-plus" opacity="0"><path d="M870 500 C905 470 900 430 842 412" fill="none" stroke="#DC2626" stroke-width="3" marker-end="url(#cy-arr)"/><text class="hl" x="912" y="470" style="fill:#DC2626">+</text><text class="sm" x="884" y="548" style="fill:#DC2626;font-weight:700">estrogen</text></g>
+<g id="cy-stop" opacity="0"><polygon points="882,382 898,382 910,394 910,410 898,422 882,422 870,410 870,394" fill="#D62828" stroke="#fff" stroke-width="2"/><text x="890" y="407" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;font-weight:800;fill:#fff">STOP</text><text class="sm" x="890" y="372" style="fill:#B91C1C;font-weight:700;font-size:14px">E + P high</text></g>
+</g>
+</svg>

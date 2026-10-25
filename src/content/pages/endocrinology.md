@@ -30,6 +30,25 @@ Press Play to follow both hormone pathways and the medulla, then tap a disease t
 
 ![Adrenal gland](/charts/endocrinology/adrenal-gland.svg "Adrenal gland: one page, only high-yield info")
 
+### Watch it work: the menstrual cycle
+
+Press Play to watch a whole month, or drag the slider to any day. Then flip to "Pregnant" and watch what HCG does.
+
+<div class="coag-anim ea" id="cycle-anim">
+<div class="ea-stage"></div>
+<input class="cy-slider" type="range" min="1" max="28" step="0.1" value="1" aria-label="Day of the cycle">
+<div class="ea-chips"><span>What happens after ovulation?</span><button type="button" data-preg="0" class="active">Not pregnant</button><button type="button" data-preg="1">Pregnant</button></div>
+<div class="ca-bar">
+<button type="button" class="btn btn-secondary" data-ca="prev">← Back</button>
+<button type="button" class="btn btn-primary" data-ca="play" aria-pressed="false">▶ Play</button>
+<button type="button" class="btn btn-secondary" data-ca="next">Next →</button>
+<button type="button" class="btn btn-secondary" data-ca="sound" aria-pressed="true">🔊 Sound on</button>
+</div>
+<p class="ca-cap" aria-live="polite"></p>
+</div>
+
+<script src="/js/cycle-anim.js" defer></script>
+
 ![Estrogen, progesterone and the menstrual cycle](/charts/endocrinology/estrogen.svg "Estrogen, progesterone and the menstrual cycle")
 
 ### Watch it work: the thyroid
