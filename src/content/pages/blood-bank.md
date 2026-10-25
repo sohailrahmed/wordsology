@@ -62,7 +62,7 @@ The note about Le is VERY high yield. In fact, the entire card describing antibo
 <tr><td>Cold antibodies</td><td><b>M</b> <b>N</b> <b>P<sub>1</sub></b></td></tr>
 <tr class="star"><td><span class="st" aria-label="Sohail starred this">★</span> Usually only react in AHG</td><td><span class="kdk"><b>Kell</b> <b>Duffy</b> <b>Kidd</b></span><i class="hand">not detected on IS</i></td></tr>
 <tr><td>Can react in any phase of testing</td><td><b>Lewis</b></td></tr>
-<tr class="star"><td><span class="st" aria-label="Sohail starred this">★</span> Detection <u>enhanced</u> by enzyme treatment of test cells</td><td><b>Rh</b> <b>Lewis</b> <b>Kidd</b> <b>P<sub>1</sub></b></td></tr>
+<tr class="star"><td><span class="st" aria-label="Sohail starred this">★</span> Detection <u>enhanced</u> by enzyme treatment of test cells</td><td><b>Rh</b> <b>Lewis</b> <b>Kidd</b></td></tr>
 <tr class="star"><td><span class="st" aria-label="Sohail starred this">★</span> <u>Not detected</u> with enzyme treatment of test cells</td><td><b>M</b> <b>N</b> <b>Duffy</b></td></tr>
 <tr><td>Enhanced by acidification</td><td><b>M</b></td></tr>
 <tr><td>Show dosage</td><td><b>Rh other than D</b> <b>MNS</b> <b>Duffy</b> <b>Kidd</b></td></tr>
