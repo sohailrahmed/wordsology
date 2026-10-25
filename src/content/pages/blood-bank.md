@@ -70,12 +70,12 @@ The note about Le is VERY high yield. In fact, the entire card describing antibo
 <tr><td>Cause in vitro hemolysis</td><td><b>ABO</b> <b>Lewis</b> <b>Kidd</b> <b>Vel</b> <b>some P<sub>1</sub></b></td></tr>
 <tr><td>Labile in vivo and in vitro</td><td><b>Kidd</b></td></tr>
 <tr><td>Common cause of anamnestic response (delayed transfusion reaction)</td><td><b>Kidd</b><i class="hand">Kidds are delayed</i></td></tr>
-<tr class="star"><td><span class="st" aria-label="Sohail starred this">★</span> Associated with paroxysmal nocturnal hemoglobinuria</td><td><b>Anti-P</b><i class="hand">IgG</i></td></tr>
+<tr class="star"><td><span class="st" aria-label="Sohail starred this">★</span> Associated with paroxysmal cold hemoglobinuria (PCH)</td><td><b>Anti-P</b><i class="hand">IgG</i></td></tr>
 </tbody>
 </table>
 </div>
 
-<p class="chart-note">★ = rows I starred · <span class="kdk-key">Kell, Duffy, Kidd</span> keep showing up together: clinically significant, warm, and usually only react in AHG · AHG = antihuman globulin · IS = immediate spin · Se = secretor gene</p>
+<p class="chart-note">★ = rows I starred · <span class="kdk-key">Kell, Duffy, Kidd</span> keep showing up together: clinically significant, warm, and usually only react in AHG · AHG = antihuman globulin · IS = immediate spin · Se = secretor gene · PCH = paroxysmal cold hemoglobinuria (anti-P is the Donath-Landsteiner antibody)</p>
 
 ![You already know how important it is to know all of this](/charts/blood-bank/blood-donor-criteria.png "You already know how important it is to know all of this")
 
