@@ -321,6 +321,24 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
 .coag-anim .mk-t { font-family: 'Patrick Hand', 'Comic Sans MS', cursive; font-size: 30px; }
 .coag-anim .mk-t.sm { font-size: 24px; }
 .coag-anim .mk-t.cy { fill: #0E7490; } .coag-anim .mk-t.rd { fill: #DC2626; }
+.coag-anim .moody .face, .coag-anim .moody .bub { opacity: 0; transition: opacity .35s, transform .35s; transform: scale(.4); transform-box: fill-box; transform-origin: center; }
+.coag-anim .moody > text { transition: opacity .35s; }
+.coag-anim .moody.happy > text { opacity: 0; }
+.coag-anim .moody.happy .face { opacity: 1; transform: scale(1); }
+.coag-anim .moody .arm { stroke: #A16207; stroke-width: 4; stroke-linecap: round; fill: none; }
+.coag-anim .moody .seven-mini { font-family: 'Patrick Hand', cursive; font-size: 18px; fill: #A16207; text-anchor: middle; }
+.coag-anim .moody.say1 .b1, .coag-anim .moody.say2 .b2 { opacity: 1; transform: scale(1); }
+.coag-anim .moody .bub rect { fill: #fff; stroke: #1F2937; stroke-width: 2.5; }
+.coag-anim .moody .bub text { font-family: 'Patrick Hand', cursive; font-size: 29px; fill: #DC2626; text-anchor: middle; }
+.coag-anim .moody .bub.left text { fill: #1E40AF; }
+.coag-anim .moody.droop .face { animation: ca-droop .5s ease-in-out infinite alternate; }
+@keyframes ca-droop { from { transform: translateY(0) rotate(-3deg); } to { transform: translateY(3px) rotate(3deg); } }
+.coag-anim .moody.bounce .face { animation: ca-bounce .32s ease-in-out infinite alternate; }
+@keyframes ca-bounce { from { transform: translateY(0) scale(1); } to { transform: translateY(-10px) scale(1.05); } }
+.coag-anim #hand { transform-box: view-box; opacity: 0; pointer-events: none; filter: drop-shadow(1px 3px 2px rgba(0,0,0,.2)); }
+.coag-anim #pencil .eraser-down { display: none; }
+.coag-anim #pencil.flip .eraser-down { display: inline; }
+.coag-anim #pencil.flip .tip-down { display: none; }
 .coag-anim #pencil { transform-box: view-box; filter: drop-shadow(1px 2px 1px rgba(0,0,0,.18)); }
 .prose .ca-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 10px; }
 .prose .ca-bar .btn { min-height: 46px; padding: 0 18px; font-size: 15px; }
