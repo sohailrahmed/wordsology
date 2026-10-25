@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="330" viewBox="0 0 620 330" font-family="Helvetica, Arial, sans-serif" role="img" aria-label="Hepatitis B virus drawn as three rings: the outer ring is the surface antigen, HBsAg; the middle ring is HBeAg; the inner core is the core antigen, HBcAg.">
+  <rect width="620" height="330" fill="#fff"/>
+  <!-- the virus, outside in: s, e, c -->
+  <circle cx="165" cy="165" r="132" fill="#E7EEF9" stroke="#2F5DA8" stroke-width="5"/>
+  <circle cx="165" cy="165" r="88" fill="#FFF3D6" stroke="#B7791F" stroke-width="5"/>
+  <circle cx="165" cy="165" r="44" fill="#FBE3EC" stroke="#B8326A" stroke-width="5"/>
+  <!-- little surface spikes -->
+  <g stroke="#2F5DA8" stroke-width="5" stroke-linecap="round">
+    <path d="M165 33 v-14 M165 297 v14 M33 165 h-14 M297 165 h14 M72 72 l-10 -10 M258 72 l10 -10 M72 258 l-10 10 M258 258 l10 10"/>
+  </g>
+  <g font-weight="800" text-anchor="middle">
+    <text x="165" y="70" font-size="30" fill="#2F5DA8">s</text>
+    <text x="165" y="110" font-size="30" fill="#B7791F">e</text>
+    <text x="165" y="176" font-size="30" fill="#B8326A">c</text>
+  </g>
+  <!-- labels -->
+  <g stroke="#6B7680" stroke-width="2">
+    <path d="M232 72 L380 72"/><path d="M226 118 L380 140"/><path d="M200 152 L380 208"/>
+  </g>
+  <g font-size="26" font-weight="800">
+    <text x="392" y="81" fill="#2F5DA8">HB<tspan text-decoration="underline">s</tspan>Ag</text>
+    <text x="392" y="149" fill="#B7791F">HB<tspan text-decoration="underline">e</tspan>Ag</text>
+    <text x="392" y="217" fill="#B8326A">HB<tspan text-decoration="underline">c</tspan>Ag</text>
+  </g>
+  <g font-size="17" fill="#4A5864">
+    <text x="392" y="104">surface antigen</text>
+    <text x="392" y="240">core antigen</text>
+  </g>
+</svg>

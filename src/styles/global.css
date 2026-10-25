@@ -239,3 +239,30 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
   .prose .le-note tr { padding: 6px 0; }
   .prose .le-note td { padding: 0; }
 }
+
+/* Hepatitis B markers */
+.prose .chart-hepb th:first-child, .prose .chart-hepb td:first-child { width: 32%; }
+.prose .chart-hepb td b { display: inline-block; font-weight: 700; border-radius: 8px; padding: 2px 9px; margin: 2px 4px 2px 0; font-size: 15px; }
+.prose .chart-hepb b.ag { background: #FFF1D6; color: #8A5300; }
+.prose .chart-hepb b.ab { background: var(--subject-tint, #E5F4EA); color: var(--subject, #15703A); }
+.prose .chart-hepb td.none { color: var(--muted); font-style: italic; }
+.prose .hepb-square { display: grid; grid-template-columns: repeat(3, 1fr); margin: 1.2em 0 0.6em; border: 3px solid var(--ink); border-radius: 14px; background: var(--card); overflow: hidden; }
+.prose .hs-col { padding: 16px 12px; text-align: center; }
+.prose .hs-col + .hs-col { border-left: 1px solid var(--line); }
+.prose .hepb-square p { margin: 0; }
+.prose .hs-h { font-weight: 800; text-decoration: underline; text-underline-offset: 4px; font-size: 18px; margin-bottom: 10px !important; }
+.prose .hs-ag { font-size: 28px; font-weight: 800; color: #8A5300; letter-spacing: 0.08em; min-height: 1.4em; }
+.prose .hs-empty { color: var(--line); }
+.prose .hs-ab { font-size: 26px; font-weight: 800; color: var(--subject, #15703A); white-space: nowrap; }
+@media (max-width: 600px) {
+  .prose .chart-hepb thead { display: none; }
+  .prose .chart-hepb table, .prose .chart-hepb tbody, .prose .chart-hepb tr, .prose .chart-hepb td { display: block; width: auto !important; }
+  .prose .chart-hepb tr { padding: 12px 14px; border-bottom: 1px solid var(--line); }
+  .prose .chart-hepb tr:last-child { border-bottom: 0; }
+  .prose .chart-hepb td { border: 0 !important; padding: 2px 0 !important; }
+  .prose .chart-hepb td.none { display: none; }
+  .prose .hs-ag { font-size: 21px; } .prose .hs-ab { font-size: 16px; } .prose .hs-h { font-size: 15px; } .prose .hs-col { padding: 14px 6px; }
+  .prose .chart-hepb td:nth-child(2)::before, .prose .chart-hepb td:nth-child(3)::before { display: block; font-size: 11px; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
+  .prose .chart-hepb td:nth-child(2)::before { content: "Antigens"; }
+  .prose .chart-hepb td:nth-child(3)::before { content: "Antibodies"; }
+}
