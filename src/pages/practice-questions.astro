@@ -1,0 +1,125 @@
+---
+// Practice questions: Sohail's original questions, written to test high-yield concepts.
+// Questions live in src/data/practice-questions.json (edit there; `answer` is 0 for A, 1 for B…).
+import Base from '../layouts/Base.astro';
+import { subjects } from '../data/subjects';
+import questions from '../data/practice-questions.json';
+
+const topicInfo: Record<string, { name: string; color: string; tint: string }> = {
+  ...Object.fromEntries(subjects.map((s) => [s.id, { name: s.name, color: s.color, tint: s.tint }])),
+  'lab-ops': { name: 'Lab operations & statistics', color: '#4A5A50', tint: '#EEF0EC' },
+};
+const used = [...new Set(questions.map((q) => q.topic))];
+const order = [...subjects.map((s) => s.id), 'lab-ops'].filter((t) => used.includes(t));
+const L = 'ABCDE';
+const paras = (s: string) => s.split(/\n\n+/);
+---
+<Base title="Practice questions" description="Original ASCP-style practice questions with full explanations: blood bank, chemistry, hematology, microbiology, immunology, urinalysis and more.">
+  <header class="pq-head">
+    <div class="wrap">
+      <p class="crumbs"><a href="/">Home</a> / Practice questions</p>
+      <h1>Practice questions</h1>
+      <p class="lede">Pick an answer, then read why it's right and why the others are wrong. The wrong answers teach as much as the right one.</p>
+      <div class="pq-chips" role="group" aria-label="Filter by subject">
+        <button type="button" class="pq-chip" data-t="all" aria-pressed="true">All <span>{questions.length}</span></button>
+        {order.map((t) => (
+          <button type="button" class="pq-chip" data-t={t} aria-pressed="false">
+            <i style={`background:${topicInfo[t].color}`} aria-hidden="true"></i>{topicInfo[t].name} <span>{questions.filter((q) => q.topic === t).length}</span>
+          </button>
+        ))}
+      </div>
+      <p class="pq-score" aria-live="polite">Score: <b data-right>0</b> right out of <b data-done>0</b> answered</p>
+    </div>
+  </header>
+  <main class="wrap pq-list">
+    {questions.map((q, n) => (
+      <article class="pq" data-topic={q.topic} data-answer={q.answer} id={q.id}>
+        <div class="pq-top">
+          <span class="pq-n">Question {n + 1}</span>
+          <span class="pq-tag" style={`color:${topicInfo[q.topic].color};background:${topicInfo[q.topic].tint}`}>{topicInfo[q.topic].name}</span>
+        </div>
+        <div class="pq-q">{paras(q.q).map((p) => <p>{p}</p>)}</div>
+        <ol class="pq-choices">
+          {q.choices.map((c, i) => (
+            <li><button type="button" class="pq-choice" data-i={i}><b>{L[i]}</b><span>{c}</span></button></li>
+          ))}
+        </ol>
+        <div class="pq-explain" hidden>
+          <p class="pq-verdict"></p>
+          {paras(q.explain).map((p) => <p>{p}</p>)}
+          <p class="pq-more"><a href={q.link}>Review the notes for this topic →</a></p>
+        </div>
+      </article>
+    ))}
+  </main>
+</Base>
+
+<script>
+  const right = document.querySelector('[data-right]')!, done = document.querySelector('[data-done]')!;
+  let nRight = 0, nDone = 0;
+  document.querySelectorAll<HTMLElement>('.pq').forEach((card) => {
+    const ans = Number(card.dataset.answer);
+    const btns = [...card.querySelectorAll<HTMLButtonElement>('.pq-choice')];
+    const box = card.querySelector<HTMLElement>('.pq-explain')!;
+    btns.forEach((b) => b.addEventListener('click', () => {
+      if (card.classList.contains('answered')) return;
+      const pick = Number(b.dataset.i);
+      card.classList.add('answered');
+      btns.forEach((x, i) => { x.classList.toggle('is-right', i === ans); x.disabled = true; });
+      if (pick !== ans) b.classList.add('is-wrong');
+      const ok = pick === ans;
+      nDone++; if (ok) nRight++;
+      right.textContent = String(nRight); done.textContent = String(nDone);
+      box.querySelector('.pq-verdict')!.textContent = ok ? 'Correct!' : 'Not quite.';
+      box.querySelector('.pq-verdict')!.className = 'pq-verdict ' + (ok ? 'ok' : 'no');
+      box.hidden = false;
+    }));
+  });
+  const chips = [...document.querySelectorAll<HTMLButtonElement>('.pq-chip')];
+  chips.forEach((c) => c.addEventListener('click', () => {
+    chips.forEach((x) => x.setAttribute('aria-pressed', String(x === c)));
+    const t = c.dataset.t;
+    let k = 0;
+    document.querySelectorAll<HTMLElement>('.pq').forEach((card) => {
+      const show = t === 'all' || card.dataset.topic === t;
+      card.hidden = !show;
+      if (show) card.querySelector('.pq-n')!.textContent = `Question ${++k}`;
+    });
+  }));
+</script>
+
+<style>
+  .pq-head { background: #fff; border-bottom: 1px solid var(--line); padding: 28px 0 22px; }
+  .pq-head h1 { margin: 6px 0 8px; }
+  .crumbs { font-size: 14px; color: var(--muted); margin: 0; }
+  .lede { max-width: 62ch; color: var(--muted); margin: 0 0 16px; }
+  .pq-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .pq-chip { display: inline-flex; align-items: center; gap: 7px; min-height: 40px; padding: 0 14px; border-radius: 999px; border: 1px solid var(--line); background: #fff; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; color: inherit; }
+  .pq-chip i { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+  .pq-chip span { color: var(--muted); font-weight: 500; }
+  .pq-chip[aria-pressed='true'] { background: #1F2937; color: #fff; border-color: #1F2937; }
+  .pq-chip[aria-pressed='true'] span { color: #CBD5E1; }
+  .pq-score { margin: 14px 0 0; font-size: 15px; color: var(--muted); }
+  .pq-list { max-width: 820px; padding-top: 24px; padding-bottom: 60px; display: grid; gap: 18px; }
+  .pq { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 20px 22px; }
+  .pq-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 10px; }
+  .pq-n { font-weight: 800; font-size: 15px; }
+  .pq-tag { font-size: 12.5px; font-weight: 700; padding: 4px 10px; border-radius: 999px; }
+  .pq-q p { margin: 0 0 10px; white-space: pre-line; line-height: 1.6; }
+  .pq-choices { list-style: none; padding: 0; margin: 12px 0 0; display: grid; gap: 8px; }
+  .pq-choice { width: 100%; display: flex; gap: 12px; align-items: flex-start; text-align: left; padding: 12px 14px; border: 1.5px solid var(--line); border-radius: 12px; background: #fff; font: inherit; font-size: 15.5px; line-height: 1.45; cursor: pointer; color: inherit; transition: border-color .15s, background .15s; }
+  .pq-choice:hover:not(:disabled) { border-color: #94A3B8; background: #F8FAFC; }
+  .pq-choice b { flex: none; width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; background: #F1F5F9; font-size: 13px; }
+  .pq-choice:disabled { cursor: default; }
+  .pq-choice.is-right { border-color: #16A34A; background: #F0FDF4; }
+  .pq-choice.is-right b { background: #16A34A; color: #fff; }
+  .pq-choice.is-wrong { border-color: #DC2626; background: #FEF2F2; }
+  .pq-choice.is-wrong b { background: #DC2626; color: #fff; }
+  .answered .pq-choice:not(.is-right):not(.is-wrong) { opacity: .6; }
+  .pq-explain { margin-top: 16px; padding: 16px 18px; background: #FFFDF4; border: 1px dashed #E5DCC3; border-radius: 12px; }
+  .pq-explain p { margin: 0 0 10px; white-space: pre-line; line-height: 1.6; }
+  .pq-verdict { font-weight: 800; font-size: 17px; }
+  .pq-verdict.ok { color: #15803D; } .pq-verdict.no { color: #B91C1C; }
+  .pq-more { margin: 4px 0 0 !important; font-weight: 700; }
+  @media (max-width: 600px) { .pq { padding: 16px; } .pq-choice { font-size: 15px; } }
+</style>

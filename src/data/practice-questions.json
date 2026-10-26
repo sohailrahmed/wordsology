@@ -1,0 +1,408 @@
+[
+ {
+  "id": "sens-kits",
+  "topic": "lab-ops",
+  "q": "An urgent care clinic in Queens is choosing between two rapid strep A kits. Both were tested on the same 200 throat swabs, using culture as the gold standard: 100 swabs were truly positive and 100 were truly negative.\n\nKit X: 92 true positives, 85 true negatives\nKit Y: 78 true positives, 98 true negatives\n\nThe clinic director wants the kit that will rarely miss a child who really has strep. (Negative rapid tests are backed up by culture anyway.) Which kit should she choose, and why?",
+  "choices": [
+   "Kit X, because it is more specific",
+   "Kit X, because it is more sensitive",
+   "Kit Y, because it is more sensitive",
+   "Kit Y, because it is more specific"
+  ],
+  "answer": 1,
+  "explain": "The answer is B.\n\nFirst, translate the director's wish into lab language. \"Rarely miss a child who really has strep\" means as few false negatives as possible. That's sensitivity.\n\nSensitivity = true positives / all who truly have the disease\nKit X: 92/100 = 92%\nKit Y: 78/100 = 78%\n\nSpecificity = true negatives / all who truly don't have the disease\nKit X: 85/100 = 85%\nKit Y: 98/100 = 98%\n\nKit X is more sensitive, so it's the better fit. Choice A pairs the right kit with the wrong reason (Kit X is actually less specific). Choice C is simply false. Choice D is a true statement about Kit Y, but it answers a different question: specificity matters when you want to avoid false positives, which isn't what the director asked for.\n\nThis concept shows up on the exam in many costumes. Whenever you see one, ask yourself: is the worry missing sick people (sensitivity) or scaring healthy people (specificity)?",
+  "link": "/passing-strategy/"
+ },
+ {
+  "id": "sens-missed",
+  "topic": "lab-ops",
+  "q": "Your laboratory is validating a new hepatitis C antibody assay. Among 120 patients whose hepatitis C infection was confirmed by RNA testing, the new assay reads 6 of them as negative. Which value do those 6 missed patients lower, and what is that value for this assay?",
+  "choices": [
+   "Specificity, which is 95%",
+   "Sensitivity, which is 5%",
+   "Positive predictive value, which is 95%",
+   "Sensitivity, which is 95%"
+  ],
+  "answer": 3,
+  "explain": "The answer is D.\n\nThose 6 patients truly have hepatitis C but tested negative, so they are false negatives. False negatives live in the sensitivity formula:\n\nSensitivity = TP / (TP + FN) = 114 / (114 + 6) = 95%\n\n(TP = true positives, FN = false negatives.)\n\nChoice A mixes up the two formulas. Specificity = TN / (TN + FP) and is about people who truly don't have the disease, and we weren't told anything about them. Choice B is the miss rate (6/120 = 5%), not the sensitivity. Choice C: positive predictive value asks \"if the test is positive, how likely is the patient to really have it?\" That needs the false positive count, which we don't have.\n\nA handy memory hook: SeNsitivity rules OUT (a highly sensitive test rarely produces false Negatives).",
+  "link": "/passing-strategy/"
+ },
+ {
+  "id": "ua-pyelo",
+  "topic": "urinalysis-body-fluids",
+  "q": "A 34 year old woman arrives at an emergency room in Newark with a fever of 102°F, chills and pain in her right flank. Her urinalysis shows: nitrite positive, leukocyte esterase positive, many bacteria, many white blood cells (WBCs) and several WBC casts. What is the most likely diagnosis?",
+  "choices": [
+   "Acute pyelonephritis",
+   "Cystitis (a bladder infection)",
+   "Acute glomerulonephritis",
+   "Nephrotic syndrome"
+  ],
+  "answer": 0,
+  "explain": "The answer is A.\n\nNitrite, leukocyte esterase, bacteria and WBCs tell you there's a bacterial urinary tract infection. Nitrite appears because many gram negative bacteria convert urinary nitrate to nitrite, and the WBCs (detected by leukocyte esterase) are the body's response. But where is the infection?\n\nThe WBC casts answer that. Casts are molded inside the renal tubules, so WBC casts mean the white cells were in the kidney itself. Add fever and flank pain and you have pyelonephritis.\n\nB is wrong because a bladder infection can give you all the same findings except the casts. Bladders don't make casts!\nC is wrong because glomerulonephritis is classically associated with RBC casts and blood in the urine, not bacteria and nitrite.\nD is wrong because nephrotic syndrome shows heavy protein loss, oval fat bodies and fatty casts.\n\nRemember: casts = kidney. The type of cast tells you what's happening there.",
+  "link": "/high-yield-notes-2/urinalysis-body-fluids/"
+ },
+ {
+  "id": "ua-albumin",
+  "topic": "chemistry",
+  "q": "A 58 year old man in Philadelphia has had high blood pressure for twenty years. His doctor orders a urine test every year to catch early kidney damage. In early glomerular damage, which plasma protein is expected to show up in the urine first, and why?",
+  "choices": [
+   "IgG, because it is the largest plasma protein",
+   "Beta-2 microglobulin, because it is the best marker of glomerular damage",
+   "Albumin, because it is the most abundant plasma protein and small enough to slip through a leaky glomerulus",
+   "Fibrinogen, because the glomerulus filters it first"
+  ],
+  "answer": 2,
+  "explain": "The answer is C.\n\nA healthy glomerulus holds back most proteins. When it starts to leak, albumin comes through first for two reasons working together: albumin is by far the most plentiful protein in plasma, and at about 66 kDa it sits right near the size cutoff of the glomerular filter. A small leak lets albumin through long before the bigger proteins. That's why urine albumin (often reported as an albumin-to-creatinine ratio) is the classic early screen for hypertensive and diabetic kidney damage.\n\nA is wrong. IgG (about 150 kDa) is much bigger, so it only spills when the damage is more severe.\nB is a clever distractor. Beta-2 microglobulin is so small that it's normally filtered and then reabsorbed by the tubules. Finding it in urine points to TUBULAR damage, not glomerular.\nD is wrong. Fibrinogen is a very large protein and is not expected in urine.",
+  "link": "/high-yield-notes-2/chemistry/"
+ },
+ {
+  "id": "cortisol-labs",
+  "topic": "endocrinology",
+  "q": "A 46 year old woman has gained weight in her face and abdomen over the past year. She bruises easily and has a fatty hump between her shoulders. Her doctor suspects she is making too much cortisol. Which lab result would you most expect?",
+  "choices": [
+   "Potassium of 6.1 mmol/L",
+   "Sodium of 124 mmol/L",
+   "An increased eosinophil count",
+   "Fasting glucose of 160 mg/dL"
+  ],
+  "answer": 3,
+  "explain": "The answer is D.\n\nThis is Cushing syndrome (hypercortisolism): moon face, abdominal weight gain, easy bruising and a buffalo hump. Cortisol works against insulin. It raises blood glucose by driving gluconeogenesis (making glucose from non-carbohydrate sources such as protein and fat), so an elevated fasting glucose fits perfectly.\n\nChoices A and B are the reverse picture. High potassium and low sodium are what you'd expect when the adrenal cortex is NOT making enough hormone, as in Addison's disease. Cortisol excess, if anything, tends toward the opposite.\n\nC is wrong because cortisol lowers eosinophils and lymphocytes. That's part of why steroids suppress the immune response.\n\nWatch the adrenal gland animation on the endocrinology page to see cortisol push the blood sugar meter up.",
+  "link": "/high-yield-notes-2/endocrinology/"
+ },
+ {
+  "id": "abo-a2",
+  "topic": "blood-bank",
+  "q": "A new patient is typed in your blood bank on a Tuesday morning:\n\nFront type: anti-A 4+, anti-B 0\nBack type: A1 cells 1+, B cells 4+\n\nThe autocontrol is negative. Patient red cells tested with Dolichos biflorus lectin (anti-A1 lectin) are nonreactive. What is the most likely explanation?",
+  "choices": [
+   "The patient has a cold autoantibody",
+   "The patient is a subgroup of A (A2) making anti-A1",
+   "The patient has rouleaux caused by multiple myeloma",
+   "The patient is type O and the front type is wrong"
+  ],
+  "answer": 1,
+  "explain": "The answer is B.\n\nThe front type clearly says group A. The back type has the expected strong anti-B, plus an unexpected weak reaction with A1 cells. So the patient's plasma has something that reacts with A1 cells even though the patient's own cells carry A antigen.\n\nThe lectin result is the clue. Dolichos biflorus agglutinates A1 cells but not A2 cells. These cells are nonreactive, so the patient is A2. A small percentage of A2 people (and a larger percentage of A2B people) make anti-A1, which reacts with reagent A1 cells but leaves their own A2 cells alone. To confirm, you'd see no reaction with reagent A2 cells.\n\nA is wrong. A cold autoantibody reacts with the patient's own cells too, so the autocontrol would be positive, and it would usually react with all the reagent cells.\nC is wrong. Rouleaux from high protein levels makes the plasma react with every reagent cell, not just A1 cells.\nD is wrong. A 4+ reaction with anti-A is not a mistake you can wave away. The front type is strong and clean.",
+  "link": "/high-yield-notes-2/blood-bank/"
+ },
+ {
+  "id": "lepto",
+  "topic": "microbiology",
+  "q": "Five days after a muddy freshwater triathlon in Hawaii, a 31 year old athlete develops high fever, severe headache, muscle pain (especially in his calves) and red eyes. The physician suspects an infection picked up from water contaminated with animal urine. Which specimen and culture medium would be best during this first week of illness?",
+  "choices": [
+   "Stool, plated on Campylobacter agar",
+   "Urine, plated on Regan-Lowe agar",
+   "Blood, inoculated into Fletcher's semisolid medium",
+   "A skin scraping, plated on Sabouraud agar"
+  ],
+  "answer": 2,
+  "explain": "The answer is C.\n\nFreshwater exposure + fever + calf pain + red eyes (conjunctival suffusion) = Leptospira, the \"animal pee borne\" spirochete from the cartoon on the homepage. Animals such as rats and cattle shed it in their urine, and people pick it up from contaminated water or soil.\n\nDuring the first week, Leptospira circulates in the blood (and CSF), so blood is the specimen of choice. After the first week, it moves to the kidneys and urine becomes the better specimen. Leptospira grows slowly in special semisolid media such as Fletcher's or EMJH.\n\nA is wrong because Campylobacter agar is for Campylobacter, a cause of diarrhea.\nB is doubly wrong: urine is better after the first week, and Regan-Lowe is the medium for Bordetella pertussis.\nD is wrong because Sabouraud agar is for fungi.\n\nIf you only remember two things about Leptospira: animal urine, and Fletcher's medium.",
+  "link": "/high-yield-notes-2/microbiology/"
+ },
+ {
+  "id": "eikenella",
+  "topic": "microbiology",
+  "q": "A man arrives at an urgent care clinic in the Bronx with a swollen, infected cut across his knuckles. He admits it happened when he punched someone in the mouth three days earlier. The wound culture grows a small gram negative rod that pits (corrodes) the agar and has a bleach-like smell. What organism is it?",
+  "choices": [
+   "Eikenella corrodens",
+   "Pasteurella multocida",
+   "Capnocytophaga canimorsus",
+   "Pseudomonas aeruginosa"
+  ],
+  "answer": 0,
+  "explain": "The answer is A.\n\nA \"fight bite\" (a closed fist hitting human teeth) delivers mouth bacteria deep into the knuckle. Eikenella corrodens lives in the human mouth, and it has two classic tells: it pits or corrodes the agar (hence \"corrodens\") and it gives off a bleach-like odor. It's one of the HACEK organisms.\n\nB is wrong. Pasteurella multocida is the classic cause of infections after cat and dog bites, and its odor is described as musty or mushroom-like.\nC is wrong. Capnocytophaga canimorsus also comes from dog bites (\"canimorsus\" means dog bite).\nD is wrong. Pseudomonas aeruginosa smells like grapes (some say corn tortillas), produces green pigment and doesn't pit the agar.\n\nHuman bite: Eikenella. Animal bite: Pasteurella.",
+  "link": "/high-yield-notes-2/microbiology/"
+ },
+ {
+  "id": "bfp",
+  "topic": "immunology",
+  "q": "A 29 year old pregnant woman with systemic lupus erythematosus (SLE) has her routine prenatal screening done. Her RPR (rapid plasma reagin) is weakly reactive at a titer of 1:2. A treponemal confirmatory test (TP-PA, Treponema pallidum particle agglutination) is nonreactive. She has no symptoms and no known exposure. What is the best interpretation?",
+  "choices": [
+   "Latent syphilis that needs treatment",
+   "A biological false positive RPR",
+   "A prozone reaction",
+   "A false negative TP-PA caused by her pregnancy"
+  ],
+  "answer": 1,
+  "explain": "The answer is B.\n\nThe RPR (like the VDRL) is a nontreponemal test. It doesn't look for the syphilis organism itself. It detects antibodies against cardiolipin, a lipid released from damaged cells. Many conditions besides syphilis can produce those antibodies, including lupus and other autoimmune diseases, rheumatoid factor, pregnancy, some viral infections and intravenous drug use. A low-titer reactive RPR with a nonreactive treponemal test, in a patient with lupus who is pregnant, is the textbook biological false positive.\n\nA is wrong because latent syphilis would give a reactive treponemal test. Treponemal antibodies usually stay positive for life once someone has been infected.\nC is wrong because the prozone phenomenon (too much antibody preventing a visible reaction) causes false NEGATIVES, usually in secondary syphilis with very high titers.\nD is wrong. Pregnancy is a cause of false positive nontreponemal tests, not false negative treponemal tests.",
+  "link": "/high-yield-notes-2/immunology/"
+ },
+ {
+  "id": "thyroid-adenoma",
+  "topic": "endocrinology",
+  "q": "Four patients' thyroid results come off the analyzer. Which pattern fits a TSH-secreting pituitary adenoma (secondary hyperthyroidism)?",
+  "choices": [
+   "TSH low, free T4 high",
+   "TSH high, free T4 low",
+   "TSH high, free T4 high",
+   "TSH low, free T4 low"
+  ],
+  "answer": 2,
+  "explain": "The answer is C.\n\nA TSH-secreting pituitary adenoma (TSH = thyroid-stimulating hormone) pumps out TSH no matter what. The healthy thyroid does what it's told and makes too much T4, so both are high. The tumor ignores the negative feedback from all that T4.\n\nUse the shortcut from the thyroid animation on the endocrinology page: if TSH and T4 move in the SAME direction, the problem is upstream in the pituitary (secondary). If they move in OPPOSITE directions, the problem is the thyroid itself (primary).\n\nA is primary hyperthyroidism, such as Graves disease: the thyroid overworks and the pituitary backs off.\nB is primary hypothyroidism, such as Hashimoto thyroiditis: the thyroid fails and the pituitary shouts louder.\nD is secondary hypothyroidism: the pituitary isn't making enough TSH, so the thyroid isn't told to work.",
+  "link": "/high-yield-notes-2/endocrinology/"
+ },
+ {
+  "id": "pth",
+  "topic": "chemistry",
+  "q": "A 62 year old woman has kidney stones, aching bones and constant fatigue. Imaging finds a benign tumor (adenoma) on one of her parathyroid glands, which is releasing too much parathyroid hormone (PTH). Which pair of serum results do you expect?",
+  "choices": [
+   "Calcium high, phosphate high",
+   "Calcium low, phosphate high",
+   "Calcium low, phosphate low",
+   "Calcium high, phosphate low"
+  ],
+  "answer": 3,
+  "explain": "The answer is D.\n\nPTH's job is to raise blood calcium. It pulls calcium out of bone, tells the kidneys to hold on to calcium, and increases activation of vitamin D (which boosts calcium absorption from the gut). At the same time, PTH tells the kidneys to dump phosphate into the urine. So too much PTH means high calcium and low phosphate. The kidney stones and bone pain come from all that calcium being moved around: \"stones, bones, groans and moans.\"\n\nA is the pattern of vitamin D toxicity, where extra vitamin D raises both calcium and phosphate absorption from the gut.\nB is the pattern of too little PTH (hypoparathyroidism, for example after neck surgery).\nC is the pattern of vitamin D deficiency.",
+  "link": "/high-yield-notes-2/chemistry/"
+ },
+ {
+  "id": "klebsiella",
+  "topic": "microbiology",
+  "q": "On the same morning, you read two urine cultures from different patients. Both isolates grow as large, mucoid, pink colonies on MacConkey agar. Both are nonmotile, lysine decarboxylase positive gram negative rods.\n\nIsolate 1: indole negative\nIsolate 2: indole positive\n\nWhat are they?",
+  "choices": [
+   "Isolate 1 is Klebsiella pneumoniae; isolate 2 is Klebsiella oxytoca",
+   "Isolate 1 is Klebsiella oxytoca; isolate 2 is Klebsiella pneumoniae",
+   "Isolate 1 is Escherichia coli; isolate 2 is Klebsiella pneumoniae",
+   "Both are Enterobacter cloacae"
+  ],
+  "answer": 0,
+  "explain": "The answer is A.\n\nPink on MacConkey means lactose fermenter. Big, mucoid (slimy) colonies come from a thick capsule, which is Klebsiella's trademark. Klebsiella is also nonmotile and lysine decarboxylase positive. So both isolates are Klebsiella, and the only question left is which species.\n\nThe indole test separates them: Klebsiella pneumoniae is indole negative, and Klebsiella oxytoca is indole positive. That makes isolate 1 K. pneumoniae and isolate 2 K. oxytoca.\n\nB has them backwards.\nC is wrong because E. coli colonies are usually flat and dry rather than mucoid, and isolate 2's indole result wouldn't fit K. pneumoniae.\nD is wrong because Enterobacter is motile and doesn't usually look this mucoid.\n\nThe trap: most students remember \"E. coli is indole positive, Klebsiella is indole negative\" and stop there. K. oxytoca is the exception that makes this a favorite exam question. Check the gram negative bacilli chart in the microbiology section.",
+  "link": "/high-yield-notes-2/microbiology/"
+ },
+ {
+  "id": "proteus",
+  "topic": "microbiology",
+  "q": "A urine culture from a nursing home resident grows an organism that spreads in waves across the entire blood agar plate. It is a gram negative rod and gives these results:\n\nPhenylalanine deaminase (PAD): positive\nH2S (hydrogen sulfide): positive\nIndole: negative\nOrnithine decarboxylase: positive\n\nWhat is it?",
+  "choices": [
+   "Proteus vulgaris",
+   "Morganella morganii",
+   "Proteus mirabilis",
+   "Providencia stuartii"
+  ],
+  "answer": 2,
+  "explain": "The answer is C.\n\nThe waves across the plate are swarming, the calling card of Proteus. PAD positive puts you in the Proteus, Morganella and Providencia group, and H2S positive narrows it to Proteus. Now the indole test splits the two Proteus species: Proteus mirabilis is indole NEGATIVE, while Proteus vulgaris is indole POSITIVE. P. mirabilis is also ornithine decarboxylase positive, and P. vulgaris is not.\n\nA is wrong because P. vulgaris is indole positive and ornithine negative.\nB is wrong because Morganella is indole positive, usually H2S negative, and doesn't swarm.\nD is wrong because Providencia is indole positive, H2S negative, and doesn't swarm.\n\nThis is practical knowledge, which is exactly why the exam loves it. P. mirabilis is one of the most common urine isolates you'll see on the bench.",
+  "link": "/high-yield-notes-2/microbiology/"
+ },
+ {
+  "id": "hpylori",
+  "topic": "microbiology",
+  "q": "A gastroenterologist takes a stomach biopsy from a 45 year old man with recurring ulcers and sends a piece of it straight to the laboratory. She wants a same-day answer on whether the curved gram negative rod she suspects is present. Which test on the biopsy gives the fastest answer?",
+  "choices": [
+   "A catalase test",
+   "A rapid urease test",
+   "A bile solubility test",
+   "A coagulase test"
+  ],
+  "answer": 1,
+  "explain": "The answer is B.\n\nThe suspect is Helicobacter pylori, the curved gram negative rod behind most peptic ulcers. To survive in stomach acid, H. pylori makes huge amounts of urease, which splits urea into ammonia and builds a little alkaline cloud around itself. A rapid urease test (often called a CLO test) puts the biopsy into a gel containing urea and a pH indicator. If H. pylori is there, the ammonia turns the indicator color, often within an hour. The urea breath test works on the same principle without a biopsy.\n\nA is wrong. H. pylori is catalase positive, but so are countless other organisms, so it wouldn't tell you anything specific.\nC is wrong. Bile solubility identifies Streptococcus pneumoniae.\nD is wrong. Coagulase separates Staphylococcus aureus from other staphylococci.\n\nIf you only know three things about H. pylori: curved, stomach, urease.",
+  "link": "/high-yield-notes-2/microbiology/"
+ },
+ {
+  "id": "qc-vial",
+  "topic": "lab-ops",
+  "q": "At 6 AM you run the chemistry analyzer's quality control (QC). The ALT control from the vial opened three weeks ago reads 2.8 standard deviations (SD) below its mean. The package insert says opened controls are stable for 7 days. You open a new vial, and that control falls right on its mean. Patient results earlier in the run looked reasonable. What was the most likely problem?",
+  "choices": [
+   "The analyzer's lamp is failing",
+   "A new lot of ALT reagent was loaded",
+   "The patient specimens were hemolyzed",
+   "The old control vial had degraded after being open too long"
+  ],
+  "answer": 3,
+  "explain": "The answer is D.\n\nALT (alanine aminotransferase) is an enzyme, and enzymes lose activity when they're stored too long or at the wrong temperature. The old vial was two weeks past its open-vial stability, so its enzyme activity dropped and the control read low. The key piece of evidence: a fresh vial from the same lot, run on the same analyzer with the same reagent, came back right on target. That points the finger squarely at the old control material.\n\nA is wrong. A failing lamp would affect every test on that wavelength, including the new control vial.\nB is wrong. A new reagent lot could shift results, but it would shift the new control vial too.\nC is wrong. Hemolysis affects patient specimens, not the control material.\n\nA useful habit: when QC fails, change ONE thing at a time. Here, changing only the control vial solved the problem, so the vial was the problem. Remember to document it, and to label opened vials with the date you opened them.",
+  "link": "/high-yield-notes-2/chemistry/"
+ },
+ {
+  "id": "hiv-nat",
+  "topic": "immunology",
+  "q": "A 24 year old man has fever, a sore throat, swollen lymph nodes and a rash, beginning two weeks after a new sexual partner. His fourth-generation HIV-1/HIV-2 antigen/antibody immunoassay is reactive. The follow-up HIV-1/HIV-2 antibody differentiation immunoassay is negative for both HIV-1 and HIV-2. What should be done next?",
+  "choices": [
+   "An HIV-1 nucleic acid test (NAT)",
+   "Report the patient as HIV negative",
+   "Repeat the differentiation immunoassay in one year",
+   "A CD4 count"
+  ],
+  "answer": 0,
+  "explain": "The answer is A.\n\nModern HIV testing runs in steps.\n\nSTEP 1: The fourth-generation screen detects both HIV antibodies AND the p24 antigen (a piece of the virus itself). Because it detects antigen, it can turn positive before the body has made much antibody.\n\nSTEP 2: The differentiation immunoassay detects only antibodies and tells you whether they're against HIV-1 or HIV-2.\n\nSo what does \"screen positive, antibodies negative\" mean? Either the screen was a false positive, or this is a very early (acute) infection where the virus is present but antibodies haven't caught up. This man's symptoms, two weeks after a new partner, fit acute HIV infection perfectly. An HIV-1 NAT detects the virus's genetic material directly and settles the question.\n\nB is wrong and dangerous. Calling this negative could miss an acute infection, which is when people are most contagious.\nC is wrong. Waiting a year wastes the most important window.\nD is wrong. A CD4 count measures immune damage. It does not diagnose HIV.\n\nOlder textbooks use the Western blot as the confirmatory step. Current guidelines replaced it with the differentiation immunoassay and NAT.",
+  "link": "/high-yield-notes-2/immunology/"
+ },
+ {
+  "id": "pcr",
+  "topic": "lab-ops",
+  "q": "Your molecular lab runs a PCR (polymerase chain reaction) test for chlamydia. Which list puts the three steps of each PCR cycle in the correct order, with typical temperatures?",
+  "choices": [
+   "Annealing (~55°C), denaturation (~95°C), extension (~72°C)",
+   "Denaturation (~95°C), annealing (~55°C), extension (~72°C)",
+   "Extension (~72°C), annealing (~55°C), denaturation (~95°C)",
+   "Denaturation (~37°C), annealing (~72°C), extension (~95°C)"
+  ],
+  "answer": 1,
+  "explain": "The answer is B.\n\nEach PCR cycle copies the target DNA, and each step needs its own temperature:\n\nSTEP 1, denaturation (~95°C): the heat separates the two DNA strands.\nSTEP 2, annealing (~55°C, depending on the primers): the temperature drops so short primers can bind to their matching sequences on each single strand.\nSTEP 3, extension (~72°C): a heat-stable DNA polymerase (Taq polymerase) builds the new strand starting from each primer.\n\nThen the cycle repeats. After 30 or so cycles, one target becomes about a billion copies.\n\nA and C put the steps in an order that can't work: primers can't anneal to DNA that is still double stranded. D has the right names but scrambled temperatures. 37°C is body temperature, not hot enough to separate DNA strands.\n\nNote the word \"extension.\" You may see the third step loosely called \"transcription,\" but transcription means making RNA from DNA, which is a different process.",
+  "link": "/high-yield-notes-2/immunology/"
+ },
+ {
+  "id": "allergy-ige",
+  "topic": "immunology",
+  "q": "A 7 year old girl's lips swelled up within minutes of eating a cookie at a birthday party. Her pediatrician wants a blood test to find out whether she is allergic to peanuts. What should the lab measure?",
+  "choices": [
+   "Total IgG",
+   "Peanut-specific IgM",
+   "Serum tryptase",
+   "Peanut-specific IgE (the test once called RAST)"
+  ],
+  "answer": 3,
+  "explain": "The answer is D.\n\nFood allergies like this are type I (immediate) hypersensitivity reactions, and IgE is the antibody behind them. IgE sits on mast cells, and when the allergen cross-links it, the mast cells release histamine within minutes. The lab can measure IgE directed against one specific allergen (peanut, cat dander, ragweed and so on). This test was originally called the RAST (radioallergosorbent test), and older exam questions still use that name.\n\nA is wrong. Total IgG reflects overall immune activity, not allergy to a particular food.\nB is wrong. IgM is the first antibody made in a new infection. It isn't the antibody of allergy.\nC is a good distractor. Tryptase is released by mast cells during a severe reaction (anaphylaxis), so it can show that a reaction happened, but it can't tell you WHAT the patient is allergic to.",
+  "link": "/high-yield-notes-2/immunology/"
+ },
+ {
+  "id": "newborn-hct",
+  "topic": "hematology",
+  "q": "On a night shift in the neonatal unit's lab, a CBC (complete blood count) from a healthy, full-term, 1 day old baby boy shows a hematocrit of 62%. The specimen was collected properly in a lavender-top EDTA tube, is not clotted, and the delta check shows no earlier results. What should you do?",
+  "choices": [
+   "Recollect in a light blue sodium citrate tube",
+   "Recollect in a green heparin tube",
+   "Report the result. It is within the normal range for a newborn",
+   "Dilute the specimen and rerun it"
+  ],
+  "answer": 2,
+  "explain": "The answer is C.\n\nA hematocrit of 62% would be alarming in an adult, but a newborn's normal range runs roughly from the mid 40s to the mid 60s. Babies live in a low-oxygen environment in the womb, so they're born with lots of red cells. Over the first months of life, the hematocrit drifts down toward normal childhood levels. Always check the patient's age before calling a result abnormal.\n\nA is wrong. Sodium citrate (light blue top) is for coagulation tests, and its liquid dilutes the specimen. EDTA (lavender top) is the right tube for a CBC.\nB is wrong. Heparin causes clumping and poor staining on blood films, so it isn't used for CBCs.\nD is wrong. Diluting is for results that exceed the analyzer's measuring range. A hematocrit of 62% is well within it.\n\nIf this had been an adult, you'd think about dehydration, polycythemia vera, or blood doping (popular with certain cyclists, and a great way to have a stroke while winning a gold medal).",
+  "link": "/high-yield-notes-2/hematology/"
+ },
+ {
+  "id": "fluor-filter",
+  "topic": "lab-ops",
+  "q": "You're reading an auramine-rhodamine stained smear for acid-fast bacilli on a fluorescence microscope. The microscope has an exciter filter, a dichroic mirror and a barrier filter. Which part keeps the high-energy excitation light from reaching your eyes?",
+  "choices": [
+   "The barrier (emission) filter",
+   "The exciter filter",
+   "The condenser",
+   "The immersion oil"
+  ],
+  "answer": 0,
+  "explain": "The answer is A.\n\nHere's how fluorescence works. High-energy light (ultraviolet or blue) from the lamp excites the dye. The dye then gives off lower-energy, longer-wavelength light (the yellow-orange glow of the stained bacilli), and that emitted light is what you want to see. The excitation light is the dangerous part.\n\nThe barrier filter sits between the specimen and the eyepieces. It blocks the excitation wavelengths and lets only the emitted light through, protecting your eyes and giving you a dark background with glowing organisms.\n\nB is wrong. The exciter filter sits on the lamp side. It selects which wavelengths reach the specimen, not what reaches your eyes.\nC is wrong. The condenser focuses light onto the specimen. It doesn't filter wavelengths.\nD is wrong. Immersion oil improves resolution. It doesn't protect your eyes from anything!\n\nNever look into the light path with the barrier filter removed.",
+  "link": "/high-yield-notes-2/microbiology/"
+ },
+ {
+  "id": "deglyc",
+  "topic": "blood-bank",
+  "q": "A patient with a rare antibody needs blood. Your supplier sends a frozen unit of red blood cells that has been stored since 2019. Your lab thaws and deglycerolizes it in an open system, finishing at 2:00 PM on Tuesday. When does the deglycerolized unit expire?",
+  "choices": [
+   "14 days from Tuesday",
+   "2:00 PM Wednesday (24 hours)",
+   "10 years from the date it was frozen",
+   "8:00 PM Tuesday (6 hours)"
+  ],
+  "answer": 1,
+  "explain": "The answer is B.\n\nRare red cells can be frozen with glycerol (which protects them from ice crystals) and kept for up to 10 years. Before they can be transfused, they must be thawed and the glycerol washed out (deglycerolized). Once you've done that in an OPEN system (one where the bag has been entered and bacteria could get in), the unit expires 24 hours later, stored at 1 to 6°C.\n\nA is the trap for students who know about closed systems. Deglycerolizing in a functionally closed system extends the expiration to 14 days, but this unit was processed in an open system.\nC describes the frozen unit. The 10-year clock stops the moment you thaw it.\nD is a made-up number.\n\nThat 24-hour window is why the blood bank and the clinical team must agree on WHEN the patient will be transfused before anyone thaws a rare unit.",
+  "link": "/high-yield-notes-2/blood-bank/"
+ },
+ {
+  "id": "syphilis-reinfection",
+  "topic": "immunology",
+  "q": "A man was treated for syphilis five years ago. After treatment, his RPR (rapid plasma reagin) became nonreactive. Today, after a new partner, he has a painless ulcer, and his RPR is reactive at a titer of 1:64. His TP-PA (Treponema pallidum particle agglutination) is reactive, as it has been since his first infection. What does this tell you?",
+  "choices": [
+   "Nothing. The reactive TP-PA proves the first infection was never cured",
+   "The RPR is a false positive because he was already treated",
+   "He has been reinfected. The rise in RPR titer shows a new, active infection",
+   "He is immune to syphilis because he had it before"
+  ],
+  "answer": 2,
+  "explain": "The answer is C.\n\nSyphilis testing uses two families of tests, and they behave very differently over time.\n\nTreponemal tests (TP-PA, FTA-ABS and others) detect antibodies against the syphilis organism itself. Once positive, they usually stay positive for life, even after successful treatment. So they can't tell an old, cured infection from a new one.\n\nNontreponemal tests (RPR, VDRL) rise with active infection and fall after treatment. They're the ones you follow. A fourfold or greater rise in titer means new or active disease, and going from nonreactive to 1:64 is a big rise.\n\nA misunderstands the treponemal test: staying positive is expected after treatment.\nB is wrong. Treatment doesn't protect against a new infection, and his ulcer and titer tell the story.\nD is wrong. Having syphilis once does not make you immune.",
+  "link": "/high-yield-notes-2/immunology/"
+ },
+ {
+  "id": "antigen-logic",
+  "topic": "blood-bank",
+  "q": "A patient's antibody workup identifies anti-Fy^a (anti-Duffy a). The patient has never been pregnant but was transfused twice last year. The patient's plasma is also tested against reagent cells that are positive for Jk^b (Kidd b), and there is no reaction. What can you conclude about the antigens on the PATIENT'S red cells?",
+  "choices": [
+   "The patient is Fy(a+) and Jk(b+)",
+   "The patient is Fy(a−) and Jk(b+)",
+   "The patient is Fy(a+); the Jk^b status cannot be determined",
+   "The patient is Fy(a−); the Jk^b status cannot be determined from these results"
+  ],
+  "answer": 3,
+  "explain": "The answer is D.\n\nThis is a two-step question. It's easy to answer the first step and stop. Read the last line again: it asks about the patient's ANTIGENS, not their antibodies.\n\nStep 1, Fy^a: the patient makes anti-Fy^a. Nobody makes an alloantibody against an antigen on their own red cells, so the patient must lack Fy^a. The patient is Fy(a−).\n\nStep 2, Jk^b: the plasma doesn't react with Jk^b-positive cells, so there's no anti-Jk^b. But NOT having an antibody doesn't tell you the patient HAS the antigen. Either the patient is Jk(b+) (so they'd never make the antibody), or the patient is Jk(b−) but has never been exposed to the antigen or has not responded to it. To know for sure, you'd type the patient's red cells with anti-Jk^b antiserum.\n\nA and C are wrong because a patient with anti-Fy^a can't be Fy(a+).\nB is wrong because it assumes the absence of an antibody proves the antigen is present.\n\nAntibody present: antigen absent. Antibody absent: you can't tell.",
+  "link": "/high-yield-notes-2/blood-bank/"
+ },
+ {
+  "id": "bence-jones",
+  "topic": "urinalysis-body-fluids",
+  "q": "A 68 year old retired teacher has back pain, anemia and a high serum calcium. Her urine reagent strip (dipstick) is negative for protein, but the sulfosalicylic acid (SSA) precipitation test is 2+. Which test should follow?",
+  "choices": [
+   "Repeat the reagent strip with a fresh bottle",
+   "Urine protein electrophoresis with immunofixation",
+   "A urine microalbumin test",
+   "A urine culture"
+  ],
+  "answer": 1,
+  "explain": "The answer is B.\n\nThe two protein tests disagree because they work differently. The reagent strip pad relies on the \"protein error of indicators,\" and it reacts mainly with albumin. SSA precipitates ALL proteins, including free immunoglobulin light chains (Bence Jones proteins). So a negative strip with a positive SSA suggests a protein in the urine that isn't albumin.\n\nNow add the clinical picture: bone pain, anemia and high calcium in an older adult point toward multiple myeloma, a cancer of plasma cells that often spills free light chains into the urine. Urine protein electrophoresis with immunofixation will identify the monoclonal light chain.\n\nA is wrong. The strip is working fine. It simply doesn't detect light chains well.\nC is wrong. A microalbumin test looks for small amounts of albumin, and albumin isn't the issue here.\nD is wrong. Nothing here suggests an infection.",
+  "link": "/high-yield-notes-2/urinalysis-body-fluids/"
+ },
+ {
+  "id": "nse-fluoride",
+  "topic": "hematology",
+  "q": "A bone marrow from a 61 year old man with swollen gums and a very high white count is full of blasts. On cytochemical stains, the blasts are strongly positive for nonspecific esterase (alpha-naphthyl butyrate), and the reaction disappears when sodium fluoride is added. What kind of cells are these blasts most likely to be?",
+  "choices": [
+   "Monoblasts (monocytic leukemia)",
+   "Myeloblasts (granulocytic leukemia)",
+   "Lymphoblasts (acute lymphoblastic leukemia)",
+   "Plasma cells (multiple myeloma)"
+  ],
+  "answer": 0,
+  "explain": "The answer is A.\n\nCytochemical stains help tell one leukemia from another:\n\nSpecific esterase (naphthol AS-D chloroacetate): stains granulocytes red.\nNonspecific esterase (alpha-naphthyl acetate or butyrate): stains monocytes, and in monocytes the reaction is INHIBITED by sodium fluoride. That fluoride step is the giveaway.\n\nSwollen gums (from leukemic cells infiltrating the gum tissue) are a classic clinical clue for acute monocytic leukemia (AML-M5 in the older FAB system), so the history and the stain point the same way.\n\nB is wrong. Myeloblasts are positive for myeloperoxidase, Sudan black B and specific esterase.\nC is wrong. Lymphoblasts are negative for these esterases (and for myeloperoxidase).\nD is wrong. Myeloma is a plasma cell disorder, diagnosed with protein electrophoresis and flow cytometry, not these stains.\n\nWhile you're here, one more classic stain: LAP (leukocyte alkaline phosphatase) is LOW in chronic myeloid leukemia (CML) and HIGH in a leukemoid reaction.",
+  "link": "/high-yield-notes-2/hematology/"
+ },
+ {
+  "id": "siadh",
+  "topic": "endocrinology",
+  "q": "A 66 year old long-time smoker with small cell lung cancer becomes confused. His results:\n\nSerum sodium: 122 mmol/L (low)\nSerum osmolality: 255 mOsm/kg (low)\nUrine osmolality: 480 mOsm/kg (inappropriately concentrated)\nHe is not dehydrated, and his adrenal and thyroid function are normal.\n\nWhat is the most likely cause?",
+  "choices": [
+   "Diabetes insipidus",
+   "Addison's disease",
+   "SIADH (syndrome of inappropriate antidiuretic hormone secretion)",
+   "Dehydration"
+  ],
+  "answer": 2,
+  "explain": "The answer is C.\n\nAntidiuretic hormone (ADH) tells the kidneys to hold on to water. Some tumors, small cell lung cancer above all, make ADH on their own. The kidneys keep reabsorbing water the body doesn't need, the extra water dilutes the blood, and sodium and osmolality drop. Meanwhile the urine stays concentrated, which is \"inappropriate\" when the blood is already watered down. Low serum sodium + low serum osmolality + concentrated urine + normal fluid status = SIADH.\n\nA is the mirror image. In diabetes insipidus, ADH is missing or ignored, so the patient makes huge amounts of DILUTE urine and serum sodium tends to run HIGH.\nB is wrong. Addison's disease can lower sodium, but it usually raises potassium and the patient tends to be dehydrated with low blood pressure, and we were told his adrenal function is normal.\nD is wrong. Dehydration concentrates the blood and raises sodium.",
+  "link": "/high-yield-notes-2/endocrinology/"
+ },
+ {
+  "id": "fibers",
+  "topic": "urinalysis-body-fluids",
+  "q": "Reviewing a urine sediment from a toddler, you see several long, flat structures with ragged ends and uneven edges. Under polarized light they are brightly birefringent (they light up). How should you report them?",
+  "choices": [
+   "As waxy casts",
+   "As hyaline casts",
+   "As mucus threads",
+   "As fibers (an artifact), not as casts"
+  ],
+  "answer": 3,
+  "explain": "The answer is D.\n\nFibers from diapers, clothing or tissues land in urine specimens all the time, and they're notorious for being mistaken for casts. Two clues give them away:\n\nShape: real casts form inside renal tubules, so they have parallel sides and rounded ends. Fibers are often flat or twisted, with ragged or cut ends.\nPolarized light: most fibers are birefringent and glow under polarized light. Casts are not birefringent.\n\nA and B are wrong because neither waxy nor hyaline casts polarize light.\nC is wrong. Mucus threads are long, wavy and ribbon-like, but they're faint and don't polarize either.\n\nReporting a fiber as a cast could send a toddler for a kidney workup they don't need. When in doubt, check under polarized light!",
+  "link": "/high-yield-notes-2/urinalysis-body-fluids/"
+ },
+ {
+  "id": "troponin",
+  "topic": "chemistry",
+  "q": "A 55 year old woman comes to the emergency department with chest pressure that began two hours ago. Which marker is the most specific for injury to her heart muscle, and why?",
+  "choices": [
+   "Myoglobin, because it rises first",
+   "Cardiac troponin, because the cardiac forms belong to the protein complex that controls heart muscle contraction",
+   "CK-MB, because it is found only in heart muscle",
+   "LD (lactate dehydrogenase), because it stays elevated the longest"
+  ],
+  "answer": 1,
+  "explain": "The answer is B.\n\nThe troponin complex (troponin C, I and T), together with tropomyosin and calcium, controls whether actin and myosin can slide past each other, so it regulates muscle contraction. Heart muscle makes its own versions of troponin I and T that differ from the skeletal muscle versions, and lab assays can tell them apart. That makes cardiac troponin the most specific marker of heart muscle injury. Today's high-sensitivity troponin assays can pick up injury within a few hours.\n\nA is half true. Myoglobin does rise early, but it's found in all muscle, so it's not specific to the heart.\nC is wrong. CK-MB is concentrated in heart muscle but is also present in skeletal muscle in small amounts. It's not found ONLY in the heart. Watch for absolute words like \"only\" in answer choices!\nD is wrong. LD is found in many tissues and is no longer used to diagnose heart attacks.",
+  "link": "/high-yield-notes-2/chemistry/"
+ },
+ {
+  "id": "fructosamine",
+  "topic": "chemistry",
+  "q": "A 38 year old man with diabetes also has hereditary spherocytosis, so his red cells survive only a few weeks instead of the usual 120 days. His hemoglobin A1c keeps coming back near normal, even though his home glucose readings are often high. Which test would better reflect his average glucose?",
+  "choices": [
+   "Repeat the hemoglobin A1c on a different analyzer",
+   "C-peptide",
+   "Fructosamine",
+   "Fasting insulin"
+  ],
+  "answer": 2,
+  "explain": "The answer is C.\n\nHemoglobin A1c measures how much glucose has stuck to hemoglobin over the red cells' lifetime, so it normally reflects about the last 2 to 3 months. That only works if the red cells live a normal lifespan. When red cells are destroyed early (hemolysis, sickle cell disease, hereditary spherocytosis) or after a recent transfusion, the circulating cells are young and haven't had time to collect much glucose. The A1c comes out falsely LOW.\n\nFructosamine measures glycated serum proteins, mostly albumin. Albumin lasts a couple of weeks in the blood, so fructosamine reflects average glucose over about 2 to 3 weeks, and red cell survival doesn't affect it.\n\nA is wrong. A different analyzer won't change the biology. Shortened red cell survival affects every A1c method.\nB is wrong. C-peptide shows how much insulin his pancreas is making, not his average glucose.\nD is wrong for the same reason. Insulin levels don't tell you average glucose.",
+  "link": "/high-yield-notes-2/chemistry/"
+ }
+]
