@@ -57,6 +57,6 @@
 <path id="cy-p-lh" d="M800 428 L828 494" class="arw" marker-end="url(#cy-ar)"/><text class="sm" x="842" y="462" style="font-weight:700;fill:#7C3AED">LH</text>
 <rect x="660" y="500" width="200" height="34" rx="10" fill="#FBCFE8" stroke="#BE185D" stroke-width="2"/><text class="sm" x="760" y="523" style="font-size:18px;fill:#9D174D">ovaries</text>
 <g id="cy-plus" opacity="0"><path d="M870 500 C905 470 900 430 842 412" fill="none" stroke="#DC2626" stroke-width="3" marker-end="url(#cy-arr)"/><text class="hl" x="912" y="470" style="fill:#DC2626">+</text><text class="sm" x="884" y="548" style="fill:#DC2626;font-weight:700">estrogen</text></g>
-<g id="cy-stop" opacity="0"><polygon points="882,382 898,382 910,394 910,410 898,422 882,422 870,410 870,394" fill="#D62828" stroke="#fff" stroke-width="2"/><text x="890" y="407" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;font-weight:800;fill:#fff">STOP</text><text class="sm" x="890" y="372" style="fill:#B91C1C;font-weight:700;font-size:14px">E + P high</text></g>
+<g id="cy-stop" opacity="0"><polygon points="882,382 898,382 910,394 910,410 898,422 882,422 870,410 870,394" fill="#D62828" stroke="#fff" stroke-width="2"/><text x="890" y="407" style="font-family:'Plus Jakarta Sans Variable',sans-serif;font-size:11px;font-weight:800;fill:#fff">STOP</text><text class="sm" x="890" y="372" style="fill:#B91C1C;font-weight:700;font-size:14px">E + P high</text></g>
 </g>
 </svg>
