@@ -42,6 +42,19 @@ a:hover { color: var(--accent-dark); }
 .nav a { color: var(--ink); text-decoration: none; white-space: nowrap; padding: 10px 0; border-bottom: 2px solid transparent; }
 .nav a:hover { color: var(--accent); }
 .nav a[aria-current='page'] { border-bottom-color: var(--accent); }
+/* Subjects dropdown */
+.nav-dd { position: relative; display: flex; align-items: center; gap: 2px; }
+.dd-toggle { border: 0; background: none; color: inherit; cursor: pointer; padding: 8px 4px; display: inline-flex; align-items: center; border-radius: 8px; }
+.dd-toggle:hover { color: var(--accent); }
+.dd-toggle svg { transition: transform .2s; }
+.nav-dd.open .dd-toggle svg { transform: rotate(180deg); }
+.dd-menu { display: none; position: absolute; top: 100%; left: -14px; z-index: 60; margin: 0; padding: 8px; list-style: none; min-width: 280px; background: var(--card); border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 14px 36px rgba(20, 30, 25, .14); }
+.dd-menu::before { content: ''; position: absolute; left: 0; right: 0; top: -12px; height: 12px; }
+.nav-dd:hover .dd-menu, .nav-dd:focus-within .dd-menu, .nav-dd.open .dd-menu { display: block; }
+.nav .dd-menu a { display: flex; align-items: center; gap: 10px; padding: 9px 12px; border: 0; border-radius: 10px; font-weight: 600; }
+.nav .dd-menu a:hover { background: var(--ground); }
+.nav .dd-menu a[aria-current='page'] { background: var(--ground); color: var(--accent); }
+.dd-menu i { width: 10px; height: 10px; border-radius: 50%; flex: none; }
 .search-form { display: flex; align-items: center; gap: 8px; border: 1px solid var(--line-2); border-radius: 999px; padding: 0 14px; height: 44px; background: var(--ground); flex: 0 1 240px; }
 .search-form input { border: 0; background: transparent; font: inherit; font-size: 14px; color: var(--ink); outline: none; width: 100%; min-width: 0; }
 .search-form svg { flex: 0 0 auto; }
@@ -53,6 +66,12 @@ a:hover { color: var(--accent-dark); }
   .nav, .search-form { display: none; }
   .site-header.open .nav { display: flex; flex-direction: column; flex-basis: 100%; order: 3; }
   .site-header.open .nav a { padding: 12px 0; border-bottom: 1px solid var(--line); }
+  .site-header.open .nav-dd { flex-wrap: wrap; border-bottom: 1px solid var(--line); }
+  .site-header.open .nav-dd > a { flex: 1; border-bottom: 0; }
+  .site-header.open .dd-toggle { width: 44px; height: 44px; justify-content: center; }
+  .nav-dd:hover .dd-menu, .nav-dd:focus-within .dd-menu { display: none; }
+  .nav-dd.open .dd-menu { display: block; position: static; flex-basis: 100%; min-width: 0; box-shadow: none; border: 0; padding: 0 0 8px 8px; background: transparent; }
+  .site-header.open .nav .dd-menu a { padding: 11px 8px; border-bottom: 0; }
   .site-header.open .search-form { display: flex; flex-basis: 100%; order: 2; }
 }
 
