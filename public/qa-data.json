@@ -21497,6 +21497,25 @@
   "win": 0
  },
  {
+  "id": 3988,
+  "a": "fred007",
+  "d": "2015-01-11",
+  "t": "Hello All and THANK YOU Wordsology !\nI passed ASCP MLS on first try last week [exam question details removed] I think Success and Polanski were enough to pass the test, I studied these 2 and some chapters of Harr and Labce and Passed the test on first attempt.",
+  "w": 1,
+  "topic": "general",
+  "r": [
+   {
+    "id": 4017,
+    "a": "wordsology",
+    "d": "2015-01-21",
+    "t": "Excellent feedback. Thank you very much for helping everyone out. Congratulations to you!",
+    "s": 1
+   }
+  ],
+  "ans": 1,
+  "win": 1
+ },
+ {
   "id": 3987,
   "a": "bitsaif",
   "d": "2015-01-11",
@@ -25858,6 +25877,25 @@
   "win": 0
  },
  {
+  "id": 769,
+  "a": "Jun3BuG",
+  "d": "2013-12-12",
+  "t": "Hello wordsology! Took the ASCP MLS exam and passed!!!! Good luck to everyone studying in the future. Here are my own personal tips of things to focus on.\n\nHematology/Coag: Make sure you definitely understand coagulation and interpreting problems related to it (reagents used in PT, aPTT, know what other tests would mean i.e. TT, bleeding time), know inhibitors and how to correlate lab data. Know everything mentioned on this site for Hemo. [exam question details removed] ***Additionally, know when to perform elutions and resolve issues with type and screens.***\n\nChemistry/UA: Unconjugated prehepatic v hepatic jaundice v conjugated hepatic jaundice etc. Everything about bilirubin! Know how to correlate UA microscopic with chemistry and identify discrepancies. \nDefinitely know sensitivity v specificity and be able to solve if given data for these. Anyway, good luck folks! \nThis website definitely helps but study hard! Success and Polansky cards are super helpful.",
+  "w": 1,
+  "topic": "general",
+  "r": [
+   {
+    "id": 914,
+    "a": "wordsology",
+    "d": "2013-12-18",
+    "t": "Excellent review - sensitivity/specificity and knowing everything about bilirubin - i couldn't agree more",
+    "s": 1
+   }
+  ],
+  "ans": 1,
+  "win": 1
+ },
+ {
   "id": 753,
   "a": "Bj",
   "d": "2013-12-10",
@@ -27322,6 +27360,31 @@
   ],
   "ans": 1,
   "win": 0
+ },
+ {
+  "id": 197,
+  "a": "Kidnkatmom",
+  "d": "2013-05-17",
+  "t": "Took the test today and Passed! [exam question details removed] Lots of Coag questions but most were not disease states, they had to do with with QC/troubleshooting or contaminated specimens. I had many (8 or more) of QC troubleshooting on different analyzers (coagulation, blood gas analyzer and spectrophotometer). \nThe materials I used were: this site, Harr book, Bottom Line approach, Polansky cards and LabCe",
+  "w": 1,
+  "topic": "general",
+  "r": [
+   {
+    "id": 198,
+    "a": "wordsology",
+    "d": "2013-05-17",
+    "t": "very informative - thank you for sharing this with others and congratulations kindnkatmom",
+    "s": 1
+   },
+   {
+    "id": 243,
+    "a": "MLS2013",
+    "d": "2013-05-27",
+    "t": "Hi Wordsology and Kidnkatmom, what type of QC/troubleshooting questions am I going to see on the test?"
+   }
+  ],
+  "ans": 1,
+  "win": 1
  },
  {
   "id": 190,
