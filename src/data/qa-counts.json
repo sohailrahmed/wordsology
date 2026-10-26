@@ -1,7 +1,7 @@
 {
  "microbiology": 111,
  "strategy": 562,
- "general": 812,
+ "general": 822,
  "endocrinology": 5,
  "chemistry": 61,
  "hematology": 21,
@@ -10,9 +10,9 @@
  "immunology": 17,
  "coagulation": 24,
  "urinalysis-body-fluids": 11,
- "all": 1736,
- "answered": 558,
- "success": 361,
- "success_comments": 373,
- "comments": 3379
+ "all": 1746,
+ "answered": 562,
+ "success": 371,
+ "success_comments": 383,
+ "comments": 3410
 }
