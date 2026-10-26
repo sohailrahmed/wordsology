@@ -10,18 +10,16 @@ const topicInfo: Record<string, { name: string; color: string; tint: string }> =
   ...Object.fromEntries(subjects.map((s) => [s.id, { name: s.name, color: s.color, tint: s.tint }])),
   'lab-ops': { name: 'Lab operations & statistics', color: '#4A5A50', tint: '#EEF0EC' },
 };
-const used = [...new Set(questions.map((q) => q.topic))];
-const order = [...subjects.map((s) => s.id), 'lab-ops'].filter((t) => used.includes(t));
 const L = 'ABCDE';
 const paras = (s: string) => s.split(/\n\n+/);
 const data = JSON.stringify({ questions, topics: topicInfo });
 ---
-<Base title="Practice questions" description="Free ASCP-style mini-tests: 10 random questions at a time, one question per screen, timed like the real exam, with full explanations at the end.">
+<Base title="Practice questions" description="Free ASCP-style mini-tests: 5 random questions at a time, one question per screen, timed like the real exam, with full explanations at the end.">
   <header class="pq-head">
     <div class="wrap">
       <p class="crumbs"><a href="/">Home</a> / Practice questions</p>
       <h1>Practice questions</h1>
-      <p class="lede">Ten questions at a time, just like exam day: one question per screen, no going back, and the clock is running. You'll see your score and every explanation at the end.</p>
+      <p class="lede">Five questions at a time, just like exam day: one question per screen, no going back, and the clock is running. You'll see your score and every explanation at the end.</p>
     </div>
   </header>
 
@@ -30,15 +28,10 @@ const data = JSON.stringify({ questions, topics: topicInfo });
     <section class="pq-card" id="pq-start" hidden>
       <h2>Start a mini-test</h2>
       <ul class="pq-rules">
-        <li><b>10 questions</b> · <b>15 minutes</b> (about the pace of the real exam)</li>
+        <li><b>5 questions</b> · <b>7½ minutes</b> (about the pace of the real exam)</li>
         <li>One question at a time. Once you press Next, you can't go back.</li>
         <li>No answers until the end, then you get your score and every explanation.</li>
       </ul>
-      <label class="pq-label" for="pq-topic">Questions from</label>
-      <select id="pq-topic" class="pq-select">
-        <option value="all">All subjects ({questions.length})</option>
-        {order.map((t) => <option value={t}>{topicInfo[t].name} ({questions.filter((q) => q.topic === t).length})</option>)}
-      </select>
       <button type="button" class="btn btn-primary pq-go" id="pq-begin">Start test</button>
       <p class="pq-seen" id="pq-seen"></p>
       <div class="pq-history" id="pq-history" hidden>
@@ -51,8 +44,8 @@ const data = JSON.stringify({ questions, topics: topicInfo });
     <!-- the test -->
     <section class="pq-card pq-test" id="pq-test" hidden>
       <div class="pq-bar">
-        <span class="pq-count" id="pq-count">Question 1 of 10</span>
-        <span class="pq-timer" id="pq-timer" aria-live="off">15:00</span>
+        <span class="pq-count" id="pq-count">Question 1 of 5</span>
+        <span class="pq-timer" id="pq-timer" aria-live="off">7:30</span>
       </div>
       <div class="pq-progress"><span id="pq-progress"></span></div>
       <div class="pq-q" id="pq-q"></div>
@@ -66,8 +59,8 @@ const data = JSON.stringify({ questions, topics: topicInfo });
         <p class="pq-big" id="pq-big"></p>
         <p class="pq-sub" id="pq-sub"></p>
         <div class="pq-actions">
-          <button type="button" class="btn btn-primary" id="pq-again">Take another 10</button>
-          <button type="button" class="btn btn-secondary" id="pq-home">Change subject</button>
+          <button type="button" class="btn btn-primary" id="pq-again">Take another 5</button>
+          <button type="button" class="btn btn-secondary" id="pq-home">See my scores</button>
         </div>
       </div>
       <h2 class="pq-review-h">Review your answers</h2>
@@ -94,7 +87,7 @@ const data = JSON.stringify({ questions, topics: topicInfo });
   const { questions, topics } = JSON.parse(document.getElementById('pq-data')!.textContent!) as { questions: Q[]; topics: Record<string, { name: string; color: string; tint: string }> };
   const $ = <T extends HTMLElement = HTMLElement>(id: string) => document.getElementById(id) as T;
   const L = 'ABCDE';
-  const N = 10, SECONDS_PER_Q = 90;
+  const N = 5, SECONDS_PER_Q = 90;
   const KEY = 'wsPractice';
 
   // ---- remembered on this device only ----
@@ -111,29 +104,24 @@ const data = JSON.stringify({ questions, topics: topicInfo });
   const shuffle = <T,>(a: T[]) => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
   const show = (id: string) => ['pq-start', 'pq-test', 'pq-results'].forEach((x) => { $(x).hidden = x !== id; });
   const fmt = (s: number) => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
-  const topicName = (t: string) => (t === 'all' ? 'All subjects' : topics[t].name);
 
   // ---- start screen ----
   function renderStart() {
-    const t = ($('pq-topic') as HTMLSelectElement).value;
-    const pool = questions.filter((q) => t === 'all' || q.topic === t);
+    const pool = questions;
     const seen = pool.filter((q) => store.seen.includes(q.id)).length;
-    $('pq-seen').textContent = seen ? `You've seen ${seen} of ${pool.length} ${t === 'all' ? '' : topicName(t) + ' '}questions. New ones come first.` : '';
+    $('pq-seen').textContent = seen >= pool.length ? `You've seen all ${pool.length} questions. Your next test starts a fresh round.` : seen ? `You've seen ${seen} of ${pool.length} questions. New ones come first.` : `${pool.length} questions from every subject, drawn at random.`;
     const h = store.history.slice(-5).reverse();
     $('pq-history').hidden = !h.length;
-    $('pq-hist-list').innerHTML = h.map((x) => `<li><b>${x.right} / ${x.n}</b> <span>${Math.round((100 * x.right) / x.n)}% · ${esc(topicName(x.topic))} · ${new Date(x.d).toLocaleDateString()}</span></li>`).join('');
+    $('pq-hist-list').innerHTML = h.map((x) => `<li><b>${x.right} / ${x.n}</b> <span>${Math.round((100 * x.right) / x.n)}% · ${new Date(x.d).toLocaleDateString()}</span></li>`).join('');
     const best = store.history.reduce((b, x) => Math.max(b, x.right / x.n), 0);
     $('pq-best').textContent = store.history.length ? `Best: ${Math.round(best * 100)}% · Tests taken: ${store.history.length}` : '';
-    ($('pq-begin') as HTMLButtonElement).textContent = `Start test (${Math.min(N, pool.length)} questions)`;
     show('pq-start');
   }
-  $('pq-topic').addEventListener('change', renderStart);
 
   // ---- the test ----
   let test: Q[] = [], picks: (number | null)[] = [], at = 0, topic = 'all', secsLeft = 0, total = 0, tick = 0;
   function begin() {
-    topic = ($('pq-topic') as HTMLSelectElement).value;
-    const pool = questions.filter((q) => topic === 'all' || q.topic === topic);
+    const pool = questions;
     const fresh = shuffle(pool.filter((q) => !store.seen.includes(q.id)));
     const old = shuffle(pool.filter((q) => store.seen.includes(q.id)));
     test = [...fresh, ...old].slice(0, Math.min(N, pool.length));
@@ -181,7 +169,7 @@ const data = JSON.stringify({ questions, topics: topicInfo });
     save(store);
     const pct = Math.round((100 * right) / test.length);
     $('pq-big').innerHTML = `${right} <small>/ ${test.length}</small>`;
-    const msg = pct >= 80 ? 'Excellent work.' : pct >= 60 ? 'Solid. Read the explanations for the ones you missed.' : 'Every miss below is a lesson. Read the explanations, then try another 10.';
+    const msg = pct >= 80 ? 'Excellent work.' : pct >= 60 ? 'Solid. Read the explanations for the ones you missed.' : 'Every miss below is a lesson. Read the explanations, then try another 5.';
     $('pq-sub').textContent = `${timeUp ? "Time's up! " : ''}${pct}% in ${fmt(used)}. ${msg}`;
     $('pq-review').innerHTML = test.map((q, i) => {
       const p = picks[i], ok = p === q.answer, t = topics[q.topic];
