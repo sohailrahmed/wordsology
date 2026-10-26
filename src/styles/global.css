@@ -454,3 +454,8 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
   .prose .ea .ea-stage::after { content: '← swipe the drawing sideways →'; display: block; text-align: center; font-size: 13px; color: var(--muted); padding: 6px 0 0; position: sticky; left: 0; width: calc(100vw - 58px); }
 }
 .ea .val.word { font-size: 32px; }
+
+/* footer LinkedIn link */
+.foot-by { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; }
+.foot-li { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; text-decoration: none; }
+.foot-li:hover span { text-decoration: underline; }
