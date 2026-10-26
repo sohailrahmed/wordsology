@@ -1,5 +1,5 @@
 ---
-// Practice questions as exam-style mini-tests: 10 random questions, one at a time, no going back,
+// Mini Exam Simulator: exam-style mini-tests of 5 random questions, one at a time, no going back,
 // a countdown timer, and results with explanations at the end. Scores are remembered on the visitor's device.
 // Questions live in src/data/practice-questions.json (`answer` is 0 for A, 1 for B…).
 import Base from '../layouts/Base.astro';
@@ -14,11 +14,11 @@ const L = 'ABCDE';
 const paras = (s: string) => s.split(/\n\n+/);
 const data = JSON.stringify({ questions, topics: topicInfo });
 ---
-<Base title="Practice questions" description="Free ASCP-style mini-tests: 5 random questions at a time, one question per screen, timed like the real exam, with full explanations at the end.">
+<Base title="Mini Exam Simulator" description="Free ASCP-style mini-tests: 5 random questions at a time, one question per screen, timed like the real exam, with full explanations at the end.">
   <header class="pq-head">
     <div class="wrap">
-      <p class="crumbs"><a href="/">Home</a> / Practice questions</p>
-      <h1>Practice questions</h1>
+      <p class="crumbs"><a href="/">Home</a> / Mini Exam Simulator</p>
+      <h1>Mini Exam Simulator</h1>
       <p class="lede">Five questions at a time, just like exam day: one question per screen, no going back, and the clock is running. You'll see your score and every explanation at the end.</p>
     </div>
   </header>
