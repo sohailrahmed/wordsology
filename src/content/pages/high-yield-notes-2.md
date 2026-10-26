@@ -4,9 +4,9 @@ path: "/high-yield-notes-2/"
 updated: "2017-01-15"
 ---
 
-Creating flowcharts and other visual representations is a great way to learn. It allows me to visualize relationships when reading just won't suffice.
+Creating flowcharts and diagrams is a great way to learn. It will allow you to visualize relationships when reading doesn't suffice. Try viewing the [animation on coagulation](/high-yield-notes-2/coagulation/#coag-anim) and then draw it out yourself on paper.
 
-Tables are also helpful. You'll notice patterns in tables that make it easy to memorize a bunch of things at once. See my chart on gram negative bacilli (curved) for an example.
+Tables are also helpful. You'll notice patterns in tables that make it easier to memorize facts that you just have to know. See my [chart on gram negative bacilli](/high-yield-notes-2/microbiology/#chart-gram-negative-bacilli-enterobacteriaceae) for an example.
 
-I hope the charts in my High-Yield section give you some idea of what I mean. They helped me learn a lot of bacteriology. However, it's always better to create your own charts because you're rewiring your own brain.
+I hope the charts and tables help. However, it's always better to create your own charts because you're rewiring your own brain.
 
