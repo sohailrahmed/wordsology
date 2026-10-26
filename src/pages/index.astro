@@ -43,22 +43,22 @@ const quotes = [
   <section class="wrap block" id="start">
     <h2 class="section-title">New here? Follow this path</h2>
     <div class="path-grid">
-      <a class="path-step path-step-dark" href="/passing-strategy/">
+      <a class="path-step is-default" href="/passing-strategy/">
         <span class="path-num">Step 1</span>
         <span class="path-title">Passing strategy</span>
         <span class="path-body">How to plan your weeks, which resources to use, and how to know you're ready.</span>
       </a>
-      <a class="path-step path-step-dark" href="/basic-testing-skills/">
+      <a class="path-step" href="/basic-testing-skills/">
         <span class="path-num">Step 2</span>
         <span class="path-title">Testing skills</span>
         <span class="path-body">How the adaptive exam works and how to handle tricky questions.</span>
       </a>
-      <a class="path-step path-step-dark" href="/high-yield-notes-2/">
+      <a class="path-step" href="/high-yield-notes-2/">
         <span class="path-num">Step 3</span>
         <span class="path-title">High-yield notes</span>
         <span class="path-body">The flowcharts and tables, subject by subject.</span>
       </a>
-      <a class="path-step path-step-dark" href="/practice-questions/">
+      <a class="path-step" href="/practice-questions/">
         <span class="path-num">Step 4</span>
         <span class="path-title">Mini Exam Simulator</span>
         <span class="path-body">Put your knowledge to work with these mini exams for practice!</span>
@@ -107,16 +107,20 @@ const quotes = [
   .path-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
   @media (max-width: 1100px) { .path-grid { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 600px) { .path-grid { grid-template-columns: 1fr; } }
-  .path-step { display: flex; flex-direction: column; gap: 10px; padding: 28px; border-radius: var(--radius); text-decoration: none; color: var(--ink); border: 1px solid var(--line); transition: box-shadow .25s ease, background-color .25s ease, border-color .25s ease, transform .25s ease; }
-  .path-step:hover, .path-step:focus-visible { color: var(--ink); background: #F1F9F3; border-color: #8FCB9F; box-shadow: 0 0 0 3px rgba(76, 175, 106, .12), 0 8px 22px rgba(76, 175, 106, .22); transform: translateY(-1px); }
-  .path-step-dark { background: var(--ink); color: #fff; border-color: var(--ink); }
-  .path-step-dark:hover, .path-step-dark:focus-visible { color: #fff; background: #1C3A26; border-color: #6FBF86; box-shadow: 0 0 0 3px rgba(111, 191, 134, .14), 0 8px 22px rgba(76, 175, 106, .28); }
-  @media (prefers-reduced-motion: reduce) { .path-step { transition: none; } .path-step:hover { transform: none; } }
+  .path-step { display: flex; flex-direction: column; gap: 10px; padding: 28px; border-radius: var(--radius); text-decoration: none; color: var(--ink); background: var(--card); border: 1px solid var(--line); transition: background-color .3s ease, border-color .3s ease, box-shadow .3s ease, color .3s ease, transform .3s ease; }
+  .path-step .path-num, .path-step .path-body { transition: color .3s ease; }
+  /* the dark "spotlight": on Step 1 by default, and it moves to whichever box you hover */
+  .path-step.is-default, .path-step:hover, .path-step:focus-visible { background: var(--ink); color: #fff; border-color: var(--ink); }
+  .path-grid:has(.path-step:hover) .path-step.is-default:not(:hover), .path-grid:has(.path-step:focus-visible) .path-step.is-default:not(:focus-visible):not(:hover) { background: var(--card); color: var(--ink); border-color: var(--line); }
+  .path-step:hover, .path-step:focus-visible { color: #fff; background: #1C3A26; border-color: #6FBF86; box-shadow: 0 0 0 3px rgba(111, 191, 134, .14), 0 8px 22px rgba(76, 175, 106, .28); transform: translateY(-1px); }
+  @media (prefers-reduced-motion: reduce) { .path-step, .path-step .path-num, .path-step .path-body { transition: none; } .path-step:hover { transform: none; } }
   .path-num { font-size: 14px; font-weight: 700; color: var(--accent); }
-  .path-step-dark .path-num { color: var(--accent-on-dark); }
+  .path-step.is-default .path-num, .path-step:hover .path-num, .path-step:focus-visible .path-num { color: var(--accent-on-dark); }
+  .path-grid:has(.path-step:hover) .path-step.is-default:not(:hover) .path-num, .path-grid:has(.path-step:focus-visible) .path-step.is-default:not(:focus-visible):not(:hover) .path-num { color: var(--accent); }
   .path-title { font-size: 21px; font-weight: 800; }
   .path-body { font-size: 15px; line-height: 1.55; color: var(--ink-3); }
-  .path-step-dark .path-body { color: #D3DDD6; }
+  .path-step.is-default .path-body, .path-step:hover .path-body, .path-step:focus-visible .path-body { color: #D3DDD6; }
+  .path-grid:has(.path-step:hover) .path-step.is-default:not(:hover) .path-body, .path-grid:has(.path-step:focus-visible) .path-step.is-default:not(:focus-visible):not(:hover) .path-body { color: var(--ink-3); }
   .quotes { background: var(--accent-soft); margin-top: 64px; padding-bottom: 64px; }
   .quote-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 16px; }
   .quote { margin: 0; background: #fff; border-radius: var(--radius); padding: 28px; }
