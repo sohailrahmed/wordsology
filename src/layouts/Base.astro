@@ -7,7 +7,7 @@ interface Props {
   description?: string;
   image?: string;
 }
-const { title, description = 'Free high-yield notes, animated charts and a Mini Exam Simulator for the ASCP MLS, MLT and ASCPi exams.', image = '/og-2026.png' } = Astro.props;
+const { title, description = 'Free high-yield notes, animated charts and a Mini Exam Simulator for the ASCP (ASCPi) MLS exams.', image = '/og-2026.png' } = Astro.props;
 const fullTitle = title === 'Home' ? 'Wordsology · ASCP made easy' : `${title} · Wordsology`;
 const here = Astro.url.pathname;
 const nav = [
