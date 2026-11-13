@@ -486,3 +486,8 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
   .exam-breakdown .xb-group { padding: 8px 10px 12px; }
   .exam-breakdown .xb-rest { padding: 0 10px; }
 }
+
+/* footer disclaimer line */
+.site-footer .foot-legal { flex-basis: 100%; margin: 0; font-size: 13px; color: var(--ink-3); }
+.site-footer .foot-legal a { color: inherit; text-decoration: underline; }
+.prose .updated-note { font-size: 14px; color: var(--ink-3); margin-top: 32px; }
